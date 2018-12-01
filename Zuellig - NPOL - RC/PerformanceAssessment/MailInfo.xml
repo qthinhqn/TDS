@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MailService>
+  <MailInfo>
+    <Server>
+    </Server>
+    <Address>
+      zpvn-hr@zuelligpharma.com
+    </Address>
+    <Port>25
+    </Port>
+    <UserName>zpvn-hr</UserName>
+    <Password>R2ljdW5nZHUwY1JDVg==</Password>
+    <Uri>https://msoutlook.zuelligpharma.com/ews/exchange.asmx</Uri>
+  </MailInfo>
+  <Database>
+    <ConString>Data Source=TDS-THINHNQ,1433;Initial Catalog=ZUELLIG_121016;Integrated Security=False;User Id=sa;MultipleActiveResultSets=True;Password=YmFyY29kZVJDVg==</ConString>
+  </Database>
+</MailService>

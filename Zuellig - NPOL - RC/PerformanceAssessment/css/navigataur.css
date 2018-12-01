@@ -1,0 +1,287 @@
+
+/*--------------------------------
+ Functional Styles (Required)
+---------------------------------*/
+/* Tim Pietrusky advanced checkbox hack (Android <= 4.1.2) */
+body{ -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }
+
+/* Main body */
+		* {
+			margin: 0;
+			padding: 0;
+			outline: 0;
+		}
+		
+		html, body{
+			height: 100%;
+			/*background: #F2F2F2;*/
+		}
+
+		body, a{
+			font: normal 16px Helvetica, Verdana, Geneva, sans-serif;
+			color: #3F3F3F;		
+		}
+		
+		.container{
+			/*min-height: 100%;*/
+			height: auto !important;
+			height: 100%;
+			margin: 0 auto -30px;
+		}
+		
+		.container:after{
+			content: '';
+			display: block;
+			height: 30px;
+			clear: both;
+		}
+		
+		.footer{
+			height: 12px;
+			padding: 8px 0;
+			background: #FFF;
+			border-top: 1px solid #51C1F1;
+			font-size: 12px;
+			text-align: center;
+		}
+
+		.img{
+			vertical-align: middle;
+			border:none;
+		}
+
+/* Begin */
+.header { position: relative; }
+#toggle, .toggle { display: none; }
+.menu > li { list-style: none; float:left;	}
+
+/* Nicolas Gallagher micro clearfix */
+.clearfix:before, .clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+
+@media only screen and (max-width: 768px){
+	.menu { display: none; opacity: 0; width: 100%; position: absolute; right: 0; }
+	.menu > li { display: block; width: 100%; margin: 0; }
+	.menu > li > a { display: block; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+	.toggle { display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+	#toggle:checked ~ .menu { display: block; opacity: 1;}
+}
+
+
+/*--------------------------------
+ Presentation Styles (Editable)
+---------------------------------*/
+.header{
+	min-height: 60px;
+	height: 100%;
+	padding: 0 20px;
+	background: #FFFFFF;
+}
+
+.header > h1 {
+	float: left;
+	padding: 30px 0 0;		
+	font-style: italic;
+	font-family: Georgia;
+	font-size: 28px;
+	color: #DFDFDF;
+}
+
+.nav{ 
+	display: block; 
+	float: right; 
+}
+
+.nav, .menu, .menu > li, .menu > li > a, .menu > li > a > img{ 
+	height: 100%; 
+	vertical-align: middle;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 22px 20px;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	-webkit-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	-o-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+}
+
+.menu > li > a:hover, .menu > li > a:focus{
+	background: #F2F2F2;
+	box-shadow: inset 0px 5px #51C1F1;
+	color: #51C1F1;
+	padding: 30px 22px 10px;
+}
+
+.toggle{ 
+	z-index: 2; 
+}
+
+@media only screen and (max-width: 768px){
+	.menu{
+		background: #FFFFFF;
+		border-top: 1px solid #51C1F1;
+	}
+	
+	.menu, .menu > li, .menu > li > a{
+		height: auto;
+	}
+	
+	.menu > li > a{
+		padding: 15px 15px;
+	}
+	
+	.menu > li > a:hover, .menu > li > a:focus{
+		background: #F2F2F2;
+		box-shadow: inset 5px 0px #51C1F1;
+		padding: 15px 15px 15px 25px;
+	}
+	
+	.toggle:after {
+		content: 'Main Menu';
+		display: block;
+		width: 200px;
+		margin: 33px 0;
+		padding: 10px 50px;
+		background: #51C1F1;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		text-align: center;
+		font-size: 12px;
+		color: #FFFFFF;
+		-webkit-transition: all 0.5s linear;
+		-moz-transition: all 0.5s linear;
+		-o-transition: all 0.5s linear;
+		transition: all 0.5s linear;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box; 
+	}
+	
+	.toggle:hover:after{
+		background: #45ABD6;
+	}
+	
+	#toggle:checked + .toggle:after{
+		content: 'Close Menu';
+	}
+	
+	ul.sub-menu {
+		display: block;
+		margin-top: -1px;
+		margin-left: 20px;
+		position: static;
+		padding: 0;
+		width: inherit;
+	}
+
+	ul.sub-menu > li:first-child {
+		border-top: 1px solid #444 !important;
+	}
+
+	ul.sub-menu > li > a.parent {
+		background: #333 !important;
+	}
+}
+
+@media only screen and (max-width: 479px){
+	.header > h1 { 
+		text-align: center;
+	}
+	.header > h1, .nav, .toggle:after{ 
+		float: none; 
+	}
+	.toggle:after { 
+		text-align: center; width: 100%; 
+	}
+	
+	ul.sub-menu {
+		display: block;
+		margin-top: -1px;
+		margin-left: 20px;
+		position: static;
+		padding: 0;
+		width: inherit;
+	}
+
+	ul.sub-menu > li:first-child {
+		border-top: 1px solid #444 !important;
+	}
+
+	ul.sub-menu > li > a.parent {
+		background: #333 !important;
+	}
+}
+
+/*--------------------------------
+ Old Styles (THINH)
+---------------------------------*/
+
+
+#main-menu li {
+	position: relative;
+	list-style:none;
+}
+
+ul.sub-menu { /* level 2 */
+	display: none;
+	left: 0px;
+	top: 38px;
+	padding-top: 20px;
+	position: absolute;
+	width: 150px;
+	z-index: 9999;
+}
+
+ul.sub-menu ul.sub-menu { /* level 3+ */
+	margin-top: 0px;
+	padding-top: 0;
+	left: 132px;
+	top: 0px;
+}
+
+ul.sub-menu > li > a {
+	background-color: #F2F2F2; /*rgba(255, 255, 255, 0.65);*/
+	color: #008CBA;
+	display: block;
+	font-size: 12px;
+	line-height: 15px;
+	padding: 10px 12px;
+	list-style:none;
+}
+
+ul.sub-menu > li > a:hover {
+	background-color: #719849; 
+	color: #fff;
+}
+
+ul.sub-menu > li:first-child {
+	border-top: 3px solid #CEDC27;
+}
+ul.sub-menu ul.sub-menu  > li:first-child {
+	border-top: 3px solid #CEDC27;
+}
+
+ul.sub-menu > li:last-child > a {
+	border-radius: 0 0 2px 2px;
+}
+
+ul.sub-menu > li > a.parent {
+	background-image: url(../images/arrow.png);
+	background-size: 5px 9px;
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+
+#main-menu li:hover > ul.sub-menu {
+	display: block; /* show the submenu */
+}
+

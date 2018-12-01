@@ -1,0 +1,284 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="NPOL.Site1" %>
+
+<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Src="~/UserControl/ucLeftMenu.ascx" TagPrefix="uc1" TagName="ucLeftMenu" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui-1.10.2.js" type="text/javascript"></script>
+
+    <title>HR System</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/navigataur.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/Foundation.css" type="text/css" />
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+
+    <script type="text/javascript">
+        function onCommandExecuted(s, e) {
+            var text = e.item.name;
+            var hiddenField = document.getElementById('HiddenField1');
+            hiddenField.value = text;
+            var hiddenButton = document.getElementById('btnSubmit');
+            hiddenButton.click();
+        }
+
+        function onFileTabClicked(s, e) {
+            var hiddenField = document.getElementById('HiddenField1');
+            hiddenField.value = '1';
+            var hiddenButton = document.getElementById('btnSubmit');
+            hiddenButton.click();
+        }
+
+        function OnShowButtonClick(s, e) {
+            popup.SetHeaderText("popup.Show()");
+            popup.Show();
+        }
+
+        function ShowUploadControl() {
+            var o = document.getElementById('upload');
+            o.style.display = 'table';
+        }
+
+    </script>
+
+    <style type="text/css">
+        .img_btn {
+            margin-bottom: 10px;
+        }
+
+        .li_padding{
+            padding-right: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server" style="width: inherit; min-width: 768px">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <!-- Tray --> 
+        <div id="tray" style="z-index:10; position:relative;">
+            <p class="f-left">
+                <!-- Switcher -->
+
+                <span class="f-left" style="margin-left: 10px;">
+                    <asp:Label Text="<%$Resources:Login,title %>" runat="server"></asp:Label></span>
+            </p>
+            <p class="f-right" style="padding: 0 5px;">
+                <asp:Label ID="lbWelcome" runat="server" Text="" Font-Bold="true" Font-Size="10pt" ForeColor="Brown"></asp:Label>
+                <asp:Label ID="lbUserName" runat="server" Text="" Font-Bold="true" Font-Size="10pt"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <strong><a id="logout">
+                        <asp:LinkButton runat="server" ID="lbtLogout" CssClass="button round tiny" Font-Bold="true" Font-Size="12px"
+                            Text="<%$Resources:LeftMenu.Master,lbtLogout%>" PostBackUrl="~/login.aspx" CausesValidation="false"></asp:LinkButton>
+                    </a></strong>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                <a href="/">
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="20px" Width="20px" ImageAlign="Middle" CausesValidation="false"
+                        ImageUrl="~/img/britain.png" OnClick="vn_Click" CssClass="img_btn" /></a>
+                <asp:Label ID="lblLanguage" runat="server" Text="" Font-Bold="true" Font-Size="10pt"></asp:Label>
+            </p>
+        </div>
+        <!--  /tray -->
+        <div id="custom-bootstrap-menu" class="container" style="z-index:9; position:relative;">
+            <div class="header clearfix">
+                <div style="float: left">
+                    <a class="navbar-brand" style="padding: 10px 15px" href="#">
+                        <img src="img/ZP_LOGO_RGB.jpg" /></a>
+                </div>
+                <div class="navbar" style="float: right">
+                    <input type="checkbox" id="toggle" style="display:none" />
+                    <label for="toggle" class="toggle" onclick=""></label>
+                    <ul id="main-menu" class="menu">
+                        <li class="parent" id="liNews" runat="server">
+                            <a runat="server" href="~/hrnews.aspx" title="<%$Resources:Ribbon,G_News %>">
+                                <img src="images/Pictures/news.jpg" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,G_News %>" runat="server"></asp:Label></a></li>
+                        <li class="parent" id="liChangePassword" runat="server">
+                            <a runat="server" href="~/F_ChangePassWord.aspx" title="<%$Resources:Ribbon,I_DoiMK %>">
+                                <img src="images/Pictures/BOPermission_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,I_DoiMK %>" runat="server"></asp:Label></a>
+                        </li>
+                        <%--nghi phep--%>
+                        <li class="parent" id="liRegistration_2" runat="server">
+                            <a runat="server" href="~/F_Registration1.aspx" title="<%$Resources:Ribbon,I_DKPhep %>">
+                                <img src="images/Pictures/FormatAsTable_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,I_DKPhep %>" runat="server"></asp:Label></a></li>
+                        <li class="parent" id="ulAnnual" runat="server">
+                            <a>
+                                <img src="images/Pictures/FormatAsTable_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,G_Annual %>" runat="server"></asp:Label>
+                            </a>
+                            <ul class="sub-menu">
+                                <li id="liRegistration" runat="server">
+                                    <a runat="server" href="~/F_Registration1.aspx" title="<%$Resources:Ribbon,I_DKPhep %>">
+                                        <%--<img src="images/Pictures/FormatAsTable_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:Ribbon,I_DKPhep %>" runat="server"></asp:Label></a></li>
+                                <li id="liApprovalNew" runat="server">
+                                    <a runat="server" href="~/AF_ApprovalNew.aspx" title="<%$Resources:Ribbon,I_DuyetPhep %>">
+                                        <%--<img src="images/Pictures/BOPosition2_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:Ribbon,I_DuyetPhep %>" runat="server"></asp:Label></a></li>
+                                <li id="liLeaveReport" runat="server">
+                                    <a runat="server" href="~/AF_LeaveReport.aspx" title="<%$Resources:Ribbon,I_Phepton %>">
+                                        <%--<img src="images/Pictures/Chart_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:Ribbon,I_Phepton %>" runat="server"></asp:Label></a></li>
+                            </ul>
+                        </li>
+                        <%--KPI--%>
+                        <li class="parent" id="ulKPI" runat="server" >
+                            <a>
+                                <img src="images/Pictures/patool_2.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,G_KPI %>" runat="server"></asp:Label>
+                            </a>
+                            <ul class="sub-menu">
+                                <li id="likpiInfo" runat="server">
+                                    <a>
+                                        <asp:Label Text="<%$Resources:Ribbon,I_KPI_Info%>" runat="server"></asp:Label></a>
+                                    <ul class="sub-menu">
+                                        <li id="li7" runat="server">
+                                            <a runat="server" href="~/Timeline.aspx" title="<%$Resources:Ribbon,I_KPI_Scheduler%>">
+                                                <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                                <asp:Label Text="<%$Resources:Ribbon,I_KPI_Scheduler%>" runat="server"></asp:Label></a></li>
+                                        <li id="li8" runat="server">
+                                            <a runat="server" href="~/Guideline.aspx" title="<%$Resources:Ribbon,I_KPI_Guideline%>">
+                                                <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                                <asp:Label Text="<%$Resources:Ribbon,I_KPI_Guideline%>" runat="server"></asp:Label></a></li>
+                                    </ul>
+                                </li>
+                                <li id="likpi4Employee" runat="server">
+                                    <a>
+                                        <asp:Label Text="<%$Resources:Ribbon,I_KPI_Employee%>" runat="server"></asp:Label></a>
+                                    <ul class="sub-menu">
+                                        <li id="li1" runat="server">
+                                            <a runat="server" href="~/SelfAssessmentHistory.aspx" title="<%$Resources:Ribbon,liPA_History %>">
+                                                <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                                <asp:Label Text="<%$Resources:Ribbon,liPA_History %>" runat="server"></asp:Label></a></li>
+                                        <li id="li2" runat="server">
+                                            <a runat="server" href="~/SelfAssessment_1.aspx" title="<%$Resources:Ribbon,liSeftAssessment %>">
+                                                <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                                <asp:Label Text="<%$Resources:Ribbon,liSeftAssessment %>" runat="server"></asp:Label></a></li>
+                                         <li id="li3" runat="server">
+                                            <a runat="server" href="~/EmployeeKPI.aspx" title="<%$Resources:Ribbon,liEmployeeKPI %>">
+                                                <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                                <asp:Label Text="<%$Resources:Ribbon,liEmployeeKPI %>" runat="server"></asp:Label></a></li>
+                                   </ul>
+                                </li>
+                                <li id="likpi4Manager" runat="server">
+                                    <a>
+                                        <asp:Label Text="<%$Resources:Ribbon,I_KPI_Manager%>" runat="server"></asp:Label></a>
+                                    <ul class="sub-menu">
+                                        <li id="li5" runat="server">
+                                            <a runat="server" href="~/ReviewFeedback.aspx" title="<%$Resources:Ribbon,liReviewFeedback%>">
+                                                <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                                <asp:Label Text="<%$Resources:Ribbon,liReviewFeedback%>" runat="server"></asp:Label></a></li>
+                                        <li id="li6" runat="server">
+                                            <a runat="server" href="~/K_ViewEmpKPI.aspx" title="<%$Resources:Ribbon,liApprovalPA%>">
+                                                <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                                <asp:Label Text="<%$Resources:Ribbon,liApprovalPA%>" runat="server"></asp:Label></a></li>
+                                        <li id="li9" runat="server" >
+                                            <a runat="server" href="~/Statistics.aspx" title="<%$Resources:Ribbon,I_ListPeriod %>">
+                                                <%--<img src="images/Pictures/KPI_32x32.png" alt="Icon" />--%>
+                                                <asp:Label Text="<%$Resources:Ribbon,I_ListPeriod %>" runat="server"></asp:Label>
+                                            </a></li>
+                                        <li id="li4" runat="server" >
+                                            <a runat="server" href="~/SetKPI.aspx" title="<%$Resources:Ribbon,liSetKPI%>">
+                                                <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                                <asp:Label Text="<%$Resources:Ribbon,liSetKPI%>" runat="server"></asp:Label></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <%--Recruit--%>
+                        <li class="parent" id="lirc_parent" runat="server">
+                            <a>
+                            <img src="images/Pictures/SwitchTimeScalesTo_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:RC_Menu,G_Recruit %>" runat="server"></asp:Label>
+                            </a>
+                            <ul class="sub-menu">
+                                <li id="lirc_01" runat="server">
+                                    <a runat="server" href="~/Recruitment/Registration.aspx" title="<%$Resources:RC_Menu,I_RCRegist_2 %>">
+                                    <%--<img src="images/Pictures/FormatAsTable_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:RC_Menu,I_RCRegist %>" runat="server"></asp:Label></a></li>
+                                <li id="lirc_02" runat="server">
+                                    <a runat="server" href="~/Recruitment/Registration_2.aspx" title="<%$Resources:RC_Menu,I_RCRegist_2 %>">
+                                    <%--<img src="images/Pictures/FormatAsTable_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:RC_Menu,I_RCRegist_2 %>" runat="server"></asp:Label></a></li>
+                                <li id="lirc_03" runat="server">
+                                    <a runat="server" href="~/Recruitment/RegistrationView.aspx" title="<%$Resources:RC_Menu,I_RCView %>">
+                                    <%--<img src="images/Pictures/BOPosition2_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:RC_Menu,I_RCView %>" runat="server"></asp:Label></a></li>
+                                <li id="lirc_04" runat="server">
+                                    <a runat="server" href="~/Recruitment/Approval.aspx" title="<%$Resources:RC_Menu,I_RCApproval %>">
+                                    <%--<img src="images/Pictures/Chart_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:RC_Menu,I_RCApproval %>" runat="server"></asp:Label></a></li>
+                                <li id="lirc_05" runat="server">
+                                    <a runat="server" href="~/Recruitment/Viewreport.aspx" title="<%$Resources:RC_Menu,I_RCStatistic %>">
+                                    <%--<img src="images/Pictures/Chart_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:RC_Menu,I_RCStatistic %>" runat="server"></asp:Label></a></li>
+                                <li id="lirc_06" runat="server">
+                                    <a runat="server" href="~/Recruitment/ViewList.aspx" title="<%$Resources:RC_Menu,I_RCViewList %>">
+                                    <%--<img src="images/Pictures/Chart_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:RC_Menu,I_RCViewList %>" runat="server"></asp:Label></a></li>
+                            </ul></li>
+                        <%--Other--%>
+                        <li class="parent" id="ulOther" runat="server">
+                            <a>
+                                <img src="images/Pictures/FormatAsTable_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,G_Other %>" runat="server"></asp:Label>
+                            </a>
+                            <ul class="sub-menu">
+                                <li id="liSalary" runat="server">
+                                    <a runat="server" href="~/F_ViewSalary.aspx" title="<%$Resources:Ribbon,I_Phieuluong %>">
+                                        <%--<img src="images/Pictures/AllowUsersToEditRanges_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:Ribbon,I_Phieuluong %>" runat="server"></asp:Label></a></li>
+                                <li id="li_SkillWill" runat="server" style="display: none">
+                                    <a runat="server" href="#" title="<%$Resources:Ribbon,I_SkillWill %>">
+                                        <%--<img src="images/Pictures/AllowUsersToEditRanges_32x32.png" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:Ribbon,I_SkillWill %>" runat="server"></asp:Label></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left Menu bat dau-->
+        <%--<div id="aside" class="box">
+            <uc1:ucLeftMenu runat="server" id="ucLeftMenu" />
+        </div>--%>
+        <!-- Left Menu ket thuc-->
+        <div style="margin: 0px 10px; overflow: hidden; min-width: 450px; min-height: 450px; background-color: #ffffff">
+            <asp:ContentPlaceHolder runat="server" ID="ct1">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%--<script src="js/l_jquery.js" type="text/javascript"></script>
+        <script src="js/l_bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/l_jquery.backstretch.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            'use strict';
+
+            /* ========================== */
+            /* ::::::: Backstrech ::::::: */
+            /* ========================== */
+            // You may also attach Backstretch to a block-level element
+            $.backstretch(
+            [
+                "img/bg_01.jpg",
+                "img/bg_02.jpg",
+                "img/bg_03.jpg",
+                "img/bg_04.jpg"
+            ],
+
+            {
+                duration: 15000,
+                fade: 1500
+            }
+        );
+        </script>--%>
+    </form>
+</body>
+</html>

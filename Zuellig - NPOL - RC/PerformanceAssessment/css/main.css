@@ -1,0 +1,110 @@
+
+.f-left {float:left !important;}
+.f-right {float:right !important;}
+
+/* =============================================================================
+LAYOUT
+============================================================================= */
+
+/*#main {min-width:980px; width:expression(document.body.clientWidth < 980? "980px" : "auto" );}*/
+#tray {padding:5px 15px 35px 15px; /*background:url("../img/tray.gif") 0 0 repeat-x;*/ font:85%/1.2 "tahoma",sans-serif;}
+#tray p {margin:0;}
+#tray p.f-left {width:50%;}
+#tray #logout {padding-left:18px; background:url("../img/tray-logout.gif") 0 50% no-repeat; text-transform:uppercase;}
+#tray #switcher {margin-right:15px;}
+#tray #switcher img {display:block; float:left; width:16px; height:16px; border:0;}
+
+#tray a {color:rgba(9,70,88,1); font-size: 10pt; font-weight: bold;}
+#tray span {color:#003a49 !important; font-size: 10pt; font-weight: bold;}
+#tray a:hover, #tray a:active, #tray a:focus {color:#b4e3ff;}
+
+/* =============================================================================
+/* =============================================================================
+MENU
+============================================================================= */
+
+#custom-bootstrap-menu.navbar-default .navbar-brand
+{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+	font-family: "FontAwesome", "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    /*font-family: 'Times New Roman' , Times, serif;*/
+    font-size: x-large;
+    font-weight: bold;
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;  
+    border-width: 1px;
+    border-radius: 0px;
+    /*background: #333;*/
+	background: rgba(51, 51, 51, 0.1);
+	border: 0;
+	-o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav > li > a
+{
+    background-color: rgba(248, 248, 248, 0);
+    color: #003a49 !important;
+    font-size: 10pt; 
+    font-weight: bold;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav > li > a:hover, #custom-bootstrap-menu.navbar-default .navbar-nav > li > a:focus
+{
+    color: rgb(153, 255, 204);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(231, 231, 231, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #888;
+}
+
+/* =============================================================================
+/* =============================================================================
+OTHERS
+============================================================================= */
+
+#aside .padding {padding-left:15px;}
+#aside ul {width:215px; margin:0 0 15px 0; list-style:none;}
+#aside ul li {display:inline;}
+#aside ul li a {display:block; width:185px; padding:10px 15px; text-decoration:none;}
+#aside ul li#submenu-active a {width:198px; border:0; background:url("../img/submenu-active.gif") 100% 50% no-repeat; font-weight:bold; z-index:999;}
+#aside ul ul {margin:0; position:static;}
+#aside ul ul li a, #aside ul li#submenu-active ul li a {width:170px; padding:5px 15px 5px 30px; background:url("../img/submenu-sub.gif") 15px 7px no-repeat; font:85%/1.2 "tahoma",sans-serif; font-weight:normal;}
+#content h1 {margin:0; padding:10px 15px; background:url("../img/content-h1.gif") 0 0 repeat-x; letter-spacing:-1px;}
+/*
+#aside ul li a {border-bottom:1px solid #cfcfcf; color:#303030;}
+#aside ul li#submenu-active a {background-color:#df0000; color:#fff;}
+#aside ul li a:hover, #aside ul li a:active, #aside ul li a:focus {color:#df0000;}
+#aside ul ul li a, #aside ul li#submenu-active ul li a {border-bottom:1px solid #cfcfcf; background-color:#f5f5f5; color:#303030;}
+#aside ul li ul li a {background-color:#e3e3e3;}
+#aside ul ul li a:hover, #aside ul ul li a:active, #aside ul ul li a:focus, #aside ul li#submenu-active ul li a:hover, #aside ul li#submenu-active ul li a:active, #aside ul li#submenu-active ul li a:focus {color:#df0000;}
+*/
+
+/* =============================================================================
+/* =============================================================================
+OTHERS
+============================================================================= */
+
+.msg {padding:10px; padding-left:35px; }
+.msg.warning {background:url("../img/ico-warning.gif") 10px 50% no-repeat; background-color: #E8F6FF; color: #003a49; font-size: 1.5rem; font-weight: 500;}
+.msg.info {background:url("../img/ico-info.gif") 10px 50% no-repeat; background-color: #E8F6FF; color: #003a49; font-size: 1.5rem; font-weight: 500;}
+.msg.done {background:url("../img/ico-done.gif") 10px 50% no-repeat;}
+.msg.error {background:url("../img/ico-delete.gif") 10px 50% no-repeat;}
+.msg.hidden {display:none; }
+

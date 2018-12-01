@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MailService>
+  <MailInfo>
+    <Server>
+	gmail
+    </Server>
+    <Address>
+      hrm.tanduc@gmail.com
+    </Address>
+    <Port>587
+    </Port>
+    <UserName>hrm.tanduc</UserName>
+    <Password>QHRkdC10YW5kdWMuY29tUkNW</Password>
+    <Uri>https://mail.namkimgroup.vn/ews/Exchange.asmx</Uri>
+  </MailInfo>
+  <Database>
+    <!--<ConString>Data Source=NGT-PC\SQLEXPRESS;Initial Catalog=PERFETTI;Integrated Security=True</ConString>-->
+    <ConString>Data Source=TDS-THINHNQ,1433;Initial Catalog=ZUELLIG_121016;Integrated Security=False;User Id=sa;Password=YmFyY29kZVJDVg==</ConString>
+  <!--<ConString>Data Source=TDS-MAN,1433;Initial Catalog=ZUELLIG_101016;Integrated Security=False;User Id=sa;Password=barcode;MultipleActiveResultSets=True</ConString>-->
+  </Database>
+</MailService>

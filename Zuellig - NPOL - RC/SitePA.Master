@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SitePA.Master.cs" Inherits="NPOL.SitePA" %>
+
+<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Src="~/UserControl/ucLeftMenu.ascx" TagPrefix="uc1" TagName="ucLeftMenu" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui-1.10.2.js" type="text/javascript"></script>
+
+    <title>Performance Assessment</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/navigataur.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <!-- Tray -->
+        <div id="tray">
+            <p class="f-left">
+                <!-- Switcher -->
+                <strong>ANNUAL LEAVE ONLINE SYSTEM</strong>
+            </p>
+            <p class="f-right" style="padding:0 5px">
+                <%--<asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/img/britain.png" Height="20px" Width="20px" ImageAlign="Middle"  CausesValidation="false" OnClick="vn_Click" />--%>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                    <asp:Label ID="lbWelcome" runat="server" Text="" Font-Bold="true" Font-Size="10pt" ForeColor="Brown"></asp:Label>
+                    <asp:Label ID="lbUserName" runat="server" Text="" Font-Bold="true" Font-Size="10pt" ></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <strong><a id="logout">
+                        <asp:LinkButton runat="server" ID="lbtLogout" CssClass="button round tiny" Font-Bold="true" Font-Size="12px"
+                        Text="<%$Resources:LeftMenu.Master,lbtLogout%>" PostBackUrl="~/login.aspx" CausesValidation="false"></asp:LinkButton>
+                            </a></strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <strong><a id="ResetPass">
+                        <asp:LinkButton runat="server" ID="LinkButton1" CssClass="button round tiny" Font-Bold="true" Font-Size="12px" Font-Underline="false"
+                        Text="Đổi MK" PostBackUrl="~/ChangePassPA.aspx" CausesValidation="false"></asp:LinkButton>
+                            </a></strong></p>
+        </div>
+        <!--  /tray -->
+        <div id="custom-bootstrap-menu" class="container">
+            <div class="header clearfix">
+                <div style="float:left">
+                <a class="navbar-brand" style="padding: 10px 15px" href="#">
+                    <img src="img/ZP_LOGO_RGB.jpg" /></a></div>
+                <div class="navbar"  style="float:right">
+				    <input type="checkbox" id="toggle"/>
+				    <label for="toggle" class="toggle" onclick=""></label>
+                    <ul id="main-menu" class="menu">
+                        <li class="parent" id="limanagerPA" runat="server">
+                            <a runat="server" href="~/Ad_ManagerPALevel.aspx" title="<%$Resources:Ribbon,I_CapDuyet %>">
+                            <img src="images/Pictures/UserGroup_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,I_CapDuyet %>" runat="server"></asp:Label></a></li>
+                        <li class="parent" id="likpi4Manager" runat="server">
+                            <a>
+                                <img src="images/Pictures/BOPosition2_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,I_KPI_Manager%>" runat="server"></asp:Label>
+                            </a>
+                            <ul class="sub-menu">
+                                <li id="li5" runat="server">
+                                    <a runat="server" href="~/Ad_ReviewFeedback.aspx" title="<%$Resources:Ribbon,liReviewFeedback%>">
+                                    <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:Ribbon,liReviewFeedback%>" runat="server"></asp:Label></a></li>
+                                <li id="li6" runat="server">
+                                    <a runat="server" href="~/Ad_ViewEmpKPI.aspx" title="<%$Resources:Ribbon,liApprovalPA%>">
+                                    <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:Ribbon,liApprovalPA%>" runat="server"></asp:Label></a></li>
+                                <li id="li4" runat="server" style="display:none">
+                                    <a runat="server" href="~/Ad_SetKPI.aspx" title="<%$Resources:Ribbon,liSetKPI%>">
+                                    <%--<img src="images/Pictures/KPI_1.jpg" alt="Icon" />--%>
+                                        <asp:Label Text="<%$Resources:Ribbon,liSetKPI%>" runat="server"></asp:Label></a></li>
+                            </ul>
+                        </li>
+                        <li class="parent" id="Li1" runat="server">
+                            <a runat="server" href="~/Ad_ListCompetency.aspx" title="<%$Resources:Ribbon,I_ListCompetency %>">
+                                <img src="images/Pictures/Skill_1.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,I_ListCompetency %>" runat="server"></asp:Label>
+                            </a></li>
+                        <%--<li class="parent" id="Li2" runat="server">
+                            <a runat="server" href="../K_ListKPI.aspx" title="<%$Resources:Ribbon,I_ListKPI %>">
+                                <asp:Label Text="<%$Resources:Ribbon,I_ListKPI %>" runat="server"></asp:Label>
+                            </a></li>--%>
+                        <li class="parent" id="Li3" runat="server">
+                            <a runat="server" href="~/Ad_CreatePeriod.aspx" title="<%$Resources:Ribbon,I_CreatePeriod %>">
+                                <img src="images/Pictures/BOScheduler_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,I_CreatePeriod %>" runat="server"></asp:Label>
+                            </a></li>
+                        <li class="parent" id="Li7" runat="server">
+                            <a runat="server" href="~/Ad_Summary.aspx" title="<%$Resources:Ribbon,I_ListPeriod %>">
+                                <img src="images/Pictures/KPI_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:Ribbon,I_ListPeriod %>" runat="server"></asp:Label>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left Menu ket thuc-->
+        <div style="margin:0px 10px; overflow:hidden; min-width: 450px; min-height: 450px; background-color: #ffffff">
+            <asp:ContentPlaceHolder runat="server" ID="ct1">
+            </asp:ContentPlaceHolder>
+        </div>
+        <script src="js/l_jquery.js" type="text/javascript"></script>
+        <script src="js/l_bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/l_jquery.backstretch.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            'use strict';
+
+            /* ========================== */
+            /* ::::::: Backstrech ::::::: */
+            /* ========================== */
+            // You may also attach Backstretch to a block-level element
+            $.backstretch(
+            [
+                "img/bg_01.jpg",
+                "img/bg_02.jpg",
+                "img/bg_03.jpg",
+                "img/bg_04.jpg"
+            ],
+
+            {
+                duration: 15000,
+                fade: 1500
+            }
+        );
+        </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="chk1_6" xml:space="preserve">
+    <value>Title Change/ Thay đổi chức danh</value>
+  </data>
+  <data name="chk1_7" xml:space="preserve">
+    <value>Other/ Thay đổi khác</value>
+  </data>
+  <data name="gv_ApprovingDate_L3" xml:space="preserve">
+    <value>Approval Date</value>
+  </data>
+  <data name="gv_ApprovingReason_L1" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="gv_ApprovingReason_L2" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="gv_ApprovingReason_L3" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="gv_ApprovingStatus_L1" xml:space="preserve">
+    <value>Approval Status L1</value>
+  </data>
+  <data name="gv_ApprovingStatus_L2" xml:space="preserve">
+    <value>Approval Status L2</value>
+  </data>
+  <data name="gv_ApprovingStatus_L3" xml:space="preserve">
+    <value>Approval Status L3</value>
+  </data>
+  <data name="gv_HRCheckingDate" xml:space="preserve">
+    <value>Approval Date</value>
+  </data>
+  <data name="gv_HRCheckingReason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="gv_HRCheckingStatus" xml:space="preserve">
+    <value>HR Approval Status</value>
+  </data>
+  <data name="gv_ManagerName_L1" xml:space="preserve">
+    <value>Manager L1</value>
+  </data>
+  <data name="gv_ManagerName_L2" xml:space="preserve">
+    <value>Manager L2</value>
+  </data>
+  <data name="gv_ManagerName_L3" xml:space="preserve">
+    <value>Manager L3</value>
+  </data>
+  <data name="lbPart_2" xml:space="preserve">
+    <value>Employee information / Thông tin nhân sự:</value>
+  </data>
+  <data name="lb4_1" xml:space="preserve">
+    <value>CURRENT/ HIỆN TẠI</value>
+  </data>
+  <data name="lb4_2" xml:space="preserve">
+    <value>CHANGE/ THAY ĐỔI - REQUESTER/ Người đề xuất</value>
+  </data>
+  <data name="lb3_2" xml:space="preserve">
+    <value>Same Headcount/ Nhân sự không đổi</value>
+  </data>
+  <data name="lb5_1" xml:space="preserve">
+    <value>Date / Ngày</value>
+  </data>
+  <data name="lb2_3" xml:space="preserve">
+    <value>Title/ Chức vụ:</value>
+  </data>
+  <data name="lb2_4" xml:space="preserve">
+    <value>Department/ Phòng ban:</value>
+  </data>
+  <data name="lb2_5" xml:space="preserve">
+    <value>Division/ Bộ phận:</value>
+  </data>
+  <data name="chk1_5" xml:space="preserve">
+    <value>Allowance/ Support Change/ Thay đổi Trợ cấp/ Hỗ trợ</value>
+  </data>
+  <data name="gv_C" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="gv_EmployeeID" xml:space="preserve">
+    <value>EmployeeID</value>
+  </data>
+  <data name="gv_EmployeeName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="gv_FinalDate" xml:space="preserve">
+    <value>Approval Date</value>
+  </data>
+  <data name="gv_FinalStatus" xml:space="preserve">
+    <value>Approval Status</value>
+  </data>
+  <data name="gv_LeaveReason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="gv_LeaveType" xml:space="preserve">
+    <value>Leave Type</value>
+  </data>
+  <data name="gv_PerTimeName" xml:space="preserve">
+    <value>PerTime Name</value>
+  </data>
+  <data name="gv_RegDate" xml:space="preserve">
+    <value>Reg Date</value>
+  </data>
+  <data name="gv_StartDate" xml:space="preserve">
+    <value>From Date</value>
+  </data>
+  <data name="gv_ToDate" xml:space="preserve">
+    <value>To Date</value>
+  </data>
+  <data name="gv_TotalDays" xml:space="preserve">
+    <value>Days off</value>
+  </data>
+  <data name="gv_W" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="lbPart_5" xml:space="preserve">
+    <value>Effective date/ Ngày Hiệu Lực:</value>
+  </data>
+  <data name="lb2_1" xml:space="preserve">
+    <value>Full name/ Họ tên nhân viên:</value>
+  </data>
+  <data name="gv_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="chk1_4" xml:space="preserve">
+    <value>Working Location Change/ Thay đổi Địa điểm làm việc</value>
+  </data>
+  <data name="lb4_4" xml:space="preserve">
+    <value>Monthly Basic Gross Salary/ Lương Gộp cơ bản hàng tháng</value>
+  </data>
+  <data name="vStartDate" xml:space="preserve">
+    <value>Mời nhập ngày đi làm</value>
+  </data>
+  <data name="lb2_7" xml:space="preserve">
+    <value>Employee Payroll Group/ Nhóm:</value>
+  </data>
+  <data name="vDuplicate" xml:space="preserve">
+    <value>There is exist on db.</value>
+  </data>
+  <data name="vTuNgay" xml:space="preserve">
+    <value>Mời nhập từ ngày</value>
+  </data>
+  <data name="vValidDate" xml:space="preserve">
+    <value>[From Date] must be less than or equal [To Date]</value>
+  </data>
+  <data name="w" xml:space="preserve">
+    <value>Chờ</value>
+  </data>
+  <data name="gv_FromTime" xml:space="preserve">
+    <value>From Time</value>
+  </data>
+  <data name="gv_TotalHours" xml:space="preserve">
+    <value>Hours off</value>
+  </data>
+  <data name="gv_ToTime" xml:space="preserve">
+    <value>To Time</value>
+  </data>
+  <data name="lbPart_4" xml:space="preserve">
+    <value>Description / Mô tả:</value>
+  </data>
+  <data name="lbEmpID_Replace" xml:space="preserve">
+    <value>Name of the person replaced/ Tên nhân viên được thay thế:</value>
+  </data>
+  <data name="lb4_3" xml:space="preserve">
+    <value>Other/ Thay đổi khác</value>
+  </data>
+  <data name="lb4_6" xml:space="preserve">
+    <value>Monthly Gross Other Support (if any)/ Hỗ trợ Gộp khác hàng tháng (nếu có)</value>
+  </data>
+  <data name="vPromotionType" xml:space="preserve">
+    <value>Mời chọn loại headcount</value>
+  </data>
+  <data name="lb2_2" xml:space="preserve">
+    <value>E-Code/ Mã số nhân viên</value>
+  </data>
+  <data name="lb3_1" xml:space="preserve">
+    <value>New Headcount/ Vị trí mới</value>
+  </data>
+  <data name="vEmployee" xml:space="preserve">
+    <value>Mời nhập họ tên</value>
+  </data>
+  <data name="lbPart_1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lb4_5" xml:space="preserve">
+    <value>Monthly Gross Transport Support/ Hỗ trợ xăng xe Gộp hàng tháng</value>
+  </data>
+  <data name="lbPart_3" xml:space="preserve">
+    <value>For Promotion; Department/ Division Change, Working Location Change</value>
+  </data>
+  <data name="lb2_6" xml:space="preserve">
+    <value>Working location/ Địa điểm làm việc:</value>
+  </data>
+  <data name="vEmployee_Replace" xml:space="preserve">
+    <value>Mời nhập người thay thế</value>
+  </data>
+  <data name="lb3_3" xml:space="preserve">
+    <value>Replacement/ Vị trí thay thế</value>
+  </data>
+  <data name="chk1_1" xml:space="preserve">
+    <value>Promotion/ Thăng tiến</value>
+  </data>
+  <data name="chk1_2" xml:space="preserve">
+    <value>Department/ Division Change/ Thay đổi Phòng ban/ Bộ Phận</value>
+  </data>
+  <data name="chk1_3" xml:space="preserve">
+    <value>Salary Change/ Thay đổi lương</value>
+  </data>
+  <data name="opt_G1" xml:space="preserve">
+    <value>ZPV</value>
+  </data>
+  <data name="opt_G2" xml:space="preserve">
+    <value>ZPS</value>
+  </data>
+  <data name="opt_G3" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="opt_G4" xml:space="preserve">
+    <value>Casual</value>
+  </data>
+  <data name="tieude" xml:space="preserve">
+    <value>BIỂU MẪU THĂNG TIẾN &amp; ĐIỀU CHỈNH</value>
+  </data>
+  <data name="lb1_8" xml:space="preserve">
+    <value>Employee Payroll Group/ Nhóm:</value>
+  </data>
+  <data name="lbPart_31" xml:space="preserve">
+    <value>Dành cho trường hợp Thăng tiến; thay đổi Phòng ban/ Bộ phận, Thay đổi Địa điểm làm việc</value>
+  </data>
+  <data name="tieude_edit" xml:space="preserve">
+    <value>[SỬA]  BIỂU MẪU THĂNG TIẾN &amp; ĐIỀU CHỈNH</value>
+  </data>
+  <data name="vDepartment" xml:space="preserve">
+    <value>Mời nhập phòng ban</value>
+  </data>
+  <data name="vLine" xml:space="preserve">
+    <value>Mời nhập bộ phận</value>
+  </data>
+  <data name="vLocation" xml:space="preserve">
+    <value>Mời nhập nơi làm việc</value>
+  </data>
+  <data name="vPosition" xml:space="preserve">
+    <value>Mời nhập chức vụ</value>
+  </data>
+  <data name="vReportTo" xml:space="preserve">
+    <value>Mời nhập người quàn lý trực tiếp</value>
+  </data>
+  <data name="vStartDate_3" xml:space="preserve">
+    <value>Ngày bắt đầu làm việc phải khác ngày chủ nhật.</value>
+  </data>
+  <data name="col_DepID" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="col_DepName" xml:space="preserve">
+    <value>Bộ phận</value>
+  </data>
+  <data name="col_LineID" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="col_LineName" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+  <data name="col_LocationID" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="col_LocationName" xml:space="preserve">
+    <value>Địa điểm</value>
+  </data>
+  <data name="col_PosID" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="col_PosName" xml:space="preserve">
+    <value>Chức vụ</value>
+  </data>
+  <data name="col_SectionID" xml:space="preserve">
+    <value>Mã nhóm lương</value>
+  </data>
+  <data name="vEmployeeID" xml:space="preserve">
+    <value>Mời nhập mã nhân viên</value>
+  </data>
+  <data name="vStartDate_2" xml:space="preserve">
+    <value>Mời nhập ngày hiệu lực</value>
+  </data>
+  <data name="col_SectionID_2" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="col_SectionName_2" xml:space="preserve">
+    <value>Nhóm</value>
+  </data>
+  <data name="vChangeAllowance" xml:space="preserve">
+    <value>Mời nhập thông tin thay đổi phụ cấp</value>
+  </data>
+  <data name="vChangeDep" xml:space="preserve">
+    <value>Mời nhập thông tin thay đổi bộ phận</value>
+  </data>
+  <data name="vChangeLine" xml:space="preserve">
+    <value>Mời nhập thông tin thay đổi phòng ban</value>
+  </data>
+  <data name="vChangeLocation" xml:space="preserve">
+    <value>Mời nhập thông tin thay đổi nơi làm việc</value>
+  </data>
+  <data name="vChangeOther" xml:space="preserve">
+    <value>Mời nhập thông tin thay đổi khác</value>
+  </data>
+  <data name="vChangePosition" xml:space="preserve">
+    <value>Mời nhập thông tin thay đổi lương</value>
+  </data>
+  <data name="vChangePromotion_Title" xml:space="preserve">
+    <value>Mời nhập thông tin thay đổi chức vụ</value>
+  </data>
+  <data name="vChangePromotion_Title_2" xml:space="preserve">
+    <value>Mời đính kèm file mô tả công việc</value>
+  </data>
+  <data name="vOneChecked" xml:space="preserve">
+    <value>Mời chọn hình thức thăng tiến điều chỉnh</value>
+  </data>
+  <data name="lbBudget_1" xml:space="preserve">
+    <value>In case of Not in budget:</value>
+  </data>
+  <data name="lbBudget_2" xml:space="preserve">
+    <value>In case of New Headcount:</value>
+  </data>
+  <data name="lb4_7" xml:space="preserve">
+    <value>CHANGE/ THAY ĐỔI - HR/CEO</value>
+  </data>
+  <data name="vNewHeadcount" xml:space="preserve">
+    <value>Mời đính kèm bản mô tả công việc</value>
+  </data>
+  <data name="vNewHeadcount_NotInBudget" xml:space="preserve">
+    <value>Mời đính kèm phê duyệt của TGD</value>
+  </data>
+  <data name="vPermissionViewSalary" xml:space="preserve">
+    <value>Bạn không được phép xem lương của nhân viên này! Vui lòng liên hệ với nhân sự</value>
+  </data>
+  <data name="vRemark" xml:space="preserve">
+    <value>Please specify the change content before submission/ Vui lòng nêu rõ nội dung thay đổi vào ô ghi chú</value>
+  </data>
+  <data name="lbRemark_1" xml:space="preserve">
+    <value>Bởi người đề xuất/ trưởng phòng:</value>
+  </data>
+  <data name="lbRemark_2" xml:space="preserve">
+    <value>Bởi phòng nhân sự (C&amp;B Manager):</value>
+  </data>
+  <data name="lbRemark_3" xml:space="preserve">
+    <value>Bởi phòng nhân sự (HR director):</value>
+  </data>
+  <data name="lbRemark_4" xml:space="preserve">
+    <value>Bởi Tổng giám đốc:</value>
+  </data>
+</root>

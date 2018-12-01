@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="gv_ApprovingDate_L1" xml:space="preserve">
+    <value>Approval Date</value>
+  </data>
+  <data name="gv_ApprovingDate_L2" xml:space="preserve">
+    <value>Approval Date</value>
+  </data>
+  <data name="gv_ApprovingDate_L3" xml:space="preserve">
+    <value>Approval Date</value>
+  </data>
+  <data name="gv_ApprovingReason_L1" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="gv_ApprovingReason_L2" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="gv_ApprovingReason_L3" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="gv_ApprovingStatus_L1" xml:space="preserve">
+    <value>Approval Status L1</value>
+  </data>
+  <data name="gv_ApprovingStatus_L2" xml:space="preserve">
+    <value>Approval Status L2</value>
+  </data>
+  <data name="gv_ApprovingStatus_L3" xml:space="preserve">
+    <value>Approval Status L3</value>
+  </data>
+  <data name="gv_HRCheckingDate" xml:space="preserve">
+    <value>Approval Date</value>
+  </data>
+  <data name="gv_HRCheckingReason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="gv_HRCheckingStatus" xml:space="preserve">
+    <value>HR Approval Status</value>
+  </data>
+  <data name="gv_ManagerName_L1" xml:space="preserve">
+    <value>Manager L1</value>
+  </data>
+  <data name="gv_ManagerName_L2" xml:space="preserve">
+    <value>Manager L2</value>
+  </data>
+  <data name="gv_ManagerName_L3" xml:space="preserve">
+    <value>Manager L3</value>
+  </data>
+  <data name="lbCheDoNghi" xml:space="preserve">
+    <value>PerTime</value>
+  </data>
+  <data name="lbLoaiNghi" xml:space="preserve">
+    <value>Leave Type</value>
+  </data>
+  <data name="lbLyDoNghi" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="lbNgayNghi" xml:space="preserve">
+    <value>Leave Day</value>
+  </data>
+  <data name="lbPhepTon" xml:space="preserve">
+    <value>Remain leave</value>
+  </data>
+  <data name="lbtDangKy" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="lbtNhapLai" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="tieude" xml:space="preserve">
+    <value>Leave Registration </value>
+  </data>
+  <data name="ToolTipCheDoNghi" xml:space="preserve">
+    <value>Please choose pertime</value>
+  </data>
+  <data name="ToolTipLoaiNghi" xml:space="preserve">
+    <value>Please choose leave type</value>
+  </data>
+  <data name="ToolTipNgayNghi" xml:space="preserve">
+    <value>Please choose leave date</value>
+  </data>
+  <data name="gv_A" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="gv_C" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="gv_EmployeeID" xml:space="preserve">
+    <value>EmployeeID</value>
+  </data>
+  <data name="gv_EmployeeName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="gv_FinalDate" xml:space="preserve">
+    <value>Approval Date</value>
+  </data>
+  <data name="gv_FinalStatus" xml:space="preserve">
+    <value>Approval Status</value>
+  </data>
+  <data name="gv_LeaveReason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="gv_LeaveType" xml:space="preserve">
+    <value>Leave Type</value>
+  </data>
+  <data name="gv_PerTimeName" xml:space="preserve">
+    <value>PerTime Name</value>
+  </data>
+  <data name="gv_RegDate" xml:space="preserve">
+    <value>Reg Date</value>
+  </data>
+  <data name="gv_StartDate" xml:space="preserve">
+    <value>From Date</value>
+  </data>
+  <data name="gv_ToDate" xml:space="preserve">
+    <value>To Date</value>
+  </data>
+  <data name="gv_TotalDays" xml:space="preserve">
+    <value>Days off</value>
+  </data>
+  <data name="gv_W" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="lbDenNgay" xml:space="preserve">
+    <value>To date</value>
+  </data>
+  <data name="lbTuNgay" xml:space="preserve">
+    <value>From date</value>
+  </data>
+  <data name="gv_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="confirmDelete" xml:space="preserve">
+    <value>Are you sure to delete?</value>
+  </data>
+  <data name="lbTongNgay" xml:space="preserve">
+    <value>Days off</value>
+  </data>
+  <data name="vTongNgay" xml:space="preserve">
+    <value>Total dayoff must be greater than zero</value>
+  </data>
+  <data name="vCheDoNghi" xml:space="preserve">
+    <value>Please enter pertime</value>
+  </data>
+  <data name="vDenNgay" xml:space="preserve">
+    <value>Please enter To Date</value>
+  </data>
+  <data name="vLoaiNghi" xml:space="preserve">
+    <value>Please enter leave type</value>
+  </data>
+  <data name="vTongNgay2" xml:space="preserve">
+    <value>There is not enough leave remain to register</value>
+  </data>
+  <data name="vTuNgay" xml:space="preserve">
+    <value>Please enter From Date</value>
+  </data>
+  <data name="vValidDate" xml:space="preserve">
+    <value>[From Date] must be less than or equal [To Date]</value>
+  </data>
+  <data name="lbPhepbu" xml:space="preserve">
+    <value>Comp. leave</value>
+  </data>
+  <data name="a" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="c" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="w" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="gv_FromTime" xml:space="preserve">
+    <value>From Time</value>
+  </data>
+  <data name="gv_TotalHours" xml:space="preserve">
+    <value>Hours off</value>
+  </data>
+  <data name="gv_ToTime" xml:space="preserve">
+    <value>To Time</value>
+  </data>
+  <data name="btnTinhGio" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="lbDengio" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="lbGio" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="lbTheoGio" xml:space="preserve">
+    <value>By hours</value>
+  </data>
+  <data name="lbTonggionghi" xml:space="preserve">
+    <value>Hours off</value>
+  </data>
+  <data name="lbTugio" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="vTongGio" xml:space="preserve">
+    <value>Total hours must be greater than 0</value>
+  </data>
+  <data name="lbWelcome" xml:space="preserve">
+    <value>Welcome: </value>
+  </data>
+  <data name="lbLyDoNghi_Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="vLydo" xml:space="preserve">
+    <value>Please enter your leave reason</value>
+  </data>
+  <data name="lbALUsed" xml:space="preserve">
+    <value>Used AL</value>
+  </data>
+  <data name="lbTotalAL" xml:space="preserve">
+    <value>Total of AL</value>
+  </data>
+  <data name="lbCondition" xml:space="preserve">
+    <value>Condition</value>
+  </data>
+  <data name="ToolTipOptCondition" xml:space="preserve">
+    <value>Vui lòng chọn điều kiện</value>
+  </data>
+  <data name="vOptCondition" xml:space="preserve">
+    <value>Vui lòng chọn điều kiện</value>
+  </data>
+  <data name="lbNotes" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="lbNotesDetail" xml:space="preserve">
+    <value>An Employee asking for Annual leave shall submit a leave form at least five (05) days before taking the leave.
+Female Employees must apply for Maternity leave at least two (02) months before taking leave.</value>
+  </data>
+</root>

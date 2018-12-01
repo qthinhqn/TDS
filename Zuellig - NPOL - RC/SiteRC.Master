@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteRC.Master.cs" Inherits="NPOL.SiteRC" %>
+
+<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<%@ Register Src="~/UserControl/ucLeftMenu.ascx" TagPrefix="uc1" TagName="ucLeftMenu" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui-1.10.2.js" type="text/javascript"></script>
+
+    <title>Đăng ký nghỉ phép trực tuyến</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/Foundation.css" type="text/css" />
+    <link rel="stylesheet" href="css/Style.css" type="text/css" />   
+    <link rel="stylesheet" href="css/Site.css" /> 
+    
+	<link rel="stylesheet" type="text/css" href="css/menu.css" />
+    
+    <link rel="stylesheet" href="css/l_bootstrap.min.css" type="text/css" />
+    <link href="css/l_style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" /> 
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/2col.css" title="2col" />
+    <link rel="alternate stylesheet" media="screen,projection" type="text/css" href="css/1col.css" title="1col" />
+
+    <script type="text/javascript">
+        function onCommandExecuted(s, e) {
+            var text = e.item.name;
+            var hiddenField = document.getElementById('HiddenField1');
+            hiddenField.value = text;
+            var hiddenButton = document.getElementById('btnSubmit');
+            hiddenButton.click();
+        }
+
+        function onFileTabClicked(s, e) {
+            var hiddenField = document.getElementById('HiddenField1');
+            hiddenField.value = '1';
+            var hiddenButton = document.getElementById('btnSubmit');
+            hiddenButton.click();
+        }
+
+        function OnShowButtonClick(s, e) {
+            popup.SetHeaderText("popup.Show()");
+            popup.Show();
+        }
+
+        function ShowUploadControl() {
+            var o = document.getElementById('upload');
+            o.style.display = 'table';
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <!-- Tray -->
+        <div id="tray">
+            <p class="f-left">
+                <!-- Switcher -->
+                <span class="f-left" id="switcher"><a href="javascript:void(0);" rel="1col" class="styleswitch ico-col1" title="Display one column">
+                    <img src="../img/switcher-1col.gif" alt="1 Column" /></a> <a href="javascript:void(0)" rel="2col" class="styleswitch ico-col2" title="Display two columns">
+                        <img src="img/switcher-2col.gif" alt="" /></a> </span><strong>ANNUAL LEAVE ONLINE SYSTEM</strong>
+            </p>
+            <p class="f-right" style="padding:0 5px">
+                <%--<asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/img/britain.png" Height="20px" Width="20px" ImageAlign="Middle"  CausesValidation="false" OnClick="vn_Click" />--%>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                    <asp:Label ID="lbWelcome" runat="server" Text="" Font-Bold="true" Font-Size="10pt" ForeColor="Brown"></asp:Label>
+                    <asp:Label ID="lbUserName" runat="server" Text="" Font-Bold="true" Font-Size="10pt" ></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <strong><a id="logout">
+                        <asp:LinkButton runat="server" ID="lbtLogout" CssClass="button round tiny" Font-Bold="true" Font-Size="12px"
+                        Text="<%$Resources:LeftMenu.Master,lbtLogout%>" PostBackUrl="~/login.aspx" CausesValidation="false"></asp:LinkButton>
+                            </a></strong>
+                    &nbsp;&nbsp; 
+                    <strong><a id="ResetPass">
+                        <asp:LinkButton runat="server" ID="LinkButton1" CssClass="button round tiny" Font-Bold="true" Font-Size="12px" Font-Underline="false"
+                        Text="Đổi MK" PostBackUrl="~/ChangePassRC.aspx" CausesValidation="false"></asp:LinkButton>
+                            </a></strong></p>
+        </div>
+        <!--  /tray -->
+        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+            <div class="container">
+                <div class="navbar-header" style="">
+                    <a class="navbar-brand" style="padding: 10px 15px" href="#">
+                        <img src="../img/ZP_LOGO_RGB.jpg" /></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-menubuilder">
+                    <ul id="main-menu" class="nav navbar-nav navbar-right">
+                        <li class="parent" id="liManagerLevelRC" runat="server">
+                            <a runat="server" href="~/Recruitment/Ad_ManagerLevel.aspx" title="<%$Resources:RC_Menu,I_CapDuyet %>">
+                            <img src="../images/Pictures/UserGroup_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:RC_Menu,I_CapDuyet %>" runat="server"></asp:Label>
+                            </a></li>
+                        <li class="parent" id="liSynchronizeRC" runat="server">
+                            <a runat="server" href="~/Recruitment/Ad_Synchronize.aspx" title="<%$Resources:RC_Menu,I_Sync %>">
+                                <img src="../images/Pictures/SaveTo_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:RC_Menu,I_Sync %>" runat="server"></asp:Label>
+                            </a></li>
+                        <li class="parent" id="liReportRC" runat="server">
+                            <a runat="server" href="~/Recruitment/Ad_Viewreport.aspx" title="<%$Resources:RC_Menu,I_ReportRC %>">
+                                <img src="../images/Pictures/History.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:RC_Menu,I_ReportRC %>" runat="server"></asp:Label>
+                            </a></li>
+                        <li class="parent" id="liDepManager" runat="server">
+                            <a runat="server" href="~/Recruitment/Ad_DepManager.aspx" title="<%$Resources:RC_Menu,I_DepManagerRC %>">
+                                <img src="../images/Pictures/BOPosition2_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:RC_Menu,I_DepManagerRC %>" runat="server"></asp:Label>
+                            </a></li>
+                        <li class="parent" id="liLineManager" runat="server">
+                            <a runat="server" href="~/Recruitment/Ad_LineManager.aspx" title="<%$Resources:RC_Menu,I_LineManagerRC %>">
+                                <img src="../images/Pictures/UserGroup_32x32.png" alt="Icon" />
+                                <asp:Label Text="<%$Resources:RC_Menu,I_LineManagerRC %>" runat="server"></asp:Label>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Menu -->
+        <div class="header">
+        </div>
+
+        <!-- Left Menu ket thuc-->
+        <div style="margin:0px 10px; overflow:hidden; min-width: 450px; min-height: 450px; background-color: #ffffff">
+            <asp:ContentPlaceHolder runat="server" ID="ct1">
+            </asp:ContentPlaceHolder>
+        </div>
+        <script src="../js/l_jquery.js" type="text/javascript"></script>
+        <script src="../js/l_bootstrap.min.js" type="text/javascript"></script>
+        <script src="../js/l_jquery.backstretch.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            'use strict';
+
+            /* ========================== */
+            /* ::::::: Backstrech ::::::: */
+            /* ========================== */
+            // You may also attach Backstretch to a block-level element
+            $.backstretch(
+            [
+                "../img/bg_01.jpg",
+                "../img/bg_02.jpg",
+                "../img/bg_03.jpg",
+                "../img/bg_04.jpg"
+            ],
+
+            {
+                duration: 15000,
+                fade: 1500
+            }
+        );
+        </script>
+    </form>
+</body>
+</html>

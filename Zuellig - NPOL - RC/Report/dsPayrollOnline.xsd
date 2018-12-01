@@ -1,0 +1,1134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPayrollOnline" targetNamespace="http://tempuri.org/dsPayrollOnline.xsd" xmlns:mstns="http://tempuri.org/dsPayrollOnline.xsd" xmlns="http://tempuri.org/dsPayrollOnline.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ZuelligConnection" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ZuelligConnection (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ZuelligConnection.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_PayrollOnlineTableAdapter" GeneratorDataComponentClassName="View_PayrollOnlineTableAdapter" Name="View_PayrollOnline" UserDataComponentName="View_PayrollOnlineTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ZuelligConnection (Web.config)" DbObjectName="scva2fde_Perfetti.scva2fde_khuong.View_PayrollOnline" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT YearID, MonthID, EmployeeID, EmployeeCode, EmployeeName, EmployeeName_Eng, FamilyName, GivenName, CardID, EmpTypeID, EmpTypeName, EmployedDate, LeftDate, LeftTypeID, LeftTypeName, ContractDate, LastWorkDate, SalaryTypeID, SalaryTypeName, SecID, SecName, SecOrderNo, SecDirect, LineID, LineName, LineOrderNo, GroupID, GroupName, GroupOrderNo, TeamID, TeamName, TeamOrderNo, PartID, PartName, PartOrderNo, PosID, PosName, PosOrderNo, BankAccount, BankID, BankName, BankGroupID, BankGroupName, IsEmp_New, IsEmp_Stop, IsEmp_ChangeSal, IsEmp_FE, Coe_Basic_O, Coe_Basic_N, Coe_Basic, BasicSal_Input_O, BasicSal_Input_N, BasicSal_Input, CurrType_O, CurrType_N, CurrType, ExRate_O, ExRate_N, ExRate, BasicSal_O, BasicSal_N, BasicSal, BasicSal_InsLimit, Date_ChangeSal, ActualBasicSal, Coe_Paid_O, Coe_Paid_N, Coe_Paid, BasicSal_Paid_O, BasicSal_Paid_N, BasicSal_Paid, MinBasicSal, BasicWD, BasicWH, WDInMonth, ActualWDInMonth, DaySal_O, DaySal_N, DaySal, HourSal_O, HourSal_N, HourSal, WDHour_O, WDHour_N, WDHour, WD_O, WD_N, WD, WDDay_O, WDDay_N, WDDay, WD_All_O, WD_All_N, WD_All, WDSal, WNHour_O, WNHour_N, WNHour, WN_O, WN_N, WN, WNDay_O, WNDay_N, WNDay, WN_All_O, WN_All_N, WN_All, WNSal, WPH_O, WPH_N, WPH, WPHSal, L_Annual_O, L_Annual_N, L_Annual, L_Annual_Paid_O, L_Annual_Paid_N, L_Annual_Paid, LSal_Annual, L_Maternity, L_Paternity, L_Wait_O, L_Wait_N, L_Wait, L_Wait_Paid_O, L_Wait_Paid_N, L_Wait_Paid, LSal_Wait, L_Sick_O, L_Sick_N, L_Sick, L_SickLong_O, L_SickLong_N, L_SickLong, L_Sick_All_O, L_Sick_All_N, L_Sick_All, LSal_Sick, L_Private_O, L_Private_N, L_Private, L_Business_O, L_Business_N, L_Business, L_Unpaid, LSal_Unpaid, L_NotPermit, LSal_NotPermit, L_Policy, L_Policy_All, L_Wedding, L_Funeral, L_ChildSick, L_Compensate, L_Paid_O, L_Paid_N, L_Paid, LSal_Paid, L_Paid_100_O, L_Paid_100_N, L_Paid_100, LSal_Paid_100, L_Paid_Not100_O, L_Paid_Not100_N, L_Paid_Not100, L_Paid_Not100_Paid_O, L_Paid_Not100_Paid_N, L_Paid_Not100_Paid, LSal_Paid_Not100, L_NotPaid_O, L_NotPaid_N, L_NotPaid, L_Absent_O, L_Absent_N, L_Absent, DeductMin_O, DeductMin_N, DeductMin, DeductDay, L_NotWD, LSal_NotWD, ActualWD, WSunday, TotalWD, MealDay, OT15_O, OT15_N, OT15, OT15Day, OT15Sal, OT15N_O, OT15N_N, OT15N, OT15NSal, OT15_All, OT20_O, OT20_N, OT20, OT20Day, OT20Sal, OT20N_O, OT20N_N, OT20N, OT20NSal, OT20_All, OT30_O, OT30_N, OT30, OT30Day, OT30Sal, OT30N_O, OT30N_N, OT30N, OT30NSal, OTNight_All, OTHour, OTHour_Tax, OTNightSal, OT05_O, OT05_N, OT05, OT05Sal, OTSal, OTSal_Tax, AD_TN, AD_Loss, AD_Uniform, AddValue_Tax, AddValue_NonTax, AddValue, DeductValue_Tax, DeductValue_NonTax, DeductValue, A_Salary, A_Housing, A_Travel, A_Area, A_Seniority, A_5S, A_Shift, A_Meal, A_Phone, A_Hotel, Coe_Position, A_Position, Coe_TN, A_TN, Coe_Harmful, A_Harmful, A_Other_Tax, A_Other_NonTax, A_Other, A_Total, BasicA_Day, A_Day, TotalSal, Bonus, PITCode, PIT_Personal, PIT_Family, PIT_Family_Dependant, PIT_Family_Sal, PIT_Family_Date, PIT_Sal, TaxableIncome, PIT, SIFee, SIFee_Co, SIFee_All, HIFee, HIFee_Co, HIFee_All, UIFee, UIFee_Co, UIFee_All, UnionMember, UnionFee, UnionFee_Co, UnionFee_All, TotalIns, TotalIns_Co, Adjust, Advance, TotalAdd, TotalAdd_Tax, TotalDeduct, TotalDeduct_Tax, Payroll13, PayrollPerformance, EIP_Bonus, EIP_IsAdvance, EIP_AdvanceDate, TakeHome, TakeHome_Round, TakeHome_Bank, TakeHome_Cash, TotalCost, TotalCost_USD, SIFund, ALInYear, ALUsed, ALRemain, OTHour_Accumulate, Note, IsTotalWD, L_Compensate_N, L_Compensate_O, L_Maternity_N, L_Maternity_O, L_Paternity_N, L_Paternity_O, L_ChildSick_N, L_ChildSick_O, L_Policy_N, L_Policy_O, L_Wedding_N, L_Wedding_O, L_Funeral_N, L_Funeral_O, L_Policy_All_N, L_Policy_All_O, L_Unpaid_N, L_Unpaid_O, L_NotPermit_N, L_NotPermit_O, L_NotWD_N, L_NotWD_O, IsATM, IsUnLimitContract, AvgSal, SeniorityYear, SeverancePay, ALRemainSal, OT10_O, OT10_N, OT10, OT10Sal, PreBasicSal, SIFund_BH, SIFund_ThaiSan, SIFund_KhamThai, PayrollType, Note_Annual, Note_Sick, Note_NotPermit, Note_UnPaid, Adjust_Tax, Adjust_NonTax, Final_HIDeduct, Final_AssetDeduct, Final_NoticeDay, Final_NoticeSal, TakeHome_ATMOnly, SecurityID, Incentive_Brand, Adjust_TaxableIncome, PayInCash, Incentive_TaxOnly, AON_TaxOnly, PITRefund, OT15_InLimit, OT15N_InLimit, OT20_InLimit, OT20N_InLimit, OT30_InLimit, OT30N_InLimit, OT15_OverLimit, OT15N_OverLimit, OT20_OverLimit, OT20N_OverLimit, OT30_OverLimit, OT30N_OverLimit, AD_EIP_Payment, A_AtSite, A_OtherFix_Tax, A_OtherFix_NonTax, A_OtherFix, A_NotInPayroll, D_NotInPayroll, ALUsed_Acc, ALRemain_Acc, A_Business, IsManager, D_UnionFee, OT15_O_InLimit, OT15_N_InLimit, OT15N_O_InLimit, OT15N_N_InLimit, OT20_O_InLimit, OT20_N_InLimit, OT20N_O_InLimit, OT20N_N_InLimit, OT30_O_InLimit, OT30_N_InLimit, OT30N_O_InLimit, OT30N_N_InLimit, OT15_O_OverLimit, OT15_N_OverLimit, OT15N_O_OverLimit, OT15N_N_OverLimit, OT20_O_OverLimit, OT20_N_OverLimit, OT20N_O_OverLimit, OT20N_N_OverLimit, OT30_O_OverLimit, OT30_N_OverLimit, OT30N_O_OverLimit, OT30N_N_OverLimit, BasicA_Month, L_Annual_M1, OT15N_2nd_O, OT15N_2nd_N, OT15N_2nd, OT15N_2ndSal, OT15N_2nd_O_InLimit, OT15N_2nd_N_InLimit, OT15N_2nd_InLimit, OT15N_2nd_O_OverLimit, OT15N_2nd_N_OverLimit, OT15N_2nd_OverLimit FROM scva2fde_khuong.View_PayrollOnline</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="YearID" DataSetColumn="YearID" />
+              <Mapping SourceColumn="MonthID" DataSetColumn="MonthID" />
+              <Mapping SourceColumn="EmployeeID" DataSetColumn="EmployeeID" />
+              <Mapping SourceColumn="EmployeeCode" DataSetColumn="EmployeeCode" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="EmployeeName_Eng" DataSetColumn="EmployeeName_Eng" />
+              <Mapping SourceColumn="FamilyName" DataSetColumn="FamilyName" />
+              <Mapping SourceColumn="GivenName" DataSetColumn="GivenName" />
+              <Mapping SourceColumn="CardID" DataSetColumn="CardID" />
+              <Mapping SourceColumn="EmpTypeID" DataSetColumn="EmpTypeID" />
+              <Mapping SourceColumn="EmpTypeName" DataSetColumn="EmpTypeName" />
+              <Mapping SourceColumn="EmployedDate" DataSetColumn="EmployedDate" />
+              <Mapping SourceColumn="LeftDate" DataSetColumn="LeftDate" />
+              <Mapping SourceColumn="LeftTypeID" DataSetColumn="LeftTypeID" />
+              <Mapping SourceColumn="LeftTypeName" DataSetColumn="LeftTypeName" />
+              <Mapping SourceColumn="ContractDate" DataSetColumn="ContractDate" />
+              <Mapping SourceColumn="LastWorkDate" DataSetColumn="LastWorkDate" />
+              <Mapping SourceColumn="SalaryTypeID" DataSetColumn="SalaryTypeID" />
+              <Mapping SourceColumn="SalaryTypeName" DataSetColumn="SalaryTypeName" />
+              <Mapping SourceColumn="SecID" DataSetColumn="SecID" />
+              <Mapping SourceColumn="SecName" DataSetColumn="SecName" />
+              <Mapping SourceColumn="SecOrderNo" DataSetColumn="SecOrderNo" />
+              <Mapping SourceColumn="SecDirect" DataSetColumn="SecDirect" />
+              <Mapping SourceColumn="LineID" DataSetColumn="LineID" />
+              <Mapping SourceColumn="LineName" DataSetColumn="LineName" />
+              <Mapping SourceColumn="LineOrderNo" DataSetColumn="LineOrderNo" />
+              <Mapping SourceColumn="GroupID" DataSetColumn="GroupID" />
+              <Mapping SourceColumn="GroupName" DataSetColumn="GroupName" />
+              <Mapping SourceColumn="GroupOrderNo" DataSetColumn="GroupOrderNo" />
+              <Mapping SourceColumn="TeamID" DataSetColumn="TeamID" />
+              <Mapping SourceColumn="TeamName" DataSetColumn="TeamName" />
+              <Mapping SourceColumn="TeamOrderNo" DataSetColumn="TeamOrderNo" />
+              <Mapping SourceColumn="PartID" DataSetColumn="PartID" />
+              <Mapping SourceColumn="PartName" DataSetColumn="PartName" />
+              <Mapping SourceColumn="PartOrderNo" DataSetColumn="PartOrderNo" />
+              <Mapping SourceColumn="PosID" DataSetColumn="PosID" />
+              <Mapping SourceColumn="PosName" DataSetColumn="PosName" />
+              <Mapping SourceColumn="PosOrderNo" DataSetColumn="PosOrderNo" />
+              <Mapping SourceColumn="BankAccount" DataSetColumn="BankAccount" />
+              <Mapping SourceColumn="BankID" DataSetColumn="BankID" />
+              <Mapping SourceColumn="BankName" DataSetColumn="BankName" />
+              <Mapping SourceColumn="BankGroupID" DataSetColumn="BankGroupID" />
+              <Mapping SourceColumn="BankGroupName" DataSetColumn="BankGroupName" />
+              <Mapping SourceColumn="IsEmp_New" DataSetColumn="IsEmp_New" />
+              <Mapping SourceColumn="IsEmp_Stop" DataSetColumn="IsEmp_Stop" />
+              <Mapping SourceColumn="IsEmp_ChangeSal" DataSetColumn="IsEmp_ChangeSal" />
+              <Mapping SourceColumn="IsEmp_FE" DataSetColumn="IsEmp_FE" />
+              <Mapping SourceColumn="Coe_Basic_O" DataSetColumn="Coe_Basic_O" />
+              <Mapping SourceColumn="Coe_Basic_N" DataSetColumn="Coe_Basic_N" />
+              <Mapping SourceColumn="Coe_Basic" DataSetColumn="Coe_Basic" />
+              <Mapping SourceColumn="BasicSal_Input_O" DataSetColumn="BasicSal_Input_O" />
+              <Mapping SourceColumn="BasicSal_Input_N" DataSetColumn="BasicSal_Input_N" />
+              <Mapping SourceColumn="BasicSal_Input" DataSetColumn="BasicSal_Input" />
+              <Mapping SourceColumn="CurrType_O" DataSetColumn="CurrType_O" />
+              <Mapping SourceColumn="CurrType_N" DataSetColumn="CurrType_N" />
+              <Mapping SourceColumn="CurrType" DataSetColumn="CurrType" />
+              <Mapping SourceColumn="ExRate_O" DataSetColumn="ExRate_O" />
+              <Mapping SourceColumn="ExRate_N" DataSetColumn="ExRate_N" />
+              <Mapping SourceColumn="ExRate" DataSetColumn="ExRate" />
+              <Mapping SourceColumn="BasicSal_O" DataSetColumn="BasicSal_O" />
+              <Mapping SourceColumn="BasicSal_N" DataSetColumn="BasicSal_N" />
+              <Mapping SourceColumn="BasicSal" DataSetColumn="BasicSal" />
+              <Mapping SourceColumn="BasicSal_InsLimit" DataSetColumn="BasicSal_InsLimit" />
+              <Mapping SourceColumn="Date_ChangeSal" DataSetColumn="Date_ChangeSal" />
+              <Mapping SourceColumn="ActualBasicSal" DataSetColumn="ActualBasicSal" />
+              <Mapping SourceColumn="Coe_Paid_O" DataSetColumn="Coe_Paid_O" />
+              <Mapping SourceColumn="Coe_Paid_N" DataSetColumn="Coe_Paid_N" />
+              <Mapping SourceColumn="Coe_Paid" DataSetColumn="Coe_Paid" />
+              <Mapping SourceColumn="BasicSal_Paid_O" DataSetColumn="BasicSal_Paid_O" />
+              <Mapping SourceColumn="BasicSal_Paid_N" DataSetColumn="BasicSal_Paid_N" />
+              <Mapping SourceColumn="BasicSal_Paid" DataSetColumn="BasicSal_Paid" />
+              <Mapping SourceColumn="MinBasicSal" DataSetColumn="MinBasicSal" />
+              <Mapping SourceColumn="BasicWD" DataSetColumn="BasicWD" />
+              <Mapping SourceColumn="BasicWH" DataSetColumn="BasicWH" />
+              <Mapping SourceColumn="WDInMonth" DataSetColumn="WDInMonth" />
+              <Mapping SourceColumn="ActualWDInMonth" DataSetColumn="ActualWDInMonth" />
+              <Mapping SourceColumn="DaySal_O" DataSetColumn="DaySal_O" />
+              <Mapping SourceColumn="DaySal_N" DataSetColumn="DaySal_N" />
+              <Mapping SourceColumn="DaySal" DataSetColumn="DaySal" />
+              <Mapping SourceColumn="HourSal_O" DataSetColumn="HourSal_O" />
+              <Mapping SourceColumn="HourSal_N" DataSetColumn="HourSal_N" />
+              <Mapping SourceColumn="HourSal" DataSetColumn="HourSal" />
+              <Mapping SourceColumn="WDHour_O" DataSetColumn="WDHour_O" />
+              <Mapping SourceColumn="WDHour_N" DataSetColumn="WDHour_N" />
+              <Mapping SourceColumn="WDHour" DataSetColumn="WDHour" />
+              <Mapping SourceColumn="WD_O" DataSetColumn="WD_O" />
+              <Mapping SourceColumn="WD_N" DataSetColumn="WD_N" />
+              <Mapping SourceColumn="WD" DataSetColumn="WD" />
+              <Mapping SourceColumn="WDDay_O" DataSetColumn="WDDay_O" />
+              <Mapping SourceColumn="WDDay_N" DataSetColumn="WDDay_N" />
+              <Mapping SourceColumn="WDDay" DataSetColumn="WDDay" />
+              <Mapping SourceColumn="WD_All_O" DataSetColumn="WD_All_O" />
+              <Mapping SourceColumn="WD_All_N" DataSetColumn="WD_All_N" />
+              <Mapping SourceColumn="WD_All" DataSetColumn="WD_All" />
+              <Mapping SourceColumn="WDSal" DataSetColumn="WDSal" />
+              <Mapping SourceColumn="WNHour_O" DataSetColumn="WNHour_O" />
+              <Mapping SourceColumn="WNHour_N" DataSetColumn="WNHour_N" />
+              <Mapping SourceColumn="WNHour" DataSetColumn="WNHour" />
+              <Mapping SourceColumn="WN_O" DataSetColumn="WN_O" />
+              <Mapping SourceColumn="WN_N" DataSetColumn="WN_N" />
+              <Mapping SourceColumn="WN" DataSetColumn="WN" />
+              <Mapping SourceColumn="WNDay_O" DataSetColumn="WNDay_O" />
+              <Mapping SourceColumn="WNDay_N" DataSetColumn="WNDay_N" />
+              <Mapping SourceColumn="WNDay" DataSetColumn="WNDay" />
+              <Mapping SourceColumn="WN_All_O" DataSetColumn="WN_All_O" />
+              <Mapping SourceColumn="WN_All_N" DataSetColumn="WN_All_N" />
+              <Mapping SourceColumn="WN_All" DataSetColumn="WN_All" />
+              <Mapping SourceColumn="WNSal" DataSetColumn="WNSal" />
+              <Mapping SourceColumn="WPH_O" DataSetColumn="WPH_O" />
+              <Mapping SourceColumn="WPH_N" DataSetColumn="WPH_N" />
+              <Mapping SourceColumn="WPH" DataSetColumn="WPH" />
+              <Mapping SourceColumn="WPHSal" DataSetColumn="WPHSal" />
+              <Mapping SourceColumn="L_Annual_O" DataSetColumn="L_Annual_O" />
+              <Mapping SourceColumn="L_Annual_N" DataSetColumn="L_Annual_N" />
+              <Mapping SourceColumn="L_Annual" DataSetColumn="L_Annual" />
+              <Mapping SourceColumn="L_Annual_Paid_O" DataSetColumn="L_Annual_Paid_O" />
+              <Mapping SourceColumn="L_Annual_Paid_N" DataSetColumn="L_Annual_Paid_N" />
+              <Mapping SourceColumn="L_Annual_Paid" DataSetColumn="L_Annual_Paid" />
+              <Mapping SourceColumn="LSal_Annual" DataSetColumn="LSal_Annual" />
+              <Mapping SourceColumn="L_Maternity" DataSetColumn="L_Maternity" />
+              <Mapping SourceColumn="L_Paternity" DataSetColumn="L_Paternity" />
+              <Mapping SourceColumn="L_Wait_O" DataSetColumn="L_Wait_O" />
+              <Mapping SourceColumn="L_Wait_N" DataSetColumn="L_Wait_N" />
+              <Mapping SourceColumn="L_Wait" DataSetColumn="L_Wait" />
+              <Mapping SourceColumn="L_Wait_Paid_O" DataSetColumn="L_Wait_Paid_O" />
+              <Mapping SourceColumn="L_Wait_Paid_N" DataSetColumn="L_Wait_Paid_N" />
+              <Mapping SourceColumn="L_Wait_Paid" DataSetColumn="L_Wait_Paid" />
+              <Mapping SourceColumn="LSal_Wait" DataSetColumn="LSal_Wait" />
+              <Mapping SourceColumn="L_Sick_O" DataSetColumn="L_Sick_O" />
+              <Mapping SourceColumn="L_Sick_N" DataSetColumn="L_Sick_N" />
+              <Mapping SourceColumn="L_Sick" DataSetColumn="L_Sick" />
+              <Mapping SourceColumn="L_SickLong_O" DataSetColumn="L_SickLong_O" />
+              <Mapping SourceColumn="L_SickLong_N" DataSetColumn="L_SickLong_N" />
+              <Mapping SourceColumn="L_SickLong" DataSetColumn="L_SickLong" />
+              <Mapping SourceColumn="L_Sick_All_O" DataSetColumn="L_Sick_All_O" />
+              <Mapping SourceColumn="L_Sick_All_N" DataSetColumn="L_Sick_All_N" />
+              <Mapping SourceColumn="L_Sick_All" DataSetColumn="L_Sick_All" />
+              <Mapping SourceColumn="LSal_Sick" DataSetColumn="LSal_Sick" />
+              <Mapping SourceColumn="L_Private_O" DataSetColumn="L_Private_O" />
+              <Mapping SourceColumn="L_Private_N" DataSetColumn="L_Private_N" />
+              <Mapping SourceColumn="L_Private" DataSetColumn="L_Private" />
+              <Mapping SourceColumn="L_Business_O" DataSetColumn="L_Business_O" />
+              <Mapping SourceColumn="L_Business_N" DataSetColumn="L_Business_N" />
+              <Mapping SourceColumn="L_Business" DataSetColumn="L_Business" />
+              <Mapping SourceColumn="L_Unpaid" DataSetColumn="L_Unpaid" />
+              <Mapping SourceColumn="LSal_Unpaid" DataSetColumn="LSal_Unpaid" />
+              <Mapping SourceColumn="L_NotPermit" DataSetColumn="L_NotPermit" />
+              <Mapping SourceColumn="LSal_NotPermit" DataSetColumn="LSal_NotPermit" />
+              <Mapping SourceColumn="L_Policy" DataSetColumn="L_Policy" />
+              <Mapping SourceColumn="L_Policy_All" DataSetColumn="L_Policy_All" />
+              <Mapping SourceColumn="L_Wedding" DataSetColumn="L_Wedding" />
+              <Mapping SourceColumn="L_Funeral" DataSetColumn="L_Funeral" />
+              <Mapping SourceColumn="L_ChildSick" DataSetColumn="L_ChildSick" />
+              <Mapping SourceColumn="L_Compensate" DataSetColumn="L_Compensate" />
+              <Mapping SourceColumn="L_Paid_O" DataSetColumn="L_Paid_O" />
+              <Mapping SourceColumn="L_Paid_N" DataSetColumn="L_Paid_N" />
+              <Mapping SourceColumn="L_Paid" DataSetColumn="L_Paid" />
+              <Mapping SourceColumn="LSal_Paid" DataSetColumn="LSal_Paid" />
+              <Mapping SourceColumn="L_Paid_100_O" DataSetColumn="L_Paid_100_O" />
+              <Mapping SourceColumn="L_Paid_100_N" DataSetColumn="L_Paid_100_N" />
+              <Mapping SourceColumn="L_Paid_100" DataSetColumn="L_Paid_100" />
+              <Mapping SourceColumn="LSal_Paid_100" DataSetColumn="LSal_Paid_100" />
+              <Mapping SourceColumn="L_Paid_Not100_O" DataSetColumn="L_Paid_Not100_O" />
+              <Mapping SourceColumn="L_Paid_Not100_N" DataSetColumn="L_Paid_Not100_N" />
+              <Mapping SourceColumn="L_Paid_Not100" DataSetColumn="L_Paid_Not100" />
+              <Mapping SourceColumn="L_Paid_Not100_Paid_O" DataSetColumn="L_Paid_Not100_Paid_O" />
+              <Mapping SourceColumn="L_Paid_Not100_Paid_N" DataSetColumn="L_Paid_Not100_Paid_N" />
+              <Mapping SourceColumn="L_Paid_Not100_Paid" DataSetColumn="L_Paid_Not100_Paid" />
+              <Mapping SourceColumn="LSal_Paid_Not100" DataSetColumn="LSal_Paid_Not100" />
+              <Mapping SourceColumn="L_NotPaid_O" DataSetColumn="L_NotPaid_O" />
+              <Mapping SourceColumn="L_NotPaid_N" DataSetColumn="L_NotPaid_N" />
+              <Mapping SourceColumn="L_NotPaid" DataSetColumn="L_NotPaid" />
+              <Mapping SourceColumn="L_Absent_O" DataSetColumn="L_Absent_O" />
+              <Mapping SourceColumn="L_Absent_N" DataSetColumn="L_Absent_N" />
+              <Mapping SourceColumn="L_Absent" DataSetColumn="L_Absent" />
+              <Mapping SourceColumn="DeductMin_O" DataSetColumn="DeductMin_O" />
+              <Mapping SourceColumn="DeductMin_N" DataSetColumn="DeductMin_N" />
+              <Mapping SourceColumn="DeductMin" DataSetColumn="DeductMin" />
+              <Mapping SourceColumn="DeductDay" DataSetColumn="DeductDay" />
+              <Mapping SourceColumn="L_NotWD" DataSetColumn="L_NotWD" />
+              <Mapping SourceColumn="LSal_NotWD" DataSetColumn="LSal_NotWD" />
+              <Mapping SourceColumn="ActualWD" DataSetColumn="ActualWD" />
+              <Mapping SourceColumn="WSunday" DataSetColumn="WSunday" />
+              <Mapping SourceColumn="TotalWD" DataSetColumn="TotalWD" />
+              <Mapping SourceColumn="MealDay" DataSetColumn="MealDay" />
+              <Mapping SourceColumn="OT15_O" DataSetColumn="OT15_O" />
+              <Mapping SourceColumn="OT15_N" DataSetColumn="OT15_N" />
+              <Mapping SourceColumn="OT15" DataSetColumn="OT15" />
+              <Mapping SourceColumn="OT15Day" DataSetColumn="OT15Day" />
+              <Mapping SourceColumn="OT15Sal" DataSetColumn="OT15Sal" />
+              <Mapping SourceColumn="OT15N_O" DataSetColumn="OT15N_O" />
+              <Mapping SourceColumn="OT15N_N" DataSetColumn="OT15N_N" />
+              <Mapping SourceColumn="OT15N" DataSetColumn="OT15N" />
+              <Mapping SourceColumn="OT15NSal" DataSetColumn="OT15NSal" />
+              <Mapping SourceColumn="OT15_All" DataSetColumn="OT15_All" />
+              <Mapping SourceColumn="OT20_O" DataSetColumn="OT20_O" />
+              <Mapping SourceColumn="OT20_N" DataSetColumn="OT20_N" />
+              <Mapping SourceColumn="OT20" DataSetColumn="OT20" />
+              <Mapping SourceColumn="OT20Day" DataSetColumn="OT20Day" />
+              <Mapping SourceColumn="OT20Sal" DataSetColumn="OT20Sal" />
+              <Mapping SourceColumn="OT20N_O" DataSetColumn="OT20N_O" />
+              <Mapping SourceColumn="OT20N_N" DataSetColumn="OT20N_N" />
+              <Mapping SourceColumn="OT20N" DataSetColumn="OT20N" />
+              <Mapping SourceColumn="OT20NSal" DataSetColumn="OT20NSal" />
+              <Mapping SourceColumn="OT20_All" DataSetColumn="OT20_All" />
+              <Mapping SourceColumn="OT30_O" DataSetColumn="OT30_O" />
+              <Mapping SourceColumn="OT30_N" DataSetColumn="OT30_N" />
+              <Mapping SourceColumn="OT30" DataSetColumn="OT30" />
+              <Mapping SourceColumn="OT30Day" DataSetColumn="OT30Day" />
+              <Mapping SourceColumn="OT30Sal" DataSetColumn="OT30Sal" />
+              <Mapping SourceColumn="OT30N_O" DataSetColumn="OT30N_O" />
+              <Mapping SourceColumn="OT30N_N" DataSetColumn="OT30N_N" />
+              <Mapping SourceColumn="OT30N" DataSetColumn="OT30N" />
+              <Mapping SourceColumn="OT30NSal" DataSetColumn="OT30NSal" />
+              <Mapping SourceColumn="OTNight_All" DataSetColumn="OTNight_All" />
+              <Mapping SourceColumn="OTHour" DataSetColumn="OTHour" />
+              <Mapping SourceColumn="OTHour_Tax" DataSetColumn="OTHour_Tax" />
+              <Mapping SourceColumn="OTNightSal" DataSetColumn="OTNightSal" />
+              <Mapping SourceColumn="OT05_O" DataSetColumn="OT05_O" />
+              <Mapping SourceColumn="OT05_N" DataSetColumn="OT05_N" />
+              <Mapping SourceColumn="OT05" DataSetColumn="OT05" />
+              <Mapping SourceColumn="OT05Sal" DataSetColumn="OT05Sal" />
+              <Mapping SourceColumn="OTSal" DataSetColumn="OTSal" />
+              <Mapping SourceColumn="OTSal_Tax" DataSetColumn="OTSal_Tax" />
+              <Mapping SourceColumn="AD_TN" DataSetColumn="AD_TN" />
+              <Mapping SourceColumn="AD_Loss" DataSetColumn="AD_Loss" />
+              <Mapping SourceColumn="AD_Uniform" DataSetColumn="AD_Uniform" />
+              <Mapping SourceColumn="AddValue_Tax" DataSetColumn="AddValue_Tax" />
+              <Mapping SourceColumn="AddValue_NonTax" DataSetColumn="AddValue_NonTax" />
+              <Mapping SourceColumn="AddValue" DataSetColumn="AddValue" />
+              <Mapping SourceColumn="DeductValue_Tax" DataSetColumn="DeductValue_Tax" />
+              <Mapping SourceColumn="DeductValue_NonTax" DataSetColumn="DeductValue_NonTax" />
+              <Mapping SourceColumn="DeductValue" DataSetColumn="DeductValue" />
+              <Mapping SourceColumn="A_Salary" DataSetColumn="A_Salary" />
+              <Mapping SourceColumn="A_Housing" DataSetColumn="A_Housing" />
+              <Mapping SourceColumn="A_Travel" DataSetColumn="A_Travel" />
+              <Mapping SourceColumn="A_Area" DataSetColumn="A_Area" />
+              <Mapping SourceColumn="A_Seniority" DataSetColumn="A_Seniority" />
+              <Mapping SourceColumn="A_5S" DataSetColumn="A_5S" />
+              <Mapping SourceColumn="A_Shift" DataSetColumn="A_Shift" />
+              <Mapping SourceColumn="A_Meal" DataSetColumn="A_Meal" />
+              <Mapping SourceColumn="A_Phone" DataSetColumn="A_Phone" />
+              <Mapping SourceColumn="A_Hotel" DataSetColumn="A_Hotel" />
+              <Mapping SourceColumn="Coe_Position" DataSetColumn="Coe_Position" />
+              <Mapping SourceColumn="A_Position" DataSetColumn="A_Position" />
+              <Mapping SourceColumn="Coe_TN" DataSetColumn="Coe_TN" />
+              <Mapping SourceColumn="A_TN" DataSetColumn="A_TN" />
+              <Mapping SourceColumn="Coe_Harmful" DataSetColumn="Coe_Harmful" />
+              <Mapping SourceColumn="A_Harmful" DataSetColumn="A_Harmful" />
+              <Mapping SourceColumn="A_Other_Tax" DataSetColumn="A_Other_Tax" />
+              <Mapping SourceColumn="A_Other_NonTax" DataSetColumn="A_Other_NonTax" />
+              <Mapping SourceColumn="A_Other" DataSetColumn="A_Other" />
+              <Mapping SourceColumn="A_Total" DataSetColumn="A_Total" />
+              <Mapping SourceColumn="BasicA_Day" DataSetColumn="BasicA_Day" />
+              <Mapping SourceColumn="A_Day" DataSetColumn="A_Day" />
+              <Mapping SourceColumn="TotalSal" DataSetColumn="TotalSal" />
+              <Mapping SourceColumn="Bonus" DataSetColumn="Bonus" />
+              <Mapping SourceColumn="PITCode" DataSetColumn="PITCode" />
+              <Mapping SourceColumn="PIT_Personal" DataSetColumn="PIT_Personal" />
+              <Mapping SourceColumn="PIT_Family" DataSetColumn="PIT_Family" />
+              <Mapping SourceColumn="PIT_Family_Dependant" DataSetColumn="PIT_Family_Dependant" />
+              <Mapping SourceColumn="PIT_Family_Sal" DataSetColumn="PIT_Family_Sal" />
+              <Mapping SourceColumn="PIT_Family_Date" DataSetColumn="PIT_Family_Date" />
+              <Mapping SourceColumn="PIT_Sal" DataSetColumn="PIT_Sal" />
+              <Mapping SourceColumn="TaxableIncome" DataSetColumn="TaxableIncome" />
+              <Mapping SourceColumn="PIT" DataSetColumn="PIT" />
+              <Mapping SourceColumn="SIFee" DataSetColumn="SIFee" />
+              <Mapping SourceColumn="SIFee_Co" DataSetColumn="SIFee_Co" />
+              <Mapping SourceColumn="SIFee_All" DataSetColumn="SIFee_All" />
+              <Mapping SourceColumn="HIFee" DataSetColumn="HIFee" />
+              <Mapping SourceColumn="HIFee_Co" DataSetColumn="HIFee_Co" />
+              <Mapping SourceColumn="HIFee_All" DataSetColumn="HIFee_All" />
+              <Mapping SourceColumn="UIFee" DataSetColumn="UIFee" />
+              <Mapping SourceColumn="UIFee_Co" DataSetColumn="UIFee_Co" />
+              <Mapping SourceColumn="UIFee_All" DataSetColumn="UIFee_All" />
+              <Mapping SourceColumn="UnionMember" DataSetColumn="UnionMember" />
+              <Mapping SourceColumn="UnionFee" DataSetColumn="UnionFee" />
+              <Mapping SourceColumn="UnionFee_Co" DataSetColumn="UnionFee_Co" />
+              <Mapping SourceColumn="UnionFee_All" DataSetColumn="UnionFee_All" />
+              <Mapping SourceColumn="TotalIns" DataSetColumn="TotalIns" />
+              <Mapping SourceColumn="TotalIns_Co" DataSetColumn="TotalIns_Co" />
+              <Mapping SourceColumn="Adjust" DataSetColumn="Adjust" />
+              <Mapping SourceColumn="Advance" DataSetColumn="Advance" />
+              <Mapping SourceColumn="TotalAdd" DataSetColumn="TotalAdd" />
+              <Mapping SourceColumn="TotalAdd_Tax" DataSetColumn="TotalAdd_Tax" />
+              <Mapping SourceColumn="TotalDeduct" DataSetColumn="TotalDeduct" />
+              <Mapping SourceColumn="TotalDeduct_Tax" DataSetColumn="TotalDeduct_Tax" />
+              <Mapping SourceColumn="Payroll13" DataSetColumn="Payroll13" />
+              <Mapping SourceColumn="PayrollPerformance" DataSetColumn="PayrollPerformance" />
+              <Mapping SourceColumn="EIP_Bonus" DataSetColumn="EIP_Bonus" />
+              <Mapping SourceColumn="EIP_IsAdvance" DataSetColumn="EIP_IsAdvance" />
+              <Mapping SourceColumn="EIP_AdvanceDate" DataSetColumn="EIP_AdvanceDate" />
+              <Mapping SourceColumn="TakeHome" DataSetColumn="TakeHome" />
+              <Mapping SourceColumn="TakeHome_Round" DataSetColumn="TakeHome_Round" />
+              <Mapping SourceColumn="TakeHome_Bank" DataSetColumn="TakeHome_Bank" />
+              <Mapping SourceColumn="TakeHome_Cash" DataSetColumn="TakeHome_Cash" />
+              <Mapping SourceColumn="TotalCost" DataSetColumn="TotalCost" />
+              <Mapping SourceColumn="TotalCost_USD" DataSetColumn="TotalCost_USD" />
+              <Mapping SourceColumn="SIFund" DataSetColumn="SIFund" />
+              <Mapping SourceColumn="ALInYear" DataSetColumn="ALInYear" />
+              <Mapping SourceColumn="ALUsed" DataSetColumn="ALUsed" />
+              <Mapping SourceColumn="ALRemain" DataSetColumn="ALRemain" />
+              <Mapping SourceColumn="OTHour_Accumulate" DataSetColumn="OTHour_Accumulate" />
+              <Mapping SourceColumn="Note" DataSetColumn="Note" />
+              <Mapping SourceColumn="IsTotalWD" DataSetColumn="IsTotalWD" />
+              <Mapping SourceColumn="L_Compensate_N" DataSetColumn="L_Compensate_N" />
+              <Mapping SourceColumn="L_Compensate_O" DataSetColumn="L_Compensate_O" />
+              <Mapping SourceColumn="L_Maternity_N" DataSetColumn="L_Maternity_N" />
+              <Mapping SourceColumn="L_Maternity_O" DataSetColumn="L_Maternity_O" />
+              <Mapping SourceColumn="L_Paternity_N" DataSetColumn="L_Paternity_N" />
+              <Mapping SourceColumn="L_Paternity_O" DataSetColumn="L_Paternity_O" />
+              <Mapping SourceColumn="L_ChildSick_N" DataSetColumn="L_ChildSick_N" />
+              <Mapping SourceColumn="L_ChildSick_O" DataSetColumn="L_ChildSick_O" />
+              <Mapping SourceColumn="L_Policy_N" DataSetColumn="L_Policy_N" />
+              <Mapping SourceColumn="L_Policy_O" DataSetColumn="L_Policy_O" />
+              <Mapping SourceColumn="L_Wedding_N" DataSetColumn="L_Wedding_N" />
+              <Mapping SourceColumn="L_Wedding_O" DataSetColumn="L_Wedding_O" />
+              <Mapping SourceColumn="L_Funeral_N" DataSetColumn="L_Funeral_N" />
+              <Mapping SourceColumn="L_Funeral_O" DataSetColumn="L_Funeral_O" />
+              <Mapping SourceColumn="L_Policy_All_N" DataSetColumn="L_Policy_All_N" />
+              <Mapping SourceColumn="L_Policy_All_O" DataSetColumn="L_Policy_All_O" />
+              <Mapping SourceColumn="L_Unpaid_N" DataSetColumn="L_Unpaid_N" />
+              <Mapping SourceColumn="L_Unpaid_O" DataSetColumn="L_Unpaid_O" />
+              <Mapping SourceColumn="L_NotPermit_N" DataSetColumn="L_NotPermit_N" />
+              <Mapping SourceColumn="L_NotPermit_O" DataSetColumn="L_NotPermit_O" />
+              <Mapping SourceColumn="L_NotWD_N" DataSetColumn="L_NotWD_N" />
+              <Mapping SourceColumn="L_NotWD_O" DataSetColumn="L_NotWD_O" />
+              <Mapping SourceColumn="IsATM" DataSetColumn="IsATM" />
+              <Mapping SourceColumn="IsUnLimitContract" DataSetColumn="IsUnLimitContract" />
+              <Mapping SourceColumn="AvgSal" DataSetColumn="AvgSal" />
+              <Mapping SourceColumn="SeniorityYear" DataSetColumn="SeniorityYear" />
+              <Mapping SourceColumn="SeverancePay" DataSetColumn="SeverancePay" />
+              <Mapping SourceColumn="ALRemainSal" DataSetColumn="ALRemainSal" />
+              <Mapping SourceColumn="OT10_O" DataSetColumn="OT10_O" />
+              <Mapping SourceColumn="OT10_N" DataSetColumn="OT10_N" />
+              <Mapping SourceColumn="OT10" DataSetColumn="OT10" />
+              <Mapping SourceColumn="OT10Sal" DataSetColumn="OT10Sal" />
+              <Mapping SourceColumn="PreBasicSal" DataSetColumn="PreBasicSal" />
+              <Mapping SourceColumn="SIFund_BH" DataSetColumn="SIFund_BH" />
+              <Mapping SourceColumn="SIFund_ThaiSan" DataSetColumn="SIFund_ThaiSan" />
+              <Mapping SourceColumn="SIFund_KhamThai" DataSetColumn="SIFund_KhamThai" />
+              <Mapping SourceColumn="PayrollType" DataSetColumn="PayrollType" />
+              <Mapping SourceColumn="Note_Annual" DataSetColumn="Note_Annual" />
+              <Mapping SourceColumn="Note_Sick" DataSetColumn="Note_Sick" />
+              <Mapping SourceColumn="Note_NotPermit" DataSetColumn="Note_NotPermit" />
+              <Mapping SourceColumn="Note_UnPaid" DataSetColumn="Note_UnPaid" />
+              <Mapping SourceColumn="Adjust_Tax" DataSetColumn="Adjust_Tax" />
+              <Mapping SourceColumn="Adjust_NonTax" DataSetColumn="Adjust_NonTax" />
+              <Mapping SourceColumn="Final_HIDeduct" DataSetColumn="Final_HIDeduct" />
+              <Mapping SourceColumn="Final_AssetDeduct" DataSetColumn="Final_AssetDeduct" />
+              <Mapping SourceColumn="Final_NoticeDay" DataSetColumn="Final_NoticeDay" />
+              <Mapping SourceColumn="Final_NoticeSal" DataSetColumn="Final_NoticeSal" />
+              <Mapping SourceColumn="TakeHome_ATMOnly" DataSetColumn="TakeHome_ATMOnly" />
+              <Mapping SourceColumn="SecurityID" DataSetColumn="SecurityID" />
+              <Mapping SourceColumn="Incentive_Brand" DataSetColumn="Incentive_Brand" />
+              <Mapping SourceColumn="Adjust_TaxableIncome" DataSetColumn="Adjust_TaxableIncome" />
+              <Mapping SourceColumn="PayInCash" DataSetColumn="PayInCash" />
+              <Mapping SourceColumn="Incentive_TaxOnly" DataSetColumn="Incentive_TaxOnly" />
+              <Mapping SourceColumn="AON_TaxOnly" DataSetColumn="AON_TaxOnly" />
+              <Mapping SourceColumn="PITRefund" DataSetColumn="PITRefund" />
+              <Mapping SourceColumn="OT15_InLimit" DataSetColumn="OT15_InLimit" />
+              <Mapping SourceColumn="OT15N_InLimit" DataSetColumn="OT15N_InLimit" />
+              <Mapping SourceColumn="OT20_InLimit" DataSetColumn="OT20_InLimit" />
+              <Mapping SourceColumn="OT20N_InLimit" DataSetColumn="OT20N_InLimit" />
+              <Mapping SourceColumn="OT30_InLimit" DataSetColumn="OT30_InLimit" />
+              <Mapping SourceColumn="OT30N_InLimit" DataSetColumn="OT30N_InLimit" />
+              <Mapping SourceColumn="OT15_OverLimit" DataSetColumn="OT15_OverLimit" />
+              <Mapping SourceColumn="OT15N_OverLimit" DataSetColumn="OT15N_OverLimit" />
+              <Mapping SourceColumn="OT20_OverLimit" DataSetColumn="OT20_OverLimit" />
+              <Mapping SourceColumn="OT20N_OverLimit" DataSetColumn="OT20N_OverLimit" />
+              <Mapping SourceColumn="OT30_OverLimit" DataSetColumn="OT30_OverLimit" />
+              <Mapping SourceColumn="OT30N_OverLimit" DataSetColumn="OT30N_OverLimit" />
+              <Mapping SourceColumn="AD_EIP_Payment" DataSetColumn="AD_EIP_Payment" />
+              <Mapping SourceColumn="A_AtSite" DataSetColumn="A_AtSite" />
+              <Mapping SourceColumn="A_OtherFix_Tax" DataSetColumn="A_OtherFix_Tax" />
+              <Mapping SourceColumn="A_OtherFix_NonTax" DataSetColumn="A_OtherFix_NonTax" />
+              <Mapping SourceColumn="A_OtherFix" DataSetColumn="A_OtherFix" />
+              <Mapping SourceColumn="A_NotInPayroll" DataSetColumn="A_NotInPayroll" />
+              <Mapping SourceColumn="D_NotInPayroll" DataSetColumn="D_NotInPayroll" />
+              <Mapping SourceColumn="ALUsed_Acc" DataSetColumn="ALUsed_Acc" />
+              <Mapping SourceColumn="ALRemain_Acc" DataSetColumn="ALRemain_Acc" />
+              <Mapping SourceColumn="A_Business" DataSetColumn="A_Business" />
+              <Mapping SourceColumn="IsManager" DataSetColumn="IsManager" />
+              <Mapping SourceColumn="D_UnionFee" DataSetColumn="D_UnionFee" />
+              <Mapping SourceColumn="OT15_O_InLimit" DataSetColumn="OT15_O_InLimit" />
+              <Mapping SourceColumn="OT15_N_InLimit" DataSetColumn="OT15_N_InLimit" />
+              <Mapping SourceColumn="OT15N_O_InLimit" DataSetColumn="OT15N_O_InLimit" />
+              <Mapping SourceColumn="OT15N_N_InLimit" DataSetColumn="OT15N_N_InLimit" />
+              <Mapping SourceColumn="OT20_O_InLimit" DataSetColumn="OT20_O_InLimit" />
+              <Mapping SourceColumn="OT20_N_InLimit" DataSetColumn="OT20_N_InLimit" />
+              <Mapping SourceColumn="OT20N_O_InLimit" DataSetColumn="OT20N_O_InLimit" />
+              <Mapping SourceColumn="OT20N_N_InLimit" DataSetColumn="OT20N_N_InLimit" />
+              <Mapping SourceColumn="OT30_O_InLimit" DataSetColumn="OT30_O_InLimit" />
+              <Mapping SourceColumn="OT30_N_InLimit" DataSetColumn="OT30_N_InLimit" />
+              <Mapping SourceColumn="OT30N_O_InLimit" DataSetColumn="OT30N_O_InLimit" />
+              <Mapping SourceColumn="OT30N_N_InLimit" DataSetColumn="OT30N_N_InLimit" />
+              <Mapping SourceColumn="OT15_O_OverLimit" DataSetColumn="OT15_O_OverLimit" />
+              <Mapping SourceColumn="OT15_N_OverLimit" DataSetColumn="OT15_N_OverLimit" />
+              <Mapping SourceColumn="OT15N_O_OverLimit" DataSetColumn="OT15N_O_OverLimit" />
+              <Mapping SourceColumn="OT15N_N_OverLimit" DataSetColumn="OT15N_N_OverLimit" />
+              <Mapping SourceColumn="OT20_O_OverLimit" DataSetColumn="OT20_O_OverLimit" />
+              <Mapping SourceColumn="OT20_N_OverLimit" DataSetColumn="OT20_N_OverLimit" />
+              <Mapping SourceColumn="OT20N_O_OverLimit" DataSetColumn="OT20N_O_OverLimit" />
+              <Mapping SourceColumn="OT20N_N_OverLimit" DataSetColumn="OT20N_N_OverLimit" />
+              <Mapping SourceColumn="OT30_O_OverLimit" DataSetColumn="OT30_O_OverLimit" />
+              <Mapping SourceColumn="OT30_N_OverLimit" DataSetColumn="OT30_N_OverLimit" />
+              <Mapping SourceColumn="OT30N_O_OverLimit" DataSetColumn="OT30N_O_OverLimit" />
+              <Mapping SourceColumn="OT30N_N_OverLimit" DataSetColumn="OT30N_N_OverLimit" />
+              <Mapping SourceColumn="BasicA_Month" DataSetColumn="BasicA_Month" />
+              <Mapping SourceColumn="L_Annual_M1" DataSetColumn="L_Annual_M1" />
+              <Mapping SourceColumn="OT15N_2nd_O" DataSetColumn="OT15N_2nd_O" />
+              <Mapping SourceColumn="OT15N_2nd_N" DataSetColumn="OT15N_2nd_N" />
+              <Mapping SourceColumn="OT15N_2nd" DataSetColumn="OT15N_2nd" />
+              <Mapping SourceColumn="OT15N_2ndSal" DataSetColumn="OT15N_2ndSal" />
+              <Mapping SourceColumn="OT15N_2nd_O_InLimit" DataSetColumn="OT15N_2nd_O_InLimit" />
+              <Mapping SourceColumn="OT15N_2nd_N_InLimit" DataSetColumn="OT15N_2nd_N_InLimit" />
+              <Mapping SourceColumn="OT15N_2nd_InLimit" DataSetColumn="OT15N_2nd_InLimit" />
+              <Mapping SourceColumn="OT15N_2nd_O_OverLimit" DataSetColumn="OT15N_2nd_O_OverLimit" />
+              <Mapping SourceColumn="OT15N_2nd_N_OverLimit" DataSetColumn="OT15N_2nd_N_OverLimit" />
+              <Mapping SourceColumn="OT15N_2nd_OverLimit" DataSetColumn="OT15N_2nd_OverLimit" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPayrollOnline" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPayrollOnline" msprop:Generator_UserDSName="dsPayrollOnline">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_PayrollOnline" msprop:Generator_TableClassName="View_PayrollOnlineDataTable" msprop:Generator_TableVarName="tableView_PayrollOnline" msprop:Generator_TablePropName="View_PayrollOnline" msprop:Generator_RowDeletingName="View_PayrollOnlineRowDeleting" msprop:Generator_RowChangingName="View_PayrollOnlineRowChanging" msprop:Generator_RowEvHandlerName="View_PayrollOnlineRowChangeEventHandler" msprop:Generator_RowDeletedName="View_PayrollOnlineRowDeleted" msprop:Generator_UserTableName="View_PayrollOnline" msprop:Generator_RowChangedName="View_PayrollOnlineRowChanged" msprop:Generator_RowEvArgName="View_PayrollOnlineRowChangeEvent" msprop:Generator_RowClassName="View_PayrollOnlineRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="YearID" msprop:Generator_ColumnVarNameInTable="columnYearID" msprop:Generator_ColumnPropNameInRow="YearID" msprop:Generator_ColumnPropNameInTable="YearIDColumn" msprop:Generator_UserColumnName="YearID" type="xs:int" />
+              <xs:element name="MonthID" msprop:Generator_ColumnVarNameInTable="columnMonthID" msprop:Generator_ColumnPropNameInRow="MonthID" msprop:Generator_ColumnPropNameInTable="MonthIDColumn" msprop:Generator_UserColumnName="MonthID" type="xs:int" />
+              <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeCode" msprop:Generator_ColumnVarNameInTable="columnEmployeeCode" msprop:Generator_ColumnPropNameInRow="EmployeeCode" msprop:Generator_ColumnPropNameInTable="EmployeeCodeColumn" msprop:Generator_UserColumnName="EmployeeCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName_Eng" msprop:Generator_ColumnVarNameInTable="columnEmployeeName_Eng" msprop:Generator_ColumnPropNameInRow="EmployeeName_Eng" msprop:Generator_ColumnPropNameInTable="EmployeeName_EngColumn" msprop:Generator_UserColumnName="EmployeeName_Eng" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FamilyName" msprop:Generator_ColumnVarNameInTable="columnFamilyName" msprop:Generator_ColumnPropNameInRow="FamilyName" msprop:Generator_ColumnPropNameInTable="FamilyNameColumn" msprop:Generator_UserColumnName="FamilyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GivenName" msprop:Generator_ColumnVarNameInTable="columnGivenName" msprop:Generator_ColumnPropNameInRow="GivenName" msprop:Generator_ColumnPropNameInTable="GivenNameColumn" msprop:Generator_UserColumnName="GivenName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CardID" msprop:Generator_ColumnVarNameInTable="columnCardID" msprop:Generator_ColumnPropNameInRow="CardID" msprop:Generator_ColumnPropNameInTable="CardIDColumn" msprop:Generator_UserColumnName="CardID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpTypeID" msprop:Generator_ColumnVarNameInTable="columnEmpTypeID" msprop:Generator_ColumnPropNameInRow="EmpTypeID" msprop:Generator_ColumnPropNameInTable="EmpTypeIDColumn" msprop:Generator_UserColumnName="EmpTypeID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpTypeName" msprop:Generator_ColumnVarNameInTable="columnEmpTypeName" msprop:Generator_ColumnPropNameInRow="EmpTypeName" msprop:Generator_ColumnPropNameInTable="EmpTypeNameColumn" msprop:Generator_UserColumnName="EmpTypeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployedDate" msprop:Generator_ColumnVarNameInTable="columnEmployedDate" msprop:Generator_ColumnPropNameInRow="EmployedDate" msprop:Generator_ColumnPropNameInTable="EmployedDateColumn" msprop:Generator_UserColumnName="EmployedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LeftDate" msprop:Generator_ColumnVarNameInTable="columnLeftDate" msprop:Generator_ColumnPropNameInRow="LeftDate" msprop:Generator_ColumnPropNameInTable="LeftDateColumn" msprop:Generator_UserColumnName="LeftDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LeftTypeID" msprop:Generator_ColumnVarNameInTable="columnLeftTypeID" msprop:Generator_ColumnPropNameInRow="LeftTypeID" msprop:Generator_ColumnPropNameInTable="LeftTypeIDColumn" msprop:Generator_UserColumnName="LeftTypeID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LeftTypeName" msprop:Generator_ColumnVarNameInTable="columnLeftTypeName" msprop:Generator_ColumnPropNameInRow="LeftTypeName" msprop:Generator_ColumnPropNameInTable="LeftTypeNameColumn" msprop:Generator_UserColumnName="LeftTypeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContractDate" msprop:Generator_ColumnVarNameInTable="columnContractDate" msprop:Generator_ColumnPropNameInRow="ContractDate" msprop:Generator_ColumnPropNameInTable="ContractDateColumn" msprop:Generator_UserColumnName="ContractDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastWorkDate" msprop:Generator_ColumnVarNameInTable="columnLastWorkDate" msprop:Generator_ColumnPropNameInRow="LastWorkDate" msprop:Generator_ColumnPropNameInTable="LastWorkDateColumn" msprop:Generator_UserColumnName="LastWorkDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SalaryTypeID" msprop:Generator_ColumnVarNameInTable="columnSalaryTypeID" msprop:Generator_ColumnPropNameInRow="SalaryTypeID" msprop:Generator_ColumnPropNameInTable="SalaryTypeIDColumn" msprop:Generator_UserColumnName="SalaryTypeID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SalaryTypeName" msprop:Generator_ColumnVarNameInTable="columnSalaryTypeName" msprop:Generator_ColumnPropNameInRow="SalaryTypeName" msprop:Generator_ColumnPropNameInTable="SalaryTypeNameColumn" msprop:Generator_UserColumnName="SalaryTypeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SecID" msprop:Generator_ColumnVarNameInTable="columnSecID" msprop:Generator_ColumnPropNameInRow="SecID" msprop:Generator_ColumnPropNameInTable="SecIDColumn" msprop:Generator_UserColumnName="SecID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SecName" msprop:Generator_ColumnVarNameInTable="columnSecName" msprop:Generator_ColumnPropNameInRow="SecName" msprop:Generator_ColumnPropNameInTable="SecNameColumn" msprop:Generator_UserColumnName="SecName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SecOrderNo" msprop:Generator_ColumnVarNameInTable="columnSecOrderNo" msprop:Generator_ColumnPropNameInRow="SecOrderNo" msprop:Generator_ColumnPropNameInTable="SecOrderNoColumn" msprop:Generator_UserColumnName="SecOrderNo" type="xs:int" minOccurs="0" />
+              <xs:element name="SecDirect" msprop:Generator_ColumnVarNameInTable="columnSecDirect" msprop:Generator_ColumnPropNameInRow="SecDirect" msprop:Generator_ColumnPropNameInTable="SecDirectColumn" msprop:Generator_UserColumnName="SecDirect" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LineID" msprop:Generator_ColumnVarNameInTable="columnLineID" msprop:Generator_ColumnPropNameInRow="LineID" msprop:Generator_ColumnPropNameInTable="LineIDColumn" msprop:Generator_UserColumnName="LineID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LineName" msprop:Generator_ColumnVarNameInTable="columnLineName" msprop:Generator_ColumnPropNameInRow="LineName" msprop:Generator_ColumnPropNameInTable="LineNameColumn" msprop:Generator_UserColumnName="LineName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LineOrderNo" msprop:Generator_ColumnVarNameInTable="columnLineOrderNo" msprop:Generator_ColumnPropNameInRow="LineOrderNo" msprop:Generator_ColumnPropNameInTable="LineOrderNoColumn" msprop:Generator_UserColumnName="LineOrderNo" type="xs:int" minOccurs="0" />
+              <xs:element name="GroupID" msprop:Generator_ColumnVarNameInTable="columnGroupID" msprop:Generator_ColumnPropNameInRow="GroupID" msprop:Generator_ColumnPropNameInTable="GroupIDColumn" msprop:Generator_UserColumnName="GroupID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GroupName" msprop:Generator_ColumnVarNameInTable="columnGroupName" msprop:Generator_ColumnPropNameInRow="GroupName" msprop:Generator_ColumnPropNameInTable="GroupNameColumn" msprop:Generator_UserColumnName="GroupName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GroupOrderNo" msprop:Generator_ColumnVarNameInTable="columnGroupOrderNo" msprop:Generator_ColumnPropNameInRow="GroupOrderNo" msprop:Generator_ColumnPropNameInTable="GroupOrderNoColumn" msprop:Generator_UserColumnName="GroupOrderNo" type="xs:int" minOccurs="0" />
+              <xs:element name="TeamID" msprop:Generator_ColumnVarNameInTable="columnTeamID" msprop:Generator_ColumnPropNameInRow="TeamID" msprop:Generator_ColumnPropNameInTable="TeamIDColumn" msprop:Generator_UserColumnName="TeamID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TeamName" msprop:Generator_ColumnVarNameInTable="columnTeamName" msprop:Generator_ColumnPropNameInRow="TeamName" msprop:Generator_ColumnPropNameInTable="TeamNameColumn" msprop:Generator_UserColumnName="TeamName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TeamOrderNo" msprop:Generator_ColumnVarNameInTable="columnTeamOrderNo" msprop:Generator_ColumnPropNameInRow="TeamOrderNo" msprop:Generator_ColumnPropNameInTable="TeamOrderNoColumn" msprop:Generator_UserColumnName="TeamOrderNo" type="xs:int" minOccurs="0" />
+              <xs:element name="PartID" msprop:Generator_ColumnVarNameInTable="columnPartID" msprop:Generator_ColumnPropNameInRow="PartID" msprop:Generator_ColumnPropNameInTable="PartIDColumn" msprop:Generator_UserColumnName="PartID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PartName" msprop:Generator_ColumnVarNameInTable="columnPartName" msprop:Generator_ColumnPropNameInRow="PartName" msprop:Generator_ColumnPropNameInTable="PartNameColumn" msprop:Generator_UserColumnName="PartName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PartOrderNo" msprop:Generator_ColumnVarNameInTable="columnPartOrderNo" msprop:Generator_ColumnPropNameInRow="PartOrderNo" msprop:Generator_ColumnPropNameInTable="PartOrderNoColumn" msprop:Generator_UserColumnName="PartOrderNo" type="xs:int" minOccurs="0" />
+              <xs:element name="PosID" msprop:Generator_ColumnVarNameInTable="columnPosID" msprop:Generator_ColumnPropNameInRow="PosID" msprop:Generator_ColumnPropNameInTable="PosIDColumn" msprop:Generator_UserColumnName="PosID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PosName" msprop:Generator_ColumnVarNameInTable="columnPosName" msprop:Generator_ColumnPropNameInRow="PosName" msprop:Generator_ColumnPropNameInTable="PosNameColumn" msprop:Generator_UserColumnName="PosName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PosOrderNo" msprop:Generator_ColumnVarNameInTable="columnPosOrderNo" msprop:Generator_ColumnPropNameInRow="PosOrderNo" msprop:Generator_ColumnPropNameInTable="PosOrderNoColumn" msprop:Generator_UserColumnName="PosOrderNo" type="xs:int" minOccurs="0" />
+              <xs:element name="BankAccount" msprop:Generator_ColumnVarNameInTable="columnBankAccount" msprop:Generator_ColumnPropNameInRow="BankAccount" msprop:Generator_ColumnPropNameInTable="BankAccountColumn" msprop:Generator_UserColumnName="BankAccount" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BankID" msprop:Generator_ColumnVarNameInTable="columnBankID" msprop:Generator_ColumnPropNameInRow="BankID" msprop:Generator_ColumnPropNameInTable="BankIDColumn" msprop:Generator_UserColumnName="BankID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BankName" msprop:Generator_ColumnVarNameInTable="columnBankName" msprop:Generator_ColumnPropNameInRow="BankName" msprop:Generator_ColumnPropNameInTable="BankNameColumn" msprop:Generator_UserColumnName="BankName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BankGroupID" msprop:Generator_ColumnVarNameInTable="columnBankGroupID" msprop:Generator_ColumnPropNameInRow="BankGroupID" msprop:Generator_ColumnPropNameInTable="BankGroupIDColumn" msprop:Generator_UserColumnName="BankGroupID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BankGroupName" msprop:Generator_ColumnVarNameInTable="columnBankGroupName" msprop:Generator_ColumnPropNameInRow="BankGroupName" msprop:Generator_ColumnPropNameInTable="BankGroupNameColumn" msprop:Generator_UserColumnName="BankGroupName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsEmp_New" msprop:Generator_ColumnVarNameInTable="columnIsEmp_New" msprop:Generator_ColumnPropNameInRow="IsEmp_New" msprop:Generator_ColumnPropNameInTable="IsEmp_NewColumn" msprop:Generator_UserColumnName="IsEmp_New" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsEmp_Stop" msprop:Generator_ColumnVarNameInTable="columnIsEmp_Stop" msprop:Generator_ColumnPropNameInRow="IsEmp_Stop" msprop:Generator_ColumnPropNameInTable="IsEmp_StopColumn" msprop:Generator_UserColumnName="IsEmp_Stop" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsEmp_ChangeSal" msprop:Generator_ColumnVarNameInTable="columnIsEmp_ChangeSal" msprop:Generator_ColumnPropNameInRow="IsEmp_ChangeSal" msprop:Generator_ColumnPropNameInTable="IsEmp_ChangeSalColumn" msprop:Generator_UserColumnName="IsEmp_ChangeSal" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsEmp_FE" msprop:Generator_ColumnVarNameInTable="columnIsEmp_FE" msprop:Generator_ColumnPropNameInRow="IsEmp_FE" msprop:Generator_ColumnPropNameInTable="IsEmp_FEColumn" msprop:Generator_UserColumnName="IsEmp_FE" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Coe_Basic_O" msprop:Generator_ColumnVarNameInTable="columnCoe_Basic_O" msprop:Generator_ColumnPropNameInRow="Coe_Basic_O" msprop:Generator_ColumnPropNameInTable="Coe_Basic_OColumn" msprop:Generator_UserColumnName="Coe_Basic_O" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Coe_Basic_N" msprop:Generator_ColumnVarNameInTable="columnCoe_Basic_N" msprop:Generator_ColumnPropNameInRow="Coe_Basic_N" msprop:Generator_ColumnPropNameInTable="Coe_Basic_NColumn" msprop:Generator_UserColumnName="Coe_Basic_N" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Coe_Basic" msprop:Generator_ColumnVarNameInTable="columnCoe_Basic" msprop:Generator_ColumnPropNameInRow="Coe_Basic" msprop:Generator_ColumnPropNameInTable="Coe_BasicColumn" msprop:Generator_UserColumnName="Coe_Basic" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BasicSal_Input_O" msprop:Generator_ColumnVarNameInTable="columnBasicSal_Input_O" msprop:Generator_ColumnPropNameInRow="BasicSal_Input_O" msprop:Generator_ColumnPropNameInTable="BasicSal_Input_OColumn" msprop:Generator_UserColumnName="BasicSal_Input_O" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicSal_Input_N" msprop:Generator_ColumnVarNameInTable="columnBasicSal_Input_N" msprop:Generator_ColumnPropNameInRow="BasicSal_Input_N" msprop:Generator_ColumnPropNameInTable="BasicSal_Input_NColumn" msprop:Generator_UserColumnName="BasicSal_Input_N" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicSal_Input" msprop:Generator_ColumnVarNameInTable="columnBasicSal_Input" msprop:Generator_ColumnPropNameInRow="BasicSal_Input" msprop:Generator_ColumnPropNameInTable="BasicSal_InputColumn" msprop:Generator_UserColumnName="BasicSal_Input" type="xs:double" minOccurs="0" />
+              <xs:element name="CurrType_O" msprop:Generator_ColumnVarNameInTable="columnCurrType_O" msprop:Generator_ColumnPropNameInRow="CurrType_O" msprop:Generator_ColumnPropNameInTable="CurrType_OColumn" msprop:Generator_UserColumnName="CurrType_O" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CurrType_N" msprop:Generator_ColumnVarNameInTable="columnCurrType_N" msprop:Generator_ColumnPropNameInRow="CurrType_N" msprop:Generator_ColumnPropNameInTable="CurrType_NColumn" msprop:Generator_UserColumnName="CurrType_N" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CurrType" msprop:Generator_ColumnVarNameInTable="columnCurrType" msprop:Generator_ColumnPropNameInRow="CurrType" msprop:Generator_ColumnPropNameInTable="CurrTypeColumn" msprop:Generator_UserColumnName="CurrType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExRate_O" msprop:Generator_ColumnVarNameInTable="columnExRate_O" msprop:Generator_ColumnPropNameInRow="ExRate_O" msprop:Generator_ColumnPropNameInTable="ExRate_OColumn" msprop:Generator_UserColumnName="ExRate_O" type="xs:double" minOccurs="0" />
+              <xs:element name="ExRate_N" msprop:Generator_ColumnVarNameInTable="columnExRate_N" msprop:Generator_ColumnPropNameInRow="ExRate_N" msprop:Generator_ColumnPropNameInTable="ExRate_NColumn" msprop:Generator_UserColumnName="ExRate_N" type="xs:double" minOccurs="0" />
+              <xs:element name="ExRate" msprop:Generator_ColumnVarNameInTable="columnExRate" msprop:Generator_ColumnPropNameInRow="ExRate" msprop:Generator_ColumnPropNameInTable="ExRateColumn" msprop:Generator_UserColumnName="ExRate" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicSal_O" msprop:Generator_ColumnVarNameInTable="columnBasicSal_O" msprop:Generator_ColumnPropNameInRow="BasicSal_O" msprop:Generator_ColumnPropNameInTable="BasicSal_OColumn" msprop:Generator_UserColumnName="BasicSal_O" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicSal_N" msprop:Generator_ColumnVarNameInTable="columnBasicSal_N" msprop:Generator_ColumnPropNameInRow="BasicSal_N" msprop:Generator_ColumnPropNameInTable="BasicSal_NColumn" msprop:Generator_UserColumnName="BasicSal_N" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicSal" msprop:Generator_ColumnVarNameInTable="columnBasicSal" msprop:Generator_ColumnPropNameInRow="BasicSal" msprop:Generator_ColumnPropNameInTable="BasicSalColumn" msprop:Generator_UserColumnName="BasicSal" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicSal_InsLimit" msprop:Generator_ColumnVarNameInTable="columnBasicSal_InsLimit" msprop:Generator_ColumnPropNameInRow="BasicSal_InsLimit" msprop:Generator_ColumnPropNameInTable="BasicSal_InsLimitColumn" msprop:Generator_UserColumnName="BasicSal_InsLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="Date_ChangeSal" msprop:Generator_ColumnVarNameInTable="columnDate_ChangeSal" msprop:Generator_ColumnPropNameInRow="Date_ChangeSal" msprop:Generator_ColumnPropNameInTable="Date_ChangeSalColumn" msprop:Generator_UserColumnName="Date_ChangeSal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ActualBasicSal" msprop:Generator_ColumnVarNameInTable="columnActualBasicSal" msprop:Generator_ColumnPropNameInRow="ActualBasicSal" msprop:Generator_ColumnPropNameInTable="ActualBasicSalColumn" msprop:Generator_UserColumnName="ActualBasicSal" type="xs:double" minOccurs="0" />
+              <xs:element name="Coe_Paid_O" msprop:Generator_ColumnVarNameInTable="columnCoe_Paid_O" msprop:Generator_ColumnPropNameInRow="Coe_Paid_O" msprop:Generator_ColumnPropNameInTable="Coe_Paid_OColumn" msprop:Generator_UserColumnName="Coe_Paid_O" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Coe_Paid_N" msprop:Generator_ColumnVarNameInTable="columnCoe_Paid_N" msprop:Generator_ColumnPropNameInRow="Coe_Paid_N" msprop:Generator_ColumnPropNameInTable="Coe_Paid_NColumn" msprop:Generator_UserColumnName="Coe_Paid_N" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Coe_Paid" msprop:Generator_ColumnVarNameInTable="columnCoe_Paid" msprop:Generator_ColumnPropNameInRow="Coe_Paid" msprop:Generator_ColumnPropNameInTable="Coe_PaidColumn" msprop:Generator_UserColumnName="Coe_Paid" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BasicSal_Paid_O" msprop:Generator_ColumnVarNameInTable="columnBasicSal_Paid_O" msprop:Generator_ColumnPropNameInRow="BasicSal_Paid_O" msprop:Generator_ColumnPropNameInTable="BasicSal_Paid_OColumn" msprop:Generator_UserColumnName="BasicSal_Paid_O" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicSal_Paid_N" msprop:Generator_ColumnVarNameInTable="columnBasicSal_Paid_N" msprop:Generator_ColumnPropNameInRow="BasicSal_Paid_N" msprop:Generator_ColumnPropNameInTable="BasicSal_Paid_NColumn" msprop:Generator_UserColumnName="BasicSal_Paid_N" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicSal_Paid" msprop:Generator_ColumnVarNameInTable="columnBasicSal_Paid" msprop:Generator_ColumnPropNameInRow="BasicSal_Paid" msprop:Generator_ColumnPropNameInTable="BasicSal_PaidColumn" msprop:Generator_UserColumnName="BasicSal_Paid" type="xs:double" minOccurs="0" />
+              <xs:element name="MinBasicSal" msprop:Generator_ColumnVarNameInTable="columnMinBasicSal" msprop:Generator_ColumnPropNameInRow="MinBasicSal" msprop:Generator_ColumnPropNameInTable="MinBasicSalColumn" msprop:Generator_UserColumnName="MinBasicSal" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicWD" msprop:Generator_ColumnVarNameInTable="columnBasicWD" msprop:Generator_ColumnPropNameInRow="BasicWD" msprop:Generator_ColumnPropNameInTable="BasicWDColumn" msprop:Generator_UserColumnName="BasicWD" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicWH" msprop:Generator_ColumnVarNameInTable="columnBasicWH" msprop:Generator_ColumnPropNameInRow="BasicWH" msprop:Generator_ColumnPropNameInTable="BasicWHColumn" msprop:Generator_UserColumnName="BasicWH" type="xs:double" minOccurs="0" />
+              <xs:element name="WDInMonth" msprop:Generator_ColumnVarNameInTable="columnWDInMonth" msprop:Generator_ColumnPropNameInRow="WDInMonth" msprop:Generator_ColumnPropNameInTable="WDInMonthColumn" msprop:Generator_UserColumnName="WDInMonth" type="xs:double" minOccurs="0" />
+              <xs:element name="ActualWDInMonth" msprop:Generator_ColumnVarNameInTable="columnActualWDInMonth" msprop:Generator_ColumnPropNameInRow="ActualWDInMonth" msprop:Generator_ColumnPropNameInTable="ActualWDInMonthColumn" msprop:Generator_UserColumnName="ActualWDInMonth" type="xs:double" minOccurs="0" />
+              <xs:element name="DaySal_O" msprop:Generator_ColumnVarNameInTable="columnDaySal_O" msprop:Generator_ColumnPropNameInRow="DaySal_O" msprop:Generator_ColumnPropNameInTable="DaySal_OColumn" msprop:Generator_UserColumnName="DaySal_O" type="xs:double" minOccurs="0" />
+              <xs:element name="DaySal_N" msprop:Generator_ColumnVarNameInTable="columnDaySal_N" msprop:Generator_ColumnPropNameInRow="DaySal_N" msprop:Generator_ColumnPropNameInTable="DaySal_NColumn" msprop:Generator_UserColumnName="DaySal_N" type="xs:double" minOccurs="0" />
+              <xs:element name="DaySal" msprop:Generator_ColumnVarNameInTable="columnDaySal" msprop:Generator_ColumnPropNameInRow="DaySal" msprop:Generator_ColumnPropNameInTable="DaySalColumn" msprop:Generator_UserColumnName="DaySal" type="xs:double" minOccurs="0" />
+              <xs:element name="HourSal_O" msprop:Generator_ColumnVarNameInTable="columnHourSal_O" msprop:Generator_ColumnPropNameInRow="HourSal_O" msprop:Generator_ColumnPropNameInTable="HourSal_OColumn" msprop:Generator_UserColumnName="HourSal_O" type="xs:double" minOccurs="0" />
+              <xs:element name="HourSal_N" msprop:Generator_ColumnVarNameInTable="columnHourSal_N" msprop:Generator_ColumnPropNameInRow="HourSal_N" msprop:Generator_ColumnPropNameInTable="HourSal_NColumn" msprop:Generator_UserColumnName="HourSal_N" type="xs:double" minOccurs="0" />
+              <xs:element name="HourSal" msprop:Generator_ColumnVarNameInTable="columnHourSal" msprop:Generator_ColumnPropNameInRow="HourSal" msprop:Generator_ColumnPropNameInTable="HourSalColumn" msprop:Generator_UserColumnName="HourSal" type="xs:double" minOccurs="0" />
+              <xs:element name="WDHour_O" msprop:Generator_ColumnVarNameInTable="columnWDHour_O" msprop:Generator_ColumnPropNameInRow="WDHour_O" msprop:Generator_ColumnPropNameInTable="WDHour_OColumn" msprop:Generator_UserColumnName="WDHour_O" type="xs:double" minOccurs="0" />
+              <xs:element name="WDHour_N" msprop:Generator_ColumnVarNameInTable="columnWDHour_N" msprop:Generator_ColumnPropNameInRow="WDHour_N" msprop:Generator_ColumnPropNameInTable="WDHour_NColumn" msprop:Generator_UserColumnName="WDHour_N" type="xs:double" minOccurs="0" />
+              <xs:element name="WDHour" msprop:Generator_ColumnVarNameInTable="columnWDHour" msprop:Generator_ColumnPropNameInRow="WDHour" msprop:Generator_ColumnPropNameInTable="WDHourColumn" msprop:Generator_UserColumnName="WDHour" type="xs:double" minOccurs="0" />
+              <xs:element name="WD_O" msprop:Generator_ColumnVarNameInTable="columnWD_O" msprop:Generator_ColumnPropNameInRow="WD_O" msprop:Generator_ColumnPropNameInTable="WD_OColumn" msprop:Generator_UserColumnName="WD_O" type="xs:double" minOccurs="0" />
+              <xs:element name="WD_N" msprop:Generator_ColumnVarNameInTable="columnWD_N" msprop:Generator_ColumnPropNameInRow="WD_N" msprop:Generator_ColumnPropNameInTable="WD_NColumn" msprop:Generator_UserColumnName="WD_N" type="xs:double" minOccurs="0" />
+              <xs:element name="WD" msprop:Generator_ColumnVarNameInTable="columnWD" msprop:Generator_ColumnPropNameInRow="WD" msprop:Generator_ColumnPropNameInTable="WDColumn" msprop:Generator_UserColumnName="WD" type="xs:double" minOccurs="0" />
+              <xs:element name="WDDay_O" msprop:Generator_ColumnVarNameInTable="columnWDDay_O" msprop:Generator_ColumnPropNameInRow="WDDay_O" msprop:Generator_ColumnPropNameInTable="WDDay_OColumn" msprop:Generator_UserColumnName="WDDay_O" type="xs:double" minOccurs="0" />
+              <xs:element name="WDDay_N" msprop:Generator_ColumnVarNameInTable="columnWDDay_N" msprop:Generator_ColumnPropNameInRow="WDDay_N" msprop:Generator_ColumnPropNameInTable="WDDay_NColumn" msprop:Generator_UserColumnName="WDDay_N" type="xs:double" minOccurs="0" />
+              <xs:element name="WDDay" msprop:Generator_ColumnVarNameInTable="columnWDDay" msprop:Generator_ColumnPropNameInRow="WDDay" msprop:Generator_ColumnPropNameInTable="WDDayColumn" msprop:Generator_UserColumnName="WDDay" type="xs:double" minOccurs="0" />
+              <xs:element name="WD_All_O" msprop:Generator_ColumnVarNameInTable="columnWD_All_O" msprop:Generator_ColumnPropNameInRow="WD_All_O" msprop:Generator_ColumnPropNameInTable="WD_All_OColumn" msprop:Generator_UserColumnName="WD_All_O" type="xs:double" minOccurs="0" />
+              <xs:element name="WD_All_N" msprop:Generator_ColumnVarNameInTable="columnWD_All_N" msprop:Generator_ColumnPropNameInRow="WD_All_N" msprop:Generator_ColumnPropNameInTable="WD_All_NColumn" msprop:Generator_UserColumnName="WD_All_N" type="xs:double" minOccurs="0" />
+              <xs:element name="WD_All" msprop:Generator_ColumnVarNameInTable="columnWD_All" msprop:Generator_ColumnPropNameInRow="WD_All" msprop:Generator_ColumnPropNameInTable="WD_AllColumn" msprop:Generator_UserColumnName="WD_All" type="xs:double" minOccurs="0" />
+              <xs:element name="WDSal" msprop:Generator_ColumnVarNameInTable="columnWDSal" msprop:Generator_ColumnPropNameInRow="WDSal" msprop:Generator_ColumnPropNameInTable="WDSalColumn" msprop:Generator_UserColumnName="WDSal" type="xs:double" minOccurs="0" />
+              <xs:element name="WNHour_O" msprop:Generator_ColumnVarNameInTable="columnWNHour_O" msprop:Generator_ColumnPropNameInRow="WNHour_O" msprop:Generator_ColumnPropNameInTable="WNHour_OColumn" msprop:Generator_UserColumnName="WNHour_O" type="xs:double" minOccurs="0" />
+              <xs:element name="WNHour_N" msprop:Generator_ColumnVarNameInTable="columnWNHour_N" msprop:Generator_ColumnPropNameInRow="WNHour_N" msprop:Generator_ColumnPropNameInTable="WNHour_NColumn" msprop:Generator_UserColumnName="WNHour_N" type="xs:double" minOccurs="0" />
+              <xs:element name="WNHour" msprop:Generator_ColumnVarNameInTable="columnWNHour" msprop:Generator_ColumnPropNameInRow="WNHour" msprop:Generator_ColumnPropNameInTable="WNHourColumn" msprop:Generator_UserColumnName="WNHour" type="xs:double" minOccurs="0" />
+              <xs:element name="WN_O" msprop:Generator_ColumnVarNameInTable="columnWN_O" msprop:Generator_ColumnPropNameInRow="WN_O" msprop:Generator_ColumnPropNameInTable="WN_OColumn" msprop:Generator_UserColumnName="WN_O" type="xs:double" minOccurs="0" />
+              <xs:element name="WN_N" msprop:Generator_ColumnVarNameInTable="columnWN_N" msprop:Generator_ColumnPropNameInRow="WN_N" msprop:Generator_ColumnPropNameInTable="WN_NColumn" msprop:Generator_UserColumnName="WN_N" type="xs:double" minOccurs="0" />
+              <xs:element name="WN" msprop:Generator_ColumnVarNameInTable="columnWN" msprop:Generator_ColumnPropNameInRow="WN" msprop:Generator_ColumnPropNameInTable="WNColumn" msprop:Generator_UserColumnName="WN" type="xs:double" minOccurs="0" />
+              <xs:element name="WNDay_O" msprop:Generator_ColumnVarNameInTable="columnWNDay_O" msprop:Generator_ColumnPropNameInRow="WNDay_O" msprop:Generator_ColumnPropNameInTable="WNDay_OColumn" msprop:Generator_UserColumnName="WNDay_O" type="xs:double" minOccurs="0" />
+              <xs:element name="WNDay_N" msprop:Generator_ColumnVarNameInTable="columnWNDay_N" msprop:Generator_ColumnPropNameInRow="WNDay_N" msprop:Generator_ColumnPropNameInTable="WNDay_NColumn" msprop:Generator_UserColumnName="WNDay_N" type="xs:double" minOccurs="0" />
+              <xs:element name="WNDay" msprop:Generator_ColumnVarNameInTable="columnWNDay" msprop:Generator_ColumnPropNameInRow="WNDay" msprop:Generator_ColumnPropNameInTable="WNDayColumn" msprop:Generator_UserColumnName="WNDay" type="xs:double" minOccurs="0" />
+              <xs:element name="WN_All_O" msprop:Generator_ColumnVarNameInTable="columnWN_All_O" msprop:Generator_ColumnPropNameInRow="WN_All_O" msprop:Generator_ColumnPropNameInTable="WN_All_OColumn" msprop:Generator_UserColumnName="WN_All_O" type="xs:double" minOccurs="0" />
+              <xs:element name="WN_All_N" msprop:Generator_ColumnVarNameInTable="columnWN_All_N" msprop:Generator_ColumnPropNameInRow="WN_All_N" msprop:Generator_ColumnPropNameInTable="WN_All_NColumn" msprop:Generator_UserColumnName="WN_All_N" type="xs:double" minOccurs="0" />
+              <xs:element name="WN_All" msprop:Generator_ColumnVarNameInTable="columnWN_All" msprop:Generator_ColumnPropNameInRow="WN_All" msprop:Generator_ColumnPropNameInTable="WN_AllColumn" msprop:Generator_UserColumnName="WN_All" type="xs:double" minOccurs="0" />
+              <xs:element name="WNSal" msprop:Generator_ColumnVarNameInTable="columnWNSal" msprop:Generator_ColumnPropNameInRow="WNSal" msprop:Generator_ColumnPropNameInTable="WNSalColumn" msprop:Generator_UserColumnName="WNSal" type="xs:double" minOccurs="0" />
+              <xs:element name="WPH_O" msprop:Generator_ColumnVarNameInTable="columnWPH_O" msprop:Generator_ColumnPropNameInRow="WPH_O" msprop:Generator_ColumnPropNameInTable="WPH_OColumn" msprop:Generator_UserColumnName="WPH_O" type="xs:double" minOccurs="0" />
+              <xs:element name="WPH_N" msprop:Generator_ColumnVarNameInTable="columnWPH_N" msprop:Generator_ColumnPropNameInRow="WPH_N" msprop:Generator_ColumnPropNameInTable="WPH_NColumn" msprop:Generator_UserColumnName="WPH_N" type="xs:double" minOccurs="0" />
+              <xs:element name="WPH" msprop:Generator_ColumnVarNameInTable="columnWPH" msprop:Generator_ColumnPropNameInRow="WPH" msprop:Generator_ColumnPropNameInTable="WPHColumn" msprop:Generator_UserColumnName="WPH" type="xs:double" minOccurs="0" />
+              <xs:element name="WPHSal" msprop:Generator_ColumnVarNameInTable="columnWPHSal" msprop:Generator_ColumnPropNameInRow="WPHSal" msprop:Generator_ColumnPropNameInTable="WPHSalColumn" msprop:Generator_UserColumnName="WPHSal" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Annual_O" msprop:Generator_ColumnVarNameInTable="columnL_Annual_O" msprop:Generator_ColumnPropNameInRow="L_Annual_O" msprop:Generator_ColumnPropNameInTable="L_Annual_OColumn" msprop:Generator_UserColumnName="L_Annual_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Annual_N" msprop:Generator_ColumnVarNameInTable="columnL_Annual_N" msprop:Generator_ColumnPropNameInRow="L_Annual_N" msprop:Generator_ColumnPropNameInTable="L_Annual_NColumn" msprop:Generator_UserColumnName="L_Annual_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Annual" msprop:Generator_ColumnVarNameInTable="columnL_Annual" msprop:Generator_ColumnPropNameInRow="L_Annual" msprop:Generator_ColumnPropNameInTable="L_AnnualColumn" msprop:Generator_UserColumnName="L_Annual" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Annual_Paid_O" msprop:Generator_ColumnVarNameInTable="columnL_Annual_Paid_O" msprop:Generator_ColumnPropNameInRow="L_Annual_Paid_O" msprop:Generator_ColumnPropNameInTable="L_Annual_Paid_OColumn" msprop:Generator_UserColumnName="L_Annual_Paid_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Annual_Paid_N" msprop:Generator_ColumnVarNameInTable="columnL_Annual_Paid_N" msprop:Generator_ColumnPropNameInRow="L_Annual_Paid_N" msprop:Generator_ColumnPropNameInTable="L_Annual_Paid_NColumn" msprop:Generator_UserColumnName="L_Annual_Paid_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Annual_Paid" msprop:Generator_ColumnVarNameInTable="columnL_Annual_Paid" msprop:Generator_ColumnPropNameInRow="L_Annual_Paid" msprop:Generator_ColumnPropNameInTable="L_Annual_PaidColumn" msprop:Generator_UserColumnName="L_Annual_Paid" type="xs:double" minOccurs="0" />
+              <xs:element name="LSal_Annual" msprop:Generator_ColumnVarNameInTable="columnLSal_Annual" msprop:Generator_ColumnPropNameInRow="LSal_Annual" msprop:Generator_ColumnPropNameInTable="LSal_AnnualColumn" msprop:Generator_UserColumnName="LSal_Annual" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Maternity" msprop:Generator_ColumnVarNameInTable="columnL_Maternity" msprop:Generator_ColumnPropNameInRow="L_Maternity" msprop:Generator_ColumnPropNameInTable="L_MaternityColumn" msprop:Generator_UserColumnName="L_Maternity" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paternity" msprop:Generator_ColumnVarNameInTable="columnL_Paternity" msprop:Generator_ColumnPropNameInRow="L_Paternity" msprop:Generator_ColumnPropNameInTable="L_PaternityColumn" msprop:Generator_UserColumnName="L_Paternity" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Wait_O" msprop:Generator_ColumnVarNameInTable="columnL_Wait_O" msprop:Generator_ColumnPropNameInRow="L_Wait_O" msprop:Generator_ColumnPropNameInTable="L_Wait_OColumn" msprop:Generator_UserColumnName="L_Wait_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Wait_N" msprop:Generator_ColumnVarNameInTable="columnL_Wait_N" msprop:Generator_ColumnPropNameInRow="L_Wait_N" msprop:Generator_ColumnPropNameInTable="L_Wait_NColumn" msprop:Generator_UserColumnName="L_Wait_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Wait" msprop:Generator_ColumnVarNameInTable="columnL_Wait" msprop:Generator_ColumnPropNameInRow="L_Wait" msprop:Generator_ColumnPropNameInTable="L_WaitColumn" msprop:Generator_UserColumnName="L_Wait" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Wait_Paid_O" msprop:Generator_ColumnVarNameInTable="columnL_Wait_Paid_O" msprop:Generator_ColumnPropNameInRow="L_Wait_Paid_O" msprop:Generator_ColumnPropNameInTable="L_Wait_Paid_OColumn" msprop:Generator_UserColumnName="L_Wait_Paid_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Wait_Paid_N" msprop:Generator_ColumnVarNameInTable="columnL_Wait_Paid_N" msprop:Generator_ColumnPropNameInRow="L_Wait_Paid_N" msprop:Generator_ColumnPropNameInTable="L_Wait_Paid_NColumn" msprop:Generator_UserColumnName="L_Wait_Paid_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Wait_Paid" msprop:Generator_ColumnVarNameInTable="columnL_Wait_Paid" msprop:Generator_ColumnPropNameInRow="L_Wait_Paid" msprop:Generator_ColumnPropNameInTable="L_Wait_PaidColumn" msprop:Generator_UserColumnName="L_Wait_Paid" type="xs:double" minOccurs="0" />
+              <xs:element name="LSal_Wait" msprop:Generator_ColumnVarNameInTable="columnLSal_Wait" msprop:Generator_ColumnPropNameInRow="LSal_Wait" msprop:Generator_ColumnPropNameInTable="LSal_WaitColumn" msprop:Generator_UserColumnName="LSal_Wait" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Sick_O" msprop:Generator_ColumnVarNameInTable="columnL_Sick_O" msprop:Generator_ColumnPropNameInRow="L_Sick_O" msprop:Generator_ColumnPropNameInTable="L_Sick_OColumn" msprop:Generator_UserColumnName="L_Sick_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Sick_N" msprop:Generator_ColumnVarNameInTable="columnL_Sick_N" msprop:Generator_ColumnPropNameInRow="L_Sick_N" msprop:Generator_ColumnPropNameInTable="L_Sick_NColumn" msprop:Generator_UserColumnName="L_Sick_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Sick" msprop:Generator_ColumnVarNameInTable="columnL_Sick" msprop:Generator_ColumnPropNameInRow="L_Sick" msprop:Generator_ColumnPropNameInTable="L_SickColumn" msprop:Generator_UserColumnName="L_Sick" type="xs:double" minOccurs="0" />
+              <xs:element name="L_SickLong_O" msprop:Generator_ColumnVarNameInTable="columnL_SickLong_O" msprop:Generator_ColumnPropNameInRow="L_SickLong_O" msprop:Generator_ColumnPropNameInTable="L_SickLong_OColumn" msprop:Generator_UserColumnName="L_SickLong_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_SickLong_N" msprop:Generator_ColumnVarNameInTable="columnL_SickLong_N" msprop:Generator_ColumnPropNameInRow="L_SickLong_N" msprop:Generator_ColumnPropNameInTable="L_SickLong_NColumn" msprop:Generator_UserColumnName="L_SickLong_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_SickLong" msprop:Generator_ColumnVarNameInTable="columnL_SickLong" msprop:Generator_ColumnPropNameInRow="L_SickLong" msprop:Generator_ColumnPropNameInTable="L_SickLongColumn" msprop:Generator_UserColumnName="L_SickLong" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Sick_All_O" msprop:Generator_ColumnVarNameInTable="columnL_Sick_All_O" msprop:Generator_ColumnPropNameInRow="L_Sick_All_O" msprop:Generator_ColumnPropNameInTable="L_Sick_All_OColumn" msprop:Generator_UserColumnName="L_Sick_All_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Sick_All_N" msprop:Generator_ColumnVarNameInTable="columnL_Sick_All_N" msprop:Generator_ColumnPropNameInRow="L_Sick_All_N" msprop:Generator_ColumnPropNameInTable="L_Sick_All_NColumn" msprop:Generator_UserColumnName="L_Sick_All_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Sick_All" msprop:Generator_ColumnVarNameInTable="columnL_Sick_All" msprop:Generator_ColumnPropNameInRow="L_Sick_All" msprop:Generator_ColumnPropNameInTable="L_Sick_AllColumn" msprop:Generator_UserColumnName="L_Sick_All" type="xs:double" minOccurs="0" />
+              <xs:element name="LSal_Sick" msprop:Generator_ColumnVarNameInTable="columnLSal_Sick" msprop:Generator_ColumnPropNameInRow="LSal_Sick" msprop:Generator_ColumnPropNameInTable="LSal_SickColumn" msprop:Generator_UserColumnName="LSal_Sick" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Private_O" msprop:Generator_ColumnVarNameInTable="columnL_Private_O" msprop:Generator_ColumnPropNameInRow="L_Private_O" msprop:Generator_ColumnPropNameInTable="L_Private_OColumn" msprop:Generator_UserColumnName="L_Private_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Private_N" msprop:Generator_ColumnVarNameInTable="columnL_Private_N" msprop:Generator_ColumnPropNameInRow="L_Private_N" msprop:Generator_ColumnPropNameInTable="L_Private_NColumn" msprop:Generator_UserColumnName="L_Private_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Private" msprop:Generator_ColumnVarNameInTable="columnL_Private" msprop:Generator_ColumnPropNameInRow="L_Private" msprop:Generator_ColumnPropNameInTable="L_PrivateColumn" msprop:Generator_UserColumnName="L_Private" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Business_O" msprop:Generator_ColumnVarNameInTable="columnL_Business_O" msprop:Generator_ColumnPropNameInRow="L_Business_O" msprop:Generator_ColumnPropNameInTable="L_Business_OColumn" msprop:Generator_UserColumnName="L_Business_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Business_N" msprop:Generator_ColumnVarNameInTable="columnL_Business_N" msprop:Generator_ColumnPropNameInRow="L_Business_N" msprop:Generator_ColumnPropNameInTable="L_Business_NColumn" msprop:Generator_UserColumnName="L_Business_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Business" msprop:Generator_ColumnVarNameInTable="columnL_Business" msprop:Generator_ColumnPropNameInRow="L_Business" msprop:Generator_ColumnPropNameInTable="L_BusinessColumn" msprop:Generator_UserColumnName="L_Business" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Unpaid" msprop:Generator_ColumnVarNameInTable="columnL_Unpaid" msprop:Generator_ColumnPropNameInRow="L_Unpaid" msprop:Generator_ColumnPropNameInTable="L_UnpaidColumn" msprop:Generator_UserColumnName="L_Unpaid" type="xs:double" minOccurs="0" />
+              <xs:element name="LSal_Unpaid" msprop:Generator_ColumnVarNameInTable="columnLSal_Unpaid" msprop:Generator_ColumnPropNameInRow="LSal_Unpaid" msprop:Generator_ColumnPropNameInTable="LSal_UnpaidColumn" msprop:Generator_UserColumnName="LSal_Unpaid" type="xs:double" minOccurs="0" />
+              <xs:element name="L_NotPermit" msprop:Generator_ColumnVarNameInTable="columnL_NotPermit" msprop:Generator_ColumnPropNameInRow="L_NotPermit" msprop:Generator_ColumnPropNameInTable="L_NotPermitColumn" msprop:Generator_UserColumnName="L_NotPermit" type="xs:double" minOccurs="0" />
+              <xs:element name="LSal_NotPermit" msprop:Generator_ColumnVarNameInTable="columnLSal_NotPermit" msprop:Generator_ColumnPropNameInRow="LSal_NotPermit" msprop:Generator_ColumnPropNameInTable="LSal_NotPermitColumn" msprop:Generator_UserColumnName="LSal_NotPermit" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Policy" msprop:Generator_ColumnVarNameInTable="columnL_Policy" msprop:Generator_ColumnPropNameInRow="L_Policy" msprop:Generator_ColumnPropNameInTable="L_PolicyColumn" msprop:Generator_UserColumnName="L_Policy" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Policy_All" msprop:Generator_ColumnVarNameInTable="columnL_Policy_All" msprop:Generator_ColumnPropNameInRow="L_Policy_All" msprop:Generator_ColumnPropNameInTable="L_Policy_AllColumn" msprop:Generator_UserColumnName="L_Policy_All" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Wedding" msprop:Generator_ColumnVarNameInTable="columnL_Wedding" msprop:Generator_ColumnPropNameInRow="L_Wedding" msprop:Generator_ColumnPropNameInTable="L_WeddingColumn" msprop:Generator_UserColumnName="L_Wedding" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Funeral" msprop:Generator_ColumnVarNameInTable="columnL_Funeral" msprop:Generator_ColumnPropNameInRow="L_Funeral" msprop:Generator_ColumnPropNameInTable="L_FuneralColumn" msprop:Generator_UserColumnName="L_Funeral" type="xs:double" minOccurs="0" />
+              <xs:element name="L_ChildSick" msprop:Generator_ColumnVarNameInTable="columnL_ChildSick" msprop:Generator_ColumnPropNameInRow="L_ChildSick" msprop:Generator_ColumnPropNameInTable="L_ChildSickColumn" msprop:Generator_UserColumnName="L_ChildSick" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Compensate" msprop:Generator_ColumnVarNameInTable="columnL_Compensate" msprop:Generator_ColumnPropNameInRow="L_Compensate" msprop:Generator_ColumnPropNameInTable="L_CompensateColumn" msprop:Generator_UserColumnName="L_Compensate" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_O" msprop:Generator_ColumnVarNameInTable="columnL_Paid_O" msprop:Generator_ColumnPropNameInRow="L_Paid_O" msprop:Generator_ColumnPropNameInTable="L_Paid_OColumn" msprop:Generator_UserColumnName="L_Paid_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_N" msprop:Generator_ColumnVarNameInTable="columnL_Paid_N" msprop:Generator_ColumnPropNameInRow="L_Paid_N" msprop:Generator_ColumnPropNameInTable="L_Paid_NColumn" msprop:Generator_UserColumnName="L_Paid_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid" msprop:Generator_ColumnVarNameInTable="columnL_Paid" msprop:Generator_ColumnPropNameInRow="L_Paid" msprop:Generator_ColumnPropNameInTable="L_PaidColumn" msprop:Generator_UserColumnName="L_Paid" type="xs:double" minOccurs="0" />
+              <xs:element name="LSal_Paid" msprop:Generator_ColumnVarNameInTable="columnLSal_Paid" msprop:Generator_ColumnPropNameInRow="LSal_Paid" msprop:Generator_ColumnPropNameInTable="LSal_PaidColumn" msprop:Generator_UserColumnName="LSal_Paid" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_100_O" msprop:Generator_ColumnVarNameInTable="columnL_Paid_100_O" msprop:Generator_ColumnPropNameInRow="L_Paid_100_O" msprop:Generator_ColumnPropNameInTable="L_Paid_100_OColumn" msprop:Generator_UserColumnName="L_Paid_100_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_100_N" msprop:Generator_ColumnVarNameInTable="columnL_Paid_100_N" msprop:Generator_ColumnPropNameInRow="L_Paid_100_N" msprop:Generator_ColumnPropNameInTable="L_Paid_100_NColumn" msprop:Generator_UserColumnName="L_Paid_100_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_100" msprop:Generator_ColumnVarNameInTable="columnL_Paid_100" msprop:Generator_ColumnPropNameInRow="L_Paid_100" msprop:Generator_ColumnPropNameInTable="L_Paid_100Column" msprop:Generator_UserColumnName="L_Paid_100" type="xs:double" minOccurs="0" />
+              <xs:element name="LSal_Paid_100" msprop:Generator_ColumnVarNameInTable="columnLSal_Paid_100" msprop:Generator_ColumnPropNameInRow="LSal_Paid_100" msprop:Generator_ColumnPropNameInTable="LSal_Paid_100Column" msprop:Generator_UserColumnName="LSal_Paid_100" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_Not100_O" msprop:Generator_ColumnVarNameInTable="columnL_Paid_Not100_O" msprop:Generator_ColumnPropNameInRow="L_Paid_Not100_O" msprop:Generator_ColumnPropNameInTable="L_Paid_Not100_OColumn" msprop:Generator_UserColumnName="L_Paid_Not100_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_Not100_N" msprop:Generator_ColumnVarNameInTable="columnL_Paid_Not100_N" msprop:Generator_ColumnPropNameInRow="L_Paid_Not100_N" msprop:Generator_ColumnPropNameInTable="L_Paid_Not100_NColumn" msprop:Generator_UserColumnName="L_Paid_Not100_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_Not100" msprop:Generator_ColumnVarNameInTable="columnL_Paid_Not100" msprop:Generator_ColumnPropNameInRow="L_Paid_Not100" msprop:Generator_ColumnPropNameInTable="L_Paid_Not100Column" msprop:Generator_UserColumnName="L_Paid_Not100" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_Not100_Paid_O" msprop:Generator_ColumnVarNameInTable="columnL_Paid_Not100_Paid_O" msprop:Generator_ColumnPropNameInRow="L_Paid_Not100_Paid_O" msprop:Generator_ColumnPropNameInTable="L_Paid_Not100_Paid_OColumn" msprop:Generator_UserColumnName="L_Paid_Not100_Paid_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_Not100_Paid_N" msprop:Generator_ColumnVarNameInTable="columnL_Paid_Not100_Paid_N" msprop:Generator_ColumnPropNameInRow="L_Paid_Not100_Paid_N" msprop:Generator_ColumnPropNameInTable="L_Paid_Not100_Paid_NColumn" msprop:Generator_UserColumnName="L_Paid_Not100_Paid_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paid_Not100_Paid" msprop:Generator_ColumnVarNameInTable="columnL_Paid_Not100_Paid" msprop:Generator_ColumnPropNameInRow="L_Paid_Not100_Paid" msprop:Generator_ColumnPropNameInTable="L_Paid_Not100_PaidColumn" msprop:Generator_UserColumnName="L_Paid_Not100_Paid" type="xs:double" minOccurs="0" />
+              <xs:element name="LSal_Paid_Not100" msprop:Generator_ColumnVarNameInTable="columnLSal_Paid_Not100" msprop:Generator_ColumnPropNameInRow="LSal_Paid_Not100" msprop:Generator_ColumnPropNameInTable="LSal_Paid_Not100Column" msprop:Generator_UserColumnName="LSal_Paid_Not100" type="xs:double" minOccurs="0" />
+              <xs:element name="L_NotPaid_O" msprop:Generator_ColumnVarNameInTable="columnL_NotPaid_O" msprop:Generator_ColumnPropNameInRow="L_NotPaid_O" msprop:Generator_ColumnPropNameInTable="L_NotPaid_OColumn" msprop:Generator_UserColumnName="L_NotPaid_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_NotPaid_N" msprop:Generator_ColumnVarNameInTable="columnL_NotPaid_N" msprop:Generator_ColumnPropNameInRow="L_NotPaid_N" msprop:Generator_ColumnPropNameInTable="L_NotPaid_NColumn" msprop:Generator_UserColumnName="L_NotPaid_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_NotPaid" msprop:Generator_ColumnVarNameInTable="columnL_NotPaid" msprop:Generator_ColumnPropNameInRow="L_NotPaid" msprop:Generator_ColumnPropNameInTable="L_NotPaidColumn" msprop:Generator_UserColumnName="L_NotPaid" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Absent_O" msprop:Generator_ColumnVarNameInTable="columnL_Absent_O" msprop:Generator_ColumnPropNameInRow="L_Absent_O" msprop:Generator_ColumnPropNameInTable="L_Absent_OColumn" msprop:Generator_UserColumnName="L_Absent_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Absent_N" msprop:Generator_ColumnVarNameInTable="columnL_Absent_N" msprop:Generator_ColumnPropNameInRow="L_Absent_N" msprop:Generator_ColumnPropNameInTable="L_Absent_NColumn" msprop:Generator_UserColumnName="L_Absent_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Absent" msprop:Generator_ColumnVarNameInTable="columnL_Absent" msprop:Generator_ColumnPropNameInRow="L_Absent" msprop:Generator_ColumnPropNameInTable="L_AbsentColumn" msprop:Generator_UserColumnName="L_Absent" type="xs:double" minOccurs="0" />
+              <xs:element name="DeductMin_O" msprop:Generator_ColumnVarNameInTable="columnDeductMin_O" msprop:Generator_ColumnPropNameInRow="DeductMin_O" msprop:Generator_ColumnPropNameInTable="DeductMin_OColumn" msprop:Generator_UserColumnName="DeductMin_O" type="xs:double" minOccurs="0" />
+              <xs:element name="DeductMin_N" msprop:Generator_ColumnVarNameInTable="columnDeductMin_N" msprop:Generator_ColumnPropNameInRow="DeductMin_N" msprop:Generator_ColumnPropNameInTable="DeductMin_NColumn" msprop:Generator_UserColumnName="DeductMin_N" type="xs:double" minOccurs="0" />
+              <xs:element name="DeductMin" msprop:Generator_ColumnVarNameInTable="columnDeductMin" msprop:Generator_ColumnPropNameInRow="DeductMin" msprop:Generator_ColumnPropNameInTable="DeductMinColumn" msprop:Generator_UserColumnName="DeductMin" type="xs:double" minOccurs="0" />
+              <xs:element name="DeductDay" msprop:Generator_ColumnVarNameInTable="columnDeductDay" msprop:Generator_ColumnPropNameInRow="DeductDay" msprop:Generator_ColumnPropNameInTable="DeductDayColumn" msprop:Generator_UserColumnName="DeductDay" type="xs:double" minOccurs="0" />
+              <xs:element name="L_NotWD" msprop:Generator_ColumnVarNameInTable="columnL_NotWD" msprop:Generator_ColumnPropNameInRow="L_NotWD" msprop:Generator_ColumnPropNameInTable="L_NotWDColumn" msprop:Generator_UserColumnName="L_NotWD" type="xs:double" minOccurs="0" />
+              <xs:element name="LSal_NotWD" msprop:Generator_ColumnVarNameInTable="columnLSal_NotWD" msprop:Generator_ColumnPropNameInRow="LSal_NotWD" msprop:Generator_ColumnPropNameInTable="LSal_NotWDColumn" msprop:Generator_UserColumnName="LSal_NotWD" type="xs:double" minOccurs="0" />
+              <xs:element name="ActualWD" msprop:Generator_ColumnVarNameInTable="columnActualWD" msprop:Generator_ColumnPropNameInRow="ActualWD" msprop:Generator_ColumnPropNameInTable="ActualWDColumn" msprop:Generator_UserColumnName="ActualWD" type="xs:double" minOccurs="0" />
+              <xs:element name="WSunday" msprop:Generator_ColumnVarNameInTable="columnWSunday" msprop:Generator_ColumnPropNameInRow="WSunday" msprop:Generator_ColumnPropNameInTable="WSundayColumn" msprop:Generator_UserColumnName="WSunday" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalWD" msprop:Generator_ColumnVarNameInTable="columnTotalWD" msprop:Generator_ColumnPropNameInRow="TotalWD" msprop:Generator_ColumnPropNameInTable="TotalWDColumn" msprop:Generator_UserColumnName="TotalWD" type="xs:double" minOccurs="0" />
+              <xs:element name="MealDay" msprop:Generator_ColumnVarNameInTable="columnMealDay" msprop:Generator_ColumnPropNameInRow="MealDay" msprop:Generator_ColumnPropNameInTable="MealDayColumn" msprop:Generator_UserColumnName="MealDay" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15_O" msprop:Generator_ColumnVarNameInTable="columnOT15_O" msprop:Generator_ColumnPropNameInRow="OT15_O" msprop:Generator_ColumnPropNameInTable="OT15_OColumn" msprop:Generator_UserColumnName="OT15_O" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15_N" msprop:Generator_ColumnVarNameInTable="columnOT15_N" msprop:Generator_ColumnPropNameInRow="OT15_N" msprop:Generator_ColumnPropNameInTable="OT15_NColumn" msprop:Generator_UserColumnName="OT15_N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15" msprop:Generator_ColumnVarNameInTable="columnOT15" msprop:Generator_ColumnPropNameInRow="OT15" msprop:Generator_ColumnPropNameInTable="OT15Column" msprop:Generator_UserColumnName="OT15" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15Day" msprop:Generator_ColumnVarNameInTable="columnOT15Day" msprop:Generator_ColumnPropNameInRow="OT15Day" msprop:Generator_ColumnPropNameInTable="OT15DayColumn" msprop:Generator_UserColumnName="OT15Day" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15Sal" msprop:Generator_ColumnVarNameInTable="columnOT15Sal" msprop:Generator_ColumnPropNameInRow="OT15Sal" msprop:Generator_ColumnPropNameInTable="OT15SalColumn" msprop:Generator_UserColumnName="OT15Sal" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_O" msprop:Generator_ColumnVarNameInTable="columnOT15N_O" msprop:Generator_ColumnPropNameInRow="OT15N_O" msprop:Generator_ColumnPropNameInTable="OT15N_OColumn" msprop:Generator_UserColumnName="OT15N_O" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_N" msprop:Generator_ColumnVarNameInTable="columnOT15N_N" msprop:Generator_ColumnPropNameInRow="OT15N_N" msprop:Generator_ColumnPropNameInTable="OT15N_NColumn" msprop:Generator_UserColumnName="OT15N_N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N" msprop:Generator_ColumnVarNameInTable="columnOT15N" msprop:Generator_ColumnPropNameInRow="OT15N" msprop:Generator_ColumnPropNameInTable="OT15NColumn" msprop:Generator_UserColumnName="OT15N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15NSal" msprop:Generator_ColumnVarNameInTable="columnOT15NSal" msprop:Generator_ColumnPropNameInRow="OT15NSal" msprop:Generator_ColumnPropNameInTable="OT15NSalColumn" msprop:Generator_UserColumnName="OT15NSal" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15_All" msprop:Generator_ColumnVarNameInTable="columnOT15_All" msprop:Generator_ColumnPropNameInRow="OT15_All" msprop:Generator_ColumnPropNameInTable="OT15_AllColumn" msprop:Generator_UserColumnName="OT15_All" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20_O" msprop:Generator_ColumnVarNameInTable="columnOT20_O" msprop:Generator_ColumnPropNameInRow="OT20_O" msprop:Generator_ColumnPropNameInTable="OT20_OColumn" msprop:Generator_UserColumnName="OT20_O" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20_N" msprop:Generator_ColumnVarNameInTable="columnOT20_N" msprop:Generator_ColumnPropNameInRow="OT20_N" msprop:Generator_ColumnPropNameInTable="OT20_NColumn" msprop:Generator_UserColumnName="OT20_N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20" msprop:Generator_ColumnVarNameInTable="columnOT20" msprop:Generator_ColumnPropNameInRow="OT20" msprop:Generator_ColumnPropNameInTable="OT20Column" msprop:Generator_UserColumnName="OT20" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20Day" msprop:Generator_ColumnVarNameInTable="columnOT20Day" msprop:Generator_ColumnPropNameInRow="OT20Day" msprop:Generator_ColumnPropNameInTable="OT20DayColumn" msprop:Generator_UserColumnName="OT20Day" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20Sal" msprop:Generator_ColumnVarNameInTable="columnOT20Sal" msprop:Generator_ColumnPropNameInRow="OT20Sal" msprop:Generator_ColumnPropNameInTable="OT20SalColumn" msprop:Generator_UserColumnName="OT20Sal" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20N_O" msprop:Generator_ColumnVarNameInTable="columnOT20N_O" msprop:Generator_ColumnPropNameInRow="OT20N_O" msprop:Generator_ColumnPropNameInTable="OT20N_OColumn" msprop:Generator_UserColumnName="OT20N_O" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20N_N" msprop:Generator_ColumnVarNameInTable="columnOT20N_N" msprop:Generator_ColumnPropNameInRow="OT20N_N" msprop:Generator_ColumnPropNameInTable="OT20N_NColumn" msprop:Generator_UserColumnName="OT20N_N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20N" msprop:Generator_ColumnVarNameInTable="columnOT20N" msprop:Generator_ColumnPropNameInRow="OT20N" msprop:Generator_ColumnPropNameInTable="OT20NColumn" msprop:Generator_UserColumnName="OT20N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20NSal" msprop:Generator_ColumnVarNameInTable="columnOT20NSal" msprop:Generator_ColumnPropNameInRow="OT20NSal" msprop:Generator_ColumnPropNameInTable="OT20NSalColumn" msprop:Generator_UserColumnName="OT20NSal" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20_All" msprop:Generator_ColumnVarNameInTable="columnOT20_All" msprop:Generator_ColumnPropNameInRow="OT20_All" msprop:Generator_ColumnPropNameInTable="OT20_AllColumn" msprop:Generator_UserColumnName="OT20_All" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30_O" msprop:Generator_ColumnVarNameInTable="columnOT30_O" msprop:Generator_ColumnPropNameInRow="OT30_O" msprop:Generator_ColumnPropNameInTable="OT30_OColumn" msprop:Generator_UserColumnName="OT30_O" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30_N" msprop:Generator_ColumnVarNameInTable="columnOT30_N" msprop:Generator_ColumnPropNameInRow="OT30_N" msprop:Generator_ColumnPropNameInTable="OT30_NColumn" msprop:Generator_UserColumnName="OT30_N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30" msprop:Generator_ColumnVarNameInTable="columnOT30" msprop:Generator_ColumnPropNameInRow="OT30" msprop:Generator_ColumnPropNameInTable="OT30Column" msprop:Generator_UserColumnName="OT30" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30Day" msprop:Generator_ColumnVarNameInTable="columnOT30Day" msprop:Generator_ColumnPropNameInRow="OT30Day" msprop:Generator_ColumnPropNameInTable="OT30DayColumn" msprop:Generator_UserColumnName="OT30Day" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30Sal" msprop:Generator_ColumnVarNameInTable="columnOT30Sal" msprop:Generator_ColumnPropNameInRow="OT30Sal" msprop:Generator_ColumnPropNameInTable="OT30SalColumn" msprop:Generator_UserColumnName="OT30Sal" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30N_O" msprop:Generator_ColumnVarNameInTable="columnOT30N_O" msprop:Generator_ColumnPropNameInRow="OT30N_O" msprop:Generator_ColumnPropNameInTable="OT30N_OColumn" msprop:Generator_UserColumnName="OT30N_O" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30N_N" msprop:Generator_ColumnVarNameInTable="columnOT30N_N" msprop:Generator_ColumnPropNameInRow="OT30N_N" msprop:Generator_ColumnPropNameInTable="OT30N_NColumn" msprop:Generator_UserColumnName="OT30N_N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30N" msprop:Generator_ColumnVarNameInTable="columnOT30N" msprop:Generator_ColumnPropNameInRow="OT30N" msprop:Generator_ColumnPropNameInTable="OT30NColumn" msprop:Generator_UserColumnName="OT30N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30NSal" msprop:Generator_ColumnVarNameInTable="columnOT30NSal" msprop:Generator_ColumnPropNameInRow="OT30NSal" msprop:Generator_ColumnPropNameInTable="OT30NSalColumn" msprop:Generator_UserColumnName="OT30NSal" type="xs:double" minOccurs="0" />
+              <xs:element name="OTNight_All" msprop:Generator_ColumnVarNameInTable="columnOTNight_All" msprop:Generator_ColumnPropNameInRow="OTNight_All" msprop:Generator_ColumnPropNameInTable="OTNight_AllColumn" msprop:Generator_UserColumnName="OTNight_All" type="xs:double" minOccurs="0" />
+              <xs:element name="OTHour" msprop:Generator_ColumnVarNameInTable="columnOTHour" msprop:Generator_ColumnPropNameInRow="OTHour" msprop:Generator_ColumnPropNameInTable="OTHourColumn" msprop:Generator_UserColumnName="OTHour" type="xs:double" minOccurs="0" />
+              <xs:element name="OTHour_Tax" msprop:Generator_ColumnVarNameInTable="columnOTHour_Tax" msprop:Generator_ColumnPropNameInRow="OTHour_Tax" msprop:Generator_ColumnPropNameInTable="OTHour_TaxColumn" msprop:Generator_UserColumnName="OTHour_Tax" type="xs:double" minOccurs="0" />
+              <xs:element name="OTNightSal" msprop:Generator_ColumnVarNameInTable="columnOTNightSal" msprop:Generator_ColumnPropNameInRow="OTNightSal" msprop:Generator_ColumnPropNameInTable="OTNightSalColumn" msprop:Generator_UserColumnName="OTNightSal" type="xs:double" minOccurs="0" />
+              <xs:element name="OT05_O" msprop:Generator_ColumnVarNameInTable="columnOT05_O" msprop:Generator_ColumnPropNameInRow="OT05_O" msprop:Generator_ColumnPropNameInTable="OT05_OColumn" msprop:Generator_UserColumnName="OT05_O" type="xs:double" minOccurs="0" />
+              <xs:element name="OT05_N" msprop:Generator_ColumnVarNameInTable="columnOT05_N" msprop:Generator_ColumnPropNameInRow="OT05_N" msprop:Generator_ColumnPropNameInTable="OT05_NColumn" msprop:Generator_UserColumnName="OT05_N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT05" msprop:Generator_ColumnVarNameInTable="columnOT05" msprop:Generator_ColumnPropNameInRow="OT05" msprop:Generator_ColumnPropNameInTable="OT05Column" msprop:Generator_UserColumnName="OT05" type="xs:double" minOccurs="0" />
+              <xs:element name="OT05Sal" msprop:Generator_ColumnVarNameInTable="columnOT05Sal" msprop:Generator_ColumnPropNameInRow="OT05Sal" msprop:Generator_ColumnPropNameInTable="OT05SalColumn" msprop:Generator_UserColumnName="OT05Sal" type="xs:double" minOccurs="0" />
+              <xs:element name="OTSal" msprop:Generator_ColumnVarNameInTable="columnOTSal" msprop:Generator_ColumnPropNameInRow="OTSal" msprop:Generator_ColumnPropNameInTable="OTSalColumn" msprop:Generator_UserColumnName="OTSal" type="xs:double" minOccurs="0" />
+              <xs:element name="OTSal_Tax" msprop:Generator_ColumnVarNameInTable="columnOTSal_Tax" msprop:Generator_ColumnPropNameInRow="OTSal_Tax" msprop:Generator_ColumnPropNameInTable="OTSal_TaxColumn" msprop:Generator_UserColumnName="OTSal_Tax" type="xs:double" minOccurs="0" />
+              <xs:element name="AD_TN" msprop:Generator_ColumnVarNameInTable="columnAD_TN" msprop:Generator_ColumnPropNameInRow="AD_TN" msprop:Generator_ColumnPropNameInTable="AD_TNColumn" msprop:Generator_UserColumnName="AD_TN" type="xs:double" minOccurs="0" />
+              <xs:element name="AD_Loss" msprop:Generator_ColumnVarNameInTable="columnAD_Loss" msprop:Generator_ColumnPropNameInRow="AD_Loss" msprop:Generator_ColumnPropNameInTable="AD_LossColumn" msprop:Generator_UserColumnName="AD_Loss" type="xs:double" minOccurs="0" />
+              <xs:element name="AD_Uniform" msprop:Generator_ColumnVarNameInTable="columnAD_Uniform" msprop:Generator_ColumnPropNameInRow="AD_Uniform" msprop:Generator_ColumnPropNameInTable="AD_UniformColumn" msprop:Generator_UserColumnName="AD_Uniform" type="xs:double" minOccurs="0" />
+              <xs:element name="AddValue_Tax" msprop:Generator_ColumnVarNameInTable="columnAddValue_Tax" msprop:Generator_ColumnPropNameInRow="AddValue_Tax" msprop:Generator_ColumnPropNameInTable="AddValue_TaxColumn" msprop:Generator_UserColumnName="AddValue_Tax" type="xs:double" minOccurs="0" />
+              <xs:element name="AddValue_NonTax" msprop:Generator_ColumnVarNameInTable="columnAddValue_NonTax" msprop:Generator_ColumnPropNameInRow="AddValue_NonTax" msprop:Generator_ColumnPropNameInTable="AddValue_NonTaxColumn" msprop:Generator_UserColumnName="AddValue_NonTax" type="xs:double" minOccurs="0" />
+              <xs:element name="AddValue" msprop:Generator_ColumnVarNameInTable="columnAddValue" msprop:Generator_ColumnPropNameInRow="AddValue" msprop:Generator_ColumnPropNameInTable="AddValueColumn" msprop:Generator_UserColumnName="AddValue" type="xs:double" minOccurs="0" />
+              <xs:element name="DeductValue_Tax" msprop:Generator_ColumnVarNameInTable="columnDeductValue_Tax" msprop:Generator_ColumnPropNameInRow="DeductValue_Tax" msprop:Generator_ColumnPropNameInTable="DeductValue_TaxColumn" msprop:Generator_UserColumnName="DeductValue_Tax" type="xs:double" minOccurs="0" />
+              <xs:element name="DeductValue_NonTax" msprop:Generator_ColumnVarNameInTable="columnDeductValue_NonTax" msprop:Generator_ColumnPropNameInRow="DeductValue_NonTax" msprop:Generator_ColumnPropNameInTable="DeductValue_NonTaxColumn" msprop:Generator_UserColumnName="DeductValue_NonTax" type="xs:double" minOccurs="0" />
+              <xs:element name="DeductValue" msprop:Generator_ColumnVarNameInTable="columnDeductValue" msprop:Generator_ColumnPropNameInRow="DeductValue" msprop:Generator_ColumnPropNameInTable="DeductValueColumn" msprop:Generator_UserColumnName="DeductValue" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Salary" msprop:Generator_ColumnVarNameInTable="columnA_Salary" msprop:Generator_ColumnPropNameInRow="A_Salary" msprop:Generator_ColumnPropNameInTable="A_SalaryColumn" msprop:Generator_UserColumnName="A_Salary" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Housing" msprop:Generator_ColumnVarNameInTable="columnA_Housing" msprop:Generator_ColumnPropNameInRow="A_Housing" msprop:Generator_ColumnPropNameInTable="A_HousingColumn" msprop:Generator_UserColumnName="A_Housing" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Travel" msprop:Generator_ColumnVarNameInTable="columnA_Travel" msprop:Generator_ColumnPropNameInRow="A_Travel" msprop:Generator_ColumnPropNameInTable="A_TravelColumn" msprop:Generator_UserColumnName="A_Travel" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Area" msprop:Generator_ColumnVarNameInTable="columnA_Area" msprop:Generator_ColumnPropNameInRow="A_Area" msprop:Generator_ColumnPropNameInTable="A_AreaColumn" msprop:Generator_UserColumnName="A_Area" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Seniority" msprop:Generator_ColumnVarNameInTable="columnA_Seniority" msprop:Generator_ColumnPropNameInRow="A_Seniority" msprop:Generator_ColumnPropNameInTable="A_SeniorityColumn" msprop:Generator_UserColumnName="A_Seniority" type="xs:double" minOccurs="0" />
+              <xs:element name="A_5S" msprop:Generator_ColumnVarNameInTable="columnA_5S" msprop:Generator_ColumnPropNameInRow="A_5S" msprop:Generator_ColumnPropNameInTable="A_5SColumn" msprop:Generator_UserColumnName="A_5S" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Shift" msprop:Generator_ColumnVarNameInTable="columnA_Shift" msprop:Generator_ColumnPropNameInRow="A_Shift" msprop:Generator_ColumnPropNameInTable="A_ShiftColumn" msprop:Generator_UserColumnName="A_Shift" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Meal" msprop:Generator_ColumnVarNameInTable="columnA_Meal" msprop:Generator_ColumnPropNameInRow="A_Meal" msprop:Generator_ColumnPropNameInTable="A_MealColumn" msprop:Generator_UserColumnName="A_Meal" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Phone" msprop:Generator_ColumnVarNameInTable="columnA_Phone" msprop:Generator_ColumnPropNameInRow="A_Phone" msprop:Generator_ColumnPropNameInTable="A_PhoneColumn" msprop:Generator_UserColumnName="A_Phone" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Hotel" msprop:Generator_ColumnVarNameInTable="columnA_Hotel" msprop:Generator_ColumnPropNameInRow="A_Hotel" msprop:Generator_ColumnPropNameInTable="A_HotelColumn" msprop:Generator_UserColumnName="A_Hotel" type="xs:double" minOccurs="0" />
+              <xs:element name="Coe_Position" msprop:Generator_ColumnVarNameInTable="columnCoe_Position" msprop:Generator_ColumnPropNameInRow="Coe_Position" msprop:Generator_ColumnPropNameInTable="Coe_PositionColumn" msprop:Generator_UserColumnName="Coe_Position" type="xs:decimal" minOccurs="0" />
+              <xs:element name="A_Position" msprop:Generator_ColumnVarNameInTable="columnA_Position" msprop:Generator_ColumnPropNameInRow="A_Position" msprop:Generator_ColumnPropNameInTable="A_PositionColumn" msprop:Generator_UserColumnName="A_Position" type="xs:double" minOccurs="0" />
+              <xs:element name="Coe_TN" msprop:Generator_ColumnVarNameInTable="columnCoe_TN" msprop:Generator_ColumnPropNameInRow="Coe_TN" msprop:Generator_ColumnPropNameInTable="Coe_TNColumn" msprop:Generator_UserColumnName="Coe_TN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="A_TN" msprop:Generator_ColumnVarNameInTable="columnA_TN" msprop:Generator_ColumnPropNameInRow="A_TN" msprop:Generator_ColumnPropNameInTable="A_TNColumn" msprop:Generator_UserColumnName="A_TN" type="xs:double" minOccurs="0" />
+              <xs:element name="Coe_Harmful" msprop:Generator_ColumnVarNameInTable="columnCoe_Harmful" msprop:Generator_ColumnPropNameInRow="Coe_Harmful" msprop:Generator_ColumnPropNameInTable="Coe_HarmfulColumn" msprop:Generator_UserColumnName="Coe_Harmful" type="xs:decimal" minOccurs="0" />
+              <xs:element name="A_Harmful" msprop:Generator_ColumnVarNameInTable="columnA_Harmful" msprop:Generator_ColumnPropNameInRow="A_Harmful" msprop:Generator_ColumnPropNameInTable="A_HarmfulColumn" msprop:Generator_UserColumnName="A_Harmful" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Other_Tax" msprop:Generator_ColumnVarNameInTable="columnA_Other_Tax" msprop:Generator_ColumnPropNameInRow="A_Other_Tax" msprop:Generator_ColumnPropNameInTable="A_Other_TaxColumn" msprop:Generator_UserColumnName="A_Other_Tax" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Other_NonTax" msprop:Generator_ColumnVarNameInTable="columnA_Other_NonTax" msprop:Generator_ColumnPropNameInRow="A_Other_NonTax" msprop:Generator_ColumnPropNameInTable="A_Other_NonTaxColumn" msprop:Generator_UserColumnName="A_Other_NonTax" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Other" msprop:Generator_ColumnVarNameInTable="columnA_Other" msprop:Generator_ColumnPropNameInRow="A_Other" msprop:Generator_ColumnPropNameInTable="A_OtherColumn" msprop:Generator_UserColumnName="A_Other" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Total" msprop:Generator_ColumnVarNameInTable="columnA_Total" msprop:Generator_ColumnPropNameInRow="A_Total" msprop:Generator_ColumnPropNameInTable="A_TotalColumn" msprop:Generator_UserColumnName="A_Total" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicA_Day" msprop:Generator_ColumnVarNameInTable="columnBasicA_Day" msprop:Generator_ColumnPropNameInRow="BasicA_Day" msprop:Generator_ColumnPropNameInTable="BasicA_DayColumn" msprop:Generator_UserColumnName="BasicA_Day" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Day" msprop:Generator_ColumnVarNameInTable="columnA_Day" msprop:Generator_ColumnPropNameInRow="A_Day" msprop:Generator_ColumnPropNameInTable="A_DayColumn" msprop:Generator_UserColumnName="A_Day" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalSal" msprop:Generator_ColumnVarNameInTable="columnTotalSal" msprop:Generator_ColumnPropNameInRow="TotalSal" msprop:Generator_ColumnPropNameInTable="TotalSalColumn" msprop:Generator_UserColumnName="TotalSal" type="xs:double" minOccurs="0" />
+              <xs:element name="Bonus" msprop:Generator_ColumnVarNameInTable="columnBonus" msprop:Generator_ColumnPropNameInRow="Bonus" msprop:Generator_ColumnPropNameInTable="BonusColumn" msprop:Generator_UserColumnName="Bonus" type="xs:double" minOccurs="0" />
+              <xs:element name="PITCode" msprop:Generator_ColumnVarNameInTable="columnPITCode" msprop:Generator_ColumnPropNameInRow="PITCode" msprop:Generator_ColumnPropNameInTable="PITCodeColumn" msprop:Generator_UserColumnName="PITCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PIT_Personal" msprop:Generator_ColumnVarNameInTable="columnPIT_Personal" msprop:Generator_ColumnPropNameInRow="PIT_Personal" msprop:Generator_ColumnPropNameInTable="PIT_PersonalColumn" msprop:Generator_UserColumnName="PIT_Personal" type="xs:double" minOccurs="0" />
+              <xs:element name="PIT_Family" msprop:Generator_ColumnVarNameInTable="columnPIT_Family" msprop:Generator_ColumnPropNameInRow="PIT_Family" msprop:Generator_ColumnPropNameInTable="PIT_FamilyColumn" msprop:Generator_UserColumnName="PIT_Family" type="xs:double" minOccurs="0" />
+              <xs:element name="PIT_Family_Dependant" msprop:Generator_ColumnVarNameInTable="columnPIT_Family_Dependant" msprop:Generator_ColumnPropNameInRow="PIT_Family_Dependant" msprop:Generator_ColumnPropNameInTable="PIT_Family_DependantColumn" msprop:Generator_UserColumnName="PIT_Family_Dependant" type="xs:int" minOccurs="0" />
+              <xs:element name="PIT_Family_Sal" msprop:Generator_ColumnVarNameInTable="columnPIT_Family_Sal" msprop:Generator_ColumnPropNameInRow="PIT_Family_Sal" msprop:Generator_ColumnPropNameInTable="PIT_Family_SalColumn" msprop:Generator_UserColumnName="PIT_Family_Sal" type="xs:double" minOccurs="0" />
+              <xs:element name="PIT_Family_Date" msprop:Generator_ColumnVarNameInTable="columnPIT_Family_Date" msprop:Generator_ColumnPropNameInRow="PIT_Family_Date" msprop:Generator_ColumnPropNameInTable="PIT_Family_DateColumn" msprop:Generator_UserColumnName="PIT_Family_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PIT_Sal" msprop:Generator_ColumnVarNameInTable="columnPIT_Sal" msprop:Generator_ColumnPropNameInRow="PIT_Sal" msprop:Generator_ColumnPropNameInTable="PIT_SalColumn" msprop:Generator_UserColumnName="PIT_Sal" type="xs:double" minOccurs="0" />
+              <xs:element name="TaxableIncome" msprop:Generator_ColumnVarNameInTable="columnTaxableIncome" msprop:Generator_ColumnPropNameInRow="TaxableIncome" msprop:Generator_ColumnPropNameInTable="TaxableIncomeColumn" msprop:Generator_UserColumnName="TaxableIncome" type="xs:double" minOccurs="0" />
+              <xs:element name="PIT" msprop:Generator_ColumnVarNameInTable="columnPIT" msprop:Generator_ColumnPropNameInRow="PIT" msprop:Generator_ColumnPropNameInTable="PITColumn" msprop:Generator_UserColumnName="PIT" type="xs:double" minOccurs="0" />
+              <xs:element name="SIFee" msprop:Generator_ColumnVarNameInTable="columnSIFee" msprop:Generator_ColumnPropNameInRow="SIFee" msprop:Generator_ColumnPropNameInTable="SIFeeColumn" msprop:Generator_UserColumnName="SIFee" type="xs:double" minOccurs="0" />
+              <xs:element name="SIFee_Co" msprop:Generator_ColumnVarNameInTable="columnSIFee_Co" msprop:Generator_ColumnPropNameInRow="SIFee_Co" msprop:Generator_ColumnPropNameInTable="SIFee_CoColumn" msprop:Generator_UserColumnName="SIFee_Co" type="xs:double" minOccurs="0" />
+              <xs:element name="SIFee_All" msprop:Generator_ColumnVarNameInTable="columnSIFee_All" msprop:Generator_ColumnPropNameInRow="SIFee_All" msprop:Generator_ColumnPropNameInTable="SIFee_AllColumn" msprop:Generator_UserColumnName="SIFee_All" type="xs:double" minOccurs="0" />
+              <xs:element name="HIFee" msprop:Generator_ColumnVarNameInTable="columnHIFee" msprop:Generator_ColumnPropNameInRow="HIFee" msprop:Generator_ColumnPropNameInTable="HIFeeColumn" msprop:Generator_UserColumnName="HIFee" type="xs:double" minOccurs="0" />
+              <xs:element name="HIFee_Co" msprop:Generator_ColumnVarNameInTable="columnHIFee_Co" msprop:Generator_ColumnPropNameInRow="HIFee_Co" msprop:Generator_ColumnPropNameInTable="HIFee_CoColumn" msprop:Generator_UserColumnName="HIFee_Co" type="xs:double" minOccurs="0" />
+              <xs:element name="HIFee_All" msprop:Generator_ColumnVarNameInTable="columnHIFee_All" msprop:Generator_ColumnPropNameInRow="HIFee_All" msprop:Generator_ColumnPropNameInTable="HIFee_AllColumn" msprop:Generator_UserColumnName="HIFee_All" type="xs:double" minOccurs="0" />
+              <xs:element name="UIFee" msprop:Generator_ColumnVarNameInTable="columnUIFee" msprop:Generator_ColumnPropNameInRow="UIFee" msprop:Generator_ColumnPropNameInTable="UIFeeColumn" msprop:Generator_UserColumnName="UIFee" type="xs:double" minOccurs="0" />
+              <xs:element name="UIFee_Co" msprop:Generator_ColumnVarNameInTable="columnUIFee_Co" msprop:Generator_ColumnPropNameInRow="UIFee_Co" msprop:Generator_ColumnPropNameInTable="UIFee_CoColumn" msprop:Generator_UserColumnName="UIFee_Co" type="xs:double" minOccurs="0" />
+              <xs:element name="UIFee_All" msprop:Generator_ColumnVarNameInTable="columnUIFee_All" msprop:Generator_ColumnPropNameInRow="UIFee_All" msprop:Generator_ColumnPropNameInTable="UIFee_AllColumn" msprop:Generator_UserColumnName="UIFee_All" type="xs:double" minOccurs="0" />
+              <xs:element name="UnionMember" msprop:Generator_ColumnVarNameInTable="columnUnionMember" msprop:Generator_ColumnPropNameInRow="UnionMember" msprop:Generator_ColumnPropNameInTable="UnionMemberColumn" msprop:Generator_UserColumnName="UnionMember" type="xs:boolean" minOccurs="0" />
+              <xs:element name="UnionFee" msprop:Generator_ColumnVarNameInTable="columnUnionFee" msprop:Generator_ColumnPropNameInRow="UnionFee" msprop:Generator_ColumnPropNameInTable="UnionFeeColumn" msprop:Generator_UserColumnName="UnionFee" type="xs:double" minOccurs="0" />
+              <xs:element name="UnionFee_Co" msprop:Generator_ColumnVarNameInTable="columnUnionFee_Co" msprop:Generator_ColumnPropNameInRow="UnionFee_Co" msprop:Generator_ColumnPropNameInTable="UnionFee_CoColumn" msprop:Generator_UserColumnName="UnionFee_Co" type="xs:double" minOccurs="0" />
+              <xs:element name="UnionFee_All" msprop:Generator_ColumnVarNameInTable="columnUnionFee_All" msprop:Generator_ColumnPropNameInRow="UnionFee_All" msprop:Generator_ColumnPropNameInTable="UnionFee_AllColumn" msprop:Generator_UserColumnName="UnionFee_All" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalIns" msprop:Generator_ColumnVarNameInTable="columnTotalIns" msprop:Generator_ColumnPropNameInRow="TotalIns" msprop:Generator_ColumnPropNameInTable="TotalInsColumn" msprop:Generator_UserColumnName="TotalIns" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalIns_Co" msprop:Generator_ColumnVarNameInTable="columnTotalIns_Co" msprop:Generator_ColumnPropNameInRow="TotalIns_Co" msprop:Generator_ColumnPropNameInTable="TotalIns_CoColumn" msprop:Generator_UserColumnName="TotalIns_Co" type="xs:double" minOccurs="0" />
+              <xs:element name="Adjust" msprop:Generator_ColumnVarNameInTable="columnAdjust" msprop:Generator_ColumnPropNameInRow="Adjust" msprop:Generator_ColumnPropNameInTable="AdjustColumn" msprop:Generator_UserColumnName="Adjust" type="xs:double" minOccurs="0" />
+              <xs:element name="Advance" msprop:Generator_ColumnVarNameInTable="columnAdvance" msprop:Generator_ColumnPropNameInRow="Advance" msprop:Generator_ColumnPropNameInTable="AdvanceColumn" msprop:Generator_UserColumnName="Advance" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalAdd" msprop:Generator_ColumnVarNameInTable="columnTotalAdd" msprop:Generator_ColumnPropNameInRow="TotalAdd" msprop:Generator_ColumnPropNameInTable="TotalAddColumn" msprop:Generator_UserColumnName="TotalAdd" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalAdd_Tax" msprop:Generator_ColumnVarNameInTable="columnTotalAdd_Tax" msprop:Generator_ColumnPropNameInRow="TotalAdd_Tax" msprop:Generator_ColumnPropNameInTable="TotalAdd_TaxColumn" msprop:Generator_UserColumnName="TotalAdd_Tax" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalDeduct" msprop:Generator_ColumnVarNameInTable="columnTotalDeduct" msprop:Generator_ColumnPropNameInRow="TotalDeduct" msprop:Generator_ColumnPropNameInTable="TotalDeductColumn" msprop:Generator_UserColumnName="TotalDeduct" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalDeduct_Tax" msprop:Generator_ColumnVarNameInTable="columnTotalDeduct_Tax" msprop:Generator_ColumnPropNameInRow="TotalDeduct_Tax" msprop:Generator_ColumnPropNameInTable="TotalDeduct_TaxColumn" msprop:Generator_UserColumnName="TotalDeduct_Tax" type="xs:double" minOccurs="0" />
+              <xs:element name="Payroll13" msprop:Generator_ColumnVarNameInTable="columnPayroll13" msprop:Generator_ColumnPropNameInRow="Payroll13" msprop:Generator_ColumnPropNameInTable="Payroll13Column" msprop:Generator_UserColumnName="Payroll13" type="xs:double" minOccurs="0" />
+              <xs:element name="PayrollPerformance" msprop:Generator_ColumnVarNameInTable="columnPayrollPerformance" msprop:Generator_ColumnPropNameInRow="PayrollPerformance" msprop:Generator_ColumnPropNameInTable="PayrollPerformanceColumn" msprop:Generator_UserColumnName="PayrollPerformance" type="xs:double" minOccurs="0" />
+              <xs:element name="EIP_Bonus" msprop:Generator_ColumnVarNameInTable="columnEIP_Bonus" msprop:Generator_ColumnPropNameInRow="EIP_Bonus" msprop:Generator_ColumnPropNameInTable="EIP_BonusColumn" msprop:Generator_UserColumnName="EIP_Bonus" type="xs:double" minOccurs="0" />
+              <xs:element name="EIP_IsAdvance" msprop:Generator_ColumnVarNameInTable="columnEIP_IsAdvance" msprop:Generator_ColumnPropNameInRow="EIP_IsAdvance" msprop:Generator_ColumnPropNameInTable="EIP_IsAdvanceColumn" msprop:Generator_UserColumnName="EIP_IsAdvance" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EIP_AdvanceDate" msprop:Generator_ColumnVarNameInTable="columnEIP_AdvanceDate" msprop:Generator_ColumnPropNameInRow="EIP_AdvanceDate" msprop:Generator_ColumnPropNameInTable="EIP_AdvanceDateColumn" msprop:Generator_UserColumnName="EIP_AdvanceDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TakeHome" msprop:Generator_ColumnVarNameInTable="columnTakeHome" msprop:Generator_ColumnPropNameInRow="TakeHome" msprop:Generator_ColumnPropNameInTable="TakeHomeColumn" msprop:Generator_UserColumnName="TakeHome" type="xs:double" minOccurs="0" />
+              <xs:element name="TakeHome_Round" msprop:Generator_ColumnVarNameInTable="columnTakeHome_Round" msprop:Generator_ColumnPropNameInRow="TakeHome_Round" msprop:Generator_ColumnPropNameInTable="TakeHome_RoundColumn" msprop:Generator_UserColumnName="TakeHome_Round" type="xs:double" minOccurs="0" />
+              <xs:element name="TakeHome_Bank" msprop:Generator_ColumnVarNameInTable="columnTakeHome_Bank" msprop:Generator_ColumnPropNameInRow="TakeHome_Bank" msprop:Generator_ColumnPropNameInTable="TakeHome_BankColumn" msprop:Generator_UserColumnName="TakeHome_Bank" type="xs:double" minOccurs="0" />
+              <xs:element name="TakeHome_Cash" msprop:Generator_ColumnVarNameInTable="columnTakeHome_Cash" msprop:Generator_ColumnPropNameInRow="TakeHome_Cash" msprop:Generator_ColumnPropNameInTable="TakeHome_CashColumn" msprop:Generator_UserColumnName="TakeHome_Cash" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalCost" msprop:Generator_ColumnVarNameInTable="columnTotalCost" msprop:Generator_ColumnPropNameInRow="TotalCost" msprop:Generator_ColumnPropNameInTable="TotalCostColumn" msprop:Generator_UserColumnName="TotalCost" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalCost_USD" msprop:Generator_ColumnVarNameInTable="columnTotalCost_USD" msprop:Generator_ColumnPropNameInRow="TotalCost_USD" msprop:Generator_ColumnPropNameInTable="TotalCost_USDColumn" msprop:Generator_UserColumnName="TotalCost_USD" type="xs:double" minOccurs="0" />
+              <xs:element name="SIFund" msprop:Generator_ColumnVarNameInTable="columnSIFund" msprop:Generator_ColumnPropNameInRow="SIFund" msprop:Generator_ColumnPropNameInTable="SIFundColumn" msprop:Generator_UserColumnName="SIFund" type="xs:double" minOccurs="0" />
+              <xs:element name="ALInYear" msprop:Generator_ColumnVarNameInTable="columnALInYear" msprop:Generator_ColumnPropNameInRow="ALInYear" msprop:Generator_ColumnPropNameInTable="ALInYearColumn" msprop:Generator_UserColumnName="ALInYear" type="xs:double" minOccurs="0" />
+              <xs:element name="ALUsed" msprop:Generator_ColumnVarNameInTable="columnALUsed" msprop:Generator_ColumnPropNameInRow="ALUsed" msprop:Generator_ColumnPropNameInTable="ALUsedColumn" msprop:Generator_UserColumnName="ALUsed" type="xs:double" minOccurs="0" />
+              <xs:element name="ALRemain" msprop:Generator_ColumnVarNameInTable="columnALRemain" msprop:Generator_ColumnPropNameInRow="ALRemain" msprop:Generator_ColumnPropNameInTable="ALRemainColumn" msprop:Generator_UserColumnName="ALRemain" type="xs:double" minOccurs="0" />
+              <xs:element name="OTHour_Accumulate" msprop:Generator_ColumnVarNameInTable="columnOTHour_Accumulate" msprop:Generator_ColumnPropNameInRow="OTHour_Accumulate" msprop:Generator_ColumnPropNameInTable="OTHour_AccumulateColumn" msprop:Generator_UserColumnName="OTHour_Accumulate" type="xs:double" minOccurs="0" />
+              <xs:element name="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnPropNameInTable="NoteColumn" msprop:Generator_UserColumnName="Note" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsTotalWD" msprop:Generator_ColumnVarNameInTable="columnIsTotalWD" msprop:Generator_ColumnPropNameInRow="IsTotalWD" msprop:Generator_ColumnPropNameInTable="IsTotalWDColumn" msprop:Generator_UserColumnName="IsTotalWD" type="xs:boolean" minOccurs="0" />
+              <xs:element name="L_Compensate_N" msprop:Generator_ColumnVarNameInTable="columnL_Compensate_N" msprop:Generator_ColumnPropNameInRow="L_Compensate_N" msprop:Generator_ColumnPropNameInTable="L_Compensate_NColumn" msprop:Generator_UserColumnName="L_Compensate_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Compensate_O" msprop:Generator_ColumnVarNameInTable="columnL_Compensate_O" msprop:Generator_ColumnPropNameInRow="L_Compensate_O" msprop:Generator_ColumnPropNameInTable="L_Compensate_OColumn" msprop:Generator_UserColumnName="L_Compensate_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Maternity_N" msprop:Generator_ColumnVarNameInTable="columnL_Maternity_N" msprop:Generator_ColumnPropNameInRow="L_Maternity_N" msprop:Generator_ColumnPropNameInTable="L_Maternity_NColumn" msprop:Generator_UserColumnName="L_Maternity_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Maternity_O" msprop:Generator_ColumnVarNameInTable="columnL_Maternity_O" msprop:Generator_ColumnPropNameInRow="L_Maternity_O" msprop:Generator_ColumnPropNameInTable="L_Maternity_OColumn" msprop:Generator_UserColumnName="L_Maternity_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paternity_N" msprop:Generator_ColumnVarNameInTable="columnL_Paternity_N" msprop:Generator_ColumnPropNameInRow="L_Paternity_N" msprop:Generator_ColumnPropNameInTable="L_Paternity_NColumn" msprop:Generator_UserColumnName="L_Paternity_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Paternity_O" msprop:Generator_ColumnVarNameInTable="columnL_Paternity_O" msprop:Generator_ColumnPropNameInRow="L_Paternity_O" msprop:Generator_ColumnPropNameInTable="L_Paternity_OColumn" msprop:Generator_UserColumnName="L_Paternity_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_ChildSick_N" msprop:Generator_ColumnVarNameInTable="columnL_ChildSick_N" msprop:Generator_ColumnPropNameInRow="L_ChildSick_N" msprop:Generator_ColumnPropNameInTable="L_ChildSick_NColumn" msprop:Generator_UserColumnName="L_ChildSick_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_ChildSick_O" msprop:Generator_ColumnVarNameInTable="columnL_ChildSick_O" msprop:Generator_ColumnPropNameInRow="L_ChildSick_O" msprop:Generator_ColumnPropNameInTable="L_ChildSick_OColumn" msprop:Generator_UserColumnName="L_ChildSick_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Policy_N" msprop:Generator_ColumnVarNameInTable="columnL_Policy_N" msprop:Generator_ColumnPropNameInRow="L_Policy_N" msprop:Generator_ColumnPropNameInTable="L_Policy_NColumn" msprop:Generator_UserColumnName="L_Policy_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Policy_O" msprop:Generator_ColumnVarNameInTable="columnL_Policy_O" msprop:Generator_ColumnPropNameInRow="L_Policy_O" msprop:Generator_ColumnPropNameInTable="L_Policy_OColumn" msprop:Generator_UserColumnName="L_Policy_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Wedding_N" msprop:Generator_ColumnVarNameInTable="columnL_Wedding_N" msprop:Generator_ColumnPropNameInRow="L_Wedding_N" msprop:Generator_ColumnPropNameInTable="L_Wedding_NColumn" msprop:Generator_UserColumnName="L_Wedding_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Wedding_O" msprop:Generator_ColumnVarNameInTable="columnL_Wedding_O" msprop:Generator_ColumnPropNameInRow="L_Wedding_O" msprop:Generator_ColumnPropNameInTable="L_Wedding_OColumn" msprop:Generator_UserColumnName="L_Wedding_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Funeral_N" msprop:Generator_ColumnVarNameInTable="columnL_Funeral_N" msprop:Generator_ColumnPropNameInRow="L_Funeral_N" msprop:Generator_ColumnPropNameInTable="L_Funeral_NColumn" msprop:Generator_UserColumnName="L_Funeral_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Funeral_O" msprop:Generator_ColumnVarNameInTable="columnL_Funeral_O" msprop:Generator_ColumnPropNameInRow="L_Funeral_O" msprop:Generator_ColumnPropNameInTable="L_Funeral_OColumn" msprop:Generator_UserColumnName="L_Funeral_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Policy_All_N" msprop:Generator_ColumnVarNameInTable="columnL_Policy_All_N" msprop:Generator_ColumnPropNameInRow="L_Policy_All_N" msprop:Generator_ColumnPropNameInTable="L_Policy_All_NColumn" msprop:Generator_UserColumnName="L_Policy_All_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Policy_All_O" msprop:Generator_ColumnVarNameInTable="columnL_Policy_All_O" msprop:Generator_ColumnPropNameInRow="L_Policy_All_O" msprop:Generator_ColumnPropNameInTable="L_Policy_All_OColumn" msprop:Generator_UserColumnName="L_Policy_All_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Unpaid_N" msprop:Generator_ColumnVarNameInTable="columnL_Unpaid_N" msprop:Generator_ColumnPropNameInRow="L_Unpaid_N" msprop:Generator_ColumnPropNameInTable="L_Unpaid_NColumn" msprop:Generator_UserColumnName="L_Unpaid_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Unpaid_O" msprop:Generator_ColumnVarNameInTable="columnL_Unpaid_O" msprop:Generator_ColumnPropNameInRow="L_Unpaid_O" msprop:Generator_ColumnPropNameInTable="L_Unpaid_OColumn" msprop:Generator_UserColumnName="L_Unpaid_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_NotPermit_N" msprop:Generator_ColumnVarNameInTable="columnL_NotPermit_N" msprop:Generator_ColumnPropNameInRow="L_NotPermit_N" msprop:Generator_ColumnPropNameInTable="L_NotPermit_NColumn" msprop:Generator_UserColumnName="L_NotPermit_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_NotPermit_O" msprop:Generator_ColumnVarNameInTable="columnL_NotPermit_O" msprop:Generator_ColumnPropNameInRow="L_NotPermit_O" msprop:Generator_ColumnPropNameInTable="L_NotPermit_OColumn" msprop:Generator_UserColumnName="L_NotPermit_O" type="xs:double" minOccurs="0" />
+              <xs:element name="L_NotWD_N" msprop:Generator_ColumnVarNameInTable="columnL_NotWD_N" msprop:Generator_ColumnPropNameInRow="L_NotWD_N" msprop:Generator_ColumnPropNameInTable="L_NotWD_NColumn" msprop:Generator_UserColumnName="L_NotWD_N" type="xs:double" minOccurs="0" />
+              <xs:element name="L_NotWD_O" msprop:Generator_ColumnVarNameInTable="columnL_NotWD_O" msprop:Generator_ColumnPropNameInRow="L_NotWD_O" msprop:Generator_ColumnPropNameInTable="L_NotWD_OColumn" msprop:Generator_UserColumnName="L_NotWD_O" type="xs:double" minOccurs="0" />
+              <xs:element name="IsATM" msprop:Generator_ColumnVarNameInTable="columnIsATM" msprop:Generator_ColumnPropNameInRow="IsATM" msprop:Generator_ColumnPropNameInTable="IsATMColumn" msprop:Generator_UserColumnName="IsATM" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsUnLimitContract" msprop:Generator_ColumnVarNameInTable="columnIsUnLimitContract" msprop:Generator_ColumnPropNameInRow="IsUnLimitContract" msprop:Generator_ColumnPropNameInTable="IsUnLimitContractColumn" msprop:Generator_UserColumnName="IsUnLimitContract" type="xs:boolean" minOccurs="0" />
+              <xs:element name="AvgSal" msprop:Generator_ColumnVarNameInTable="columnAvgSal" msprop:Generator_ColumnPropNameInRow="AvgSal" msprop:Generator_ColumnPropNameInTable="AvgSalColumn" msprop:Generator_UserColumnName="AvgSal" type="xs:double" minOccurs="0" />
+              <xs:element name="SeniorityYear" msprop:Generator_ColumnVarNameInTable="columnSeniorityYear" msprop:Generator_ColumnPropNameInRow="SeniorityYear" msprop:Generator_ColumnPropNameInTable="SeniorityYearColumn" msprop:Generator_UserColumnName="SeniorityYear" type="xs:double" minOccurs="0" />
+              <xs:element name="SeverancePay" msprop:Generator_ColumnVarNameInTable="columnSeverancePay" msprop:Generator_ColumnPropNameInRow="SeverancePay" msprop:Generator_ColumnPropNameInTable="SeverancePayColumn" msprop:Generator_UserColumnName="SeverancePay" type="xs:double" minOccurs="0" />
+              <xs:element name="ALRemainSal" msprop:Generator_ColumnVarNameInTable="columnALRemainSal" msprop:Generator_ColumnPropNameInRow="ALRemainSal" msprop:Generator_ColumnPropNameInTable="ALRemainSalColumn" msprop:Generator_UserColumnName="ALRemainSal" type="xs:double" minOccurs="0" />
+              <xs:element name="OT10_O" msprop:Generator_ColumnVarNameInTable="columnOT10_O" msprop:Generator_ColumnPropNameInRow="OT10_O" msprop:Generator_ColumnPropNameInTable="OT10_OColumn" msprop:Generator_UserColumnName="OT10_O" type="xs:double" minOccurs="0" />
+              <xs:element name="OT10_N" msprop:Generator_ColumnVarNameInTable="columnOT10_N" msprop:Generator_ColumnPropNameInRow="OT10_N" msprop:Generator_ColumnPropNameInTable="OT10_NColumn" msprop:Generator_UserColumnName="OT10_N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT10" msprop:Generator_ColumnVarNameInTable="columnOT10" msprop:Generator_ColumnPropNameInRow="OT10" msprop:Generator_ColumnPropNameInTable="OT10Column" msprop:Generator_UserColumnName="OT10" type="xs:double" minOccurs="0" />
+              <xs:element name="OT10Sal" msprop:Generator_ColumnVarNameInTable="columnOT10Sal" msprop:Generator_ColumnPropNameInRow="OT10Sal" msprop:Generator_ColumnPropNameInTable="OT10SalColumn" msprop:Generator_UserColumnName="OT10Sal" type="xs:double" minOccurs="0" />
+              <xs:element name="PreBasicSal" msprop:Generator_ColumnVarNameInTable="columnPreBasicSal" msprop:Generator_ColumnPropNameInRow="PreBasicSal" msprop:Generator_ColumnPropNameInTable="PreBasicSalColumn" msprop:Generator_UserColumnName="PreBasicSal" type="xs:double" minOccurs="0" />
+              <xs:element name="SIFund_BH" msprop:Generator_ColumnVarNameInTable="columnSIFund_BH" msprop:Generator_ColumnPropNameInRow="SIFund_BH" msprop:Generator_ColumnPropNameInTable="SIFund_BHColumn" msprop:Generator_UserColumnName="SIFund_BH" type="xs:double" minOccurs="0" />
+              <xs:element name="SIFund_ThaiSan" msprop:Generator_ColumnVarNameInTable="columnSIFund_ThaiSan" msprop:Generator_ColumnPropNameInRow="SIFund_ThaiSan" msprop:Generator_ColumnPropNameInTable="SIFund_ThaiSanColumn" msprop:Generator_UserColumnName="SIFund_ThaiSan" type="xs:double" minOccurs="0" />
+              <xs:element name="SIFund_KhamThai" msprop:Generator_ColumnVarNameInTable="columnSIFund_KhamThai" msprop:Generator_ColumnPropNameInRow="SIFund_KhamThai" msprop:Generator_ColumnPropNameInTable="SIFund_KhamThaiColumn" msprop:Generator_UserColumnName="SIFund_KhamThai" type="xs:double" minOccurs="0" />
+              <xs:element name="PayrollType" msprop:Generator_ColumnVarNameInTable="columnPayrollType" msprop:Generator_ColumnPropNameInRow="PayrollType" msprop:Generator_ColumnPropNameInTable="PayrollTypeColumn" msprop:Generator_UserColumnName="PayrollType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Note_Annual" msprop:Generator_ColumnVarNameInTable="columnNote_Annual" msprop:Generator_ColumnPropNameInRow="Note_Annual" msprop:Generator_ColumnPropNameInTable="Note_AnnualColumn" msprop:Generator_UserColumnName="Note_Annual" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Note_Sick" msprop:Generator_ColumnVarNameInTable="columnNote_Sick" msprop:Generator_ColumnPropNameInRow="Note_Sick" msprop:Generator_ColumnPropNameInTable="Note_SickColumn" msprop:Generator_UserColumnName="Note_Sick" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Note_NotPermit" msprop:Generator_ColumnVarNameInTable="columnNote_NotPermit" msprop:Generator_ColumnPropNameInRow="Note_NotPermit" msprop:Generator_ColumnPropNameInTable="Note_NotPermitColumn" msprop:Generator_UserColumnName="Note_NotPermit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Note_UnPaid" msprop:Generator_ColumnVarNameInTable="columnNote_UnPaid" msprop:Generator_ColumnPropNameInRow="Note_UnPaid" msprop:Generator_ColumnPropNameInTable="Note_UnPaidColumn" msprop:Generator_UserColumnName="Note_UnPaid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adjust_Tax" msprop:Generator_ColumnVarNameInTable="columnAdjust_Tax" msprop:Generator_ColumnPropNameInRow="Adjust_Tax" msprop:Generator_ColumnPropNameInTable="Adjust_TaxColumn" msprop:Generator_UserColumnName="Adjust_Tax" type="xs:double" minOccurs="0" />
+              <xs:element name="Adjust_NonTax" msprop:Generator_ColumnVarNameInTable="columnAdjust_NonTax" msprop:Generator_ColumnPropNameInRow="Adjust_NonTax" msprop:Generator_ColumnPropNameInTable="Adjust_NonTaxColumn" msprop:Generator_UserColumnName="Adjust_NonTax" type="xs:double" minOccurs="0" />
+              <xs:element name="Final_HIDeduct" msprop:Generator_ColumnVarNameInTable="columnFinal_HIDeduct" msprop:Generator_ColumnPropNameInRow="Final_HIDeduct" msprop:Generator_ColumnPropNameInTable="Final_HIDeductColumn" msprop:Generator_UserColumnName="Final_HIDeduct" type="xs:double" minOccurs="0" />
+              <xs:element name="Final_AssetDeduct" msprop:Generator_ColumnVarNameInTable="columnFinal_AssetDeduct" msprop:Generator_ColumnPropNameInRow="Final_AssetDeduct" msprop:Generator_ColumnPropNameInTable="Final_AssetDeductColumn" msprop:Generator_UserColumnName="Final_AssetDeduct" type="xs:double" minOccurs="0" />
+              <xs:element name="Final_NoticeDay" msprop:Generator_ColumnVarNameInTable="columnFinal_NoticeDay" msprop:Generator_ColumnPropNameInRow="Final_NoticeDay" msprop:Generator_ColumnPropNameInTable="Final_NoticeDayColumn" msprop:Generator_UserColumnName="Final_NoticeDay" type="xs:double" minOccurs="0" />
+              <xs:element name="Final_NoticeSal" msprop:Generator_ColumnVarNameInTable="columnFinal_NoticeSal" msprop:Generator_ColumnPropNameInRow="Final_NoticeSal" msprop:Generator_ColumnPropNameInTable="Final_NoticeSalColumn" msprop:Generator_UserColumnName="Final_NoticeSal" type="xs:double" minOccurs="0" />
+              <xs:element name="TakeHome_ATMOnly" msprop:Generator_ColumnVarNameInTable="columnTakeHome_ATMOnly" msprop:Generator_ColumnPropNameInRow="TakeHome_ATMOnly" msprop:Generator_ColumnPropNameInTable="TakeHome_ATMOnlyColumn" msprop:Generator_UserColumnName="TakeHome_ATMOnly" type="xs:double" minOccurs="0" />
+              <xs:element name="SecurityID" msprop:Generator_ColumnVarNameInTable="columnSecurityID" msprop:Generator_ColumnPropNameInRow="SecurityID" msprop:Generator_ColumnPropNameInTable="SecurityIDColumn" msprop:Generator_UserColumnName="SecurityID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Incentive_Brand" msprop:Generator_ColumnVarNameInTable="columnIncentive_Brand" msprop:Generator_ColumnPropNameInRow="Incentive_Brand" msprop:Generator_ColumnPropNameInTable="Incentive_BrandColumn" msprop:Generator_UserColumnName="Incentive_Brand" type="xs:double" minOccurs="0" />
+              <xs:element name="Adjust_TaxableIncome" msprop:Generator_ColumnVarNameInTable="columnAdjust_TaxableIncome" msprop:Generator_ColumnPropNameInRow="Adjust_TaxableIncome" msprop:Generator_ColumnPropNameInTable="Adjust_TaxableIncomeColumn" msprop:Generator_UserColumnName="Adjust_TaxableIncome" type="xs:double" minOccurs="0" />
+              <xs:element name="PayInCash" msprop:Generator_ColumnVarNameInTable="columnPayInCash" msprop:Generator_ColumnPropNameInRow="PayInCash" msprop:Generator_ColumnPropNameInTable="PayInCashColumn" msprop:Generator_UserColumnName="PayInCash" type="xs:double" minOccurs="0" />
+              <xs:element name="Incentive_TaxOnly" msprop:Generator_ColumnVarNameInTable="columnIncentive_TaxOnly" msprop:Generator_ColumnPropNameInRow="Incentive_TaxOnly" msprop:Generator_ColumnPropNameInTable="Incentive_TaxOnlyColumn" msprop:Generator_UserColumnName="Incentive_TaxOnly" type="xs:double" minOccurs="0" />
+              <xs:element name="AON_TaxOnly" msprop:Generator_ColumnVarNameInTable="columnAON_TaxOnly" msprop:Generator_ColumnPropNameInRow="AON_TaxOnly" msprop:Generator_ColumnPropNameInTable="AON_TaxOnlyColumn" msprop:Generator_UserColumnName="AON_TaxOnly" type="xs:double" minOccurs="0" />
+              <xs:element name="PITRefund" msprop:Generator_ColumnVarNameInTable="columnPITRefund" msprop:Generator_ColumnPropNameInRow="PITRefund" msprop:Generator_ColumnPropNameInTable="PITRefundColumn" msprop:Generator_UserColumnName="PITRefund" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT15_InLimit" msprop:Generator_ColumnPropNameInRow="OT15_InLimit" msprop:Generator_ColumnPropNameInTable="OT15_InLimitColumn" msprop:Generator_UserColumnName="OT15_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_InLimit" msprop:Generator_ColumnPropNameInRow="OT15N_InLimit" msprop:Generator_ColumnPropNameInTable="OT15N_InLimitColumn" msprop:Generator_UserColumnName="OT15N_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT20_InLimit" msprop:Generator_ColumnPropNameInRow="OT20_InLimit" msprop:Generator_ColumnPropNameInTable="OT20_InLimitColumn" msprop:Generator_UserColumnName="OT20_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20N_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT20N_InLimit" msprop:Generator_ColumnPropNameInRow="OT20N_InLimit" msprop:Generator_ColumnPropNameInTable="OT20N_InLimitColumn" msprop:Generator_UserColumnName="OT20N_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT30_InLimit" msprop:Generator_ColumnPropNameInRow="OT30_InLimit" msprop:Generator_ColumnPropNameInTable="OT30_InLimitColumn" msprop:Generator_UserColumnName="OT30_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30N_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT30N_InLimit" msprop:Generator_ColumnPropNameInRow="OT30N_InLimit" msprop:Generator_ColumnPropNameInTable="OT30N_InLimitColumn" msprop:Generator_UserColumnName="OT30N_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT15_OverLimit" msprop:Generator_ColumnPropNameInRow="OT15_OverLimit" msprop:Generator_ColumnPropNameInTable="OT15_OverLimitColumn" msprop:Generator_UserColumnName="OT15_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_OverLimit" msprop:Generator_ColumnPropNameInRow="OT15N_OverLimit" msprop:Generator_ColumnPropNameInTable="OT15N_OverLimitColumn" msprop:Generator_UserColumnName="OT15N_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT20_OverLimit" msprop:Generator_ColumnPropNameInRow="OT20_OverLimit" msprop:Generator_ColumnPropNameInTable="OT20_OverLimitColumn" msprop:Generator_UserColumnName="OT20_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20N_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT20N_OverLimit" msprop:Generator_ColumnPropNameInRow="OT20N_OverLimit" msprop:Generator_ColumnPropNameInTable="OT20N_OverLimitColumn" msprop:Generator_UserColumnName="OT20N_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT30_OverLimit" msprop:Generator_ColumnPropNameInRow="OT30_OverLimit" msprop:Generator_ColumnPropNameInTable="OT30_OverLimitColumn" msprop:Generator_UserColumnName="OT30_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30N_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT30N_OverLimit" msprop:Generator_ColumnPropNameInRow="OT30N_OverLimit" msprop:Generator_ColumnPropNameInTable="OT30N_OverLimitColumn" msprop:Generator_UserColumnName="OT30N_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="AD_EIP_Payment" msprop:Generator_ColumnVarNameInTable="columnAD_EIP_Payment" msprop:Generator_ColumnPropNameInRow="AD_EIP_Payment" msprop:Generator_ColumnPropNameInTable="AD_EIP_PaymentColumn" msprop:Generator_UserColumnName="AD_EIP_Payment" type="xs:double" minOccurs="0" />
+              <xs:element name="A_AtSite" msprop:Generator_ColumnVarNameInTable="columnA_AtSite" msprop:Generator_ColumnPropNameInRow="A_AtSite" msprop:Generator_ColumnPropNameInTable="A_AtSiteColumn" msprop:Generator_UserColumnName="A_AtSite" type="xs:double" minOccurs="0" />
+              <xs:element name="A_OtherFix_Tax" msprop:Generator_ColumnVarNameInTable="columnA_OtherFix_Tax" msprop:Generator_ColumnPropNameInRow="A_OtherFix_Tax" msprop:Generator_ColumnPropNameInTable="A_OtherFix_TaxColumn" msprop:Generator_UserColumnName="A_OtherFix_Tax" type="xs:double" minOccurs="0" />
+              <xs:element name="A_OtherFix_NonTax" msprop:Generator_ColumnVarNameInTable="columnA_OtherFix_NonTax" msprop:Generator_ColumnPropNameInRow="A_OtherFix_NonTax" msprop:Generator_ColumnPropNameInTable="A_OtherFix_NonTaxColumn" msprop:Generator_UserColumnName="A_OtherFix_NonTax" type="xs:double" minOccurs="0" />
+              <xs:element name="A_OtherFix" msprop:Generator_ColumnVarNameInTable="columnA_OtherFix" msprop:Generator_ColumnPropNameInRow="A_OtherFix" msprop:Generator_ColumnPropNameInTable="A_OtherFixColumn" msprop:Generator_UserColumnName="A_OtherFix" type="xs:double" minOccurs="0" />
+              <xs:element name="A_NotInPayroll" msprop:Generator_ColumnVarNameInTable="columnA_NotInPayroll" msprop:Generator_ColumnPropNameInRow="A_NotInPayroll" msprop:Generator_ColumnPropNameInTable="A_NotInPayrollColumn" msprop:Generator_UserColumnName="A_NotInPayroll" type="xs:double" minOccurs="0" />
+              <xs:element name="D_NotInPayroll" msprop:Generator_ColumnVarNameInTable="columnD_NotInPayroll" msprop:Generator_ColumnPropNameInRow="D_NotInPayroll" msprop:Generator_ColumnPropNameInTable="D_NotInPayrollColumn" msprop:Generator_UserColumnName="D_NotInPayroll" type="xs:double" minOccurs="0" />
+              <xs:element name="ALUsed_Acc" msprop:Generator_ColumnVarNameInTable="columnALUsed_Acc" msprop:Generator_ColumnPropNameInRow="ALUsed_Acc" msprop:Generator_ColumnPropNameInTable="ALUsed_AccColumn" msprop:Generator_UserColumnName="ALUsed_Acc" type="xs:double" minOccurs="0" />
+              <xs:element name="ALRemain_Acc" msprop:Generator_ColumnVarNameInTable="columnALRemain_Acc" msprop:Generator_ColumnPropNameInRow="ALRemain_Acc" msprop:Generator_ColumnPropNameInTable="ALRemain_AccColumn" msprop:Generator_UserColumnName="ALRemain_Acc" type="xs:double" minOccurs="0" />
+              <xs:element name="A_Business" msprop:Generator_ColumnVarNameInTable="columnA_Business" msprop:Generator_ColumnPropNameInRow="A_Business" msprop:Generator_ColumnPropNameInTable="A_BusinessColumn" msprop:Generator_UserColumnName="A_Business" type="xs:double" minOccurs="0" />
+              <xs:element name="IsManager" msprop:Generator_ColumnVarNameInTable="columnIsManager" msprop:Generator_ColumnPropNameInRow="IsManager" msprop:Generator_ColumnPropNameInTable="IsManagerColumn" msprop:Generator_UserColumnName="IsManager" type="xs:boolean" minOccurs="0" />
+              <xs:element name="D_UnionFee" msprop:Generator_ColumnVarNameInTable="columnD_UnionFee" msprop:Generator_ColumnPropNameInRow="D_UnionFee" msprop:Generator_ColumnPropNameInTable="D_UnionFeeColumn" msprop:Generator_UserColumnName="D_UnionFee" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15_O_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT15_O_InLimit" msprop:Generator_ColumnPropNameInRow="OT15_O_InLimit" msprop:Generator_ColumnPropNameInTable="OT15_O_InLimitColumn" msprop:Generator_UserColumnName="OT15_O_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15_N_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT15_N_InLimit" msprop:Generator_ColumnPropNameInRow="OT15_N_InLimit" msprop:Generator_ColumnPropNameInTable="OT15_N_InLimitColumn" msprop:Generator_UserColumnName="OT15_N_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_O_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_O_InLimit" msprop:Generator_ColumnPropNameInRow="OT15N_O_InLimit" msprop:Generator_ColumnPropNameInTable="OT15N_O_InLimitColumn" msprop:Generator_UserColumnName="OT15N_O_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_N_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_N_InLimit" msprop:Generator_ColumnPropNameInRow="OT15N_N_InLimit" msprop:Generator_ColumnPropNameInTable="OT15N_N_InLimitColumn" msprop:Generator_UserColumnName="OT15N_N_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20_O_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT20_O_InLimit" msprop:Generator_ColumnPropNameInRow="OT20_O_InLimit" msprop:Generator_ColumnPropNameInTable="OT20_O_InLimitColumn" msprop:Generator_UserColumnName="OT20_O_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20_N_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT20_N_InLimit" msprop:Generator_ColumnPropNameInRow="OT20_N_InLimit" msprop:Generator_ColumnPropNameInTable="OT20_N_InLimitColumn" msprop:Generator_UserColumnName="OT20_N_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20N_O_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT20N_O_InLimit" msprop:Generator_ColumnPropNameInRow="OT20N_O_InLimit" msprop:Generator_ColumnPropNameInTable="OT20N_O_InLimitColumn" msprop:Generator_UserColumnName="OT20N_O_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20N_N_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT20N_N_InLimit" msprop:Generator_ColumnPropNameInRow="OT20N_N_InLimit" msprop:Generator_ColumnPropNameInTable="OT20N_N_InLimitColumn" msprop:Generator_UserColumnName="OT20N_N_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30_O_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT30_O_InLimit" msprop:Generator_ColumnPropNameInRow="OT30_O_InLimit" msprop:Generator_ColumnPropNameInTable="OT30_O_InLimitColumn" msprop:Generator_UserColumnName="OT30_O_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30_N_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT30_N_InLimit" msprop:Generator_ColumnPropNameInRow="OT30_N_InLimit" msprop:Generator_ColumnPropNameInTable="OT30_N_InLimitColumn" msprop:Generator_UserColumnName="OT30_N_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30N_O_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT30N_O_InLimit" msprop:Generator_ColumnPropNameInRow="OT30N_O_InLimit" msprop:Generator_ColumnPropNameInTable="OT30N_O_InLimitColumn" msprop:Generator_UserColumnName="OT30N_O_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30N_N_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT30N_N_InLimit" msprop:Generator_ColumnPropNameInRow="OT30N_N_InLimit" msprop:Generator_ColumnPropNameInTable="OT30N_N_InLimitColumn" msprop:Generator_UserColumnName="OT30N_N_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15_O_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT15_O_OverLimit" msprop:Generator_ColumnPropNameInRow="OT15_O_OverLimit" msprop:Generator_ColumnPropNameInTable="OT15_O_OverLimitColumn" msprop:Generator_UserColumnName="OT15_O_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15_N_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT15_N_OverLimit" msprop:Generator_ColumnPropNameInRow="OT15_N_OverLimit" msprop:Generator_ColumnPropNameInTable="OT15_N_OverLimitColumn" msprop:Generator_UserColumnName="OT15_N_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_O_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_O_OverLimit" msprop:Generator_ColumnPropNameInRow="OT15N_O_OverLimit" msprop:Generator_ColumnPropNameInTable="OT15N_O_OverLimitColumn" msprop:Generator_UserColumnName="OT15N_O_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_N_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_N_OverLimit" msprop:Generator_ColumnPropNameInRow="OT15N_N_OverLimit" msprop:Generator_ColumnPropNameInTable="OT15N_N_OverLimitColumn" msprop:Generator_UserColumnName="OT15N_N_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20_O_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT20_O_OverLimit" msprop:Generator_ColumnPropNameInRow="OT20_O_OverLimit" msprop:Generator_ColumnPropNameInTable="OT20_O_OverLimitColumn" msprop:Generator_UserColumnName="OT20_O_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20_N_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT20_N_OverLimit" msprop:Generator_ColumnPropNameInRow="OT20_N_OverLimit" msprop:Generator_ColumnPropNameInTable="OT20_N_OverLimitColumn" msprop:Generator_UserColumnName="OT20_N_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20N_O_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT20N_O_OverLimit" msprop:Generator_ColumnPropNameInRow="OT20N_O_OverLimit" msprop:Generator_ColumnPropNameInTable="OT20N_O_OverLimitColumn" msprop:Generator_UserColumnName="OT20N_O_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT20N_N_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT20N_N_OverLimit" msprop:Generator_ColumnPropNameInRow="OT20N_N_OverLimit" msprop:Generator_ColumnPropNameInTable="OT20N_N_OverLimitColumn" msprop:Generator_UserColumnName="OT20N_N_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30_O_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT30_O_OverLimit" msprop:Generator_ColumnPropNameInRow="OT30_O_OverLimit" msprop:Generator_ColumnPropNameInTable="OT30_O_OverLimitColumn" msprop:Generator_UserColumnName="OT30_O_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30_N_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT30_N_OverLimit" msprop:Generator_ColumnPropNameInRow="OT30_N_OverLimit" msprop:Generator_ColumnPropNameInTable="OT30_N_OverLimitColumn" msprop:Generator_UserColumnName="OT30_N_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30N_O_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT30N_O_OverLimit" msprop:Generator_ColumnPropNameInRow="OT30N_O_OverLimit" msprop:Generator_ColumnPropNameInTable="OT30N_O_OverLimitColumn" msprop:Generator_UserColumnName="OT30N_O_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT30N_N_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT30N_N_OverLimit" msprop:Generator_ColumnPropNameInRow="OT30N_N_OverLimit" msprop:Generator_ColumnPropNameInTable="OT30N_N_OverLimitColumn" msprop:Generator_UserColumnName="OT30N_N_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="BasicA_Month" msprop:Generator_ColumnVarNameInTable="columnBasicA_Month" msprop:Generator_ColumnPropNameInRow="BasicA_Month" msprop:Generator_ColumnPropNameInTable="BasicA_MonthColumn" msprop:Generator_UserColumnName="BasicA_Month" type="xs:double" minOccurs="0" />
+              <xs:element name="L_Annual_M1" msprop:Generator_ColumnVarNameInTable="columnL_Annual_M1" msprop:Generator_ColumnPropNameInRow="L_Annual_M1" msprop:Generator_ColumnPropNameInTable="L_Annual_M1Column" msprop:Generator_UserColumnName="L_Annual_M1" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_2nd_O" msprop:Generator_ColumnVarNameInTable="columnOT15N_2nd_O" msprop:Generator_ColumnPropNameInRow="OT15N_2nd_O" msprop:Generator_ColumnPropNameInTable="OT15N_2nd_OColumn" msprop:Generator_UserColumnName="OT15N_2nd_O" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_2nd_N" msprop:Generator_ColumnVarNameInTable="columnOT15N_2nd_N" msprop:Generator_ColumnPropNameInRow="OT15N_2nd_N" msprop:Generator_ColumnPropNameInTable="OT15N_2nd_NColumn" msprop:Generator_UserColumnName="OT15N_2nd_N" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_2nd" msprop:Generator_ColumnVarNameInTable="columnOT15N_2nd" msprop:Generator_ColumnPropNameInRow="OT15N_2nd" msprop:Generator_ColumnPropNameInTable="OT15N_2ndColumn" msprop:Generator_UserColumnName="OT15N_2nd" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_2ndSal" msprop:Generator_ColumnVarNameInTable="columnOT15N_2ndSal" msprop:Generator_ColumnPropNameInRow="OT15N_2ndSal" msprop:Generator_ColumnPropNameInTable="OT15N_2ndSalColumn" msprop:Generator_UserColumnName="OT15N_2ndSal" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_2nd_O_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_2nd_O_InLimit" msprop:Generator_ColumnPropNameInRow="OT15N_2nd_O_InLimit" msprop:Generator_ColumnPropNameInTable="OT15N_2nd_O_InLimitColumn" msprop:Generator_UserColumnName="OT15N_2nd_O_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_2nd_N_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_2nd_N_InLimit" msprop:Generator_ColumnPropNameInRow="OT15N_2nd_N_InLimit" msprop:Generator_ColumnPropNameInTable="OT15N_2nd_N_InLimitColumn" msprop:Generator_UserColumnName="OT15N_2nd_N_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_2nd_InLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_2nd_InLimit" msprop:Generator_ColumnPropNameInRow="OT15N_2nd_InLimit" msprop:Generator_ColumnPropNameInTable="OT15N_2nd_InLimitColumn" msprop:Generator_UserColumnName="OT15N_2nd_InLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_2nd_O_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_2nd_O_OverLimit" msprop:Generator_ColumnPropNameInRow="OT15N_2nd_O_OverLimit" msprop:Generator_ColumnPropNameInTable="OT15N_2nd_O_OverLimitColumn" msprop:Generator_UserColumnName="OT15N_2nd_O_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_2nd_N_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_2nd_N_OverLimit" msprop:Generator_ColumnPropNameInRow="OT15N_2nd_N_OverLimit" msprop:Generator_ColumnPropNameInTable="OT15N_2nd_N_OverLimitColumn" msprop:Generator_UserColumnName="OT15N_2nd_N_OverLimit" type="xs:double" minOccurs="0" />
+              <xs:element name="OT15N_2nd_OverLimit" msprop:Generator_ColumnVarNameInTable="columnOT15N_2nd_OverLimit" msprop:Generator_ColumnPropNameInRow="OT15N_2nd_OverLimit" msprop:Generator_ColumnPropNameInTable="OT15N_2nd_OverLimitColumn" msprop:Generator_UserColumnName="OT15N_2nd_OverLimit" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_PayrollOnline" />
+      <xs:field xpath="mstns:YearID" />
+      <xs:field xpath="mstns:MonthID" />
+      <xs:field xpath="mstns:EmployeeID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

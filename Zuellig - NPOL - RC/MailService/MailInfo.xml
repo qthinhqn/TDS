@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MailService>
+  <MailInfo>
+    <Server>
+    </Server>
+    <Address>
+    </Address>
+    <Port>
+    </Port>
+    <UserName>hrm.tanduc@gmail.com</UserName>
+    <Password>@tdt-tanduc.com</Password>
+    <Uri>https://mail.namkimgroup.vn/ews/Exchange.asmx</Uri>
+  </MailInfo>
+  <Database>
+    <!--<ConString>Data Source=NGT-PC\SQLEXPRESS;Initial Catalog=PERFETTI;Integrated Security=True</ConString>-->
+    <ConString>Data Source=.,1433;Initial Catalog=ZUELLIG_121016;Persist Security Info=False;Max Pool Size=1000; Connection Timeout=10;User ID=sa;Password=barcode</ConString>
+  </Database>
+</MailService>

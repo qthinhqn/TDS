@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<wrapper>
+  <ObjectTypes>
+    <ObjectType ID="0" Name="TẤT CẢ (ALL Employee)" />
+    <ObjectType ID="1" Name="CẤP BẬC GIÁM SÁT TRỞ LÊN (FOR SUPERVISOR LEVEL AND ABOVE)" />
+    <ObjectType ID="2" Name="KHÔNG BẮT BUỘC (OPTIONAL)" />
+  </ObjectTypes>
+  <Scores>
+    <Score ID="0" />
+    <Score ID="0.5" />
+    <Score ID="1" />
+    <Score ID="1.5" />
+    <Score ID="2" />
+    <Score ID="2.5" />
+    <Score ID="3" />
+    <Score ID="3.5" />
+    <Score ID="4" />
+    <Score ID="4.5" />
+    <Score ID="5" />
+  </Scores>
+  <Importants>
+    <Important ID="0" />
+    <Important ID="1" />
+    <Important ID="2" />
+    <Important ID="3" />
+    <Important ID="4" />
+    <Important ID="5" />
+  </Importants>
+  <Ratings>
+    <Rating ID="0" />
+    <Rating ID="3" />
+    <Rating ID="3.5" />
+    <Rating ID="4" />
+    <Rating ID="4.5" />
+    <Rating ID="5" />
+  </Ratings>
+</wrapper>
