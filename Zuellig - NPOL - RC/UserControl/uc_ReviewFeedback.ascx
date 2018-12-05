@@ -5,6 +5,11 @@
         <table style="width: 98%; margin: 10px">
             <tr>
                 <td>
+                    <div style="float: left; width:600px">
+                        <asp:DropDownList ID="ddlPeriod" runat="server" AutoPostBack="true" Width="100%"
+                            OnSelectedIndexChanged="ddlPeriod_SelectedIndexChanged">
+                        </asp:DropDownList>
+                    </div>
                     <div style="float: right">
                         <dx:ASPxButton ID="btnXlsExport" runat="server" Text="<%$Resources:K_Feedback,expXLS %>" UseSubmitBehavior="False"
                             OnClick="btnXlsExport_Click">
@@ -55,6 +60,7 @@
                         SelectMethod="GetInfoByManagerID" TypeName="NPOL.App_Code.Business.EmpFeedbackService">
                         <SelectParameters>
                             <asp:SessionParameter Name="ManagerID" SessionField="ManagerID" Type="String" />
+                            <asp:SessionParameter Name="Period_ID" SessionField="Period_ID" Type="Int32" DefaultValue="1" />
                         </SelectParameters>
                     </asp:ObjectDataSource>
                 </td>

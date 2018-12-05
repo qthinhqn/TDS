@@ -44,10 +44,10 @@ namespace NPOL.App_Code.Business
             EmpFeedbackDAO newsDAO = new EmpFeedbackDAO();
             return newsDAO.GetInfoByEmpID("spKPI_GetFeedbackByEmp", "@EmployeeID", EmpID);
         }
-        public static List<tbl_EmpFeedback> GetInfoByManagerID(string ManagerID)
+        public static List<tbl_EmpFeedback> GetInfoByManagerID(string ManagerID, int Period_ID)
         {
             EmpFeedbackDAO newsDAO = new EmpFeedbackDAO();
-            return newsDAO.GetInfoByManagerID("spKPI_GetFeedbackByManager", ManagerID);
+            return newsDAO.GetInfoByManagerID("spKPI_GetFeedbackByManager", ManagerID, Period_ID);
         }
         public static DataTable GetTableByid(string EmpID)
         {

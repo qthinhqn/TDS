@@ -149,7 +149,7 @@ namespace NPOL.App_Code.Data
             }
             return newsList;
         }
-        public List<tbl_EmpFeedback> GetInfoByManagerID(string Procedure_Name, string EmpID)
+        public List<tbl_EmpFeedback> GetInfoByManagerID(string Procedure_Name, string EmpID, int Period_ID)
         {
             List<tbl_EmpFeedback> newsList = new List<tbl_EmpFeedback>();
             using (SqlConnection connection = GetConnection())
@@ -162,7 +162,7 @@ namespace NPOL.App_Code.Data
                         command.Parameters.Add(new SqlParameter("@ManagerID", DBNull.Value));
                     else
                         command.Parameters.Add(new SqlParameter("@ManagerID", EmpID));
-                    //command.Parameters.Add(new SqlParameter("@Period", period));
+                    command.Parameters.Add(new SqlParameter("@Period", Period_ID));
 
                     connection.Open();
                     using (IDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection))
