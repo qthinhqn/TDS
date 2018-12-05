@@ -1008,5 +1008,26 @@ namespace NPOL
             provider.CloseConnection();
             return returnValue;
         }
+
+        public bool IsEmployeeResign(string EmployeeID)
+        {
+            bool returnValue = true;
+            khSqlServerProvider provider = new khSqlServerProvider(con);
+            DataTable dt;
+            try
+            {
+                provider.CommandText = "Select * from tblEmployee where EmployeeID = @EmployeeID And (LeftDate is null Or LeftDate >= getdate())";
+                provider.ParameterCollection = new string[] { "@EmployeeID" };
+                provider.ValueCollection = new object[] { EmployeeID };
+                dt = provider.GetDataTable();
+                if (dt.Rows.Count > 0)
+                {
+                    returnValue = false;
+                }
+            }
+            catch { returnValue = true; }
+            provider.CloseConnection();
+            return returnValue;
+        }
     }
 }

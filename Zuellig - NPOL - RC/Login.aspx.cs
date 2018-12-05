@@ -31,7 +31,7 @@ namespace NPOL
             //Session.Remove("CR_ToDate");
             //Session.Remove("YearID");
             Session.Clear();
- 
+
             //Get account cookie
             if (!IsPostBack)
             {
@@ -50,6 +50,7 @@ namespace NPOL
             string Password = txtPass.Text.Trim();
             //bool monitor = false;
             Khuong kh = new Khuong(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ZuelligConnection"].ConnectionString);
+            string Email = kh.getEmpPayslipEmail(UserName);
 
             #region Kiem tra user đăng nhập bằng EmployeeID hay Email
             if (kh.getEmpPayslipEmail(UserName) == null && kh.getEmpID(UserName) == null)
@@ -131,26 +132,47 @@ namespace NPOL
                 }
                 #endregion
                 #region Trường hợp nhân viên chưa có email để nhận mật khẩu --mới
-                else if (kh.getEmpPayslipEmail(UserName).Equals(""))
+                else if (Email == null || Email.Equals(""))
                 {
-
                     //Session["txtUserName"] = txtUserName.Text;
                     //Response.Redirect("ForgotPassword.aspx");
                     string message = null;
-                    if (Session["lang"] != null)
+                    // kiem tra nv con lam viec khong?
+                    if (kh.IsEmployeeResign(UserName))
                     {
-                        if (Session["lang"].ToString().Equals("vi"))
+                        if (Session["lang"] != null)
                         {
-                            message = "alert('Bạn chưa đăng ký email để nhận mật khẩu');";
+                            if (Session["lang"].ToString().Equals("vi"))
+                            {
+                                message = "alert('Nhân viên không có quyền truy cập vì đã nghỉ việc!');";
+                            }
+                            else
+                            {
+                                message = "alert('You do not have access because your have been resigned!');";
+                            }
                         }
                         else
                         {
-                            message = "alert('You have not yet registerd email to receive new password');";
+                            message = "alert('Nhân viên không có quyền truy cập vì đã nghỉ việc!');";
                         }
                     }
                     else
                     {
-                        message = "alert('Bạn chưa đăng ký email để nhận mật khẩu');";
+                        if (Session["lang"] != null)
+                        {
+                            if (Session["lang"].ToString().Equals("vi"))
+                            {
+                                message = "alert('Bạn chưa đăng ký email để nhận mật khẩu');";
+                            }
+                            else
+                            {
+                                message = "alert('You have not yet registerd email to receive new password');";
+                            }
+                        }
+                        else
+                        {
+                            message = "alert('Bạn chưa đăng ký email để nhận mật khẩu');";
+                        }
                     }
                     ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "alert", message, true);
                 }
@@ -588,7 +610,7 @@ namespace NPOL
             else
             {
                 #region Xet truong hop la nhan vien cu
-                if (kh.IsEmployee(UserName) ) //&& !kh.IsNewEmployee(UserName))
+                if (kh.IsEmployee(UserName)) //&& !kh.IsNewEmployee(UserName))
                 {
                     if (kh.IsLogin(UserName, Password))
                     {
