@@ -145,11 +145,11 @@ namespace NPOL
                     ddlTuNgay.Value = (DateTime)dt.Rows[0]["StartDate"];
                     ddlDenNgay.Value = (DateTime)dt.Rows[0]["ToDate"];
                     txtLydo.Text = dt.Rows[0]["LeaveReason"].ToString();
-                    
+
                     ddlDenNgay_DateChanged(null, null);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             { }
         }
 
@@ -696,66 +696,132 @@ namespace NPOL
             double workday = getWorkDay(employeeID);
             string leaveid = drLoainghi.Value.ToString();
 
-            if (workday == 22) //Nghỉ làm thứ 7
+            // T/h nghi thai san => tinh luon thu 7, CN, le
+            if (String.Compare(leaveid, "ML", true) == 0)
             {
-                if (perTimeID.Equals("0"))
+                #region // nghi thai san
+                if (workday == 22) //Nghỉ làm thứ 7
                 {
-                    result = TotalDay(fromDate, toDate) - TotalSunday(fromDate, toDate) - TotalHoliday(fromDate, toDate) - TotalSaturday(fromDate, toDate);
-                }
-                else
-                {
-                    if (perTimeID.Equals("3"))
+                    if (perTimeID.Equals("0"))
                     {
-                        result = TotalDay(fromDate, fromDate) - TotalSunday(fromDate, fromDate) - TotalHoliday(fromDate, fromDate) - TotalSaturday(fromDate, fromDate);
+                        result = TotalDay(fromDate, toDate);
                     }
                     else
                     {
-                        result = (TotalDay(fromDate, toDate) - TotalSunday(fromDate, toDate) - TotalHoliday(fromDate, toDate) - TotalSaturday(fromDate, toDate)) / 2;
+                        if (perTimeID.Equals("3"))
+                        {
+                            result = TotalDay(fromDate, fromDate);
+                        }
+                        else
+                        {
+                            result = TotalDay(fromDate, toDate) / 2;
+                        }
                     }
-
                 }
+
+                if (workday == 26)//Đi làm thứ 7
+                {
+                    if (chkSunday.Checked)
+                    {
+                        if (perTimeID.Equals("0"))
+                        {
+                            result = TotalDay(fromDate, toDate);
+                        }
+                        else
+                        {
+                            if (perTimeID.Equals("3"))
+                            {
+                                result = TotalDay(fromDate, fromDate);
+                            }
+                            else
+                            {
+                                result = TotalDay(fromDate, toDate) / 2;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (perTimeID.Equals("0"))
+                        {
+                            result = TotalDay(fromDate, toDate);
+                        }
+                        else
+                        {
+                            if (perTimeID.Equals("3"))
+                            {
+                                result = TotalDay(fromDate, fromDate);
+                            }
+                            else
+                            {
+                                result = TotalDay(fromDate, toDate) / 2;
+                            }
+                        }
+                    }
+                }
+                #endregion
             }
-
-            if (workday == 26)//Đi làm thứ 7
+            else
             {
-
-                if (chkSunday.Checked)
+                #region // cac loai nghi khac nghi thai san
+                if (workday == 22) //Nghỉ làm thứ 7
                 {
                     if (perTimeID.Equals("0"))
                     {
-                        result = TotalDay(fromDate, toDate) - TotalHoliday(fromDate, toDate);
+                        result = TotalDay(fromDate, toDate) - TotalSunday(fromDate, toDate) - TotalHoliday(fromDate, toDate) - TotalSaturday(fromDate, toDate);
                     }
                     else
                     {
                         if (perTimeID.Equals("3"))
                         {
-                            result = TotalDay(fromDate, fromDate) - TotalHoliday(fromDate, fromDate);
+                            result = TotalDay(fromDate, fromDate) - TotalSunday(fromDate, fromDate) - TotalHoliday(fromDate, fromDate) - TotalSaturday(fromDate, fromDate);
                         }
                         else
                         {
-                            result = (TotalDay(fromDate, toDate) - TotalHoliday(fromDate, toDate)) / 2;
-                        }
-                    }
-                }
-                else
-                {
-                    if (perTimeID.Equals("0"))
-                    {
-                        result = TotalDay(fromDate, toDate) - TotalSunday(fromDate, toDate) - TotalHoliday(fromDate, toDate);
-                    }
-                    else
-                    {
-                        if (perTimeID.Equals("3"))
-                        {
-                            result = TotalDay(fromDate, fromDate) - TotalSunday(fromDate, fromDate) - TotalHoliday(fromDate, fromDate);
-                        }
-                        else
-                        {
-                            result = (TotalDay(fromDate, toDate) - TotalSunday(fromDate, toDate) - TotalHoliday(fromDate, toDate)) / 2;
+                            result = (TotalDay(fromDate, toDate) - TotalSunday(fromDate, toDate) - TotalHoliday(fromDate, toDate) - TotalSaturday(fromDate, toDate)) / 2;
                         }
                     }
                 }
 
+                if (workday == 26)//Đi làm thứ 7
+                {
+                    if (chkSunday.Checked)
+                    {
+                        if (perTimeID.Equals("0"))
+                        {
+                            result = TotalDay(fromDate, toDate) - TotalHoliday(fromDate, toDate);
+                        }
+                        else
+                        {
+                            if (perTimeID.Equals("3"))
+                            {
+                                result = TotalDay(fromDate, fromDate) - TotalHoliday(fromDate, fromDate);
+                            }
+                            else
+                            {
+                                result = (TotalDay(fromDate, toDate) - TotalHoliday(fromDate, toDate)) / 2;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (perTimeID.Equals("0"))
+                        {
+                            result = TotalDay(fromDate, toDate) - TotalSunday(fromDate, toDate) - TotalHoliday(fromDate, toDate);
+                        }
+                        else
+                        {
+                            if (perTimeID.Equals("3"))
+                            {
+                                result = TotalDay(fromDate, fromDate) - TotalSunday(fromDate, fromDate) - TotalHoliday(fromDate, fromDate);
+                            }
+                            else
+                            {
+                                result = (TotalDay(fromDate, toDate) - TotalSunday(fromDate, toDate) - TotalHoliday(fromDate, toDate)) / 2;
+                            }
+                        }
+                    }
+                }
+                #endregion
             }
 
             //Trường hợp đăng ký làm thêm nghỉ bù (1-1)
@@ -1546,7 +1612,7 @@ namespace NPOL
                             UpdateMailAction(EmpID, level);
                         }
                         break;
-                    #endregion
+                        #endregion
                 }
 
                 this.ASPxGridView1.DataBind();
@@ -2478,7 +2544,7 @@ namespace NPOL
                         e.Visible = true;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
@@ -2518,7 +2584,7 @@ namespace NPOL
             sqlProvider.CommandText = "Delete from tblWebData where id = @id";
             sqlProvider.ParameterCollection = new string[] { "@id" };
             sqlProvider.ValueCollection = new object[] { id };
-            
+
             sqlProvider.ExecuteNonQuery();
             sqlProvider.CloseConnection();
         }
@@ -2538,7 +2604,7 @@ namespace NPOL
                     if (!IsDeleted(id.ToString()))
                         e.Visible = DevExpress.Utils.DefaultBoolean.False;
                     else
-                        e.Visible = DevExpress.Utils.DefaultBoolean.True; 
+                        e.Visible = DevExpress.Utils.DefaultBoolean.True;
                 }
             }
             catch (Exception ex)
