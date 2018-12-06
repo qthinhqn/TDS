@@ -67,7 +67,7 @@ namespace NPOL
             //Nạp dữ liệu chế độ nghỉ khi mở trang
             if (!IsPostBack)
             {
-                drchedonghi.DataSource = getPerTimeDataSource2();
+                drchedonghi.DataSource = getPerTimeDataSource1();
                 drchedonghi.DataBind();
                 drchedonghi.SelectedIndex = 0;
 
@@ -1397,6 +1397,39 @@ namespace NPOL
                         break;
                     #endregion
 
+                    #region Trường hợp DOD
+                    case "dod": //Trường hợp di cong tac
+                        checkNum = 1;
+
+                        //Insert data
+                        if (perTimeID.Equals("3"))
+                        {
+                            DateTime FromTime = (DateTime)teditTuGio.Value;
+                            DateTime ToTime = (DateTime)teditDenGio.Value;
+                            TimeSpan ts = ToTime - FromTime;
+                            float TotalHours = (float)(Math.Round(ts.TotalHours, 2));
+
+
+                            DateTime FromTime1 = new DateTime(startDate.Year, startDate.Month, startDate.Day, FromTime.Hour, FromTime.Minute, FromTime.Second);
+                            DateTime ToTime1 = new DateTime(startDate.Year, startDate.Month, startDate.Day, ToTime.Hour, ToTime.Minute, ToTime.Second);
+
+                            //Insert data cho lượt đăng ký nghỉ theo giờ
+                            InsertRecord2(EmpID, regDate, leaveID, startDate, startDate, perTimeID, leaveReason, checkNum, mailToL1, managerID_L1, managerID_L2, managerID_L3, FromTime1, ToTime1, TotalHours);
+                        }
+                        else
+                        {
+                            InsertRecordWithWarning(EmpID, regDate, leaveID, startDate, toDate, perTimeID, leaveReason, checkNum, totalDay, mailToL1, managerID_L1, managerID_L2, managerID_L3);
+                        }
+
+                        //Update Mail Action
+                        level = getMailLevel(managerID_L1, managerID_L2, managerID_L3);
+                        if (level > 0)
+                        {
+                            UpdateMailAction(EmpID, level);
+                        }
+                        break;
+                    #endregion
+
                     #region Trường hợp AL
                     case "al"://Trường hợp phép năm
                         //if (MaxCheckNum >= 2)
@@ -2098,15 +2131,19 @@ namespace NPOL
             txtTongNgay.Value = 0;
             txtLydo.Text = "";
 
-            if (Convert.ToInt32(drchedonghi.Value) == 3)
+            string leaveid = drLoainghi.Value.ToString();
+            if (leaveid == "DOD")
             {
-                //Hiện đăng ký giờ
-                //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "show", "ShowTimeReg();", true);
-                teditTuGio.Enabled = true;
-                teditDenGio.Enabled = true;
-                vTongGio.Enabled = true;
-                btnTinhGio.Enabled = true;
-                ddlDenNgay.Enabled = false;
+                if (Convert.ToInt32(drchedonghi.Value) == 3)
+                {
+                    //Hiện đăng ký giờ
+                    //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "show", "ShowTimeReg();", true);
+                    teditTuGio.Enabled = true;
+                    teditDenGio.Enabled = true;
+                    vTongGio.Enabled = true;
+                    btnTinhGio.Enabled = true;
+                    ddlDenNgay.Enabled = false;
+                }
             }
             else
             {
@@ -2131,15 +2168,19 @@ namespace NPOL
                 txtTongNgay.Text = CalculateLeaveDays(FromDate, ToDate, drchedonghi.Value.ToString(), EmpID).ToString();
             }
 
-            if (Convert.ToInt32(drchedonghi.Value) == 3)
+            string leaveid = drLoainghi.Value.ToString();
+            if (leaveid == "DOD")
             {
-                //Hiện đăng ký giờ
-                //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "show", "ShowTimeReg();", true);
-                teditTuGio.Enabled = true;
-                teditDenGio.Enabled = true;
-                vTongGio.Enabled = true;
-                btnTinhGio.Enabled = true;
-                txtTongNgay.Text = "";
+                if (Convert.ToInt32(drchedonghi.Value) == 3)
+                {
+                    //Hiện đăng ký giờ
+                    //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "show", "ShowTimeReg();", true);
+                    teditTuGio.Enabled = true;
+                    teditDenGio.Enabled = true;
+                    vTongGio.Enabled = true;
+                    btnTinhGio.Enabled = true;
+                    txtTongNgay.Text = "";
+                }
             }
             else
             {
@@ -2153,16 +2194,20 @@ namespace NPOL
         protected void drchedonghi_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Thiết lập trạng thái control chế độ đăng ký theo giờ
-            if (Convert.ToInt32(drchedonghi.Value) == 3)
+            string leaveid = drLoainghi.Value.ToString();
+            if (leaveid == "DOD")
             {
-                //Hiện đăng ký giờ
-                //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "show", "ShowTimeReg();", true);
-                teditTuGio.Enabled = true;
-                teditDenGio.Enabled = true;
-                vTongGio.Enabled = true;
-                btnTinhGio.Enabled = true;
-                ddlDenNgay.Enabled = false;
-                txtTongNgay.Text = "";
+                if (Convert.ToInt32(drchedonghi.Value) == 3)
+                {
+                    //Hiện đăng ký giờ
+                    //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "show", "ShowTimeReg();", true);
+                    teditTuGio.Enabled = true;
+                    teditDenGio.Enabled = true;
+                    vTongGio.Enabled = true;
+                    btnTinhGio.Enabled = true;
+                    ddlDenNgay.Enabled = false;
+                    txtTongNgay.Text = "";
+                }
             }
             else
             {
@@ -2277,16 +2322,19 @@ namespace NPOL
                 //drchedonghi.SelectedIndex = 0;
 
                 //Xét trường hợp đăng ký theo giờ
-                if (drchedonghi.Value.ToString().Equals("3"))
+                if (leaveid == "DOD")
                 {
                     //Hiện đăng ký giờ
                     //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "show", "ShowTimeReg();", true);
-                    teditTuGio.Enabled = true;
-                    teditDenGio.Enabled = true;
-                    vTongGio.Enabled = true;
-                    btnTinhGio.Enabled = true;
-                    ddlDenNgay.Enabled = false;
-                    txtTongNgay.Text = "";
+                    if (drchedonghi.Value.ToString().Equals("3"))
+                    {
+                        teditTuGio.Enabled = true;
+                        teditDenGio.Enabled = true;
+                        vTongGio.Enabled = true;
+                        btnTinhGio.Enabled = true;
+                        ddlDenNgay.Enabled = false;
+                        txtTongNgay.Text = "";
+                    }
                 }
                 else
                 {
@@ -2300,21 +2348,24 @@ namespace NPOL
             }
             else
             {
-                drchedonghi.DataSource = getPerTimeDataSource2();
+                drchedonghi.DataSource = getPerTimeDataSource1();
                 drchedonghi.DataBind();
                 drchedonghi.SelectedIndex = 0;
 
                 //Xét trường hợp đăng ký theo giờ
-                if (drchedonghi.Value.ToString().Equals("3"))
+                if (leaveid == "DOD")
                 {
                     //Hiện đăng ký giờ
                     //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "show", "ShowTimeReg();", true);
-                    teditTuGio.Enabled = true;
-                    teditDenGio.Enabled = true;
-                    vTongGio.Enabled = true;
-                    btnTinhGio.Enabled = true;
-                    ddlDenNgay.Enabled = false;
-                    txtTongNgay.Text = "";
+                    if (drchedonghi.Value.ToString().Equals("3"))
+                    {
+                        teditTuGio.Enabled = true;
+                        teditDenGio.Enabled = true;
+                        vTongGio.Enabled = true;
+                        btnTinhGio.Enabled = true;
+                        ddlDenNgay.Enabled = false;
+                        txtTongNgay.Text = "";
+                    }
                 }
                 else
                 {
@@ -2386,15 +2437,19 @@ namespace NPOL
                 txtTongNgay.Text = CalculateLeaveDays(FromDate, ToDate, drchedonghi.Value.ToString(), EmpID).ToString();
             }
 
-            if (Convert.ToInt32(drchedonghi.Value) == 3)
+            string leaveid = drLoainghi.Value.ToString();
+            if (leaveid == "DOD")
             {
-                //Hiện đăng ký giờ
-                //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "show", "ShowTimeReg();", true);
-                teditTuGio.Enabled = true;
-                teditDenGio.Enabled = true;
-                vTongGio.Enabled = true;
-                btnTinhGio.Enabled = true;
-                txtTongNgay.Text = "";
+                if (Convert.ToInt32(drchedonghi.Value) == 3)
+                {
+                    //Hiện đăng ký giờ
+                    //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "show", "ShowTimeReg();", true);
+                    teditTuGio.Enabled = true;
+                    teditDenGio.Enabled = true;
+                    vTongGio.Enabled = true;
+                    btnTinhGio.Enabled = true;
+                    txtTongNgay.Text = "";
+                }
             }
             else
             {
