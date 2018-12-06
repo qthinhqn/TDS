@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLeaveReport" targetNamespace="http://tempuri.org/dsLeaveReport.xsd" xmlns:mstns="http://tempuri.org/dsLeaveReport.xsd" xmlns="http://tempuri.org/dsLeaveReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="PERFETTIConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PERFETTIConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.PERFETTIConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblWeb_LeaveReportTableAdapter" GeneratorDataComponentClassName="tblWeb_LeaveReportTableAdapter" Name="tblWeb_LeaveReport" UserDataComponentName="tblWeb_LeaveReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PERFETTIConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT dbo.tblWeb_LeaveReport.*, dbo.tblEmployee.SectionName FROM dbo.tblEmployee RIGHT OUTER JOIN dbo.tblWeb_LeaveReport ON dbo.tblEmployee.EmployeeID = dbo.tblWeb_LeaveReport.EmployeeID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UserID" DataSetColumn="UserID" />
+              <Mapping SourceColumn="EmployeeID" DataSetColumn="EmployeeID" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="EmployedDate" DataSetColumn="EmployedDate" />
+              <Mapping SourceColumn="Seniority" DataSetColumn="Seniority" />
+              <Mapping SourceColumn="LineName" DataSetColumn="LineName" />
+              <Mapping SourceColumn="PosName" DataSetColumn="PosName" />
+              <Mapping SourceColumn="TotalALInit" DataSetColumn="TotalALInit" />
+              <Mapping SourceColumn="Jan_AL" DataSetColumn="Jan_AL" />
+              <Mapping SourceColumn="Jan_SL" DataSetColumn="Jan_SL" />
+              <Mapping SourceColumn="Jan_UP" DataSetColumn="Jan_UP" />
+              <Mapping SourceColumn="Jan_UN" DataSetColumn="Jan_UN" />
+              <Mapping SourceColumn="Feb_AL" DataSetColumn="Feb_AL" />
+              <Mapping SourceColumn="Feb_SL" DataSetColumn="Feb_SL" />
+              <Mapping SourceColumn="Feb_UP" DataSetColumn="Feb_UP" />
+              <Mapping SourceColumn="Feb_UN" DataSetColumn="Feb_UN" />
+              <Mapping SourceColumn="Mar_AL" DataSetColumn="Mar_AL" />
+              <Mapping SourceColumn="Mar_SL" DataSetColumn="Mar_SL" />
+              <Mapping SourceColumn="Mar_UP" DataSetColumn="Mar_UP" />
+              <Mapping SourceColumn="Mar_UN" DataSetColumn="Mar_UN" />
+              <Mapping SourceColumn="Apr_AL" DataSetColumn="Apr_AL" />
+              <Mapping SourceColumn="Apr_SL" DataSetColumn="Apr_SL" />
+              <Mapping SourceColumn="Apr_UP" DataSetColumn="Apr_UP" />
+              <Mapping SourceColumn="Apr_UN" DataSetColumn="Apr_UN" />
+              <Mapping SourceColumn="May_AL" DataSetColumn="May_AL" />
+              <Mapping SourceColumn="May_SL" DataSetColumn="May_SL" />
+              <Mapping SourceColumn="May_UP" DataSetColumn="May_UP" />
+              <Mapping SourceColumn="May_UN" DataSetColumn="May_UN" />
+              <Mapping SourceColumn="Jun_AL" DataSetColumn="Jun_AL" />
+              <Mapping SourceColumn="Jun_SL" DataSetColumn="Jun_SL" />
+              <Mapping SourceColumn="Jun_UP" DataSetColumn="Jun_UP" />
+              <Mapping SourceColumn="Jun_UN" DataSetColumn="Jun_UN" />
+              <Mapping SourceColumn="Jul_AL" DataSetColumn="Jul_AL" />
+              <Mapping SourceColumn="Jul_SL" DataSetColumn="Jul_SL" />
+              <Mapping SourceColumn="Jul_UP" DataSetColumn="Jul_UP" />
+              <Mapping SourceColumn="Jul_UN" DataSetColumn="Jul_UN" />
+              <Mapping SourceColumn="Aug_AL" DataSetColumn="Aug_AL" />
+              <Mapping SourceColumn="Aug_SL" DataSetColumn="Aug_SL" />
+              <Mapping SourceColumn="Aug_UP" DataSetColumn="Aug_UP" />
+              <Mapping SourceColumn="Aug_UN" DataSetColumn="Aug_UN" />
+              <Mapping SourceColumn="Sep_AL" DataSetColumn="Sep_AL" />
+              <Mapping SourceColumn="Sep_SL" DataSetColumn="Sep_SL" />
+              <Mapping SourceColumn="Sep_UP" DataSetColumn="Sep_UP" />
+              <Mapping SourceColumn="Sep_UN" DataSetColumn="Sep_UN" />
+              <Mapping SourceColumn="Oct_AL" DataSetColumn="Oct_AL" />
+              <Mapping SourceColumn="Oct_SL" DataSetColumn="Oct_SL" />
+              <Mapping SourceColumn="Oct_UP" DataSetColumn="Oct_UP" />
+              <Mapping SourceColumn="Oct_UN" DataSetColumn="Oct_UN" />
+              <Mapping SourceColumn="Nov_AL" DataSetColumn="Nov_AL" />
+              <Mapping SourceColumn="Nov_SL" DataSetColumn="Nov_SL" />
+              <Mapping SourceColumn="Nov_UP" DataSetColumn="Nov_UP" />
+              <Mapping SourceColumn="Nov_UN" DataSetColumn="Nov_UN" />
+              <Mapping SourceColumn="Dec_AL" DataSetColumn="Dec_AL" />
+              <Mapping SourceColumn="Dec_SL" DataSetColumn="Dec_SL" />
+              <Mapping SourceColumn="Dec_UP" DataSetColumn="Dec_UP" />
+              <Mapping SourceColumn="Dec_UN" DataSetColumn="Dec_UN" />
+              <Mapping SourceColumn="TotalAL" DataSetColumn="TotalAL" />
+              <Mapping SourceColumn="TotalSL" DataSetColumn="TotalSL" />
+              <Mapping SourceColumn="TotalUP" DataSetColumn="TotalUP" />
+              <Mapping SourceColumn="TotalUN" DataSetColumn="TotalUN" />
+              <Mapping SourceColumn="ALBalance" DataSetColumn="ALBalance" />
+              <Mapping SourceColumn="SectionName" DataSetColumn="SectionName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLeaveReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsLeaveReport" msprop:Generator_UserDSName="dsLeaveReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblWeb_LeaveReport" msprop:Generator_TableClassName="tblWeb_LeaveReportDataTable" msprop:Generator_TableVarName="tabletblWeb_LeaveReport" msprop:Generator_TablePropName="tblWeb_LeaveReport" msprop:Generator_RowDeletingName="tblWeb_LeaveReportRowDeleting" msprop:Generator_RowChangingName="tblWeb_LeaveReportRowChanging" msprop:Generator_RowEvHandlerName="tblWeb_LeaveReportRowChangeEventHandler" msprop:Generator_RowDeletedName="tblWeb_LeaveReportRowDeleted" msprop:Generator_UserTableName="tblWeb_LeaveReport" msprop:Generator_RowChangedName="tblWeb_LeaveReportRowChanged" msprop:Generator_RowEvArgName="tblWeb_LeaveReportRowChangeEvent" msprop:Generator_RowClassName="tblWeb_LeaveReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" msprop:Generator_UserColumnName="UserID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployedDate" msprop:Generator_ColumnVarNameInTable="columnEmployedDate" msprop:Generator_ColumnPropNameInRow="EmployedDate" msprop:Generator_ColumnPropNameInTable="EmployedDateColumn" msprop:Generator_UserColumnName="EmployedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Seniority" msprop:Generator_ColumnVarNameInTable="columnSeniority" msprop:Generator_ColumnPropNameInRow="Seniority" msprop:Generator_ColumnPropNameInTable="SeniorityColumn" msprop:Generator_UserColumnName="Seniority" type="xs:double" minOccurs="0" />
+              <xs:element name="LineName" msprop:Generator_ColumnVarNameInTable="columnLineName" msprop:Generator_ColumnPropNameInRow="LineName" msprop:Generator_ColumnPropNameInTable="LineNameColumn" msprop:Generator_UserColumnName="LineName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PosName" msprop:Generator_ColumnVarNameInTable="columnPosName" msprop:Generator_ColumnPropNameInRow="PosName" msprop:Generator_ColumnPropNameInTable="PosNameColumn" msprop:Generator_UserColumnName="PosName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalALInit" msprop:Generator_ColumnVarNameInTable="columnTotalALInit" msprop:Generator_ColumnPropNameInRow="TotalALInit" msprop:Generator_ColumnPropNameInTable="TotalALInitColumn" msprop:Generator_UserColumnName="TotalALInit" type="xs:double" minOccurs="0" />
+              <xs:element name="Jan_AL" msprop:Generator_ColumnVarNameInTable="columnJan_AL" msprop:Generator_ColumnPropNameInRow="Jan_AL" msprop:Generator_ColumnPropNameInTable="Jan_ALColumn" msprop:Generator_UserColumnName="Jan_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Jan_SL" msprop:Generator_ColumnVarNameInTable="columnJan_SL" msprop:Generator_ColumnPropNameInRow="Jan_SL" msprop:Generator_ColumnPropNameInTable="Jan_SLColumn" msprop:Generator_UserColumnName="Jan_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Jan_UP" msprop:Generator_ColumnVarNameInTable="columnJan_UP" msprop:Generator_ColumnPropNameInRow="Jan_UP" msprop:Generator_ColumnPropNameInTable="Jan_UPColumn" msprop:Generator_UserColumnName="Jan_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Jan_UN" msprop:Generator_ColumnVarNameInTable="columnJan_UN" msprop:Generator_ColumnPropNameInRow="Jan_UN" msprop:Generator_ColumnPropNameInTable="Jan_UNColumn" msprop:Generator_UserColumnName="Jan_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="Feb_AL" msprop:Generator_ColumnVarNameInTable="columnFeb_AL" msprop:Generator_ColumnPropNameInRow="Feb_AL" msprop:Generator_ColumnPropNameInTable="Feb_ALColumn" msprop:Generator_UserColumnName="Feb_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Feb_SL" msprop:Generator_ColumnVarNameInTable="columnFeb_SL" msprop:Generator_ColumnPropNameInRow="Feb_SL" msprop:Generator_ColumnPropNameInTable="Feb_SLColumn" msprop:Generator_UserColumnName="Feb_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Feb_UP" msprop:Generator_ColumnVarNameInTable="columnFeb_UP" msprop:Generator_ColumnPropNameInRow="Feb_UP" msprop:Generator_ColumnPropNameInTable="Feb_UPColumn" msprop:Generator_UserColumnName="Feb_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Feb_UN" msprop:Generator_ColumnVarNameInTable="columnFeb_UN" msprop:Generator_ColumnPropNameInRow="Feb_UN" msprop:Generator_ColumnPropNameInTable="Feb_UNColumn" msprop:Generator_UserColumnName="Feb_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="Mar_AL" msprop:Generator_ColumnVarNameInTable="columnMar_AL" msprop:Generator_ColumnPropNameInRow="Mar_AL" msprop:Generator_ColumnPropNameInTable="Mar_ALColumn" msprop:Generator_UserColumnName="Mar_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Mar_SL" msprop:Generator_ColumnVarNameInTable="columnMar_SL" msprop:Generator_ColumnPropNameInRow="Mar_SL" msprop:Generator_ColumnPropNameInTable="Mar_SLColumn" msprop:Generator_UserColumnName="Mar_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Mar_UP" msprop:Generator_ColumnVarNameInTable="columnMar_UP" msprop:Generator_ColumnPropNameInRow="Mar_UP" msprop:Generator_ColumnPropNameInTable="Mar_UPColumn" msprop:Generator_UserColumnName="Mar_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Mar_UN" msprop:Generator_ColumnVarNameInTable="columnMar_UN" msprop:Generator_ColumnPropNameInRow="Mar_UN" msprop:Generator_ColumnPropNameInTable="Mar_UNColumn" msprop:Generator_UserColumnName="Mar_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="Apr_AL" msprop:Generator_ColumnVarNameInTable="columnApr_AL" msprop:Generator_ColumnPropNameInRow="Apr_AL" msprop:Generator_ColumnPropNameInTable="Apr_ALColumn" msprop:Generator_UserColumnName="Apr_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Apr_SL" msprop:Generator_ColumnVarNameInTable="columnApr_SL" msprop:Generator_ColumnPropNameInRow="Apr_SL" msprop:Generator_ColumnPropNameInTable="Apr_SLColumn" msprop:Generator_UserColumnName="Apr_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Apr_UP" msprop:Generator_ColumnVarNameInTable="columnApr_UP" msprop:Generator_ColumnPropNameInRow="Apr_UP" msprop:Generator_ColumnPropNameInTable="Apr_UPColumn" msprop:Generator_UserColumnName="Apr_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Apr_UN" msprop:Generator_ColumnVarNameInTable="columnApr_UN" msprop:Generator_ColumnPropNameInRow="Apr_UN" msprop:Generator_ColumnPropNameInTable="Apr_UNColumn" msprop:Generator_UserColumnName="Apr_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="May_AL" msprop:Generator_ColumnVarNameInTable="columnMay_AL" msprop:Generator_ColumnPropNameInRow="May_AL" msprop:Generator_ColumnPropNameInTable="May_ALColumn" msprop:Generator_UserColumnName="May_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="May_SL" msprop:Generator_ColumnVarNameInTable="columnMay_SL" msprop:Generator_ColumnPropNameInRow="May_SL" msprop:Generator_ColumnPropNameInTable="May_SLColumn" msprop:Generator_UserColumnName="May_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="May_UP" msprop:Generator_ColumnVarNameInTable="columnMay_UP" msprop:Generator_ColumnPropNameInRow="May_UP" msprop:Generator_ColumnPropNameInTable="May_UPColumn" msprop:Generator_UserColumnName="May_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="May_UN" msprop:Generator_ColumnVarNameInTable="columnMay_UN" msprop:Generator_ColumnPropNameInRow="May_UN" msprop:Generator_ColumnPropNameInTable="May_UNColumn" msprop:Generator_UserColumnName="May_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="Jun_AL" msprop:Generator_ColumnVarNameInTable="columnJun_AL" msprop:Generator_ColumnPropNameInRow="Jun_AL" msprop:Generator_ColumnPropNameInTable="Jun_ALColumn" msprop:Generator_UserColumnName="Jun_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Jun_SL" msprop:Generator_ColumnVarNameInTable="columnJun_SL" msprop:Generator_ColumnPropNameInRow="Jun_SL" msprop:Generator_ColumnPropNameInTable="Jun_SLColumn" msprop:Generator_UserColumnName="Jun_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Jun_UP" msprop:Generator_ColumnVarNameInTable="columnJun_UP" msprop:Generator_ColumnPropNameInRow="Jun_UP" msprop:Generator_ColumnPropNameInTable="Jun_UPColumn" msprop:Generator_UserColumnName="Jun_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Jun_UN" msprop:Generator_ColumnVarNameInTable="columnJun_UN" msprop:Generator_ColumnPropNameInRow="Jun_UN" msprop:Generator_ColumnPropNameInTable="Jun_UNColumn" msprop:Generator_UserColumnName="Jun_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="Jul_AL" msprop:Generator_ColumnVarNameInTable="columnJul_AL" msprop:Generator_ColumnPropNameInRow="Jul_AL" msprop:Generator_ColumnPropNameInTable="Jul_ALColumn" msprop:Generator_UserColumnName="Jul_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Jul_SL" msprop:Generator_ColumnVarNameInTable="columnJul_SL" msprop:Generator_ColumnPropNameInRow="Jul_SL" msprop:Generator_ColumnPropNameInTable="Jul_SLColumn" msprop:Generator_UserColumnName="Jul_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Jul_UP" msprop:Generator_ColumnVarNameInTable="columnJul_UP" msprop:Generator_ColumnPropNameInRow="Jul_UP" msprop:Generator_ColumnPropNameInTable="Jul_UPColumn" msprop:Generator_UserColumnName="Jul_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Jul_UN" msprop:Generator_ColumnVarNameInTable="columnJul_UN" msprop:Generator_ColumnPropNameInRow="Jul_UN" msprop:Generator_ColumnPropNameInTable="Jul_UNColumn" msprop:Generator_UserColumnName="Jul_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="Aug_AL" msprop:Generator_ColumnVarNameInTable="columnAug_AL" msprop:Generator_ColumnPropNameInRow="Aug_AL" msprop:Generator_ColumnPropNameInTable="Aug_ALColumn" msprop:Generator_UserColumnName="Aug_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Aug_SL" msprop:Generator_ColumnVarNameInTable="columnAug_SL" msprop:Generator_ColumnPropNameInRow="Aug_SL" msprop:Generator_ColumnPropNameInTable="Aug_SLColumn" msprop:Generator_UserColumnName="Aug_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Aug_UP" msprop:Generator_ColumnVarNameInTable="columnAug_UP" msprop:Generator_ColumnPropNameInRow="Aug_UP" msprop:Generator_ColumnPropNameInTable="Aug_UPColumn" msprop:Generator_UserColumnName="Aug_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Aug_UN" msprop:Generator_ColumnVarNameInTable="columnAug_UN" msprop:Generator_ColumnPropNameInRow="Aug_UN" msprop:Generator_ColumnPropNameInTable="Aug_UNColumn" msprop:Generator_UserColumnName="Aug_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="Sep_AL" msprop:Generator_ColumnVarNameInTable="columnSep_AL" msprop:Generator_ColumnPropNameInRow="Sep_AL" msprop:Generator_ColumnPropNameInTable="Sep_ALColumn" msprop:Generator_UserColumnName="Sep_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Sep_SL" msprop:Generator_ColumnVarNameInTable="columnSep_SL" msprop:Generator_ColumnPropNameInRow="Sep_SL" msprop:Generator_ColumnPropNameInTable="Sep_SLColumn" msprop:Generator_UserColumnName="Sep_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Sep_UP" msprop:Generator_ColumnVarNameInTable="columnSep_UP" msprop:Generator_ColumnPropNameInRow="Sep_UP" msprop:Generator_ColumnPropNameInTable="Sep_UPColumn" msprop:Generator_UserColumnName="Sep_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Sep_UN" msprop:Generator_ColumnVarNameInTable="columnSep_UN" msprop:Generator_ColumnPropNameInRow="Sep_UN" msprop:Generator_ColumnPropNameInTable="Sep_UNColumn" msprop:Generator_UserColumnName="Sep_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="Oct_AL" msprop:Generator_ColumnVarNameInTable="columnOct_AL" msprop:Generator_ColumnPropNameInRow="Oct_AL" msprop:Generator_ColumnPropNameInTable="Oct_ALColumn" msprop:Generator_UserColumnName="Oct_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Oct_SL" msprop:Generator_ColumnVarNameInTable="columnOct_SL" msprop:Generator_ColumnPropNameInRow="Oct_SL" msprop:Generator_ColumnPropNameInTable="Oct_SLColumn" msprop:Generator_UserColumnName="Oct_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Oct_UP" msprop:Generator_ColumnVarNameInTable="columnOct_UP" msprop:Generator_ColumnPropNameInRow="Oct_UP" msprop:Generator_ColumnPropNameInTable="Oct_UPColumn" msprop:Generator_UserColumnName="Oct_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Oct_UN" msprop:Generator_ColumnVarNameInTable="columnOct_UN" msprop:Generator_ColumnPropNameInRow="Oct_UN" msprop:Generator_ColumnPropNameInTable="Oct_UNColumn" msprop:Generator_UserColumnName="Oct_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="Nov_AL" msprop:Generator_ColumnVarNameInTable="columnNov_AL" msprop:Generator_ColumnPropNameInRow="Nov_AL" msprop:Generator_ColumnPropNameInTable="Nov_ALColumn" msprop:Generator_UserColumnName="Nov_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Nov_SL" msprop:Generator_ColumnVarNameInTable="columnNov_SL" msprop:Generator_ColumnPropNameInRow="Nov_SL" msprop:Generator_ColumnPropNameInTable="Nov_SLColumn" msprop:Generator_UserColumnName="Nov_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Nov_UP" msprop:Generator_ColumnVarNameInTable="columnNov_UP" msprop:Generator_ColumnPropNameInRow="Nov_UP" msprop:Generator_ColumnPropNameInTable="Nov_UPColumn" msprop:Generator_UserColumnName="Nov_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Nov_UN" msprop:Generator_ColumnVarNameInTable="columnNov_UN" msprop:Generator_ColumnPropNameInRow="Nov_UN" msprop:Generator_ColumnPropNameInTable="Nov_UNColumn" msprop:Generator_UserColumnName="Nov_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="Dec_AL" msprop:Generator_ColumnVarNameInTable="columnDec_AL" msprop:Generator_ColumnPropNameInRow="Dec_AL" msprop:Generator_ColumnPropNameInTable="Dec_ALColumn" msprop:Generator_UserColumnName="Dec_AL" type="xs:double" minOccurs="0" />
+              <xs:element name="Dec_SL" msprop:Generator_ColumnVarNameInTable="columnDec_SL" msprop:Generator_ColumnPropNameInRow="Dec_SL" msprop:Generator_ColumnPropNameInTable="Dec_SLColumn" msprop:Generator_UserColumnName="Dec_SL" type="xs:double" minOccurs="0" />
+              <xs:element name="Dec_UP" msprop:Generator_ColumnVarNameInTable="columnDec_UP" msprop:Generator_ColumnPropNameInRow="Dec_UP" msprop:Generator_ColumnPropNameInTable="Dec_UPColumn" msprop:Generator_UserColumnName="Dec_UP" type="xs:double" minOccurs="0" />
+              <xs:element name="Dec_UN" msprop:Generator_ColumnVarNameInTable="columnDec_UN" msprop:Generator_ColumnPropNameInRow="Dec_UN" msprop:Generator_ColumnPropNameInTable="Dec_UNColumn" msprop:Generator_UserColumnName="Dec_UN" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalAL" msprop:Generator_ColumnVarNameInTable="columnTotalAL" msprop:Generator_ColumnPropNameInRow="TotalAL" msprop:Generator_ColumnPropNameInTable="TotalALColumn" msprop:Generator_UserColumnName="TotalAL" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalSL" msprop:Generator_ColumnVarNameInTable="columnTotalSL" msprop:Generator_ColumnPropNameInRow="TotalSL" msprop:Generator_ColumnPropNameInTable="TotalSLColumn" msprop:Generator_UserColumnName="TotalSL" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalUP" msprop:Generator_ColumnVarNameInTable="columnTotalUP" msprop:Generator_ColumnPropNameInRow="TotalUP" msprop:Generator_ColumnPropNameInTable="TotalUPColumn" msprop:Generator_UserColumnName="TotalUP" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalUN" msprop:Generator_ColumnVarNameInTable="columnTotalUN" msprop:Generator_ColumnPropNameInRow="TotalUN" msprop:Generator_ColumnPropNameInTable="TotalUNColumn" msprop:Generator_UserColumnName="TotalUN" type="xs:double" minOccurs="0" />
+              <xs:element name="ALBalance" msprop:Generator_ColumnVarNameInTable="columnALBalance" msprop:Generator_ColumnPropNameInRow="ALBalance" msprop:Generator_ColumnPropNameInTable="ALBalanceColumn" msprop:Generator_UserColumnName="ALBalance" type="xs:double" minOccurs="0" />
+              <xs:element name="SectionName" msprop:Generator_ColumnVarNameInTable="columnSectionName" msprop:Generator_ColumnPropNameInRow="SectionName" msprop:Generator_ColumnPropNameInTable="SectionNameColumn" msprop:Generator_UserColumnName="SectionName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

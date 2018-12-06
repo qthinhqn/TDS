@@ -1,0 +1,279 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="NPOL.Site1" %>
+
+<%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui-1.10.2.js" type="text/javascript"></script>
+
+
+    <title>Đăng ký nghỉ phép trực tuyến</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="css/Foundation.css" type="text/css" />
+    <link rel="stylesheet" href="css/Style.css" type="text/css" />
+    <script type="text/javascript">
+        function onCommandExecuted(s, e) {
+            var text = e.item.name;
+            var hiddenField = document.getElementById('HiddenField1');
+            hiddenField.value = text;
+            var hiddenButton = document.getElementById('btnSubmit');
+            hiddenButton.click();
+        }
+
+        function onFileTabClicked(s, e) {
+            var hiddenField = document.getElementById('HiddenField1');
+            hiddenField.value = '1';
+            var hiddenButton = document.getElementById('btnSubmit');
+            hiddenButton.click();
+        }
+
+        function OnShowButtonClick(s, e) {
+            popup.SetHeaderText("popup.Show()");
+            popup.Show();
+        }
+
+        function ShowUploadControl() {
+            var o = document.getElementById('upload');
+            o.style.display = 'table';
+        }
+
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <dx:ASPxPanel ID="TopPanel" runat="server" Width="100%" Collapsible="true" FixedPosition="WindowTop" Theme="Office2010Blue">
+            <SettingsAdaptivity CollapseAtWindowInnerWidth="580" />
+            <PanelCollection>
+                <dx:PanelContent runat="server">
+                    <!--Ribbon bat dau-->
+                    <dx:ASPxRibbon ID="S_Ribbon" runat="server" ClientInstanceName="C_Ribbon" Theme="Office2010Blue"
+                        FileTabText="Home" AllowMinimize="true" StylesTabControl-ActiveTab-BackColor="blue" StylesTabControl-ActiveTab-ForeColor="White"
+                        StylesTabControl-ActiveTab-Font-Bold="true" OnCommandExecuted="S_Ribbon_CommandExecuted" ShowFileTab="false">
+
+                        <StylesTabControl>
+                            <ActiveTab BackColor="Blue" Font-Bold="True" ForeColor="White"></ActiveTab>
+                        </StylesTabControl>
+
+                        <ClientSideEvents FileTabClicked="onFileTabClicked" />
+                        <Tabs>
+                            <dx:RibbonTab Text="<%$Resources:Ribbon,T_NV %>">
+                                <Groups>
+                                    <dx:RibbonGroup Text="<%$Resources:Ribbon,G_TaiKhoan %>">
+                                        <Items>
+                                            <dx:RibbonButtonItem Name="0" Text="<%$Resources:Ribbon,I_DoiMK %>" Size="Large">
+                                                <LargeImage IconID="businessobjects_bopermission_32x32"></LargeImage>
+                                                <ItemStyle Width="100" />
+                                            </dx:RibbonButtonItem>
+                                        </Items>
+                                    </dx:RibbonGroup>
+                                    <dx:RibbonGroup Text="<%$Resources:Ribbon,G_DangKy %>">
+                                        <Items>
+                                            <dx:RibbonButtonItem Name="1" Text="<%$Resources:Ribbon,I_DKPhep %>" Size="Large">
+                                                <LargeImage IconID="actions_formatastable_32x32"></LargeImage>
+                                                <ItemStyle Width="100" />
+                                            </dx:RibbonButtonItem>
+                                            <dx:RibbonButtonItem Name="2" Text="<%$Resources:Ribbon,I_DKBu %>" Size="Large">
+                                                <LargeImage IconID="edit_edit_32x32"></LargeImage>
+                                                <ItemStyle Width="150" />
+                                            </dx:RibbonButtonItem>
+                                        </Items>
+                                    </dx:RibbonGroup>
+                                    <dx:RibbonGroup Text="<%$Resources:Ribbon,G_Luong %>">
+                                        <Items>
+                                            <dx:RibbonButtonItem Name="3" Text="<%$Resources:Ribbon,I_Phieuluong %>" Size="Large">
+                                                <LargeImage IconID="spreadsheet_allowuserstoeditranges_32x32"></LargeImage>
+                                                <ItemStyle Width="100" />
+                                            </dx:RibbonButtonItem>
+                                            <dx:RibbonButtonItem Name="3.2" Text="<%$Resources:Ribbon,I_QTT_TNCN %>" Size="Large">
+                                                <LargeImage Url="images/tax-icon.png"></LargeImage>
+                                                <ItemStyle Width="170" />
+                                            </dx:RibbonButtonItem>
+                                        </Items>
+                                    </dx:RibbonGroup>
+                                </Groups>
+                            </dx:RibbonTab>
+                            <dx:RibbonTab Text="<%$Resources:Ribbon,T_QL %>">
+                                <Groups>
+                                    <dx:RibbonGroup Text="<%$Resources:Ribbon,G_PheDuyet %>">
+                                        <Items>
+                                            <dx:RibbonButtonItem Name="4" Text="<%$Resources:Ribbon,I_DKPhep %>" Size="Large">
+                                                <LargeImage IconID="businessobjects_boposition2_32x32"></LargeImage>
+                                                <ItemStyle Width="100px"></ItemStyle>
+                                            </dx:RibbonButtonItem>
+                                        </Items>
+                                    </dx:RibbonGroup>
+                                    <dx:RibbonGroup Text="<%$Resources:Ribbon,G_HRM %>">
+                                        <Items>
+                                            <dx:RibbonButtonItem Text="<%$Resources:Ribbon,I_HRM %>" Name="5" Size="Large">
+                                                <LargeImage IconID="save_saveto_32x32"></LargeImage>
+                                                <ItemStyle Width="100px"></ItemStyle>
+                                            </dx:RibbonButtonItem>
+                                        </Items>
+                                    </dx:RibbonGroup>
+                                    <dx:RibbonGroup Text="<%$Resources:Ribbon,G_CapDuyet %>">
+                                        <Items>
+                                            <dx:RibbonButtonItem Text="<%$Resources:Ribbon,I_CapDuyet %>" Name="6" Size="Large">
+                                                <LargeImage IconID="people_usergroup_32x32"></LargeImage>
+                                                <ItemStyle Width="150px"></ItemStyle>
+                                            </dx:RibbonButtonItem>
+                                        </Items>
+                                    </dx:RibbonGroup>
+                                    <dx:RibbonGroup Text="<%$Resources:Ribbon,G_BaoCao %>">
+                                        <Items>
+                                            <dx:RibbonButtonItem Text="<%$Resources:Ribbon,I_Phepton %>" Name="7" Size="Large">
+                                                <LargeImage IconID="chart_chart_32x32"></LargeImage>
+                                                <ItemStyle Width="100px"></ItemStyle>
+                                            </dx:RibbonButtonItem>
+                                        </Items>
+                                    </dx:RibbonGroup>
+                                    <dx:RibbonGroup Text="Mật khẩu" Visible="false">
+                                        <Items>
+                                            <dx:RibbonButtonItem Text="QL mật khẩu" Name="8" Size="Large">
+                                                <LargeImage IconID="businessobjects_bopermission_32x32"></LargeImage>
+                                                <ItemStyle Width="100px"></ItemStyle>
+                                            </dx:RibbonButtonItem>
+                                        </Items>
+                                    </dx:RibbonGroup>
+                                    <dx:RibbonGroup Text="<%$Resources:Ribbon,G_BaoCao %>">
+                                        <Items>
+                                            <dx:RibbonButtonItem Text="<%$Resources:Ribbon,I_Phepton %>" Name="9" Size="Large">
+                                                <LargeImage IconID="chart_chart_32x32"></LargeImage>
+                                                <ItemStyle Width="100px"></ItemStyle>
+                                            </dx:RibbonButtonItem>
+                                        </Items>
+                                    </dx:RibbonGroup>
+                                </Groups>
+                            </dx:RibbonTab>
+                        </Tabs>
+                    </dx:ASPxRibbon>
+                    <!--Ribbon ket thuc-->
+                </dx:PanelContent>
+            </PanelCollection>
+        </dx:ASPxPanel>
+        <%--<asp:UpdatePanel runat="server" ID="up2">
+            <ContentTemplate>
+                <asp:HiddenField ID="HiddenField1" runat="server" />
+                <div style="display: none">
+                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>--%>
+
+        <!-- Left Menu bat dau-->
+        <dx:ASPxPanel runat="server" FixedPosition="WindowLeft" Collapsible="true" Theme="Office2010Blue" EnableHierarchyRecreation="False" EnableTheming="True" ID="LPanel">
+            <SettingsAdaptivity CollapseAtWindowInnerWidth="2000" />
+            <PanelCollection>
+                <dx:PanelContent runat="server">
+                    <!-- NavBar (left) bat dau --->
+                    <dx:ASPxNavBar ID="ASPxNavBar1" runat="server" Theme="Office2010Blue">
+                        <Groups>
+                            <dx:NavBarGroup Text="<%$Resources:LeftMenu.Master,info %>" HeaderStyle-Font-Bold="true" HeaderStyle-HorizontalAlign="Center" HeaderStyle-Font-Size="10pt">
+                                <Items>
+                                    <dx:NavBarItem>
+                                        <Template>
+                                            <table style="width: 270px; border: thin solid silver">
+                                                <tr>
+                                                    <td style="width: 60px"></td>
+                                                    <td>
+                                                        <asp:Image ID="Image1" runat="server" Height="160" Width="140" ImageUrl="Images/Logo.jpg"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <table style="margin: 0; padding: 0; width: 100%">
+                                                            <tr>
+                                                                <td style="width: 80px">
+                                                                    <asp:Label ID="lblMaNV" runat="server" Font-Size="8pt" Font-Bold="true" Text="<%$Resources:LeftMenu.Master,id %>"></asp:Label></td>
+                                                                <td>:</td>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="txtMaNV" ForeColor="Blue" Font-Bold="true" Font-Size="8pt"></asp:Label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="lblHoTen" Font-Size="8pt" Font-Bold="true" Text="<%$Resources:LeftMenu.Master,fullname %>"></asp:Label></td>
+                                                                <td>:</td>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="txtHoTen" Font-Bold="true" ForeColor="Blue" Font-Size="8pt"></asp:Label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="lbNgayVaoLam" Font-Size="8pt" Font-Bold="true" Text="<%$Resources:LeftMenu.Master,lbNgayVaoLam %>"></asp:Label></td>
+                                                                <td>:</td>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="txtNgayVaoLam" Font-Bold="true" ForeColor="Blue" Font-Size="8pt"></asp:Label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="lbViTri" Font-Size="8pt" Font-Bold="true" Text="<%$Resources:LeftMenu.Master,lbViTri %>"></asp:Label></td>
+                                                                <td>:</td>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="txtViTri" Font-Bold="true" ForeColor="Blue" Font-Size="8pt"></asp:Label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="lbBoPhan" Font-Size="8pt" Font-Bold="true" Text="<%$Resources:LeftMenu.Master,lbBoPhan %>"></asp:Label></td>
+                                                                <td>:</td>
+                                                                <td>
+                                                                    <asp:Label runat="server" ID="txtBoPhan" Font-Bold="true" ForeColor="Blue" Font-Size="8pt"></asp:Label></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="2">
+                                                                    <asp:Label runat="server" ID="Label1"></asp:Label></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </Template>
+                                    </dx:NavBarItem>
+                                </Items>
+                                <HeaderStyle HorizontalAlign="Center" Font-Bold="True" Font-Size="10pt"></HeaderStyle>
+                            </dx:NavBarGroup>
+                        </Groups>
+                        <Paddings Padding="0px" />
+                    </dx:ASPxNavBar>
+                    <!-- NavBar (left) ket thuc --->
+                    <div>
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 40%">
+                                    <div style="margin-top: 10px">
+                                        <asp:LinkButton ID="lbtLogout" runat="server" Text="<%$Resources:LeftMenu.Master,lbtLogout %>" OnClick="lbtLogout_Click"
+                                            CssClass="button round tiny" Font-Bold="true" Font-Size="12px" CausesValidation="false"></asp:LinkButton>
+                                    </div>
+                                </td>
+                                <td style="text-align: right">
+                                    <div style="margin-top: 10px">                                      
+                                        <input id="btChangeImage" type="button" value="Thay đổi hình ảnh" class="button round" style="background-color:#99ccff; font:12px bold italic; color:black; width:130px"
+                                            onclick="ShowUploadControl()" />  
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="margin-top:15px; display:none" id="upload">
+                        <dx:ASPxUploadControl ID="ASPxUploadControl1" runat="server" UploadMode="Auto" Width="280px" Theme="Office2003Blue" ShowUploadButton="true"
+                            UploadStorage="FileSystem" ShowProgressPanel="true" OnFileUploadComplete="ASPxUploadControl1_FileUploadComplete" Visible="true">
+                            <ValidationSettings MaxFileSize="4194304" AllowedFileExtensions=".jpg, .jpeg, .gif, .png"></ValidationSettings>
+                            <BrowseButton Text="Chọn hình"></BrowseButton>
+                        </dx:ASPxUploadControl>
+                    </div>                    
+                </dx:PanelContent>
+            </PanelCollection>
+        </dx:ASPxPanel>
+        <!-- Left Menu ket thuc-->        
+        <div>
+            <asp:ContentPlaceHolder runat="server" ID="ct1">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
