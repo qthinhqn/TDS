@@ -23,6 +23,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -2950,7 +2951,6 @@
     </Compile>
     <Compile Include="Report\dsPayrollOnline.cs">
       <DependentUpon>dsPayrollOnline.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report\dsPayrollOnline.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -3169,7 +3169,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CR_Payroll_Slip_Sales1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Report\AnnualLeave_en.resx">
       <DependentUpon>AnnualLeave_en.cs</DependentUpon>
     </EmbeddedResource>

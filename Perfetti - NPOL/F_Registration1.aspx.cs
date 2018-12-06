@@ -161,7 +161,7 @@ namespace NPOL
             khSqlServerProvider provider = new khSqlServerProvider(conn.WebConfigurationManager.ConnectionStrings["PERFETTIConnectionString"].ConnectionString);
             try
             {
-                provider.CommandText = "Select * from dbo.udf_GetMax_Contract(@thamso) Where ContractTypeID In (Select ContractTypeID from tblRef_ContractType Where GroupID in (2,4))";
+                provider.CommandText = "Select * from dbo.udf_GetMax_Contract(@thamso) Where ContractTypeID In (Select ContractTypeID from tblRef_ContractType Where GroupID in (2,3,4))";
                 provider.ParameterCollection = new string[] { "@thamso" };
                 provider.ValueCollection = new object[] { View };
                 DataTable dt = provider.GetDataTable();
