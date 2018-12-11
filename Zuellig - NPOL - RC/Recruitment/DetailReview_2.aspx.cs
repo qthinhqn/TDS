@@ -48,8 +48,10 @@ namespace NPOL
 
                 loadAttach_CE();
                 loadAttach_JD();
-            }
 
+                // hide phan thong tin dieu chinh
+                ShowHide_Description();
+            }
 
             // kiem tra dieu kien edit
             if (Session["RecruitTmp"].ToString() == "True")
@@ -425,9 +427,12 @@ namespace NPOL
                     {
                         validate = true;
                     }
-                    if (_Director_Status != DBNull.Value && _Director_Status.ToString() == "w")
+                    if (Is_HRDirector(employeeID))
                     {
-                        validate = true;
+                        if (_Director_Status != DBNull.Value && _Director_Status.ToString() == "w")
+                        {
+                            validate = true;
+                        }
                     }
                 }
                 else if (_EmpID_Apply != null && _EmpID_Apply.ToString() != "")
@@ -682,9 +687,9 @@ namespace NPOL
                             strTemp2 = dt2.Rows[0]["Permanent_Sal"].ToString();
                             txtBasicSal_new2.Text = Double.Parse(strTemp2 == "" ? "0" : strTemp2).ToString("#,###");
                             strTemp2 = dt2.Rows[0]["Permanent_Travel"].ToString();
-                            txtTransAllow_new2.Text = Double.Parse(strTemp2 == "" ? "0" : strTemp2).ToString("#,###"); 
+                            txtTransAllow_new2.Text = Double.Parse(strTemp2 == "" ? "0" : strTemp2).ToString("#,###");
                             strTemp2 = dt2.Rows[0]["Permanent_Allowance"].ToString();
-                            txtOtherAllow_new2.Text = Double.Parse(strTemp2 == "" ? "0" : strTemp2).ToString("#,###"); 
+                            txtOtherAllow_new2.Text = Double.Parse(strTemp2 == "" ? "0" : strTemp2).ToString("#,###");
                             txtOther_new2.Text = dt2.Rows[0]["Other_newValue"].ToString();
                             txtA_HotlineNew2.Text = dt2.Rows[0]["Other_new2Value"].ToString();
                         }
