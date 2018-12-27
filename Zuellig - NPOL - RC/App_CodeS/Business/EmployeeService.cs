@@ -17,5 +17,10 @@ namespace NPOL.App_Code.Business
             return newsDAO.GetAttachmentById( empID);
         }
 
+        public static bool CheckViewSalary_EmpReplace(string empID, string managerID)
+        {
+            Employee_InfoDAO newsDAO = new Employee_InfoDAO();
+            return newsDAO.CheckViewSalary_EmpReplace(empID, managerID);
+        }
     }
 }

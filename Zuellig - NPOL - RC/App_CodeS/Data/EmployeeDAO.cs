@@ -45,6 +45,32 @@ namespace NPOL.App_Code.Data
             return news;
         }
 
+        public bool CheckViewSalary_EmpReplace(string empID, string managerID)
+        {
+            bool result = false;
+            try
+            {
+                using (SqlConnection connection = GetConnection())
+                {
+                    SqlCommand command = new SqlCommand("spRC_CheckViewSalary", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.Add(new SqlParameter("@EmpID", empID));
+                    command.Parameters.Add(new SqlParameter("@ManagerID", managerID));
+                    SqlParameter paramID = new SqlParameter("@KQ", SqlDbType.Bit);
+                    paramID.Direction = ParameterDirection.Output;
+                    command.Parameters.Add(paramID);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    if (paramID.Value != DBNull.Value)
+                        result = (bool)paramID.Value;
+                }
+            }
+            catch (Exception ex) { }
+            return result;
+        }
+
         public Employee_Info GetAttachmentById(string empID)
         {
             using (SqlConnection connection = GetConnection())

@@ -764,7 +764,11 @@ namespace NPOL
                         textLeftDate.Text = "";
                         textLeftDate.Visible = false;
                     }
-                    textSalary.Text = item.Salary.ToString("#,###");
+                    // Load tt luong theo tung quan ly
+                    if (EmployeeService.CheckViewSalary_EmpReplace(txtEmpID_Replace.Text.Trim(), Session["EmployeeID"].ToString()))
+                        textSalary.Text = item.Salary.ToString("#,###");
+                    else
+                        textSalary.Text = "";
                     if (item.MaternityDate == null)
                     {
                         textMaternity.Text = "";
