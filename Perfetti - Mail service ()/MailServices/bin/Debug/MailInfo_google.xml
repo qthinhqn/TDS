@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MailService>
+  <MailInfo>
+    <Server>smtp.gmail.com
+    </Server>
+    <Address>hrm.tanduc@gmail.com
+    </Address>
+    <Port>587
+    </Port>
+    <UserName>hrm.tanduc</UserName>
+    <Password>@tdt-tanduc.com</Password>
+    <Uri>https://outlook.office365.com/EWS/Exchange.asmx</Uri>
+  </MailInfo>
+  <Database>
+    <!--<ConString>Data Source=NGT-PC\SQLEXPRESS;Initial Catalog=PERFETTI;Integrated Security=True</ConString>-->
+    <ConString>Data Source=TDS-CUONGDO\SQL2012;Initial Catalog=Khai_26.03;Persist Security Info=False;Max Pool Size=1000; Connection Timeout=0;User ID=sa;Password=barcode</ConString>
+  </Database>
+</MailService>

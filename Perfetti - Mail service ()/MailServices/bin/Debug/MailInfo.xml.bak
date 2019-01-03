@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MailService>
+  <MailInfo>
+    <Server>
+    </Server>
+    <Address>
+      thinhnq@tdt-tanduc.com
+    </Address>
+    <Port>25
+    </Port>
+    <UserName>thinhnq</UserName>
+    <Password>QHRkdC10YW5kdWMuY29tUkNW</Password>
+    <Uri>https://msoutlook.zuelligpharma.com/ews/exchange.asmx</Uri>
+    <Link>http://localhost/zuelligpharma/Login.aspx</Link>
+  </MailInfo>
+  <Database>
+    <ConString>Data Source=tanduc\SQL2008R2SP;Initial Catalog=PERFETTI;Persist Security Info=False;Max Pool Size=1000; Connection Timeout=0;User ID=sa;Password=YmFyY29kZVJDVg==</ConString>
+  </Database>
+</MailService>

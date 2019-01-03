@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MailService>
+  <MailInfo>
+    <Server>smtp.gmail.com
+    </Server>
+    <Address>hrm.tanduc@gmail.com
+    </Address>
+    <Port>587
+    </Port>
+    <UserName>hrm.tanduc</UserName>
+    <Password>QHRkdC10YW5kdWMuY29tUkNW</Password>
+    <Uri></Uri>
+  </MailInfo>
+  <Database>
+    <ConString>Data Source=TDS-CUONGDO\SQL2012;Initial Catalog=Khai_26.03;Persist Security Info=False;Max Pool Size=1000; Connection Timeout=0;User ID=sa;Password=YmFyY29kZVJDVgd==</ConString>
+  </Database>
+</MailService>
