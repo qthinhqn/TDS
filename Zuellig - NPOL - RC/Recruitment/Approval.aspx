@@ -74,7 +74,8 @@
                         OnCommandButtonInitialize="gvApproval_CommandButtonInitialize"
                         OnCustomButtonCallback="gvApproval_CustomButtonCallback"
                         OnHtmlEditFormCreated="gvApproval_HtmlEditFormCreated"
-                        OnDataBinding="gvApproval_DataBinding">
+                        OnDataBinding="gvApproval_DataBinding"
+                        >
                         <Styles>
                             <Header HorizontalAlign="Center" Font-Bold="true" Wrap="True"></Header>
                         </Styles>
@@ -147,10 +148,15 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td colspan="2">
+                                            <dx:ASPxLabel ID="lbAlert" runat="server" Text="<%$Resources:RC_Approval,lbAlert %>" Font-Bold="true" ForeColor="Red" Font-Italic="true"></dx:ASPxLabel>
+                                        </td>
+                                    </tr>
+                                    <tr>
                                         <td></td>
                                         <td>
                                             <div style="margin: 3px">
-                                                <dx:ASPxGridViewTemplateReplacement runat="server" ReplacementType="EditFormUpdateButton" />
+                                                <dx:ASPxGridViewTemplateReplacement runat="server" ReplacementType="EditFormUpdateButton" ID="btnUpdate"/>
                                                 <dx:ASPxGridViewTemplateReplacement runat="server" ReplacementType="EditFormCancelButton" />
                                             </div>
                                         </td>

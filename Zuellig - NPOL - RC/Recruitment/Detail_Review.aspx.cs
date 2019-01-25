@@ -1,32 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
-using System.Collections;
 using conn = System.Web.Configuration;
-using DevExpress.Web;
 using NPOL.App_Code.Business;
 using NPOL.App_Code.Entities;
 using System.Web.Services;
 using System.Data.SqlClient;
-using DevExpress.XtraRichEdit;
-using System.IO;
-using System.Net;
-using DevExpress.Office.Services;
-using DevExpress.Web.Office;
 using NPOL.Recruitment;
 
 namespace NPOL
 {
-    public partial class PR_DetailReview : System.Web.UI.Page
+    public partial class PR_Detail_Review : System.Web.UI.Page
     {
         bool IsForeWarning = true;
         bool IsRepresentative = true;
         bool IsForeWarning_RegisterDate = true;
         tblCand_Request_Online item = null;
+
+        private void HideInfo()
+        {
+            row01.Visible = false;
+            row02.Visible = false;
+            row03.Visible = false;
+            row04.Visible = false;
+            Part5.Visible = false;
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             //Validate Page
@@ -37,6 +38,9 @@ namespace NPOL
             else
             {
             }
+
+            // Hide info
+            HideInfo();
 
             // get data info
             if (Session["RecruitTmp"].ToString() == "True")
@@ -90,12 +94,12 @@ namespace NPOL
                 */
                 if (Check_Benifit(Session["EmployeeID"].ToString()))
                 {
-                    Part5.Visible = true;
+                    //Part5.Visible = true;
                     textSalary.Visible = true;
                 }
                 else
                 {
-                    Part5.Visible = false;
+                    //Part5.Visible = false;
                     textSalary.Visible = false;
                 }
 
@@ -475,6 +479,7 @@ namespace NPOL
             args.IsValid = true;
             try
             {
+                /*
                 // kiem tra chon Nhan vien dieu chinh
                 if (txtEmpID.Text.Trim() == "")
                 {
@@ -489,6 +494,7 @@ namespace NPOL
                     SetErrorMessage("vGender");
                     return;
                 }
+                */
                 // kiem tra chon nhom luong
                 if (!Validate_Payroll_Checked())
                 {
@@ -524,6 +530,7 @@ namespace NPOL
                     SetErrorMessage("vEmployee_Replace");
                     return;
                 }
+                /*
                 // kiem tra chon loai hop dong
                 if (!Validate_Promotion())
                 {
@@ -566,7 +573,7 @@ namespace NPOL
                 //    SetErrorMessage("vDuplicate");
                 //    return;
                 //}
-
+                */
             }
             catch (Exception ex)
             {
@@ -791,7 +798,7 @@ namespace NPOL
                 //Code insert data into database
                 tblCand_Request_Online new_Obj = new tblCand_Request_Online();
                 //new_Obj.EmpID_Apply = null;
-                new_Obj.Apply_Name = txtEmpID.Text;
+                //new_Obj.Apply_Name = txtEmpID.Text;
                 new_Obj.RequestID = item.RequestID;
                 new_Obj.DateID = DateTime.Now;
                 //new_Obj.ReceivedDate = ;
@@ -866,13 +873,14 @@ namespace NPOL
                 //new_Obj.IsInternalPost = ;
                 //if (ComboBox_Location.Value != null)
                 //new_Obj.LocationID = ComboBox_Location.Value.ToString();
-                if (opt_Male.Checked)
-                    new_Obj.SexID = "M";
-                else
-                    new_Obj.SexID = "F";
+                //if (opt_Male.Checked)
+                //    new_Obj.SexID = "M";
+                //else
+                //    new_Obj.SexID = "F";
                 //new_Obj.JobDes = ;
                 //new_Obj.JobDes_File = ;
                 //new_Obj.IsBudgetHead = ;
+                /*
                 new_Obj.StartDate = cld_StartDate.Date;
                 // ProbationID
                 {
@@ -902,6 +910,7 @@ namespace NPOL
                     new_Obj.Permanent_Travel = double.Parse(TextBox13.Text.Replace(",", "").Replace(".", ""));
                 if (TextBox15.Text != "")
                     new_Obj.Permanent_Allowance = double.Parse(TextBox15.Text.Replace(",", "").Replace(".", ""));
+                */            
                 new_Obj.Requester = item.Requester;
                 new_Obj.ReportTo = txtEmpOtherID.Text;
                 //new_Obj.ApprovedBy = ;
@@ -919,6 +928,7 @@ namespace NPOL
                     new_Obj.LocationID = ComboBox_Location.Value.ToString();
 
                 // moi them 12.01
+                /*
                 if (TextBox1.Text.Trim() != "")
                     new_Obj.Other_old = TextBox1.Text;
                 if (TextBox2.Text.Trim() != "")
@@ -927,6 +937,7 @@ namespace NPOL
                     new_Obj.Other_oldValue = TextBox3.Text;
                 if (TextBox4.Text.Trim() != "")
                     new_Obj.Other_newValue = TextBox4.Text;
+                */
                 // Remark
                 new_Obj.Remarks = txtRemarks.Value;
 
@@ -935,10 +946,10 @@ namespace NPOL
                 {
                     Cand_Request_OnlineService.UpdateNews(new_Obj);
 
-                    if (uc_Upload2.Validate())
-                    {
-                        uc_Upload2.Submit_Attach(new_Obj.RequestID, "CE");
-                    }
+                    //if (uc_Upload2.Validate())
+                    //{
+                    //    uc_Upload2.Submit_Attach(new_Obj.RequestID, "CE");
+                    //}
                     if (uc_Upload3.Validate())
                     {
                         uc_Upload3.Submit_Attach(new_Obj.RequestID, "JD");
@@ -958,10 +969,10 @@ namespace NPOL
                     {
                         // cap nhat file attach
                         UpdateAttachment(Session["RequestID"].ToString(), new_Obj.RequestID);
-                        if (uc_Upload2.Validate())
-                        {
-                            uc_Upload2.Submit_Attach(new_Obj.RequestID, "CE");
-                        }
+                        //if (uc_Upload2.Validate())
+                        //{
+                        //    uc_Upload2.Submit_Attach(new_Obj.RequestID, "CE");
+                        //}
                         if (uc_Upload3.Validate())
                         {
                             uc_Upload3.Submit_Attach(new_Obj.RequestID, "JD");

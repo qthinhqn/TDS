@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Review" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="DetailReview.aspx.cs" Inherits="NPOL.PR_DetailReview" %>
+﻿<%@ Page Title="Review" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Detail_Review.aspx.cs" Inherits="NPOL.PR_Detail_Review" %>
 
 <%@ Register Assembly="DevExpress.Web.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 <%@ Register Src="~/Recruitment/uc_Upload1.ascx" TagPrefix="uc1" TagName="uc_Upload1" %>
@@ -73,6 +73,7 @@
                     <table class="table" style="width: 100%">
                         <tr>
                             <td>
+                                <div id="row01" runat="server">
                                 <div class="col-lg-2 control-label2">
                                     <asp:Label ID="Label10" runat="server" Text="<%$Resources:RC_Registration,lb1_1 %>"></asp:Label>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="<%$Resources:RC_Registration2,vEmployee %>" ControlToValidate="txtEmpID" Text="*"></asp:RequiredFieldValidator>
@@ -84,6 +85,7 @@
                                     <asp:TextBox ID="txtEmpID" runat="server" placeholder="" CssClass="form-control" BackColor="#e4effa"></asp:TextBox>
                                 </div>
                                 <asp:Label ID="Label24" runat="server" Text=" " CssClass="col-lg-12 control-label2"></asp:Label>
+                                </div>
 
                                 <div class="col-lg-2 control-label2">
                                     <asp:Label ID="Label11" runat="server" Text="<%$Resources:RC_Registration,lb1_2 %>"></asp:Label>
@@ -190,6 +192,7 @@
                                         SelectCommand="SELECT DISTINCT EmployeeName, EmployeeID from tblEmployee Where Leftdate is null Order by EmployeeName;"></asp:SqlDataSource>
                                 </div>--%>
 
+                                <div id="row02" runat="server">
                                 <asp:Label ID="Label1" runat="server" Text="" CssClass="col-lg-12 control-label2"></asp:Label>
                                 <asp:Label ID="Label17" runat="server" Text="<%$Resources:RC_Registration,lb1_7 %>" CssClass="col-lg-4 control-label2"></asp:Label>
                                 <div class="col-lg-2">
@@ -201,6 +204,7 @@
                                     <dx:ASPxRadioButton ID="opt_Female" runat="server" Text="<%$Resources:RC_Registration,opt_Female%>" GroupName="gGender">
                                         <RadioButtonStyle ForeColor="Red" Font-Bold="true" />
                                     </dx:ASPxRadioButton>
+                                </div>
                                 </div>
 
                                 <asp:Label ID="Label36" runat="server" Text="" CssClass="col-lg-12 control-label2"></asp:Label>
@@ -338,7 +342,7 @@
                             </td>
                             <%--<td colspan="4"></td>--%>
                         </tr>
-                        <tr>
+                        <tr style="display:none">
                             <td colspan="3">
                                 <asp:Label ID="Label30" runat="server" Text="<%$Resources:RC_Registration,lbAttach_CE %>" CssClass="col-lg-12 control-label2"></asp:Label>
                                 <asp:HiddenField runat="server" ID="HiddenField"></asp:HiddenField>
@@ -446,7 +450,7 @@
                     </table>
                 </div>
                 <%--Phan dang ky : Part 4.0--%>
-                <div class="large-12 columns">
+                <div class="large-12 columns" id="row03" runat="server">
                     <lbtitle><asp:Label ID="Label28" runat="server" Text="<%$Resources:RC_Registration,lb4_1 %>" ></asp:Label> <i class="fa fa-pencil pull-right"></i></lbtitle>
                     <table class="table" style="width: 100%">
                         <tr>
@@ -466,7 +470,7 @@
                     </table>
                 </div>
                 <%--Phan dang ky : Part 4.1--%>
-                <div class="large-12 columns">
+                <div class="large-12 columns" id="row04" runat="server">
                     <lbtitle><asp:Label ID="Label5" runat="server" Text="<%$Resources:RC_Registration,lbPart_4 %>" ></asp:Label> <i class="fa fa-pencil pull-right"></i></lbtitle>
                     <table class="table" style="width: 100%">
                         <tr>

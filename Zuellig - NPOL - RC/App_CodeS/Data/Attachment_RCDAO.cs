@@ -140,5 +140,32 @@ namespace NPOL.App_Code.Data
             }
         }
 
+        public bool CheckAlert(object regID)
+        {
+            bool result = false;
+            try
+            {
+                using (SqlConnection connection = GetConnection())
+                {
+                    SqlCommand command = new SqlCommand("spRC_CheckAlert", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.Add(new SqlParameter("@RequestID", regID));
+                    SqlParameter paramID = new SqlParameter("@ID", SqlDbType.Int, 4);
+                    paramID.Direction = ParameterDirection.Output;
+                    command.Parameters.Add(paramID);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    int ID = (int)paramID.Value;
+                    if (ID > 0)
+                        result = false;
+                    else
+                        result = true;
+                }
+            }
+            catch (Exception ex) { }
+            return result;
+        }
     }
 }

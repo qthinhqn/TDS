@@ -76,6 +76,24 @@ namespace NPOL {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl liManagerLevelRC;
         
         /// <summary>
+        /// liTD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liTD;
+        
+        /// <summary>
+        /// liTTDC control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl liTTDC;
+        
+        /// <summary>
         /// liSynchronizeRC control.
         /// </summary>
         /// <remarks>

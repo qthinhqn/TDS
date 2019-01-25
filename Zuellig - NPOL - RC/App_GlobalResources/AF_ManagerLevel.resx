@@ -249,4 +249,10 @@
   <data name="tieude" xml:space="preserve">
     <value>Build manager level list</value>
   </data>
+  <data name="tieude1" xml:space="preserve">
+    <value>Build manager level list - Personnel requisition</value>
+  </data>
+  <data name="tieude2" xml:space="preserve">
+    <value>Build manager level list - Promotion &amp; Adjustment</value>
+  </data>
 </root>

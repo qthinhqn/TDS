@@ -249,4 +249,10 @@
   <data name="tieude" xml:space="preserve">
     <value>Định cấp phê duyệt</value>
   </data>
+  <data name="tieude1" xml:space="preserve">
+    <value>Định cấp phê duyệt - Tuyển dụng</value>
+  </data>
+  <data name="tieude2" xml:space="preserve">
+    <value>Định cấp phê duyệt - Thăng tiến &amp; Điều chỉnh</value>
+  </data>
 </root>

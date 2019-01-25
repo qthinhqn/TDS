@@ -130,13 +130,16 @@
     <value>Promotion &amp; Adjustment</value>
   </data>
   <data name="chkDirector" xml:space="preserve">
-    <value>Submit to General Director approve</value>
+    <value>Submit to HR Director approve</value>
   </data>
   <data name="colRemarks" xml:space="preserve">
     <value>Remark</value>
   </data>
   <data name="colView" xml:space="preserve">
     <value>Approval status</value>
+  </data>
+  <data name="lbAlert" xml:space="preserve">
+    <value>Please enter full information before submitting!</value>
   </data>
   <data name="optChecked" xml:space="preserve">
     <value>Approved.</value>

@@ -88,6 +88,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Personnel requisition.
+        /// </summary>
+        internal static string I_CapDuyet_TD {
+            get {
+                return ResourceManager.GetString("I_CapDuyet_TD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Promotion &amp; Adjustment.
+        /// </summary>
+        internal static string I_CapDuyet_TTDC {
+            get {
+                return ResourceManager.GetString("I_CapDuyet_TTDC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Department-Manager.
         /// </summary>
         internal static string I_DepManagerRC {

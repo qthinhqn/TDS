@@ -391,6 +391,30 @@ namespace NPOL
             return returnValue;
         }
 
+        public bool IsExistsEmployee_PR(string EmployeeID)
+        {
+            bool returnValue = true;
+            khSqlServerProvider provider = new khSqlServerProvider(con);
+            DataTable dt;
+            try
+            {
+                provider.CommandText = "Select top 1 * from tblPR_ManagerLevel where EmployeeID = @EmployeeID order by DateChange desc;";
+                provider.ParameterCollection = new string[] { "@EmployeeID" };
+                provider.ValueCollection = new object[] { EmployeeID };
+                dt = provider.GetDataTable();
+                if (dt.Rows.Count <= 0)
+                {
+                    returnValue = false;
+                }
+            }
+            catch
+            {
+                returnValue = false;
+            }
+            provider.CloseConnection();
+            return returnValue;
+        }
+
         public bool IsEmployeeOrigin(string EmployeeID)
         {
             bool returnValue = true;

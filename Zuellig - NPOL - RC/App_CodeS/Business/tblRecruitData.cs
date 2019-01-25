@@ -404,21 +404,30 @@ namespace NPOL
         public bool Approve_open(object id, object manager, object approval, object reason, object sendToDirector, object curLevel)
         {
             bool value = false;
-            khSqlServerProvider provider = new khSqlServerProvider(ConString);
-            //object nextLevel = getNextLevel(id, approval);
-            string sql = "spRecruit_Approval_Open_New";
-            provider.CommandText = sql;
-            provider.CommandType = CommandType.StoredProcedure;
-            provider.ParameterCollection = new string[] { "@id", "@ManagerID", "@ApprovalStatus", "@Note", "@SendToDirector", "@iLevel"};
-            provider.ValueCollection = new object[] { id, manager, approval, reason, sendToDirector, curLevel };
-            int i = provider.ExecuteNonQuery();
-            if (i > 0)
+            try
             {
-                value = true;
-            }
+                khSqlServerProvider provider = new khSqlServerProvider(ConString);
+                //object nextLevel = getNextLevel(id, approval);
+                string sql = "spRecruit_Approval_Open_New";
+                provider.CommandText = sql;
+                provider.CommandType = CommandType.StoredProcedure;
+                provider.ParameterCollection = new string[] { "@id", "@ManagerID", "@ApprovalStatus", "@Note", "@SendToDirector", "@iLevel" };
+                provider.ValueCollection = new object[] { id, manager, approval, reason, sendToDirector, curLevel };
+                int i = provider.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    value = true;
+                }
 
-            setHRView(id, "b");
-            provider.CloseConnection();
+                setHRView(id, "b");
+                provider.CloseConnection();
+            }
+            catch (Exception ex)
+            {
+            }
+            finally
+            {
+            }
             return value;
         }
 

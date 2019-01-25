@@ -47,6 +47,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\MyWork\Perfetti\Tang ca ONLINE\Perfetti - NPOL\bin\App_Licenses.dll</HintPath>
     </Reference>
+    <Reference Include="ClosedXML, Version=0.69.1.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ClosedXML.dll</HintPath>
+    </Reference>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -124,6 +128,7 @@
       <HintPath>bin\DevExpress.SpellChecker.v15.1.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\DevExpress.Utils.v15.1.dll</HintPath>
@@ -205,6 +210,10 @@
     </Reference>
     <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>packages\EntityFramework.6.1.0\lib\net40\EntityFramework.dll</HintPath>
@@ -546,6 +555,13 @@
     <Compile Include="Recruitment\Ad_LineManager.aspx.designer.cs">
       <DependentUpon>Ad_LineManager.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Recruitment\Ad_ManagerLevelNew.aspx.cs">
+      <DependentUpon>Ad_ManagerLevelNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recruitment\Ad_ManagerLevelNew.aspx.designer.cs">
+      <DependentUpon>Ad_ManagerLevelNew.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Recruitment\Ad_ManagerLevel.aspx.cs">
       <DependentUpon>Ad_ManagerLevel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -575,6 +591,13 @@
       <DependentUpon>Approval.aspx</DependentUpon>
     </Compile>
     <Compile Include="Recruitment\ASPxOfficeUriStreamService.cs" />
+    <Compile Include="Recruitment\Detail_Review.aspx.cs">
+      <DependentUpon>Detail_Review.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recruitment\Detail_Review.aspx.designer.cs">
+      <DependentUpon>Detail_Review.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Recruitment\DetailReview.aspx.cs">
       <DependentUpon>DetailReview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1827,6 +1850,7 @@
     <Content Include="NewsData\Images\NoImages.jpg" />
     <Content Include="Recruitment\Ad_DepManager.aspx" />
     <Content Include="Recruitment\Ad_LineManager.aspx" />
+    <Content Include="Recruitment\Ad_ManagerLevelNew.aspx" />
     <Content Include="Recruitment\Ad_ManagerLevel.aspx" />
     <Content Include="Recruitment\Ad_Synchronize.aspx" />
     <Content Include="Recruitment\Ad_Viewreport.aspx" />
@@ -1847,6 +1871,7 @@
     <Content Include="Recruitment\css\Style.css" />
     <Content Include="Recruitment\css\style1.css" />
     <Content Include="Recruitment\css\timeline.css" />
+    <Content Include="Recruitment\Detail_Review.aspx" />
     <Content Include="Recruitment\DetailReview.aspx" />
     <Content Include="Recruitment\DetailReview_2.aspx" />
     <Content Include="Recruitment\fonts\fontawesome-webfont.svg" />

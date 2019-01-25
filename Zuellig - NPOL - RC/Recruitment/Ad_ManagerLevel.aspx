@@ -9,7 +9,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ct1" runat="server">
     <div style="margin: 8px 10px">
         <p class="msg info" style="background-color: #E8F6FF;">
-            <asp:Label ID="Label1" runat="server" Text="<%$Resources:AF_ManagerLevel,tieude %>"></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="<%$Resources:AF_ManagerLevel,tieude2 %>"></asp:Label>
         </p>
     </div>
 

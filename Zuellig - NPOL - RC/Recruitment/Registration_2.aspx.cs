@@ -633,6 +633,8 @@ namespace NPOL
             cld_StartDate.Date = DateTime.Now;
             if (uc_Upload1.Validate())
                 uc_Upload1.ClearTokenBox();
+            if (uc_Upload2.Validate())
+                uc_Upload2.ClearTokenBox();
         }
         protected void btnNhapLai_Click(object sender, EventArgs e)
         {

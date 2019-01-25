@@ -10,7 +10,7 @@
 namespace NPOL {
     
     
-    public partial class Registration_Recruit {
+    public partial class PR_Detail_Review {
         
         /// <summary>
         /// lbTieuDe control.
@@ -337,13 +337,13 @@ namespace NPOL {
         protected global::DevExpress.Web.ASPxRadioButton opt_Female;
         
         /// <summary>
-        /// Label35 control.
+        /// Label36 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label35;
+        protected global::System.Web.UI.WebControls.Label Label36;
         
         /// <summary>
         /// Label18 control.
@@ -409,13 +409,13 @@ namespace NPOL {
         protected global::DevExpress.Web.ASPxRadioButton opt_G7;
         
         /// <summary>
-        /// Label36 control.
+        /// Label35 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label36;
+        protected global::System.Web.UI.WebControls.Label Label35;
         
         /// <summary>
         /// Label26 control.
@@ -526,15 +526,6 @@ namespace NPOL {
         protected global::DevExpress.Web.ASPxRadioButton opt_outButget;
         
         /// <summary>
-        /// tr_CEAttach control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTableRow tr_CEAttach;
-        
-        /// <summary>
         /// Label30 control.
         /// </summary>
         /// <remarks>
@@ -542,6 +533,24 @@ namespace NPOL {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label30;
+        
+        /// <summary>
+        /// HiddenField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField HiddenField;
+        
+        /// <summary>
+        /// LinkButton1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
         
         /// <summary>
         /// uc_Upload2 control.
@@ -560,6 +569,24 @@ namespace NPOL {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label31;
+        
+        /// <summary>
+        /// HiddenField1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField HiddenField1;
+        
+        /// <summary>
+        /// LinkButton2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
         
         /// <summary>
         /// uc_Upload3 control.
@@ -1057,6 +1084,24 @@ namespace NPOL {
         protected global::System.Web.UI.WebControls.Label Label32;
         
         /// <summary>
+        /// HiddenField2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField HiddenField2;
+        
+        /// <summary>
+        /// LinkButton3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        
+        /// <summary>
         /// uc_Upload1 control.
         /// </summary>
         /// <remarks>
@@ -1064,15 +1109,6 @@ namespace NPOL {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NPOL.Recruitment.uc_Upload1 uc_Upload1;
-        
-        /// <summary>
-        /// btnSaveTemp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnSaveTemp;
         
         /// <summary>
         /// btnDangKy control.

@@ -174,4 +174,10 @@
   <data name="I_RCViewList" xml:space="preserve">
     <value>Xem yêu cầu</value>
   </data>
+  <data name="I_CapDuyet_TD" xml:space="preserve">
+    <value>Tuyển dụng</value>
+  </data>
+  <data name="I_CapDuyet_TTDC" xml:space="preserve">
+    <value>Thăng tiến &amp; Điều chỉnh</value>
+  </data>
 </root>

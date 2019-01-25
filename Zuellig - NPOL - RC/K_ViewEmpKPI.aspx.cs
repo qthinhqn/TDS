@@ -642,7 +642,8 @@ namespace NPOL
                                             // cho edit
                                             if (Approval_L2.ToString().ToLower().Equals("true"))
                                             {
-                                                e.Visible = false;
+                                                //Update 10.01.2019
+                                                //e.Visible = false;
                                             }
                                         }
                                         else
@@ -653,7 +654,8 @@ namespace NPOL
 
                                         if (fstatus.ToString().Equals("a"))
                                         {
-                                            e.Visible = false;
+                                            //Update 10.01.2019
+                                            //e.Visible = false;
                                         }
                                         break;
 
@@ -707,7 +709,8 @@ namespace NPOL
                                             // cho edit
                                             if (Approval_L3.ToString().ToLower().Equals("true"))
                                             {
-                                                e.Visible = false;
+                                                //Update 10.01.2019
+                                                //e.Visible = false;
                                             }
                                         }
                                         else
@@ -723,12 +726,14 @@ namespace NPOL
 
                                         if (Approval_L1.ToString().ToLower().Equals(""))
                                         {
-                                            e.Visible = false;
+                                            //Update 10.01.2019
+                                            //e.Visible = false;
                                         }
 
                                         if (fstatus.ToString().Equals("a"))
                                         {
-                                            e.Visible = false;
+                                            //Update 10.01.2019
+                                            //e.Visible = false;
                                         }
                                         break;
 
@@ -767,6 +772,7 @@ namespace NPOL
         {
             try
             {
+                
                 object id = e.GetFieldValue("ID");
                 object empid = Session["EmployeeID"];
                 object fstatus = e.GetFieldValue("FinalStatus");
@@ -873,6 +879,7 @@ namespace NPOL
                         }
                     }
                 }
+                
             }
             catch (Exception ex)
             {
@@ -1147,7 +1154,8 @@ namespace NPOL
                                             {
                                                 if (e.ButtonID == "Edit" || e.ButtonID == "Approval" || e.ButtonID == "Reject")
                                                 {
-                                                    e.Visible = DefaultBoolean.False;
+                                                    //Update 10.01.2019
+                                                    //e.Visible = DefaultBoolean.False;
                                                 }
                                             }
                                         }
@@ -1176,7 +1184,8 @@ namespace NPOL
                                         {
                                             if (e.ButtonID == "Edit" || e.ButtonID == "Approval")
                                             {
-                                                e.Visible = DefaultBoolean.False;
+                                                //Update 10.01.2019
+                                                //e.Visible = DefaultBoolean.False;
                                             }
                                         }
                                         break;
@@ -1196,7 +1205,8 @@ namespace NPOL
                                         {
                                             if (e.ButtonID == "Edit" || e.ButtonID == "Approval" || e.ButtonID == "Reject")
                                             {
-                                                e.Visible = DefaultBoolean.False;
+                                                //Update 10.01.2019
+                                                //e.Visible = DefaultBoolean.False;
                                             }
                                         }
                                         break;
@@ -1244,7 +1254,8 @@ namespace NPOL
                                             {
                                                 if (e.ButtonID == "Edit" || e.ButtonID == "Approval" || e.ButtonID == "Reject")
                                                 {
-                                                    e.Visible = DefaultBoolean.False;
+                                                    // Update 10.01.2019
+                                                    //e.Visible = DefaultBoolean.False;
                                                 }
                                             }
                                         }
@@ -1273,7 +1284,8 @@ namespace NPOL
                                         {
                                             if (e.ButtonID == "Edit" || e.ButtonID == "Approval" || e.ButtonID == "Reject")
                                             {
-                                                e.Visible = DefaultBoolean.False;
+                                                // Update 10.01.2019
+                                                //e.Visible = DefaultBoolean.False;
                                             }
                                         }
 
@@ -1281,7 +1293,8 @@ namespace NPOL
                                         {
                                             if (e.ButtonID == "Edit" || e.ButtonID == "Approval")
                                             {
-                                                e.Visible = DefaultBoolean.False;
+                                                // Update 10.01.2019
+                                                //e.Visible = DefaultBoolean.False;
                                             }
                                         }
                                         break;

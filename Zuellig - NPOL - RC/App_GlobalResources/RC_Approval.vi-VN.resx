@@ -130,13 +130,16 @@
     <value>YC Thăng tiến &amp; Điều chỉnh</value>
   </data>
   <data name="chkDirector" xml:space="preserve">
-    <value>Trình lên Tổng giám đốc</value>
+    <value>Trình lên Giám đốc nhân sự</value>
   </data>
   <data name="colRemarks" xml:space="preserve">
     <value>Chú ý</value>
   </data>
   <data name="colView" xml:space="preserve">
     <value>Quá trình phê duyệt</value>
+  </data>
+  <data name="lbAlert" xml:space="preserve">
+    <value>Mời nhập đầy đủ thông tin trước khi trình lên!</value>
   </data>
   <data name="optChecked" xml:space="preserve">
     <value>Đã duyệt.</value>

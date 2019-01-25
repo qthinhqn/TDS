@@ -503,7 +503,7 @@ namespace NPOL
                     SetCultureInfo();
                     //Session.Timeout = 30;
                     Session["ActiveTab"] = 0;
-                    Response.Redirect("Recruitment/Ad_ManagerLevel.aspx");
+                    Response.Redirect("Recruitment/Ad_ManagerLevelNew.aspx");
                 }
             }
         }

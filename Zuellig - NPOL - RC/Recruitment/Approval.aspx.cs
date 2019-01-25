@@ -812,6 +812,7 @@ namespace NPOL
             {
                 string _type = Check_RCManager_Open(Session["EmployeeID"].ToString());
                 ASPxCheckBox chk = gvApproval.FindEditFormTemplateControl("chkDirector") as ASPxCheckBox;
+                /* // 2018
                 if (_type.Equals("B"))
                 {
                     chk.Visible = true;
@@ -820,9 +821,68 @@ namespace NPOL
                 {
                     chk.Visible = false;
                 }
+                */
+                // 2019
+                int index = gvApproval.EditingRowVisibleIndex;
+                object val = gvApproval.GetRowValues(index, "EmpID_Apply");
+
+                if (_type.Equals("F") && (val==null || val.ToString() == ""))
+                {
+                    chk.Visible = true;
+                }
+                else
+                {
+                    chk.Visible = false;
+                }
+
+                // kiem tra da nhap du thong tin truoc khi duyet
+                ASPxLabel lbAlert = gvApproval.FindEditFormTemplateControl("lbAlert") as ASPxLabel;
+                Control btnUpdate = gvApproval.FindEditFormTemplateControl("btnUpdate");
+                object regID = gvApproval.GetRowValues(index, "RequestID");
+                if (!CheckAlert(regID))
+                {
+                    lbAlert.Visible = true;
+                    btnUpdate.Visible = false;
+                }
+                else
+                {
+                    lbAlert.Visible = false;
+                    btnUpdate.Visible = true;
+                }
             }
             catch (Exception ex)
             { }
+        }
+
+        private bool CheckAlert(object regID)
+        {
+            bool result = true;
+            try
+            {
+                //Code xu ly
+                Attachment_RCService service = new Attachment_RCService();
+                result = service.CheckAlert(regID);
+
+                    /*
+                khSqlServerProvider sqlProvider = new khSqlServerProvider(conn.WebConfigurationManager.ConnectionStrings["ZuelligConnection"].ToString());
+                sqlProvider.CommandText = "Select * from tblCand_Request_Online Where RequestID=@RequestID AND EmpID_Apply IS NULL";
+                sqlProvider.CommandType = CommandType.StoredProcedure;
+                sqlProvider.ParameterCollection = new string[] { "@RequestID" };
+                sqlProvider.ValueCollection = new object[] { regID };
+                
+                DataTable dt = sqlProvider.GetDataTable();
+
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    result = false;
+                }
+                sqlProvider.CloseConnection();
+                
+                */
+            }
+            catch(Exception ex)
+            { }
+            return result;
         }
 
         protected void gvOTList_CustomColumnDisplayText(object sender, ASPxGridViewColumnDisplayTextEventArgs e)

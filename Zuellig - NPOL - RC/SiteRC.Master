@@ -11,20 +11,20 @@
     <script src="Scripts/jquery-1.10.2.js" type="text/javascript"></script>
     <script src="Scripts/jquery-ui-1.10.2.js" type="text/javascript"></script>
 
-    <title>Đăng ký nghỉ phép trực tuyến</title>
+    <title>HR System</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
     <link rel="stylesheet" href="css/Foundation.css" type="text/css" />
-    <link rel="stylesheet" href="css/Style.css" type="text/css" />   
-    <link rel="stylesheet" href="css/Site.css" /> 
-    
-	<link rel="stylesheet" type="text/css" href="css/menu.css" />
-    
+    <link rel="stylesheet" href="css/Style.css" type="text/css" />
+    <link rel="stylesheet" href="css/Site.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+
     <link rel="stylesheet" href="css/l_bootstrap.min.css" type="text/css" />
     <link href="css/l_style.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/main.css" /> 
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/2col.css" title="2col" />
-    <link rel="alternate stylesheet" media="screen,projection" type="text/css" href="css/1col.css" title="1col" />
+    <link rel="stylesheet" href="css/main.css" />
+    <%--<link rel="stylesheet" media="screen,projection" type="text/css" href="css/2col.css" title="2col" />--%>
+    <%--<link rel="alternate stylesheet" media="screen,projection" type="text/css" href="css/1col.css" title="1col" />--%>
 
     <script type="text/javascript">
         function onCommandExecuted(s, e) {
@@ -63,25 +63,25 @@
         <div id="tray">
             <p class="f-left">
                 <!-- Switcher -->
-                <span class="f-left" id="switcher"><a href="javascript:void(0);" rel="1col" class="styleswitch ico-col1" title="Display one column">
-                    <img src="../img/switcher-1col.gif" alt="1 Column" /></a> <a href="javascript:void(0)" rel="2col" class="styleswitch ico-col2" title="Display two columns">
-                        <img src="img/switcher-2col.gif" alt="" /></a> </span><strong>ANNUAL LEAVE ONLINE SYSTEM</strong>
+                <span class="f-left" style="margin-left: 10px;" id="switcher">
+                </span><strong>ANNUAL LEAVE ONLINE SYSTEM</strong>
             </p>
-            <p class="f-right" style="padding:0 5px">
+            <p class="f-right" style="padding: 0 5px">
                 <%--<asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/img/britain.png" Height="20px" Width="20px" ImageAlign="Middle"  CausesValidation="false" OnClick="vn_Click" />--%>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
                     <asp:Label ID="lbWelcome" runat="server" Text="" Font-Bold="true" Font-Size="10pt" ForeColor="Brown"></asp:Label>
-                    <asp:Label ID="lbUserName" runat="server" Text="" Font-Bold="true" Font-Size="10pt" ></asp:Label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <asp:Label ID="lbUserName" runat="server" Text="" Font-Bold="true" Font-Size="10pt"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                     <strong><a id="logout">
                         <asp:LinkButton runat="server" ID="lbtLogout" CssClass="button round tiny" Font-Bold="true" Font-Size="12px"
-                        Text="<%$Resources:LeftMenu.Master,lbtLogout%>" PostBackUrl="~/login.aspx" CausesValidation="false"></asp:LinkButton>
-                            </a></strong>
-                    &nbsp;&nbsp; 
+                            Text="<%$Resources:LeftMenu.Master,lbtLogout%>" PostBackUrl="~/login.aspx" CausesValidation="false"></asp:LinkButton>
+                    </a></strong>
+                &nbsp;&nbsp; 
                     <strong><a id="ResetPass">
                         <asp:LinkButton runat="server" ID="LinkButton1" CssClass="button round tiny" Font-Bold="true" Font-Size="12px" Font-Underline="false"
-                        Text="Đổi MK" PostBackUrl="~/ChangePassRC.aspx" CausesValidation="false"></asp:LinkButton>
-                            </a></strong></p>
+                            Text="Đổi MK" PostBackUrl="~/ChangePassRC.aspx" CausesValidation="false"></asp:LinkButton>
+                    </a></strong>
+            </p>
         </div>
         <!--  /tray -->
         <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
@@ -95,12 +95,25 @@
                     </button>
                 </div>
                 <div class="collapse navbar-collapse navbar-menubuilder">
-                    <ul id="main-menu" class="nav navbar-nav navbar-right">
+                    <ul id="main-menu">
                         <li class="parent" id="liManagerLevelRC" runat="server">
-                            <a runat="server" href="~/Recruitment/Ad_ManagerLevel.aspx" title="<%$Resources:RC_Menu,I_CapDuyet %>">
-                            <img src="../images/Pictures/UserGroup_32x32.png" alt="Icon" />
+                            <a runat="server" title="<%$Resources:RC_Menu,I_CapDuyet %>" >
+                                <img src="../images/Pictures/UserGroup_32x32.png" alt="Icon" />
                                 <asp:Label Text="<%$Resources:RC_Menu,I_CapDuyet %>" runat="server"></asp:Label>
-                            </a></li>
+                            </a>
+                            <ul class="sub-menu">
+                                <li id="liTD" runat="server">
+                                    <a runat="server" href="~/Recruitment/Ad_ManagerLevelNew.aspx" title="<%$Resources:RC_Menu,I_CapDuyet_TD %>">
+                                        <asp:Label Text="<%$Resources:RC_Menu,I_CapDuyet_TD %>" runat="server"></asp:Label>
+                                    </a>
+                                </li>
+                                <li id="liTTDC" runat="server">
+                                    <a runat="server" href="~/Recruitment/Ad_ManagerLevel.aspx" title="<%$Resources:RC_Menu,I_CapDuyet_TTDC %>">
+                                        <asp:Label Text="<%$Resources:RC_Menu,I_CapDuyet_TTDC %>" runat="server"></asp:Label>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="parent" id="liSynchronizeRC" runat="server">
                             <a runat="server" href="~/Recruitment/Ad_Synchronize.aspx" title="<%$Resources:RC_Menu,I_Sync %>">
                                 <img src="../images/Pictures/SaveTo_32x32.png" alt="Icon" />
@@ -130,7 +143,7 @@
         </div>
 
         <!-- Left Menu ket thuc-->
-        <div style="margin:0px 10px; overflow:hidden; min-width: 450px; min-height: 450px; background-color: #ffffff">
+        <div style="margin: 0px 10px; overflow: hidden; min-width: 450px; min-height: 450px; background-color: #ffffff">
             <asp:ContentPlaceHolder runat="server" ID="ct1">
             </asp:ContentPlaceHolder>
         </div>

@@ -38,5 +38,12 @@ namespace NPOL.App_Code.Business
             Attachment_RCDAO newsDAO = new Attachment_RCDAO();
             return newsDAO.GetAttachmentById("spGetAttachment_RCById", ID);
         }
+
+        public bool CheckAlert(object regID)
+        {
+            Attachment_RCDAO newsDAO = new Attachment_RCDAO();
+            return newsDAO.CheckAlert(regID);
+        }
+
     }
 }

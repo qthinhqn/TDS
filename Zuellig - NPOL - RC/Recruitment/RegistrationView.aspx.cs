@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Data;
-using System.Collections;
 using conn = System.Web.Configuration;
 using DevExpress.Web;
 using NPOL.App_Code.Business;
@@ -578,7 +572,13 @@ namespace NPOL
                     if (empID_Apply != null && empID_Apply.ToString() != "")
                         ASPxWebControl.RedirectOnCallback("~/Recruitment/DetailReview_2.aspx");
                     else
-                        ASPxWebControl.RedirectOnCallback("~/Recruitment/DetailReview.aspx");
+                    {
+                        // kiem tra da co phe duyet chua
+                        if (Approval_TA(requestID) == true || IsTA_Manager() == true)
+                            ASPxWebControl.RedirectOnCallback("~/Recruitment/DetailReview.aspx");
+                        else
+                            ASPxWebControl.RedirectOnCallback("~/Recruitment/Detail_Review.aspx");
+                    }
                     break;
 
                 case "Print":
@@ -590,6 +590,58 @@ namespace NPOL
                 default:
                     break;
             }
+        }
+
+        private bool IsTA_Manager()
+        {
+            bool validate = false;
+            try
+            {
+                // bat dau sau 19-1-2019
+                if (DateTime.Now < new DateTime(2019, 1, 16))
+                {
+                    validate = true;
+                    return validate;
+                }
+                //Code xu ly
+                khSqlServerProvider sqlProvider = new khSqlServerProvider(conn.WebConfigurationManager.ConnectionStrings["ZuelligConnection"].ToString());
+                sqlProvider.CommandText = "SELECT * FROM tbl_RCManager_Open WHERE ManagerID = @EmployeeID AND Type in ('A','E');";
+                sqlProvider.ParameterCollection = new string[] { "@EmployeeID" };
+                sqlProvider.ValueCollection = new object[] { Session["EmployeeID"] };
+                DataTable dt = sqlProvider.GetDataTable();
+
+                if (dt != null & dt.Rows.Count > 0)
+                {
+                    validate = true;
+                }
+                sqlProvider.CloseConnection();
+            }
+            catch (Exception ex)
+            { }
+            return validate;
+        }
+
+        private bool Approval_TA(string requestID)
+        {
+            bool validate = false;
+            try
+            {
+                //Code xu ly
+                khSqlServerProvider sqlProvider = new khSqlServerProvider(conn.WebConfigurationManager.ConnectionStrings["ZuelligConnection"].ToString());
+                sqlProvider.CommandText = "Select * from tblRecruitApproval_Detail Where RegID = @requestID";
+                sqlProvider.ParameterCollection = new string[] { "@requestID" };
+                sqlProvider.ValueCollection = new object[] { requestID };
+                DataTable dt = sqlProvider.GetDataTable();
+
+                if (dt != null & dt.Rows.Count > 0)
+                {
+                    validate = true;
+                }
+                sqlProvider.CloseConnection();
+            }
+            catch(Exception ex)
+            { }
+            return validate;
         }
 
         protected void btnEdit_Click(object sender, EventArgs e)
@@ -607,7 +659,9 @@ namespace NPOL
                 if (empID_Apply != null && empID_Apply.ToString() != "")
                     Response.Redirect("~/Recruitment/DetailReview_2.aspx");
                 else
+                {
                     Response.Redirect("~/Recruitment/DetailReview.aspx");
+                }
             }
         }
 

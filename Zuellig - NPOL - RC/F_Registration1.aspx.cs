@@ -2396,6 +2396,29 @@ namespace NPOL
                 switch (leavetype.ToLower())
                 {
                     case "al": //Phép năm
+                        // Xet t/h con nghi Thai san
+                        if (Validate_in_TS_AL(EmployeeID, FromDate, ToDate) == false)
+                        {
+                            args.IsValid = false;
+                            if (Session["lang"] != null)
+                            {
+                                if (Session["lang"].ToString().Equals("vi"))
+                                {
+                                    this.vThongBao.ErrorMessage = "Không thể đăng ký phép năm trong giai đoạn nghỉ thai sản";
+                                    return;
+                                }
+                                else
+                                {
+                                    this.vThongBao.ErrorMessage = "You are still in maternity leave";
+                                    return;
+                                }
+                            }
+                            else
+                            {
+                                this.vThongBao.ErrorMessage = "Không thể đăng ký phép năm trong giai đoạn nghỉ thai sản";
+                                return;
+                            }
+                        }
                         if (Validate_ForeWarn(FromDate, ToDate, PerTimeID, EmployeeID) == false)
                         {
                             IsForeWarning = true;
@@ -2710,26 +2733,30 @@ namespace NPOL
 
                     case "ul": //Nghỉ không hưởng lương
                         double dayRemain = 0;
-                        if (Validate_UP(EmployeeID, out dayRemain) == false)
+                        // Xet th con nghi thai san
+                        if (Validate_in_TS_UL(EmployeeID, FromDate, ToDate) == false)
                         {
-                            args.IsValid = false;
-                            if (Session["lang"] != null)
+                            if (Validate_UP(EmployeeID, out dayRemain) == false)
                             {
-                                if (Session["lang"].ToString().Equals("vi"))
+                                args.IsValid = false;
+                                if (Session["lang"] != null)
+                                {
+                                    if (Session["lang"].ToString().Equals("vi"))
+                                    {
+                                        this.vThongBao.ErrorMessage = "Khi hết số ngày phép năm thì mới được đăng ký nghỉ không lương";
+                                        return;
+                                    }
+                                    else
+                                    {
+                                        this.vThongBao.ErrorMessage = "You still have " + dayRemain.ToString("#0.#") + " days annual leave. You can not register this type.";
+                                        return;
+                                    }
+                                }
+                                else
                                 {
                                     this.vThongBao.ErrorMessage = "Khi hết số ngày phép năm thì mới được đăng ký nghỉ không lương";
                                     return;
                                 }
-                                else
-                                {
-                                    this.vThongBao.ErrorMessage = "You still have " + dayRemain.ToString("#0.#") + " days annual leave. You can not register this type.";
-                                    return;
-                                }
-                            }
-                            else
-                            {
-                                this.vThongBao.ErrorMessage = "Khi hết số ngày phép năm thì mới được đăng ký nghỉ không lương";
-                                return;
                             }
                         }
                         if (Validate_ForeWarn_UP(FromDate, ToDate, PerTimeID, EmployeeID) == false)
@@ -2777,6 +2804,70 @@ namespace NPOL
                 args.IsValid = true;
             }
 
+        }
+
+        private bool Validate_in_TS_AL(string employeeID, DateTime dfrom, DateTime dto)
+        {
+            bool validate = true;
+            try
+            {
+                //Code xu ly
+                khSqlServerProvider sqlProvider = new khSqlServerProvider(conn.WebConfigurationManager.ConnectionStrings["ZuelligConnection"].ToString());
+                sqlProvider.CommandText = "SELECT TOP 1 * FROM tblEmpDayOff WHERE [LeaveID] IN ('ML') AND EmployeeID = @EmployeeID ORDER BY FromDate DESC;";
+                sqlProvider.ParameterCollection = new string[] { "@EmployeeID" };
+                sqlProvider.ValueCollection = new object[] { Session["EmployeeID"], dfrom };
+                DataTable dt = sqlProvider.GetDataTable();
+
+                if (dt != null & dt.Rows.Count > 0)
+                {
+                    //	AND getdate() BETWEEN FromDate	AND ToDate
+                    DateTime FromDate = (DateTime)dt.Rows[0]["FromDate"];
+                    DateTime ToDate = (DateTime)dt.Rows[0]["ToDate"];
+
+                    // khong duoc dang ky AL trong thi gian thai san
+                    if ((dfrom >= FromDate && dfrom <= ToDate) ||
+                        (dto >= FromDate && dto <= ToDate))
+                    {
+                        validate = false;
+                    }
+                }
+                sqlProvider.CloseConnection();
+            }
+            catch (Exception ex)
+            { }
+            return validate;
+        }
+
+        private bool Validate_in_TS_UL(string employeeID, DateTime dfrom, DateTime dto)
+        {
+            bool validate = false;
+            try
+            {
+                //Code xu ly
+                khSqlServerProvider sqlProvider = new khSqlServerProvider(conn.WebConfigurationManager.ConnectionStrings["ZuelligConnection"].ToString());
+                sqlProvider.CommandText = "SELECT TOP 1 * FROM tblEmpDayOff WHERE [LeaveID] IN ('ML') AND EmployeeID = @EmployeeID ORDER BY FromDate DESC;";
+                sqlProvider.ParameterCollection = new string[] { "@EmployeeID" };
+                sqlProvider.ValueCollection = new object[] { Session["EmployeeID"], dfrom };
+                DataTable dt = sqlProvider.GetDataTable();
+
+                if (dt != null & dt.Rows.Count > 0)
+                {
+                    //	AND getdate() BETWEEN FromDate	AND ToDate
+                    DateTime FromDate = (DateTime)dt.Rows[0]["FromDate"];
+                    DateTime ToDate = (DateTime)dt.Rows[0]["ToDate"];
+
+                    // DK nghi khong luong sau thai san trong cung nam
+                    if ((dfrom > ToDate) &&
+                        (dfrom.Year == ToDate.Year))
+                    {
+                        validate = true;
+                    }
+                }
+                sqlProvider.CloseConnection();
+            }
+            catch (Exception ex)
+            { }
+            return validate;
         }
 
         protected void btnNhapLai_Click(object sender, EventArgs e)

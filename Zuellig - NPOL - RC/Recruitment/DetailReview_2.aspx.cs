@@ -665,12 +665,21 @@ namespace NPOL
                             strTemp = dt1.Rows[0]["Permanent_Travel"].ToString();
                             txtTransAllow_new.Text = Double.Parse(strTemp == "" ? "0" : strTemp).ToString("#,###");
                             strTemp = dt1.Rows[0]["Permanent_Allowance"].ToString();
+
+                            // Gia tri nam dau
+                            txtOther_old.Text = item.Other_old.ToString();
+                            txtOther_new.Text = item.Other_new.ToString();
+                            txtA_HotlineOld.Text = item.Other_oldValue;
+                            txtA_HotlineNew.Text = item.Other_newValue;
+
+                            // Gia tri thay doi
                             txtOtherAllow_new.Text = Double.Parse(strTemp == "" ? "0" : strTemp).ToString("#,###");
                             //txtOther_old.Text = dt1.Rows[0]["Other_old"].ToString();
-                            txtOther_new.Text = dt1.Rows[0]["Other_newValue"].ToString();
-
+                            if (dt1.Rows[0]["Other_newValue"].ToString() != "")
+                                txtOther_new.Text = dt1.Rows[0]["Other_newValue"].ToString();
                             //txtA_HotlineOld.Text = dt1.Rows[0]["Other_oldValue"].ToString();
-                            txtA_HotlineNew.Text = dt1.Rows[0]["Other_new2Value"].ToString();
+                            if (dt1.Rows[0]["Other_new2Value"].ToString() != "")
+                                txtA_HotlineNew.Text = dt1.Rows[0]["Other_new2Value"].ToString();
                         }
                         DataTable dt2 = pr_service2.getDescription_HR(item.RequestID);
                         if (dt2 != null && dt2.Rows.Count > 0)
@@ -1459,7 +1468,7 @@ namespace NPOL
                         new_Obj.To_PosID = ddl_Pos.Text.Split(']')[0].Trim('[');
                     if (ddl_Location.Text != "")
                         new_Obj.To_LocationID = ddl_Location.Text.Split(']')[0].Trim('[');
-                    new_Obj.Other_new = txtOther_new.Text;
+                    new_Obj.Other_newValue = txtOther_new.Text;
                     new_Obj.Other_newValue = txtA_HotlineNew.Text;
                 }
                 else
@@ -1528,7 +1537,6 @@ namespace NPOL
                     Response.Redirect("~/Recruitment/RegistrationView.aspx");
                 else
                     Response.Redirect("~/Recruitment/Approval.aspx");
-                //Response.Redirect("~/Recruitment/RegistrationView.aspx");
             }
 
         }

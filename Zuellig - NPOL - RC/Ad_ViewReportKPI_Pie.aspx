@@ -129,23 +129,23 @@
                             <dx:GridViewDataTextColumn FieldName="RangeID" Visible="false" ShowInCustomizationForm="True"
                                 Caption="Mã">
                             </dx:GridViewDataTextColumn>
-                            <dx:GridViewDataTextColumn FieldName="Range" ShowInCustomizationForm="True" Width="60px"
+                            <dx:GridViewDataTextColumn FieldName="Range" ShowInCustomizationForm="True" Width="100px"
                                 Caption="<%$Resources:K_PercentageRating,colRange %>">
                             </dx:GridViewDataTextColumn>
-                            <dx:GridViewDataTextColumn FieldName="Description" ShowInCustomizationForm="True" Width="200px"
+                            <dx:GridViewDataTextColumn FieldName="Description" ShowInCustomizationForm="True" Width="100px"
                                 Caption="<%$Resources:K_PercentageRating,colDescription%>">
                                 <CellStyle HorizontalAlign="Center"></CellStyle>
                             </dx:GridViewDataTextColumn>
-                            <dx:GridViewDataTextColumn FieldName="Expectation" ShowInCustomizationForm="True" Width="120px"
+                            <dx:GridViewDataTextColumn FieldName="Expectation" ShowInCustomizationForm="True" Width="100px"
                                 Caption="<%$Resources:K_PercentageRating,colExpectation %>">
                                 <CellStyle HorizontalAlign="Center"></CellStyle>
                             </dx:GridViewDataTextColumn>
-                            <dx:GridViewDataTextColumn FieldName="HeadCount" ShowInCustomizationForm="True" Width="45px"
+                            <dx:GridViewDataTextColumn FieldName="HeadCount" ShowInCustomizationForm="True" Width="70px"
                                 Caption="<%$Resources:K_PercentageRating,colHeadCount %>">
                                 <PropertiesTextEdit DisplayFormatString="N0" />
                                 <CellStyle HorizontalAlign="Right"></CellStyle>
                             </dx:GridViewDataTextColumn>
-                            <dx:GridViewDataTextColumn FieldName="Percent" ShowInCustomizationForm="True" Width="80px"
+                            <dx:GridViewDataTextColumn FieldName="Percent" ShowInCustomizationForm="True" Width="70px"
                                 Caption="<%$Resources:K_PercentageRating,colPercent %>">
                                 <PropertiesTextEdit DisplayFormatString="P1" />
                                 <CellStyle HorizontalAlign="Right"></CellStyle>

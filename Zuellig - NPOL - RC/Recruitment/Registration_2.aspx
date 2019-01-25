@@ -528,10 +528,10 @@
                                 <asp:Label ID="Label32" runat="server" Text="" CssClass="col-lg-12 control-label2"></asp:Label>
                                 <asp:Label ID="Label33" runat="server" Text="<%$Resources:RC_Registration2,lb4_3 %>" CssClass="col-lg-4 control-label2"></asp:Label>
                                 <div class="col-lg-4">
-                                    <asp:TextBox ID="txtOther_old" runat="server" onblur="makeMoney(this);" placeholder="parking allowances (VND)" CssClass="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="txtOther_old" runat="server"  placeholder="parking allowances (VND)" CssClass="form-control"></asp:TextBox>
                                 </div>
                                 <div class="col-lg-4">
-                                    <asp:TextBox ID="txtOther_new" runat="server" onblur="makeMoney(this);" placeholder="parking allowances (VND)" CssClass="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="txtOther_new" runat="server"  placeholder="parking allowances (VND)" CssClass="form-control"></asp:TextBox>
                                 </div>
                                 <%--<div class="col-lg-3">
                                     <asp:TextBox ID="TextBox6" runat="server" onblur="makeMoney(this);" placeholder="parking allowances (VND)" CssClass="form-control"></asp:TextBox>

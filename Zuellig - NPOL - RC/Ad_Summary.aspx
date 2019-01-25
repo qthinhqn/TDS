@@ -233,11 +233,12 @@
                                             </dx:GridViewDataTextColumn>
                                         </Columns>
                                     </dx:ASPxGridView>
-                                    <asp:SqlDataSource ID="dsReport" runat="server" ConnectionString="<%$ ConnectionStrings:ZuelligConnection %>" SelectCommand="SELECT * FROM tblEmp_KPIInfo WHERE (Period_ID = @Period_ID)">
+                                    <asp:SqlDataSource ID="dsReport" runat="server" ConnectionString="<%$ ConnectionStrings:ZuelligConnection %>" 
+                                        SelectCommand="SELECT * FROM tblEmp_KPIInfo WHERE (Period_ID = @Period_ID)">
                                     <SelectParameters>
-                                        <%--<asp:SessionParameter Name="Period_ID" SessionField="Period_ID" Type="Int32" />--%>
-                                        <asp:Parameter Name="Period_ID" Type="Int32" DefaultValue="1" />
-                                        <asp:Parameter Name="YearID" Type="Int32" DefaultValue="2017" />
+                                        <asp:SessionParameter Name="Period_ID" SessionField="Period_ID" Type="Int32" />
+                                        <%--<asp:Parameter Name="Period_ID" Type="Int32" DefaultValue="2" />--%>
+                                        <asp:Parameter Name="YearID" Type="Int32" DefaultValue="2018" />
                                     </SelectParameters>
                                     </asp:SqlDataSource>
                                     <div>

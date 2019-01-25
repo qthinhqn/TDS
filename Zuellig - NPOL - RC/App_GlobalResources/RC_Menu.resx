@@ -174,4 +174,10 @@
   <data name="I_RCViewList" xml:space="preserve">
     <value>View request</value>
   </data>
+  <data name="I_CapDuyet_TD" xml:space="preserve">
+    <value>Personnel requisition</value>
+  </data>
+  <data name="I_CapDuyet_TTDC" xml:space="preserve">
+    <value>Promotion &amp; Adjustment</value>
+  </data>
 </root>

@@ -1,20 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
-using System.Collections;
 using conn = System.Web.Configuration;
-using DevExpress.Web;
 using NPOL.App_Code.Business;
 using NPOL.App_Code.Entities;
 using System.Web.Services;
 using System.Data.SqlClient;
-using System.IO;
 using NPOL.Recruitment;
-using System.Configuration;
 
 namespace NPOL
 {
@@ -23,6 +17,49 @@ namespace NPOL
         bool IsForeWarning = true;
         bool IsRepresentative = true;
         bool IsForeWarning_RegisterDate = true;
+
+        private void HideInfo()
+        {
+            // neu nguoi tao khong phai Nhan su HR tao dum
+            if (IsTA_Manager() == false)
+            {
+                row01.Visible = false;
+                row02.Visible = false;
+                row03.Visible = false;
+                row04.Visible = false;
+                Part5.Visible = false;
+                tr_CEAttach.Visible = false;
+            }
+        }
+
+        private bool IsTA_Manager()
+        {
+            bool validate = false;
+            try
+            {
+                // bat dau sau 19-1-2019
+                if (DateTime.Now < new DateTime(2019, 1, 16))
+                {
+                    validate = true;
+                    return validate;
+                }
+                //Code xu ly
+                khSqlServerProvider sqlProvider = new khSqlServerProvider(conn.WebConfigurationManager.ConnectionStrings["ZuelligConnection"].ToString());
+                sqlProvider.CommandText = "SELECT * FROM tbl_RCManager_Open WHERE ManagerID = @EmployeeID AND Type in ('A','E');";
+                sqlProvider.ParameterCollection = new string[] { "@EmployeeID" };
+                sqlProvider.ValueCollection = new object[] { Session["EmployeeID"] };
+                DataTable dt = sqlProvider.GetDataTable();
+
+                if (dt != null & dt.Rows.Count > 0)
+                {
+                    validate = true;
+                }
+                sqlProvider.CloseConnection();
+            }
+            catch (Exception ex)
+            { }
+            return validate;
+        }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -34,6 +71,9 @@ namespace NPOL
             else
             {
             }
+
+            // Hide info
+            HideInfo();
 
             //
             if (!IsPostBack)
@@ -53,12 +93,12 @@ namespace NPOL
                 //xet dieu kien display phan 5: Benifit
                 if (Check_Benifit(Session["EmployeeID"].ToString()))
                 {
-                    Part5.Visible = true;
+                    //Part5.Visible = true;
                     textSalary.Visible = true;
                 }
                 else
                 {
-                    Part5.Visible = false;
+                    //Part5.Visible = false;
                     textSalary.Visible = false;
                 }
                 //
@@ -92,7 +132,8 @@ namespace NPOL
         bool Check_Benifit(string employeeID)
         {
             bool validate = true;
-            //Code xu ly
+            // Code xu ly
+            // danh sach nhan vien L2, L1, HR, Driector & truong phong ban
             khSqlServerProvider sqlProvider = new khSqlServerProvider(conn.WebConfigurationManager.ConnectionStrings["ZuelligConnection"].ToString());
             sqlProvider.CommandText = "spRC_CheckBenifit";
             sqlProvider.CommandType = CommandType.StoredProcedure;
@@ -193,19 +234,70 @@ namespace NPOL
             args.IsValid = true;
             try
             {
-                // kiem tra chon Nhan vien dieu chinh
-                if (txtEmpID.Text.Trim() == "")
+                if (IsTA_Manager() == true)
                 {
-                    args.IsValid = false;
-                    //SetErrorMessage("vEmployee");
-                    return;
-                }
-                // kiem tra chon gioi tinh
-                if (!opt_Male.Checked && !opt_Female.Checked)
-                {
-                    args.IsValid = false;
-                    SetErrorMessage("vGender");
-                    return;
+                    // kiem tra chon Nhan vien dieu chinh
+                    if (txtEmpID.Text.Trim() == "")
+                    {
+                        args.IsValid = false;
+                        SetErrorMessage("vEmployee");
+                        return;
+                    }
+                    // kiem tra chon gioi tinh
+                    if (!opt_Male.Checked && !opt_Female.Checked)
+                    {
+                        args.IsValid = false;
+                        SetErrorMessage("vGender");
+                        return;
+                    }
+                    // kiem tra file phe duyet
+                    if (!Validate_Attach_CE())
+                    {
+                        args.IsValid = false;
+                        SetErrorMessage("vAttach_CE");
+                        return;
+                    }
+                    // kiem tra chon loai hop dong
+                    if (!Validate_Promotion())
+                    {
+                        args.IsValid = false;
+                        SetErrorMessage("vPromotionType");
+                        return;
+                    }
+                    // kiem tra chon loai hop dong
+                    if (!Validate_CasualContract())
+                    {
+                        args.IsValid = false;
+                        SetErrorMessage("vPromotionType_2");
+                        return;
+                    }
+                    // kiem tra ngay hieu luc
+                    if (cld_StartDate.Date == null)
+                    {
+                        args.IsValid = false;
+                        SetErrorMessage("vStartDate");
+                        return;
+                    }
+                    if (cld_StartDate.Date <= DateTime.Now.Date)
+                    {
+                        args.IsValid = false;
+                        SetErrorMessage("vStartDate_2");
+                        return;
+                    }
+                    if (cld_StartDate.Date.DayOfWeek == DayOfWeek.Sunday)
+                    {
+                        args.IsValid = false;
+                        SetErrorMessage("vStartDate_3");
+                        return;
+                    }
+                    // kiem tra trung
+                    DateTime start = cld_StartDate.Date;
+                    if (!Validate_DuplicateDate(txtEmpID.Text, start))
+                    {
+                        args.IsValid = false;
+                        SetErrorMessage("vDuplicate");
+                        return;
+                    }
                 }
                 // kiem tra chon nhom luong
                 if (!Validate_Payroll_Checked())
@@ -235,13 +327,6 @@ namespace NPOL
                     SetErrorMessage("vButget");
                     return;
                 }
-                // kiem tra file phe duyet
-                if (!Validate_Attach_CE())
-                {
-                    args.IsValid = false;
-                    SetErrorMessage("vAttach_CE");
-                    return;
-                }
                 // kiem tra file mo ta cong viec
                 if (!Validate_Attach_JD())
                 {
@@ -254,48 +339,6 @@ namespace NPOL
                 {
                     args.IsValid = false;
                     SetErrorMessage("vEmployee_Replace");
-                    return;
-                }
-                // kiem tra chon loai hop dong
-                if (!Validate_Promotion())
-                {
-                    args.IsValid = false;
-                    SetErrorMessage("vPromotionType");
-                    return;
-                }
-                // kiem tra chon loai hop dong
-                if (!Validate_CasualContract())
-                {
-                    args.IsValid = false;
-                    SetErrorMessage("vPromotionType_2");
-                    return;
-                }
-                // kiem tra ngay hieu luc
-                if (cld_StartDate.Date == null)
-                {
-                    args.IsValid = false;
-                    SetErrorMessage("vStartDate");
-                    return;
-                }
-                if (cld_StartDate.Date <= DateTime.Now.Date)
-                {
-                    args.IsValid = false;
-                    SetErrorMessage("vStartDate_2");
-                    return;
-                }
-                if (cld_StartDate.Date.DayOfWeek == DayOfWeek.Sunday)
-                {
-                    args.IsValid = false;
-                    SetErrorMessage("vStartDate_3");
-                    return;
-                }
-
-                // kiem tra trung
-                DateTime start = cld_StartDate.Date;
-                if (!Validate_DuplicateDate(txtEmpID.Text, start))
-                {
-                    args.IsValid = false;
-                    SetErrorMessage("vDuplicate");
                     return;
                 }
 
@@ -431,71 +474,6 @@ namespace NPOL
 
         #endregion
 
-        private void UpdateMailAction(string employeeid, int level)
-        {
-            string sql = "";
-            switch (level)
-            {
-                case 1:
-                    sql += "Update tblOTdata Set MailToL1 = 1, MailToL2 = NULL, MailToL3 = NULL Where EmployeeID = @EmployeeID and MailToL1 is null and FinalStatus='w'";
-                    break;
-                case 2:
-                    sql += "Update tblOTdata Set MailToL1 = NULL, MailToL2 = 1, MailToL3 = NULL Where EmployeeID = @EmployeeID and MailToL2 is null and FinalStatus='w'";
-                    break;
-                case 3:
-                    sql += "Update tblOTdata Set MailToL1 = NULL, MailToL2 = NULL, MailToL3 = 1 Where EmployeeID = @EmployeeID and MailToL3 is null and FinalStatus='w'";
-                    break;
-            }
-            khSqlServerProvider provider = new khSqlServerProvider(System.Web.Configuration.WebConfigurationManager.ConnectionStrings["ZuelligConnection"].ConnectionString);
-            provider.CommandText = sql;
-            provider.ParameterCollection = new string[] { "@EmployeeID" };
-            provider.ValueCollection = new object[] { employeeid };
-            //provider.ExecuteNonQuery();
-            provider.CloseConnection();
-        }
-
-        private int getMailLevel(string ManagerID_L1, string ManagerID_L2, string ManagerID_L3)
-        {
-            int returnValue = 0;
-            string[] arr = new string[] { ManagerID_L1, ManagerID_L2, ManagerID_L3 };
-            foreach (string str in arr)
-            {
-                returnValue++;
-                if (String.IsNullOrEmpty(str) == false || String.IsNullOrWhiteSpace(str) == false)
-                {
-                    break;
-                }
-            }
-            return returnValue;
-        }
-
-
-        private void GetEmployeeInfo(string input)
-        {
-            DataTable dt = null;
-            // get info
-            dt = Cand_Request_OnlineService.GetEmpInfoByid(input);
-            //Binding TextBox From dataTable 
-            if (dt != null && dt.Rows.Count == 1)
-            {
-                txtEmpID.Text = input.ToUpper();
-                //txtPos.Text = dt.Rows[0]["PosName"].ToString();
-                //txtLine.Text = dt.Rows[0]["LineName"].ToString();
-                //txtDep.Text = dt.Rows[0]["DepName"].ToString();
-                //txtLocation.Text = dt.Rows[0]["LocationName"].ToString();
-
-            }
-            else
-            {
-                txtEmpID.Text = "";
-                ComboBox_Pos.Text = "";
-                ComboBox_Dep.Text = "";
-                ComboBox_Line.Text = "";
-                ComboBox_Location.Text = "";
-
-            }
-        }
-
         #region Submit & Reset
         private void resetNull()
         {
@@ -540,8 +518,10 @@ namespace NPOL
 
             if (uc_Upload1.Validate())
                 uc_Upload1.ClearTokenBox();
-            uc_Upload2.ClearTokenBox();
-            uc_Upload3.ClearTokenBox();
+            if (uc_Upload2.Validate())
+                uc_Upload2.ClearTokenBox();
+            if (uc_Upload3.Validate())
+                uc_Upload3.ClearTokenBox();
         }
         protected void btnNhapLai_Click(object sender, EventArgs e)
         {
@@ -555,7 +535,57 @@ namespace NPOL
                 //Code insert data into database
                 tblCand_Request_Online new_Obj = new tblCand_Request_Online();
                 //new_Obj.EmpID_Apply = null;
-                new_Obj.Apply_Name = txtEmpID.Text;
+                if (IsTA_Manager() == true)
+                {
+                    new_Obj.Apply_Name = txtEmpID.Text;
+
+                    if (opt_Male.Checked)
+                        new_Obj.SexID = "M";
+                    else
+                        new_Obj.SexID = "F";
+
+                    new_Obj.StartDate = cld_StartDate.Date;
+
+                    // ProbationID
+                    {
+                        if (chk4_1.Checked)
+                            new_Obj.ProbationID = "";
+                        else if (chk4_2.Checked)
+                            new_Obj.ProbationID = "01";
+                        else if (chk4_3.Checked)
+                            new_Obj.ProbationID = "08";
+                        new_Obj.ContractID = null;
+                    }
+                    if (opt_P3.Checked || opt_P4.Checked || opt_P7.Checked || opt_P8.Checked || opt_P9.Checked)
+                    {
+                        if (GridLookup_Contract.Value != null)
+                            new_Obj.ContractID = GridLookup_Contract.Value.ToString();
+                    }
+
+                    if (TextBox10.Text != "")
+                        new_Obj.Probation_Sal = double.Parse(TextBox10.Text.Replace(",", "").Replace(".", ""));
+                    if (TextBox12.Text != "")
+                        new_Obj.Probation_Travel = double.Parse(TextBox12.Text.Replace(",", "").Replace(".", ""));
+                    if (TextBox14.Text != "")
+                        new_Obj.Probation_Allowance = double.Parse(TextBox14.Text.Replace(",", "").Replace(".", ""));
+                    if (TextBox11.Text != "")
+                        new_Obj.Permanent_Sal = double.Parse(TextBox11.Text.Replace(",", "").Replace(".", ""));
+                    if (TextBox13.Text != "")
+                        new_Obj.Permanent_Travel = double.Parse(TextBox13.Text.Replace(",", "").Replace(".", ""));
+                    if (TextBox15.Text != "")
+                        new_Obj.Permanent_Allowance = double.Parse(TextBox15.Text.Replace(",", "").Replace(".", ""));
+
+                    // moi them 12.01
+                    if (TextBox1.Text.Trim() != "")
+                        new_Obj.Other_old = TextBox1.Text;
+                    if (TextBox2.Text.Trim() != "")
+                        new_Obj.Other_new = TextBox2.Text;
+                    if (TextBox3.Text.Trim() != "")
+                        new_Obj.Other_oldValue = TextBox3.Text;
+                    if (TextBox4.Text.Trim() != "")
+                        new_Obj.Other_newValue = TextBox4.Text;
+
+                }
                 new_Obj.RequestID = Guid.NewGuid().ToString();
                 new_Obj.DateID = DateTime.Now;
                 //new_Obj.ReceivedDate = ;
@@ -630,42 +660,11 @@ namespace NPOL
                 //new_Obj.IsInternalPost = ;
                 //if (GridLookup_Location.Value != null)
                 //new_Obj.LocationID = GridLookup_Location.Value.ToString();
-                if (opt_Male.Checked)
-                    new_Obj.SexID = "M";
-                else
-                    new_Obj.SexID = "F";
+
                 //new_Obj.JobDes = ;
                 //new_Obj.JobDes_File = ;
                 //new_Obj.IsBudgetHead = ;
-                new_Obj.StartDate = cld_StartDate.Date;
-                // ProbationID
-                {
-                    if (chk4_1.Checked)
-                        new_Obj.ProbationID = "";
-                    else if (chk4_2.Checked)
-                        new_Obj.ProbationID = "01";
-                    else if (chk4_3.Checked)
-                        new_Obj.ProbationID = "08";
-                    new_Obj.ContractID = null;
-                }
-                if (opt_P3.Checked || opt_P4.Checked || opt_P7.Checked || opt_P8.Checked || opt_P9.Checked)
-                {
-                    if (GridLookup_Contract.Value != null)
-                        new_Obj.ContractID = GridLookup_Contract.Value.ToString();
-                }
 
-                if (TextBox10.Text != "")
-                    new_Obj.Probation_Sal = double.Parse(TextBox10.Text.Replace(",", "").Replace(".", ""));
-                if (TextBox12.Text != "")
-                    new_Obj.Probation_Travel = double.Parse(TextBox12.Text.Replace(",", "").Replace(".", ""));
-                if (TextBox14.Text != "")
-                    new_Obj.Probation_Allowance = double.Parse(TextBox14.Text.Replace(",", "").Replace(".", ""));
-                if (TextBox11.Text != "")
-                    new_Obj.Permanent_Sal = double.Parse(TextBox11.Text.Replace(",", "").Replace(".", ""));
-                if (TextBox13.Text != "")
-                    new_Obj.Permanent_Travel = double.Parse(TextBox13.Text.Replace(",", "").Replace(".", ""));
-                if (TextBox15.Text != "")
-                    new_Obj.Permanent_Allowance = double.Parse(TextBox15.Text.Replace(",", "").Replace(".", ""));
                 new_Obj.Requester = Session["EmployeeID"].ToString();
                 new_Obj.ReportTo = txtEmpOtherID.Text;
                 //new_Obj.ApprovedBy = ;
@@ -681,15 +680,7 @@ namespace NPOL
                     new_Obj.PosID = ComboBox_Pos.Value.ToString();
                 if (ComboBox_Location.Value != null)
                     new_Obj.LocationID = ComboBox_Location.Value.ToString();
-                // moi them 12.01
-                if (TextBox1.Text.Trim() != "")
-                    new_Obj.Other_old = TextBox1.Text;
-                if (TextBox2.Text.Trim() != "")
-                    new_Obj.Other_new = TextBox2.Text;
-                if (TextBox3.Text.Trim() != "")
-                    new_Obj.Other_oldValue = TextBox3.Text;
-                if (TextBox4.Text.Trim() != "")
-                    new_Obj.Other_newValue = TextBox4.Text;
+
                 // remarks
                 new_Obj.Remarks = txtRemarks.Value.Trim();
 
@@ -697,10 +688,11 @@ namespace NPOL
                 Cand_Request_OnlineService.CreateNews(new_Obj);
                 if (new_Obj.RequestID != null)
                 {
-                    if (uc_Upload2.Validate())
-                    {
-                        uc_Upload2.Submit_Attach(new_Obj.RequestID, "CE");
-                    }
+                    if (IsTA_Manager() == true)
+                        if (uc_Upload2.Validate())
+                        {
+                            uc_Upload2.Submit_Attach(new_Obj.RequestID, "CE");
+                        }
                     if (uc_Upload3.Validate())
                     {
                         uc_Upload3.Submit_Attach(new_Obj.RequestID, "JD");
@@ -718,7 +710,7 @@ namespace NPOL
                 //string message = "alert('" + GetGlobalResourceObject("RC_Registration", "AlertSuccess").ToString() + "')";
                 //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "Infor", message, true);
                 // clean content
-                string str_script = "Func('"+ Session["Lang"] + "')";
+                string str_script = "Func('" + Session["Lang"] + "')";
                 ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", str_script, true);
                 resetNull();
             }
@@ -895,7 +887,58 @@ namespace NPOL
         {
             tblCand_Request_Online new_Obj = new tblCand_Request_Online();
             //new_Obj.EmpID_Apply = null;
-            new_Obj.Apply_Name = txtEmpID.Text;
+
+            if (IsTA_Manager() == true)
+            {
+                new_Obj.Apply_Name = txtEmpID.Text;
+
+                if (opt_Male.Checked)
+                    new_Obj.SexID = "M";
+                else
+                    new_Obj.SexID = "F";
+
+                new_Obj.StartDate = cld_StartDate.Date;
+                // ProbationID
+                {
+                    if (chk4_1.Checked)
+                        new_Obj.ProbationID = "";
+                    else if (chk4_2.Checked)
+                        new_Obj.ProbationID = "01";
+                    else if (chk4_3.Checked)
+                        new_Obj.ProbationID = "08";
+                    new_Obj.ContractID = null;
+                }
+                if (opt_P3.Checked || opt_P4.Checked || opt_P7.Checked || opt_P8.Checked || opt_P9.Checked)
+                {
+                    if (GridLookup_Contract.Value != null)
+                        new_Obj.ContractID = GridLookup_Contract.Value.ToString();
+                }
+
+                if (TextBox10.Text != "")
+                    new_Obj.Probation_Sal = double.Parse(TextBox10.Text.Replace(",", "").Replace(".", ""));
+                if (TextBox12.Text != "")
+                    new_Obj.Probation_Travel = double.Parse(TextBox12.Text.Replace(",", "").Replace(".", ""));
+                if (TextBox14.Text != "")
+                    new_Obj.Probation_Allowance = double.Parse(TextBox14.Text.Replace(",", "").Replace(".", ""));
+                if (TextBox11.Text != "")
+                    new_Obj.Permanent_Sal = double.Parse(TextBox11.Text.Replace(",", "").Replace(".", ""));
+                if (TextBox13.Text != "")
+                    new_Obj.Permanent_Travel = double.Parse(TextBox13.Text.Replace(",", "").Replace(".", ""));
+                if (TextBox15.Text != "")
+                    new_Obj.Permanent_Allowance = double.Parse(TextBox15.Text.Replace(",", "").Replace(".", ""));
+
+                // moi them 12.01
+                if (TextBox1.Text.Trim() != "")
+                    new_Obj.Other_old = TextBox1.Text;
+                if (TextBox2.Text.Trim() != "")
+                    new_Obj.Other_new = TextBox2.Text;
+                if (TextBox3.Text.Trim() != "")
+                    new_Obj.Other_oldValue = TextBox3.Text;
+                if (TextBox4.Text.Trim() != "")
+                    new_Obj.Other_newValue = TextBox4.Text;
+
+            }
+
             new_Obj.RequestID = Guid.NewGuid().ToString();
             new_Obj.DateID = DateTime.Now;
             //new_Obj.ReceivedDate = ;
@@ -970,42 +1013,11 @@ namespace NPOL
             //new_Obj.IsInternalPost = ;
             //if (GridLookup_Location.Value != null)
             //new_Obj.LocationID = GridLookup_Location.Value.ToString();
-            if (opt_Male.Checked)
-                new_Obj.SexID = "M";
-            else
-                new_Obj.SexID = "F";
+
             //new_Obj.JobDes = ;
             //new_Obj.JobDes_File = ;
             //new_Obj.IsBudgetHead = ;
-            new_Obj.StartDate = cld_StartDate.Date;
-            // ProbationID
-            {
-                if (chk4_1.Checked)
-                    new_Obj.ProbationID = "";
-                else if (chk4_2.Checked)
-                    new_Obj.ProbationID = "01";
-                else if (chk4_3.Checked)
-                    new_Obj.ProbationID = "08";
-                new_Obj.ContractID = null;
-            }
-            if (opt_P3.Checked || opt_P4.Checked || opt_P7.Checked || opt_P8.Checked || opt_P9.Checked)
-            {
-                if (GridLookup_Contract.Value != null)
-                    new_Obj.ContractID = GridLookup_Contract.Value.ToString();
-            }
 
-            if (TextBox10.Text != "")
-                new_Obj.Probation_Sal = double.Parse(TextBox10.Text.Replace(",", "").Replace(".", ""));
-            if (TextBox12.Text != "")
-                new_Obj.Probation_Travel = double.Parse(TextBox12.Text.Replace(",", "").Replace(".", ""));
-            if (TextBox14.Text != "")
-                new_Obj.Probation_Allowance = double.Parse(TextBox14.Text.Replace(",", "").Replace(".", ""));
-            if (TextBox11.Text != "")
-                new_Obj.Permanent_Sal = double.Parse(TextBox11.Text.Replace(",", "").Replace(".", ""));
-            if (TextBox13.Text != "")
-                new_Obj.Permanent_Travel = double.Parse(TextBox13.Text.Replace(",", "").Replace(".", ""));
-            if (TextBox15.Text != "")
-                new_Obj.Permanent_Allowance = double.Parse(TextBox15.Text.Replace(",", "").Replace(".", ""));
             new_Obj.Requester = Session["EmployeeID"].ToString();
             new_Obj.ReportTo = txtEmpOtherID.Text;
             //new_Obj.ApprovedBy = ;
@@ -1021,15 +1033,6 @@ namespace NPOL
                 new_Obj.PosID = ComboBox_Pos.Value.ToString();
             if (ComboBox_Location.Value != null)
                 new_Obj.LocationID = ComboBox_Location.Value.ToString();
-            // moi them 12.01
-            if (TextBox1.Text.Trim() != "")
-                new_Obj.Other_old = TextBox1.Text;
-            if (TextBox2.Text.Trim() != "")
-                new_Obj.Other_new = TextBox2.Text;
-            if (TextBox3.Text.Trim() != "")
-                new_Obj.Other_oldValue = TextBox3.Text;
-            if (TextBox4.Text.Trim() != "")
-                new_Obj.Other_newValue = TextBox4.Text;
 
             // remarks
             new_Obj.Remarks = txtRemarks.Value.Trim();
@@ -1039,10 +1042,11 @@ namespace NPOL
             Cand_Request_OnlineService.CreateNews_Tmp(new_Obj);
             if (new_Obj.RequestID != null)
             {
-                if (uc_Upload2.Validate())
-                {
-                    uc_Upload2.Submit_Attach(new_Obj.RequestID, "CE");
-                }
+                if (IsTA_Manager() == true)
+                    if (uc_Upload2.Validate())
+                    {
+                        uc_Upload2.Submit_Attach(new_Obj.RequestID, "CE");
+                    }
                 if (uc_Upload3.Validate())
                 {
                     uc_Upload3.Submit_Attach(new_Obj.RequestID, "JD");
@@ -1056,7 +1060,7 @@ namespace NPOL
             ////ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "Infor", message, true);
             string str_script = "Func2('" + Session["Lang"] + "')";
             ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", str_script, true);
-            
+
             // clean content
             resetNull();
         }

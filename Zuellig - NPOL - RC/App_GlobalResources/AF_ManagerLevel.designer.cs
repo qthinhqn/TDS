@@ -19,7 +19,7 @@ namespace Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option or rebuild the Visual Studio project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "12.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class AF_ManagerLevel {
@@ -61,11 +61,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete all.
+        /// </summary>
+        internal static string bntDeleteAll {
+            get {
+                return ResourceManager.GetString("bntDeleteAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browse....
+        /// </summary>
+        internal static string btnBrowse {
+            get {
+                return ResourceManager.GetString("btnBrowse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
         internal static string btnCancel {
             get {
                 return ResourceManager.GetString("btnCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete All.
+        /// </summary>
+        internal static string btnDeletaAll {
+            get {
+                return ResourceManager.GetString("btnDeletaAll", resourceCulture);
             }
         }
         
@@ -88,6 +115,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Export Excel.
+        /// </summary>
+        internal static string btnExport {
+            get {
+                return ResourceManager.GetString("btnExport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import from excel.
+        /// </summary>
+        internal static string btnImportExcel {
+            get {
+                return ResourceManager.GetString("btnImportExcel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Template file.
+        /// </summary>
+        internal static string btnTemplate {
+            get {
+                return ResourceManager.GetString("btnTemplate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Transfer.
         /// </summary>
         internal static string btnTransfer {
@@ -97,11 +151,101 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit data.
+        /// </summary>
+        internal static string btnTransfer_1 {
+            get {
+                return ResourceManager.GetString("btnTransfer_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Update.
         /// </summary>
         internal static string btnUpdate {
             get {
                 return ResourceManager.GetString("btnUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Emp.ID.
+        /// </summary>
+        internal static string col_ID {
+            get {
+                return ResourceManager.GetString("col_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Line Name.
+        /// </summary>
+        internal static string col_Line {
+            get {
+                return ResourceManager.GetString("col_Line", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manager 1.
+        /// </summary>
+        internal static string col_Manager1 {
+            get {
+                return ResourceManager.GetString("col_Manager1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manager 2.
+        /// </summary>
+        internal static string col_Manager2 {
+            get {
+                return ResourceManager.GetString("col_Manager2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manager 3.
+        /// </summary>
+        internal static string col_Manager3 {
+            get {
+                return ResourceManager.GetString("col_Manager3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manager 4.
+        /// </summary>
+        internal static string col_Manager4 {
+            get {
+                return ResourceManager.GetString("col_Manager4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee Name.
+        /// </summary>
+        internal static string col_Name {
+            get {
+                return ResourceManager.GetString("col_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Position Name.
+        /// </summary>
+        internal static string col_Pos {
+            get {
+                return ResourceManager.GetString("col_Pos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Section Name.
+        /// </summary>
+        internal static string col_Sec {
+            get {
+                return ResourceManager.GetString("col_Sec", resourceCulture);
             }
         }
         
@@ -223,6 +367,42 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Choose excel file.
+        /// </summary>
+        internal static string lbNull {
+            get {
+                return ResourceManager.GetString("lbNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upload.
+        /// </summary>
+        internal static string lbUpload {
+            get {
+                return ResourceManager.GetString("lbUpload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You have not upload import file..
+        /// </summary>
+        internal static string mess_1 {
+            get {
+                return ResourceManager.GetString("mess_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import file is incorrect format..
+        /// </summary>
+        internal static string mess_2 {
+            get {
+                return ResourceManager.GetString("mess_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Employee list.
         /// </summary>
         internal static string tab1 {
@@ -241,11 +421,56 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Employee - Manager.
+        /// </summary>
+        internal static string tab_1 {
+            get {
+                return ResourceManager.GetString("tab_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update Employee - Manager.
+        /// </summary>
+        internal static string tab_2 {
+            get {
+                return ResourceManager.GetString("tab_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change manager.
+        /// </summary>
+        internal static string tab_3 {
+            get {
+                return ResourceManager.GetString("tab_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Build manager level list.
         /// </summary>
         internal static string tieude {
             get {
                 return ResourceManager.GetString("tieude", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Build manager level list - Personnel requisition.
+        /// </summary>
+        internal static string tieude1 {
+            get {
+                return ResourceManager.GetString("tieude1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Build manager level list - Promotion &amp; Adjustment.
+        /// </summary>
+        internal static string tieude2 {
+            get {
+                return ResourceManager.GetString("tieude2", resourceCulture);
             }
         }
     }
