@@ -104,7 +104,7 @@ namespace COCOSIN_ERP.BasicSamples.Endpoints
             if (!System.IO.File.Exists(path))
             {
                 // load it from github, VSGallery might not like loading hundreds of pages
-                var bytes = new WebClient().DownloadData("https://github.com/volkanceylan/COCOSIN_ERP/raw/master/COCOSIN_ERP/COCOSIN_ERP.Web/" + 
+                var bytes = new WebClient().DownloadData("https://github.com/volkanceylan/SerExtra/raw/master/SerExtra/COCOSIN_ERP.Web/" + 
                     "Modules/BasicSamples/Grids/VSGalleryQA/VSGalleryQAThreads.v1.deflate");
                 var buffer = new byte[65536];
                 using (var output = new MemoryStream())

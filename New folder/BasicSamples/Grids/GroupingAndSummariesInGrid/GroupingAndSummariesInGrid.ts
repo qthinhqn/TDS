@@ -56,7 +56,7 @@ namespace COCOSIN_ERP.BasicSamples {
             return [{
                 title: 'Group By Category',
                 cssClass: 'expand-all-button',
-                onClick: () => this.view.setGrouping(
+                onClick: () => this.setGrouping(
                     [{
                         getter: fld.CategoryName
                     }])
@@ -64,7 +64,7 @@ namespace COCOSIN_ERP.BasicSamples {
             {
                 title: 'Group By Category and Supplier',
                 cssClass: 'expand-all-button',
-                onClick: () => this.view.setGrouping(
+                onClick: () => this.setGrouping(
                     [{
                         formatter: x => 'Category: ' + x.value + ' (' + x.count + ' items)',
                         getter: fld.CategoryName
@@ -75,7 +75,7 @@ namespace COCOSIN_ERP.BasicSamples {
             }, {
                 title: 'No Grouping',
                 cssClass: 'collapse-all-button',
-                onClick: () => this.view.setGrouping([])
+                onClick: () => this.setGrouping([])
             }];
         }
     }

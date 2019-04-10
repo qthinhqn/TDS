@@ -5,7 +5,7 @@ namespace COCOSIN_ERP.BasicSamples {
 
     @Serenity.Decorators.registerClass()
     export class CancellableBulkActionGrid extends Northwind.OrderGrid {
-        private rowSelection: Serenity.GridRowSelectionMixin;
+        //private rowSelection: Serenity.GridRowSelectionMixin;
 
         constructor(container: JQuery) {
             super(container);
@@ -13,7 +13,7 @@ namespace COCOSIN_ERP.BasicSamples {
 
         protected createToolbarExtensions() {
             super.createToolbarExtensions();
-            this.rowSelection = new Serenity.GridRowSelectionMixin(this);
+            //this.rowSelection = new Serenity.GridRowSelectionMixin(this);
         }
 
         protected getButtons() {
