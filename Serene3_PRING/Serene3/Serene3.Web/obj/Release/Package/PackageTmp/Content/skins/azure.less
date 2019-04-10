@@ -1,0 +1,393 @@
+@azure-header-height: 62px;
+@azure-header-bg: #1f7dce;
+@azure-header-bevel: #016fce;
+@azure-title-color: #1f7fce;
+
+.skin-azure, .skin-azure-light {
+    .ui-dialog .ui-dialog-titlebar {
+        background-color: @azure-header-bg;
+    }
+
+    .sidebar-menu li > a > .fa-angle-left {
+        right: 5px;
+    }
+
+    .sidebar-form {
+        border-radius: 3px;
+        margin: 20px 10px 10px 10px;
+    }
+
+    .sidebar-menu > li > a {
+        border-left: 3px solid transparent;
+        font-size: 14px;
+    }
+
+    .sidebar-menu .treeview-menu > li > a {
+        font-size: 13px;
+    }
+
+    .sidebar-form input[type="text"],
+    .sidebar-form .btn {
+        box-shadow: none;
+        border: 1px solid transparent;
+        height: 35px;
+    }
+
+    .sidebar-form .btn {
+        color: #999;
+    }
+
+    .control-sidebar-dark, .control-sidebar-dark + .control-sidebar-bg {
+        background: #2475b7;
+    }
+
+    .main-header {
+
+        .logo {
+            height: 50px;
+        }
+
+        .navbar {
+            background-color: #1d6db1;
+            z-index: 999;
+            min-height: initial;
+        }
+
+        .sidebar-toggle {
+            font-size: 2.5rem;
+            color: #fff;
+            line-height: 20px;
+            border-right: 1px solid @azure-header-bevel;
+            padding: 15px 15px;
+        }
+
+        .logo {
+            font-family: 'Open Sans';
+            color: #fff;
+            z-index: 1000;
+            background-color: @azure-header-bg;
+            padding: 0 0;
+        }
+    }
+
+    .navbar-nav > li > a {
+        border-left: 1px solid @azure-header-bevel;
+        color: #fff;
+    }
+
+    .navbar-nav > .user-menu .user-image {
+        border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus {
+        background: transparent;
+        color: lightgreen;
+    }
+
+    .navbar-nav .open > a, .navbar-nav .open > a:hover, .navbar-nav .open > a:focus {
+        background: #096bc0;
+        color: lightgreen;
+    }
+
+    .navbar-nav > li > a[data-toggle=control-sidebar] {
+        font-size: 18px;
+    }
+
+    section.content > .s-DataGrid {
+        border-radius: 0;
+        border-top: 2px solid #086cc0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .grid-title, .panel-titlebar {
+        color: @azure-title-color;
+        font-size: 17px;
+    }
+
+    .s-Panel {
+        border-radius: 0;
+        border-top: 3px solid @azure-title-color;
+    }
+
+    .sidebar-menu .treeview-menu > li > a > .fa,
+    .sidebar-menu .treeview-menu > li > a > .glyphicon,
+    .sidebar-menu .treeview-menu > li > a > .ion {
+        font-size: 14px;
+    }
+
+    .sidebar-menu > li > a > .fa,
+    .sidebar-menu > li > a > .glyphicon,
+    .sidebar-menu > li > a > .ion {
+        font-size: 18px;
+    }
+
+    .sidebar-menu > li > a > .nav-icon {
+        width: 23px;
+    }
+
+    .sidebar-menu .treeview-menu > li > a > .nav-icon {
+        width: 19px;
+    }
+
+    .main-header li.user-header {
+        background-color: @azure-header-bg;
+    }
+
+    .s-QuickSearchBar .quick-search-icon {
+        background: @azure-title-color;
+    }
+
+    .quick-filters-bar {
+        border: none;
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #ddd;
+        background-color: #f9f9f9;
+        border-radius: 0;
+    }
+
+    .slick-header-column, .slick-header-column.ui-state-default {
+        color: #016fce;
+    }
+
+    .slick-cell > a {
+        color: #30569c;
+    }
+}
+
+.skin-azure {
+    .main-sidebar {
+        background-color: #1f7dce;
+        background: linear-gradient(-65deg, #222d32, #1f7dce);
+    }
+
+    .sidebar a {
+        color: #dee5fb;
+    }
+
+    .sidebar-menu > li > .treeview-menu {
+        background-color: rgba(85, 133, 175, 0.2);
+    }
+
+    .sidebar-menu > li:hover > a, .sidebar-menu > li.active > a {
+        color: #fff;
+        border-left-color: #9ccbf7;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .sidebar-menu > li li:hover > a, .sidebar-menu li li.active > a {
+        color: #83f78c;
+    }
+
+    .sidebar-form {
+        border: 1px solid rgba(0, 0, 0, 0.20);
+    }
+
+    .sidebar-form input[type="text"],
+    .sidebar-form .btn {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .sidebar-form input[type="text"] {
+        color: #bbb;
+    }
+}
+
+.skin-azure-light {
+    .content-wrapper, .right-side {
+        background-color: #edf5fb;
+    }
+
+    .main-sidebar {
+        background-color: #fff;
+    }
+
+    .sidebar a {
+        color: #222;
+    }
+
+    .sidebar-menu > li > .treeview-menu {
+        background-color: rgba(196, 196, 196, 0.2);
+    }
+
+    .sidebar-menu > li:hover > a, .sidebar-menu > li.active > a {
+        color: #fff;
+        border-left-color: #64b7ff;
+        background-color: #016fce;
+
+        i.nav-icon {
+            color: #fff;
+        }
+    }
+
+    .sidebar-menu .nav-icon {
+        color: #31386b;
+    }
+
+    .sidebar-menu > li > a > .nav-icon {
+        color: #575b7b;
+    }
+
+    .sidebar-menu .treeview-menu {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .sidebar-menu .treeview-menu > li > a {
+        padding-left: 19px;
+    }
+
+    .sidebar-menu .treeview-menu > li {
+        margin: 1px 4px 1px 0;
+    }
+
+    .sidebar-menu li > a > .fa-angle-left {
+        right: 1px;
+    }
+
+    .sidebar-menu > li > ul > li:hover > a, .sidebar-menu > li > ul > li.active > a {
+        color: #fff;
+        background-color: #4393d5;
+        border-radius: 13px;
+        border-right: 4px solid #c0d7f3;
+        border-left: 4px solid #c0d7f3;
+        box-shadow: 0px 0px 2px white;
+        padding-left: 15px;
+
+        .nav-icon {
+            color: #fff;
+        }
+    }
+
+    .sidebar-form input[type="text"],
+    .sidebar-form .btn {
+        background-color: #eaf1f7;
+    }
+
+    .sidebar-menu > li li li:hover > a, .sidebar-menu li li li.active > a {
+        color: #0595ec;
+
+        .nav-icon {
+            color: #50316b;
+        }
+    }
+
+    .sidebar-form input[type="text"] {
+        color: #666;
+    }
+}
+
+@media (min-width: 768px) {
+    .skin-azure, .skin-azure-light {
+        .content {
+            padding: 25px 15px 15px 20px;
+        }
+
+        .content-header {
+            padding-left: 20px;
+        }
+
+        .main-header {
+            .navbar {
+                min-height: @azure-header-height;
+                margin-left: 0;
+                background: @azure-header-bg;
+            }
+
+            .sidebar-toggle {
+                padding-right: 1.25rem;
+                position: absolute;
+                left: 4px;
+                top: -8px;
+                line-height: inherit;
+                border-right: 1px solid transparent;
+                padding: 21px 15px;
+            }
+
+            .logo {
+                position: absolute;
+                left: 6rem;
+                border-left: 1px solid @azure-header-bevel;
+                top: 6px;
+                background-color: transparent;
+                padding: 0 15px;
+
+                b {
+                    float: left;
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        .navbar-nav {
+            margin-top: 6px;
+        }
+
+        .navbar-nav > li > a {
+            line-height: 20px;
+            padding: 15px 22px;
+            font-size: 15px;
+        }
+
+        .navbar-nav > .user-menu .user-image {
+            height: 45px;
+            width: 45px;
+            margin-top: -12px;
+        }
+
+        &.fixed .content-wrapper, &.fixed .right-side {
+            padding-top: @azure-header-height;
+        }
+
+        .main-sidebar, .left-side {
+            padding-top: @azure-header-height;
+        }
+
+        &.sidebar-mini.sidebar-collapse .main-header .navbar {
+            margin-left: 0;
+        }
+
+        &.sidebar-mini.sidebar-collapse .main-header .logo {
+            width: 80px;
+        }
+
+        &.sidebar-mini.sidebar-collapse .main-header .logo > .logo-mini {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &.sidebar-mini.sidebar-collapse .main-sidebar {
+            width: 62px !important;
+        }
+
+        &.sidebar-mini.sidebar-collapse {
+            .content-wrapper,
+            .right-side,
+            .main-footer {
+                margin-left: 62px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .skin-azure {
+        .main-header {
+            box-shadow: 0 2px 5px rgba(24, 96, 158, 0.6);
+        }
+
+        .main-sidebar {
+            box-shadow: 2px 0px 3px rgba(24, 96, 158, 0.2);
+            border-right: 1px solid #0a59a0;
+        }
+    }
+
+    .skin-azure-light {
+        .main-header {
+            box-shadow: 0 1px 3px rgba(40, 37, 89, 0.6);
+        }
+
+        .main-sidebar {
+            border-right: 1px solid #d2d2d2;
+        }
+    }
+}

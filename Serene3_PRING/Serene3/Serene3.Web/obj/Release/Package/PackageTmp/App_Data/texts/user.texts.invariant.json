@@ -1,0 +1,15 @@
+{
+  "Db.SpringPrintingConnection.TblXuatKhoKh.MaKh1": "Customer ID",
+  "Db.SpringPrintingConnection.TblXuatKhoKh.NgayXuat": "Date out",
+  "Db.SpringPrintingConnection.TblXuatKhoKh.SoPhieu": "Ticket ID:",
+  "Navigation.SpringPrintingConnection/InPut": "Nhập hàng",
+  "Navigation.SpringPrintingConnection/InPut/Tbl Bo Btp": "Chi tiết hàng",
+  "Navigation.SpringPrintingConnection/InPut/Tbl Lo Sp": "Nhập hàng",
+  "Navigation.SpringPrintingConnection/LenChuyen": "Lên Chuyền",
+  "Navigation.SpringPrintingConnection/Reports/RptNhapFE_3Controller": "Báo cáo nhập hàng",
+  "Navigation.SpringPrintingConnection/Reports/RptXuatFEController": "Báo cáo xuất hàng",
+  "Navigation.SpringPrintingConnection/Tbl Khach Hang": "Khách hàng",
+  "Navigation.SpringPrintingConnection/XuatKho": "Export warehouse",
+  "Navigation.SpringPrintingConnection/XuatKho/Tbl Xuat Kho Chi Tiet": "Export warehouse (detail)",
+  "Navigation.SpringPrintingConnection/XuatKho/Tbl Xuat Kho Kh": "Export warehouse"
+}

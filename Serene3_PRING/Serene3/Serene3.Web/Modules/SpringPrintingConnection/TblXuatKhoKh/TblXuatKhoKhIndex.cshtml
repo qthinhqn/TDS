@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = Serenity.LocalText.Get("Db.SpringPrintingConnection.TblXuatKhoKh.EntityPlural");
+}
+
+<div id="GridDiv"></div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        new Serene3.SpringPrintingConnection.TblXuatKhoKhGrid($('#GridDiv'), {}).init();
+
+        Q.initFullHeightGridPage($('#GridDiv'));
+    });
+</script>

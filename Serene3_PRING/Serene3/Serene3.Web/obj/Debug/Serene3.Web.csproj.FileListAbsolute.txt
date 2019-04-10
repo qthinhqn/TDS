@@ -1,0 +1,536 @@
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\wkhtmltopdf.exe
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serene3.Web.dll.config
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serene3.Web.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serene3.Web.pdb
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\CsQuery.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Dapper.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\EPPlus.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.Runner.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Microsoft.Web.Infrastructure.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Mono.Cecil.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Newtonsoft.Json.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\NUglify.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Core.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.Entity.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Services.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Web.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\StackExchange.Exceptional.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.Helpers.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.Mvc.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.Razor.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\CsQuery.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Dapper.pdb
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Dapper.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\EPPlus.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.pdb
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.Runner.pdb
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Newtonsoft.Json.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\NUglify.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Core.pdb
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Core.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.pdb
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.Entity.pdb
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Services.pdb
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\Serenity.Web.pdb
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\StackExchange.Exceptional.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.Helpers.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.Mvc.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.Razor.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.xml
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\obj\Debug\Serene3.Web.dll
+c:\users\tdsdemo.tdt\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\obj\Debug\Serene3.Web.pdb
+C:\Users\tdsdemo.TDT\documents\visual studio 2015\Projects\Serene3\Serene3\Serene3.Web\obj\Debug\Serene3.Web.csprojResolveAssemblyReference.cache
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\wkhtmltopdf.exe
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serene3.Web.dll.config
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serene3.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serene3.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\CsQuery.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Dapper.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\EPPlus.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.Runner.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Mono.Cecil.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Newtonsoft.Json.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\NUglify.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Core.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.Entity.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Services.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\StackExchange.Exceptional.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.Helpers.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.Mvc.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.Razor.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\CsQuery.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Dapper.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Dapper.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\EPPlus.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.Runner.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Newtonsoft.Json.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\NUglify.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Core.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Core.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.Entity.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Services.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\Serenity.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\StackExchange.Exceptional.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.Helpers.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.Mvc.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.Razor.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\obj\Debug\Serene3.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\obj\Debug\Serene3.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\20.04.2018\Serene3\Serene3\Serene3.Web\obj\Debug\Serene3.Web.csprojResolveAssemblyReference.cache
+E:\Serene3\Serene3\Serene3.Web\bin\wkhtmltopdf.exe
+E:\Serene3\Serene3\Serene3.Web\bin\Serene3.Web.dll.config
+E:\Serene3\Serene3\Serene3.Web\bin\Serene3.Web.dll
+E:\Serene3\Serene3\Serene3.Web\bin\Serene3.Web.pdb
+E:\Serene3\Serene3\Serene3.Web\bin\CsQuery.dll
+E:\Serene3\Serene3\Serene3.Web\bin\Dapper.dll
+E:\Serene3\Serene3\Serene3.Web\bin\EPPlus.dll
+E:\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.dll
+E:\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.Runner.dll
+E:\Serene3\Serene3\Serene3.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\Serene3\Serene3\Serene3.Web\bin\Mono.Cecil.dll
+E:\Serene3\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.dll
+E:\Serene3\Serene3\Serene3.Web\bin\Newtonsoft.Json.dll
+E:\Serene3\Serene3\Serene3.Web\bin\NUglify.dll
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Core.dll
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.dll
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.Entity.dll
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Services.dll
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Web.dll
+E:\Serene3\Serene3\Serene3.Web\bin\StackExchange.Exceptional.dll
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.Helpers.dll
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.Mvc.dll
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.Razor.dll
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.dll
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.dll
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.dll
+E:\Serene3\Serene3\Serene3.Web\bin\CsQuery.xml
+E:\Serene3\Serene3\Serene3.Web\bin\Dapper.pdb
+E:\Serene3\Serene3\Serene3.Web\bin\Dapper.xml
+E:\Serene3\Serene3\Serene3.Web\bin\EPPlus.xml
+E:\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.pdb
+E:\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.xml
+E:\Serene3\Serene3\Serene3.Web\bin\FluentMigrator.Runner.pdb
+E:\Serene3\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.xml
+E:\Serene3\Serene3\Serene3.Web\bin\Newtonsoft.Json.xml
+E:\Serene3\Serene3\Serene3.Web\bin\NUglify.xml
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Core.pdb
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Core.xml
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.pdb
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.xml
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Data.Entity.pdb
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Services.pdb
+E:\Serene3\Serene3\Serene3.Web\bin\Serenity.Web.pdb
+E:\Serene3\Serene3\Serene3.Web\bin\StackExchange.Exceptional.xml
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.Helpers.xml
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.Mvc.xml
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.Razor.xml
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.xml
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.xml
+E:\Serene3\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.xml
+E:\Serene3\Serene3\Serene3.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+E:\Serene3\Serene3\Serene3.Web\obj\Debug\Serene3.Web.csprojResolveAssemblyReference.cache
+E:\Serene3\Serene3\Serene3.Web\obj\Debug\Serene3.Web.dll
+E:\Serene3\Serene3\Serene3.Web\obj\Debug\Serene3.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.csprojResolveAssemblyReference.cache
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\wkhtmltopdf.exe
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.dll.config
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportSource.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.Shared.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CsQuery.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\EPPlus.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.Runner.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Mono.Cecil.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Newtonsoft.Json.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\NUglify.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.Entity.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Services.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\StackExchange.Exceptional.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Helpers.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Mvc.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Razor.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\stdole.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\CsQuery.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\EPPlus.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.Runner.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Newtonsoft.Json.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\NUglify.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.Entity.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Services.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\StackExchange.Exceptional.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Helpers.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Mvc.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Razor.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\Serene3_PRING\Serene3\Serene3.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\wkhtmltopdf.exe
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.dll.config
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.pdb
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportSource.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.Shared.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.Web.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CsQuery.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\EPPlus.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.Runner.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\log4net.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Mono.Cecil.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Newtonsoft.Json.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\NUglify.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.Entity.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Services.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Web.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\StackExchange.Exceptional.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Helpers.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Mvc.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Razor.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\stdole.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CsQuery.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.pdb
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\EPPlus.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.pdb
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.Runner.pdb
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\log4net.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Newtonsoft.Json.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\NUglify.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.pdb
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.pdb
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.Entity.pdb
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Services.pdb
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Web.pdb
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\StackExchange.Exceptional.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Helpers.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Mvc.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Razor.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.xml
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.dll
+E:\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\wkhtmltopdf.exe
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.dll.config
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportSource.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.Shared.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CsQuery.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\EPPlus.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.Runner.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\log4net.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Mono.Cecil.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Newtonsoft.Json.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\NUglify.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.Entity.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Services.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\StackExchange.Exceptional.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Helpers.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Mvc.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Razor.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\stdole.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CsQuery.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\EPPlus.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.Runner.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\log4net.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Newtonsoft.Json.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\NUglify.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.Entity.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Services.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\StackExchange.Exceptional.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Helpers.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Mvc.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Razor.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.xml
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.csprojResolveAssemblyReference.cache
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.pdb
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.csproj.GenerateResource.Cache
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\vi-vn\Serene3.Web.resources.dll
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.App_GlobalResources.RptXuatFEList.vi-vn.resources
+C:\_A_NANGCAP_2017\HRM_TDS_DUYKHAI\27.04.2018\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\vi-vn\Serene3.Web.resources.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\wkhtmltopdf.exe
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.dll.config
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.pdb
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\vi-vn\Serene3.Web.resources.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportSource.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.Shared.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.Web.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CsQuery.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\EPPlus.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.Runner.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\log4net.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Mono.Cecil.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Newtonsoft.Json.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\NUglify.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.Entity.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Services.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Web.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\StackExchange.Exceptional.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Helpers.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Mvc.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Razor.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\stdole.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\CsQuery.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.pdb
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\EPPlus.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.pdb
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.Runner.pdb
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\log4net.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Newtonsoft.Json.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\NUglify.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.pdb
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.pdb
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.Entity.pdb
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Services.pdb
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Web.pdb
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\StackExchange.Exceptional.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Helpers.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Mvc.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Razor.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.xml
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.App_GlobalResources.RptXuatFEList.vi-vn.resources
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.csproj.GenerateResource.Cache
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\vi-vn\Serene3.Web.resources.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.dll
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.pdb
+E:\2018.02.05\Serene3_PRING\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.csprojResolveAssemblyReference.cache
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\wkhtmltopdf.exe
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.dll.config
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serene3.Web.pdb
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\vi-vn\Serene3.Web.resources.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportSource.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.Shared.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.Web.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CsQuery.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\EPPlus.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.Runner.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\log4net.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Mono.Cecil.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Newtonsoft.Json.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\NUglify.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.Entity.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Services.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Web.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\StackExchange.Exceptional.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Helpers.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Mvc.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Razor.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\stdole.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\CsQuery.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.pdb
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Dapper.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\EPPlus.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.pdb
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\FluentMigrator.Runner.pdb
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\log4net.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\MsieJavaScriptEngine.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Newtonsoft.Json.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\NUglify.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.pdb
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Core.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.pdb
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Data.Entity.pdb
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Services.pdb
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\Serenity.Web.pdb
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\StackExchange.Exceptional.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Helpers.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Mvc.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.Razor.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Deployment.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\System.Web.WebPages.Razor.xml
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.App_GlobalResources.RptXuatFEList.vi-vn.resources
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.csproj.GenerateResource.Cache
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\vi-vn\Serene3.Web.resources.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.dll
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.pdb
+E:\SpringPrinting\Serene3_PRING(24-5-18)\Serene3_PRING\Serene3\Serene3.Web\obj\Debug\Serene3.Web.csprojResolveAssemblyReference.cache

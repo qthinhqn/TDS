@@ -1,0 +1,68 @@
+﻿using Serenity.Navigation;
+using MyPages = Serene3.SpringPrintingConnection.Pages;
+[assembly: NavigationMenu(8000, "SpringPrintingConnection", icon: "fa-anchor")]
+
+[assembly: NavigationMenu(8001, "SpringPrintingConnection/Generals", icon: "fa-truck")]
+[assembly: NavigationLink(8002, "SpringPrintingConnection/Generals/Tbl Ban Thanh Pham", typeof(MyPages.TblBanThanhPhamController), icon: "fa-credit-card")]
+[assembly: NavigationLink(8003, "SpringPrintingConnection/Generals/Tbl Fe Card Info", typeof(MyPages.TblFeCardInfoController), icon: "fa-shopping-cart")]
+[assembly: NavigationLink(8004, "SpringPrintingConnection/Generals/Tbl Fe Stock Out Info", typeof(MyPages.TblFeStockOutInfoController), icon: "fa-cube")]
+[assembly: NavigationLink(8005, "SpringPrintingConnection/Generals/Tbl Khach Hang", typeof(MyPages.TblKhachHangController), icon:"fa-truck")]
+[assembly: NavigationLink(8006, "SpringPrintingConnection/Generals/Tbl Nguoi Dung", typeof(MyPages.TblNguoiDungController), icon: "fa-credit-card")]
+[assembly: NavigationLink(8007, "SpringPrintingConnection/Generals/Tbl Ref Mau", typeof(MyPages.TblRefMauController), icon: "fa-credit-card")]
+[assembly: NavigationLink(8008, "SpringPrintingConnection/Generals/Tbl Ref Nguoi Dai Dien", typeof(MyPages.TblRefNguoiDaiDienController), icon: "fa-credit-card")]
+//[assembly: NavigationLink(8009, "SpringPrintingConnection/Generals/Tbl Ref Sex", typeof(MyPages.TblRefSexController), icon: "fa-credit-card")]
+[assembly: NavigationLink(8010, "SpringPrintingConnection/Generals/Tbl Ref Size", typeof(MyPages.TblRefSizeController), icon: "fa-credit-card")]
+[assembly: NavigationLink(8011, "SpringPrintingConnection/Generals/Tbl Ref Style", typeof(MyPages.TblRefStyleController), icon: "fa-credit-card")]
+
+[assembly: NavigationMenu(8010, "SpringPrintingConnection/Contract", icon: "fa-anchor")]
+[assembly: NavigationLink(8011, "SpringPrintingConnection/Contract/Tbl Hop Dong", typeof(MyPages.TblHopDongController), icon: "fa-credit-card")]
+//[assembly: NavigationLink(8022, "SpringPrintingConnection/Contract/Tbl Hop Dong Chi Tiet", typeof(MyPages.TblHopDong_ChiTietController), icon: "fa-shopping-cart")]
+//[assembly: NavigationLink(8023, "SpringPrintingConnection/Contract/Tbl Hop Dong Dieu Chinh", typeof(MyPages.TblHopDong_DieuChinhController), icon: "fa-cube")]
+[assembly: NavigationLink(8022, "SpringPrintingConnection/Contract/V Hop Dong Trang Thai", typeof(MyPages.VHopDongTrangThaiController), icon: null)]
+[assembly: NavigationLink(8023, "SpringPrintingConnection/Contract/V Chi Tiet Btp", typeof(MyPages.VChiTietBtpController), icon: null)]
+
+[assembly: NavigationMenu(8030, "SpringPrintingConnection/InPut", icon: "fa-anchor")]
+[assembly: NavigationLink(8031, "SpringPrintingConnection/InPut/Tbl Bo Btp", typeof(MyPages.TblBoBtpController), icon: "fa-truck")]
+[assembly: NavigationLink(8032, "SpringPrintingConnection/InPut/Tbl Lo Sp", typeof(MyPages.TblLoSpController), icon: "fa-cube")]
+
+[assembly: NavigationMenu(8040, "SpringPrintingConnection/LenChuyen", icon: "fa-anchor")]
+[assembly: NavigationLink(8041, "SpringPrintingConnection/LenChuyen/Tbl Len Chuyen", typeof(MyPages.TblLenChuyenController), icon: "fa-truck")]
+[assembly: NavigationLink(8042, "SpringPrintingConnection/LenChuyen/Tbl Len Chuyen In Chi Tiet", typeof(MyPages.TblLenChuyenInChiTietController), icon: "fa-cube")]
+
+[assembly: NavigationMenu(8050, "SpringPrintingConnection/XuongChuyen", icon: "fa-anchor")]
+[assembly: NavigationLink(8051, "SpringPrintingConnection/XuongChuyen/Tbl Xuong Chuyen", typeof(MyPages.TblXuongChuyenController), icon: "fa-truck")]
+[assembly: NavigationLink(8052, "SpringPrintingConnection/XuongChuyen/Tbl Xuong Chuyen In Chi Tiet", typeof(MyPages.TblXuongChuyenInChiTietController), icon: "fa-cube")]
+
+[assembly: NavigationMenu(8060, "SpringPrintingConnection/XuatKho", icon: "fa-anchor")]
+[assembly: NavigationLink(8061, "SpringPrintingConnection/XuatKho/Tbl Xuat Kho Chi Tiet", typeof(MyPages.TblXuatKhoChiTietController), icon: "fa-truck")]
+[assembly: NavigationLink(8062, "SpringPrintingConnection/XuatKho/Tbl Xuat Kho Kh", typeof(MyPages.TblXuatKhoKhController), icon: "fa-cube")]
+
+[assembly: NavigationMenu(8070, "SpringPrintingConnection/Reports", icon: "fa-anchor")]
+//[assembly: NavigationLink(8071, "SpringPrintingConnection/Reports/RptNhapFEController", typeof(Serene3.Controllers.RptNhapFEController), icon: "fa-truck")]
+//[assembly: NavigationLink(8072, "SpringPrintingConnection/Reports/RptNhapFE_2Controller", typeof(Serene3.Controllers.RptNhapFE_2Controller), icon: "fa-cube")]
+[assembly: NavigationLink(8073, "SpringPrintingConnection/Reports/RptNhapFE_3Controller", typeof(Serene3.Controllers.RptNhapFE_3Controller), icon: "fa-shopping-cart")]
+[assembly: NavigationLink(8074, "SpringPrintingConnection/Reports/RptXuatFEController", typeof(Serene3.Controllers.RptXuatFEController), icon: "fa-credit-card")]
+[assembly: NavigationLink(8075, "SpringPrintingConnection/Reports/TKeNXTController", typeof(Serene3.Controllers.TKeNXTController), icon: null)]
+[assembly: NavigationLink(8076, "SpringPrintingConnection/Reports/RptLenChuyenFEController", typeof(Serene3.Controllers.RptLenChuyenFEController), icon: "fa-cube")]
+[assembly: NavigationLink(8077, "SpringPrintingConnection/Reports/RptXuongChuyenFEController", typeof(Serene3.Controllers.RptXuongChuyenFEController), icon: "fa-cube")]
+[assembly: NavigationLink(8078, "SpringPrintingConnection/Reports/RptXuatKhoFEController", typeof(Serene3.Controllers.RptXuatKhoFEController), icon: "fa-cube")]
+
+
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/V Nhap Kho Sp", typeof(MyPages.VNhapKhoSpController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/V Hop Dong Chi Tiet", typeof(MyPages.VHopDongChiTietController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/V Len Chuyen Chi Tiet", typeof(MyPages.VLenChuyenChiTietController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/V Lo Sp Kh", typeof(MyPages.VLoSpKhController), icon: null)]
+
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/V Trang Thai Bo Btp", typeof(MyPages.VTrangThaiBoBtpController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/Tbl Hop Dong", typeof(MyPages.TblHopDongController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/Tbl Hop Dong Chi Tiet", typeof(MyPages.TblHopDongChiTietController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/Tbl Hop Dong Dieu Chinh", typeof(MyPages.TblHopDongDieuChinhController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/Tbl Bo Btp", typeof(MyPages.TblBo_BTPController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/Tbl Len Chuyen In Chi Tiet", typeof(MyPages.TblLenChuyenIn_ChiTietController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/V Chi Tiet Btp Size", typeof(MyPages.VChiTietBtp_SizeController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/V Chi Tiet Btp Style", typeof(MyPages.VChiTietBtp_StyleController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/V Chi Tiet Btp Style Color", typeof(MyPages.VChiTietBtp_Style_ColorController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/Tbl Xuong Chuyen In Chi Tiet", typeof(MyPages.TblXuongChuyenIn_ChiTietController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/Tbl Xuat Kho Chi Tiet", typeof(MyPages.TblXuatKho_ChiTietController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/Tbl Ref Type", typeof(MyPages.TblRefTypeController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "SpringPrintingConnection/Grouping and Sum. In Grid", typeof(MyPages.GroupingInPageController), icon: null)]
