@@ -111,7 +111,6 @@ namespace COCOSIN_ERP.Administration.Repositories
                             var tab = member.GetCustomAttribute<TabAttribute>();
                             if (tab != null && !tab.Value.IsEmptyOrNull())
                                 result.Add("Forms." + attr.Key + ".Tabs." + tab.Value);
-
                         }
                     }
                 }
