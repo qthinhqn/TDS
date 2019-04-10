@@ -14,7 +14,7 @@ public static class ExcelWorksheetHelper
         var cellValueAsString = worksheet.GetValue<string>(row, col);
         DateTime date;
 
-        if (DateTime.TryParseExact(cellValueAsString, dateFormates, null, DateTimeStyles.AllowWhiteSpaces, out date))
+        if (DateTime.TryParseExact(cellValueAsString, dateFormates, null, DateTimeStyles.AllowWhiteSpaces, out  date))
         {
             return date;
         }
