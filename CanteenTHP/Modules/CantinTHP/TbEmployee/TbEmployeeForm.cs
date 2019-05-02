@@ -13,6 +13,7 @@ namespace Canteen.CantinTHP.Forms
     [BasedOnRow(typeof(Entities.TbEmployeeRow), CheckNames = true)]
     public class TbEmployeeForm
     {
+        //[Category("Employee info")]
         [FormCssClass("line-break-sm")]
         public String EmployeeId { get; set; }
         [HalfWidth(UntilNext = true)]
@@ -25,5 +26,9 @@ namespace Canteen.CantinTHP.Forms
         public DateTime LeftDate { get; set; }
         public DateTime StartDate { get; set; }
         public Boolean Active { get; set; }
+
+        //[Category("Cantin Details")]
+        //[EmpCanteenEditor]
+        //public List<Entities.TbEmpCanteenRow> DetailList { get; set; }
     }
 }

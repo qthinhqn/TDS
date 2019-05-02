@@ -6,6 +6,7 @@ namespace Canteen.CantinTHP.Entities
     using Serenity.Data;
     using Serenity.Data.Mapping;
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel;
     using System.IO;
 
@@ -129,6 +130,13 @@ namespace Canteen.CantinTHP.Entities
             set { Fields.StringName[this] = value; }
         }
 
+        [DisplayName("Details"), MasterDetailRelation(foreignKey: "EmpID"), NotMapped]
+        public List<TbEmpCanteenRow> DetailList
+        {
+            get { return Fields.DetailList[this]; }
+            set { Fields.DetailList[this] = value; }
+        }
+
         IIdField IIdRow.IdField
         {
             get { return Fields.KeyId; }
@@ -164,6 +172,8 @@ namespace Canteen.CantinTHP.Entities
             public StringField CanteenId;
             public StringField CostCenter;
             public StringField StringName;
+
+            public RowListField<TbEmpCanteenRow> DetailList;
         }
     }
 }
