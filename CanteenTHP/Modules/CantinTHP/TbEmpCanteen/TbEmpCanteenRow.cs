@@ -1,6 +1,7 @@
 ﻿
 namespace Canteen.CantinTHP.Entities
 {
+    using Scripts;
     using Serenity;
     using Serenity.ComponentModel;
     using Serenity.Data;
@@ -13,6 +14,7 @@ namespace Canteen.CantinTHP.Entities
     [DisplayName("Tb Emp Canteen"), InstanceName("Tb Emp Canteen")]
     [ReadPermission("Administration:General")]
     [ModifyPermission("Administration:General")]
+    [LookupScript]
     public sealed class TbEmpCanteenRow : Row, IIdRow, INameRow
     {
         [DisplayName("Key Id"), Column("KeyID"), Identity]
@@ -22,14 +24,17 @@ namespace Canteen.CantinTHP.Entities
             set { Fields.KeyId[this] = value; }
         }
 
-        [DisplayName("Emp"), Column("EmpID"), Size(25), ForeignKey("[dbo].[tbEmployee]", "EmployeeID"), LeftJoin("jEmp"), QuickSearch, TextualField("EmpEmployeeCost")]
+        [DisplayName("Emp"), Column("EmpID"), Size(25), ForeignKey("[dbo].[tbEmployee]", "EmployeeID"), LeftJoin("jEmp")]
+
+        [_Ext.GridItemPickerEditor(typeof(TbEmployeeRow))]
         public String EmpId
         {
             get { return Fields.EmpId[this]; }
             set { Fields.EmpId[this] = value; }
         }
 
-        [DisplayName("Canteen"), Column("CanteenID"), Size(10), ForeignKey("[dbo].[tbRef_Canteen]", "CanteenID"), LeftJoin("jCanteen"), TextualField("CanteenCanteenName")]
+        [DisplayName("Canteen"), Column("CanteenID"), Size(10), ForeignKey("[dbo].[tbRef_Canteen]", "CanteenID"), LeftJoin("jCanteen")]
+        [LookupInclude, LookupEditor(typeof(TbRefCanteenRow), InplaceAdd = true)]
         public String CanteenId
         {
             get { return Fields.CanteenId[this]; }

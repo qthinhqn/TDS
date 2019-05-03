@@ -13,6 +13,7 @@ namespace Canteen.CantinTHP.Forms
     [BasedOnRow(typeof(Entities.TbMealCostRow), CheckNames = true)]
     public class TbMealCostForm
     {
+        [DefaultValue("now")]
         public DateTime DateChange { get; set; }
         public Double EmployeeCost { get; set; }
         public Double ManagerCost { get; set; }

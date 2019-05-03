@@ -2,7 +2,7 @@
 namespace Canteen.CantinTHP {
 
     @Serenity.Decorators.registerClass()
-    export class TbMealCostGrid extends Serenity.EntityGrid<TbMealCostRow, any> {
+    export class TbMealCostGrid extends _Ext.GridBase<TbMealCostRow, any> {
         protected getColumnsKey() { return 'CantinTHP.TbMealCost'; }
         protected getDialogType() { return TbMealCostDialog; }
         protected getIdProperty() { return TbMealCostRow.idProperty; }

@@ -16,6 +16,7 @@ namespace Canteen.CantinTHP.Forms
     {
         [LookupEditor(typeof(TbEmployeeLookup))]
         public String EmpId { get; set; }
+        [DefaultValue("now")]
         public DateTime DDay { get; set; }
         public String ShiftId { get; set; }
         public String CanteenId { get; set; }

@@ -2,7 +2,7 @@
 namespace Canteen.CantinTHP {
 
     @Serenity.Decorators.registerClass()
-    export class TbRefLeaveTypeGrid extends Serenity.EntityGrid<TbRefLeaveTypeRow, any> {
+    export class TbRefLeaveTypeGrid extends _Ext.GridBase<TbRefLeaveTypeRow, any> {
         protected getColumnsKey() { return 'CantinTHP.TbRefLeaveType'; }
         protected getDialogType() { return TbRefLeaveTypeDialog; }
         protected getIdProperty() { return TbRefLeaveTypeRow.idProperty; }

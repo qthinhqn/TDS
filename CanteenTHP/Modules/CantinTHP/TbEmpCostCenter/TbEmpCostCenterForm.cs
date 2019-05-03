@@ -19,6 +19,7 @@ namespace Canteen.CantinTHP.Forms
         public String EmpId { get; set; }
         [LookupEditor(typeof(Entities.TbRefCostCenterRow))]
         public String CostCenter { get; set; }
+        [DefaultValue("now")]
         public DateTime DateChange { get; set; }
         public String Remarks { get; set; }
     }

@@ -2,7 +2,7 @@
 namespace Canteen.CantinTHP {
 
     @Serenity.Decorators.registerClass()
-    export class TbPrintTicketGrid extends Serenity.EntityGrid<TbPrintTicketRow, any> {
+    export class TbPrintTicketGrid extends _Ext.GridBase<TbPrintTicketRow, any> {
         protected getColumnsKey() { return 'CantinTHP.TbPrintTicket'; }
         protected getDialogType() { return TbPrintTicketDialog; }
         protected getIdProperty() { return TbPrintTicketRow.idProperty; }

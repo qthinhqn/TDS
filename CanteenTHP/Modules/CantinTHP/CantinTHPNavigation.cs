@@ -15,7 +15,7 @@ using MyPages = Canteen.CantinTHP.Pages;
 [assembly: NavigationLink(int.MaxValue, "CantinTHP/Info/Tb Emp Manager", typeof(MyPages.TbEmpManagerController), icon: null)]
 [assembly: NavigationLink(int.MaxValue, "CantinTHP/Info/Tb Emp Shift", typeof(MyPages.TbEmpShiftController), icon: null)]
 [assembly: NavigationLink(int.MaxValue, "CantinTHP/Info/Tb Emp Day Off", typeof(MyPages.TbEmpDayOffController), icon: null)]
-[assembly: NavigationLink(int.MaxValue, "CantinTHP/Info/Tb Emp Type", typeof(MyPages.TbEmpTypeController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "CantinTHP/Info/Tb Emp Type", typeof(MyPages.TbEmpTypeController), icon: null)]
 
 
 [assembly: NavigationMenu(int.MaxValue, "CantinTHP/Registration", icon: "fa-registered")]
@@ -43,4 +43,4 @@ using MyPages = Canteen.CantinTHP.Pages;
 [assembly: NavigationLink(int.MaxValue, "CantinTHP/Generals/Tb Ref Menu", typeof(MyPages.TbRefMenuController), icon: null)]
 [assembly: NavigationLink(int.MaxValue, "CantinTHP/Generals/Tb Ref Shift", typeof(MyPages.TbRefShiftController), icon: null)]
 [assembly: NavigationLink(int.MaxValue, "CantinTHP/Generals/Zk Tbl Record", typeof(MyPages.ZkTblRecordController), icon: null)]
-[assembly: NavigationLink(int.MaxValue, "CantinTHP/V Employee Info Current", typeof(MyPages.VEmployeeInfoCurrentController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "CantinTHP/V Employee Info Current", typeof(MyPages.VEmployeeInfoCurrentController), icon: null)]

@@ -2,25 +2,24 @@
 namespace Canteen.CantinTHP.Scripts
 {
     using Entities;
-    //using global::Canteen.Utilities;
     using Serenity.ComponentModel;
     using Serenity.Data;
     using Serenity.Web;
     using System;
     using System.Web;
 
-    [LookupScript("CantinTHP.EmployeeLookup", Permission = "*")]
-    public class TbEmployeeLookup : RowLookupScript<TbEmployeeRow>
+    [LookupScript("CantinTHP.TbRefCanteenLookup", Permission = "*")]
+    public class TbRefCanteenLookup : RowLookupScript<TbRefCanteenRow>
     {
-        public TbEmployeeLookup()
+        public TbRefCanteenLookup()
         {
-            IdField = TbEmployeeRow.Fields.EmployeeId.PropertyName;
-            TextField = TbEmployeeRow.Fields.StringName.PropertyName;
+            IdField = TbRefCanteenRow.Fields.CanteenId.PropertyName;
+            TextField = TbRefCanteenRow.Fields.StringName.PropertyName;
             Expiration = TimeSpan.FromDays(-1);
         }
         protected override void PrepareQuery(SqlQuery query)
         {
-            var fld = Entities.TbEmployeeRow.Fields;
+            var fld = Entities.TbRefCanteenRow.Fields;
             //if (Declare.isEmp(HttpContext.Current.User.Identity.Name) == true)
             //{
 
@@ -31,10 +30,10 @@ namespace Canteen.CantinTHP.Scripts
             //else
             {
                 query.Distinct(true)
-                    .Select(fld.EmployeeId, fld.EmployeeName, fld.StringName)
+                    .Select(fld.CanteenId, fld.CanteenName, fld.StringName)
                     .Where(
-                        new Criteria(fld.EmployeeId) != "" &
-                        new Criteria(fld.EmployeeId).IsNotNull());
+                        new Criteria(fld.CanteenId) != "" &
+                        new Criteria(fld.CanteenId).IsNotNull());
             }
 
         }

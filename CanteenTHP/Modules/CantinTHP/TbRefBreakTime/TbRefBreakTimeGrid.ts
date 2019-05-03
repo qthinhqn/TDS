@@ -2,7 +2,7 @@
 namespace Canteen.CantinTHP {
 
     @Serenity.Decorators.registerClass()
-    export class TbRefBreakTimeGrid extends Serenity.EntityGrid<TbRefBreakTimeRow, any> {
+    export class TbRefBreakTimeGrid extends _Ext.GridBase<TbRefBreakTimeRow, any> {
         protected getColumnsKey() { return 'CantinTHP.TbRefBreakTime'; }
         protected getDialogType() { return TbRefBreakTimeDialog; }
         protected getIdProperty() { return TbRefBreakTimeRow.idProperty; }

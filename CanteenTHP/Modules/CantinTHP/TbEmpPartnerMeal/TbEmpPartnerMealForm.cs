@@ -16,6 +16,7 @@ namespace Canteen.CantinTHP.Forms
     {
         public String PartnerName { get; set; }
         public String ContactName { get; set; }
+        [DefaultValue("now")]
         public DateTime DDate { get; set; }
         public String Phone { get; set; }
         public String Remarks { get; set; }

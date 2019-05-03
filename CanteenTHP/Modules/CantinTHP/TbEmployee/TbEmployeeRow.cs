@@ -108,7 +108,6 @@ namespace Canteen.CantinTHP.Entities
         }
 
         [DisplayName("Canteen"), Expression("ed.[CanteenName]")]
-        [LookupEditor(typeof(Entities.TbRefCanteenRow))]
         public String CanteenId
         {
             get { return Fields.CanteenId[this]; }
@@ -139,7 +138,7 @@ namespace Canteen.CantinTHP.Entities
 
         IIdField IIdRow.IdField
         {
-            get { return Fields.KeyId; }
+            get { return Fields.EmployeeId; }
         }
 
         StringField INameRow.NameField

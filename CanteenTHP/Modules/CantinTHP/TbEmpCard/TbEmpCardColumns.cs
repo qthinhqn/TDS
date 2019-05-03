@@ -13,9 +13,8 @@ namespace Canteen.CantinTHP.Columns
     [BasedOnRow(typeof(Entities.TbEmpCardRow), CheckNames = true)]
     public class TbEmpCardColumns
     {
-        [EditLink, DisplayName("Db.Shared.RecordId"), AlignRight]
+        [DisplayName("Db.Shared.RecordId"), AlignRight]
         public Int32 KeyId { get; set; }
-        [EditLink]
         public String StringName { get; set; }
         public String CardId { get; set; }
         public DateTime DateChange { get; set; }

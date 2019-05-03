@@ -17,9 +17,10 @@ namespace Canteen.CantinTHP.Forms
         //[LookupEditor(typeof(Entities.TbEmployeeRow))]
         [LookupEditor(typeof(TbEmployeeLookup))]
         public String EmpId { get; set; }
+        [DefaultValue("now")]
         public DateTime DDay { get; set; }
         public String ShiftId { get; set; }
-        [LookupEditor(typeof(Entities.TbRefCanteenRow))]
+        [LookupEditor(typeof(TbRefCanteenLookup))]
         public String CanteenId { get; set; }
         public String MenuId { get; set; }
         public Int32 RegTypeId { get; set; }

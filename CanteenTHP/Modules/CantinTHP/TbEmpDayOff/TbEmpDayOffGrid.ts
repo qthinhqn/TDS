@@ -2,7 +2,7 @@
 namespace Canteen.CantinTHP {
 
     @Serenity.Decorators.registerClass()
-    export class TbEmpDayOffGrid extends Serenity.EntityGrid<TbEmpDayOffRow, any> {
+    export class TbEmpDayOffGrid extends _Ext.GridBase<TbEmpDayOffRow, any> {
         protected getColumnsKey() { return 'CantinTHP.TbEmpDayOff'; }
         protected getDialogType() { return TbEmpDayOffDialog; }
         protected getIdProperty() { return TbEmpDayOffRow.idProperty; }

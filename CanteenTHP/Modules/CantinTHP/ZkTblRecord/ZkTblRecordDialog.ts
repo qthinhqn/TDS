@@ -2,7 +2,7 @@
 namespace Canteen.CantinTHP {
 
     @Serenity.Decorators.registerClass()
-    export class ZkTblRecordDialog extends Serenity.EntityDialog<ZkTblRecordRow, any> {
+    export class ZkTblRecordDialog extends _Ext.DialogBase<ZkTblRecordRow, any> {
         protected getFormKey() { return ZkTblRecordForm.formKey; }
         protected getIdProperty() { return ZkTblRecordRow.idProperty; }
         protected getLocalTextPrefix() { return ZkTblRecordRow.localTextPrefix; }

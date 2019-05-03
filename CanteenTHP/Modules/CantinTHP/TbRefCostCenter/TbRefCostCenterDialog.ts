@@ -2,7 +2,7 @@
 namespace Canteen.CantinTHP {
 
     @Serenity.Decorators.registerClass()
-    export class TbRefCostCenterDialog extends Serenity.EntityDialog<TbRefCostCenterRow, any> {
+    export class TbRefCostCenterDialog extends _Ext.DialogBase<TbRefCostCenterRow, any> {
         protected getFormKey() { return TbRefCostCenterForm.formKey; }
         protected getIdProperty() { return TbRefCostCenterRow.idProperty; }
         protected getLocalTextPrefix() { return TbRefCostCenterRow.localTextPrefix; }

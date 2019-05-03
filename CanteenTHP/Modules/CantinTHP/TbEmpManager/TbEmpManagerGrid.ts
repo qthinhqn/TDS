@@ -2,7 +2,7 @@
 namespace Canteen.CantinTHP {
 
     @Serenity.Decorators.registerClass()
-    export class TbEmpManagerGrid extends Serenity.EntityGrid<TbEmpManagerRow, any> {
+    export class TbEmpManagerGrid extends _Ext.GridBase<TbEmpManagerRow, any> {
         protected getColumnsKey() { return 'CantinTHP.TbEmpManager'; }
         protected getDialogType() { return TbEmpManagerDialog; }
         protected getIdProperty() { return TbEmpManagerRow.idProperty; }

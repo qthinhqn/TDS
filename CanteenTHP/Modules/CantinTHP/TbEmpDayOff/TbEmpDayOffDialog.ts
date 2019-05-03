@@ -2,7 +2,7 @@
 namespace Canteen.CantinTHP {
 
     @Serenity.Decorators.registerClass()
-    export class TbEmpDayOffDialog extends Serenity.EntityDialog<TbEmpDayOffRow, any> {
+    export class TbEmpDayOffDialog extends _Ext.DialogBase<TbEmpDayOffRow, any> {
         protected getFormKey() { return TbEmpDayOffForm.formKey; }
         protected getIdProperty() { return TbEmpDayOffRow.idProperty; }
         protected getLocalTextPrefix() { return TbEmpDayOffRow.localTextPrefix; }
