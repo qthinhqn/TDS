@@ -29,7 +29,7 @@ namespace Canteen.Administration.Entities
             set { Fields.RoleName[this] = value; }
         }
 
-        [DisplayName("Details"), MasterDetailRelation(foreignKey: "RoleId"), NotMapped]
+        [DisplayName("Details"), MasterDetailRelation(foreignKey: "RoleId", IncludeColumns = "EmployeeName, SexId, StartDate, LeftDate, CompanyKey, DepKey, IsManager, CanteenId, CostCenter"), NotMapped]
         public List<RoleSelectionRow> DetailList
         {
             get { return Fields.DetailList[this]; }

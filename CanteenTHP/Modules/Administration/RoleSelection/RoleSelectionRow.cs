@@ -13,6 +13,8 @@ namespace Canteen.Administration.Entities
     [DisplayName("Role Selection"), InstanceName("Role Selection")]
     [ReadPermission(PermissionKeys.Security)]
     [ModifyPermission(PermissionKeys.Security)]
+    [LeftJoin("ed", "v_EmployeeInfoCurrent", "ed.[EmployeeID] = t0.[EmpID]", RowType = typeof(CantinTHP.Entities.VEmployeeInfoCurrentRow), TitlePrefix = "")]
+
     public sealed class RoleSelectionRow : Row, IIdRow, INameRow
     {
         [DisplayName("Role Selection Id"), Identity]
@@ -29,7 +31,7 @@ namespace Canteen.Administration.Entities
             set { Fields.RoleId[this] = value; }
         }
 
-        [DisplayName("Emp"), Column("EmpID"), Size(25), NotNull, ForeignKey("[dbo].[tbEmployee]", "EmployeeID"), LeftJoin("jEmp"), QuickSearch, TextualField("EmpFirstName")]
+        [DisplayName("Emp"), Column("EmpID"), Size(25), NotNull]
         public String EmpId
         {
             get { return Fields.EmpId[this]; }
@@ -43,60 +45,81 @@ namespace Canteen.Administration.Entities
             set { Fields.RoleRoleName[this] = value; }
         }
 
-        [DisplayName("Emp Key Id"), Expression("jEmp.[KeyID]")]
-        public Int32? EmpKeyId
+        [DisplayName("Company Key"), Expression("ed.[CompanyName]")]
+        public String CompanyKey
         {
-            get { return Fields.EmpKeyId[this]; }
-            set { Fields.EmpKeyId[this] = value; }
+            get { return Fields.CompanyKey[this]; }
+            set { Fields.CompanyKey[this] = value; }
         }
 
-        [DisplayName("Emp First Name"), Expression("jEmp.[FirstName]")]
-        public String EmpFirstName
+        [DisplayName("LastName"), Expression("ed.[LastName]")]
+        public String LastName
         {
-            get { return Fields.EmpFirstName[this]; }
-            set { Fields.EmpFirstName[this] = value; }
+            get { return Fields.LastName[this]; }
+            set { Fields.LastName[this] = value; }
         }
 
-        [DisplayName("Emp Last Name"), Expression("jEmp.[LastName]")]
-        public String EmpLastName
+        [DisplayName("FirstName"), Expression("ed.[FirstName]")]
+        public String FirstName
         {
-            get { return Fields.EmpLastName[this]; }
-            set { Fields.EmpLastName[this] = value; }
+            get { return Fields.FirstName[this]; }
+            set { Fields.FirstName[this] = value; }
         }
 
-        [DisplayName("Emp Employee Name"), Expression("jEmp.[EmployeeName]")]
-        public String EmpEmployeeName
+        [DisplayName("Employee Name"), Expression("ed.[EmployeeName]")]
+        public String EmployeeName
         {
-            get { return Fields.EmpEmployeeName[this]; }
-            set { Fields.EmpEmployeeName[this] = value; }
+            get { return Fields.EmployeeName[this]; }
+            set { Fields.EmployeeName[this] = value; }
         }
 
-        [DisplayName("Emp Sex Id"), Expression("jEmp.[SexID]")]
-        public String EmpSexId
+        [DisplayName("Sex Id"), Expression("ed.[SexId]")]
+        public String SexId
         {
-            get { return Fields.EmpSexId[this]; }
-            set { Fields.EmpSexId[this] = value; }
+            get { return Fields.SexId[this]; }
+            set { Fields.SexId[this] = value; }
         }
 
-        [DisplayName("Emp Left Date"), Expression("jEmp.[LeftDate]")]
-        public DateTime? EmpLeftDate
+        [DisplayName("Left Date"), Expression("ed.[LeftDate]")]
+        public DateTime? LeftDate
         {
-            get { return Fields.EmpLeftDate[this]; }
-            set { Fields.EmpLeftDate[this] = value; }
+            get { return Fields.LeftDate[this]; }
+            set { Fields.LeftDate[this] = value; }
         }
 
-        [DisplayName("Emp Active"), Expression("jEmp.[Active]")]
-        public Boolean? EmpActive
+        [DisplayName("Start Date"), Expression("ed.[StartDate]")]
+        public DateTime? StartDate
         {
-            get { return Fields.EmpActive[this]; }
-            set { Fields.EmpActive[this] = value; }
+            get { return Fields.StartDate[this]; }
+            set { Fields.StartDate[this] = value; }
         }
 
-        [DisplayName("Emp Start Date"), Expression("jEmp.[StartDate]")]
-        public DateTime? EmpStartDate
+        [DisplayName("Dep Key"), Expression("ed.[DepName]")]
+        public String DepKey
         {
-            get { return Fields.EmpStartDate[this]; }
-            set { Fields.EmpStartDate[this] = value; }
+            get { return Fields.DepKey[this]; }
+            set { Fields.DepKey[this] = value; }
+        }
+
+        [DisplayName("Is Manager"), Expression("ed.[IsManager]")]
+        public Boolean? IsManager
+        {
+            get { return Fields.IsManager[this]; }
+            set { Fields.IsManager[this] = value; }
+        }
+
+        [DisplayName("Canteen"), Expression("ed.[CanteenName]")]
+        public String CanteenId
+        {
+            get { return Fields.CanteenId[this]; }
+            set { Fields.CanteenId[this] = value; }
+        }
+
+        [DisplayName("Cost Center"), Expression("ed.[CostCenter]")]
+        public String CostCenter
+        {
+            get { return Fields.CostCenter[this]; }
+            set { Fields.CostCenter[this] = value; }
         }
 
         IIdField IIdRow.IdField
@@ -124,14 +147,18 @@ namespace Canteen.Administration.Entities
 
             public StringField RoleRoleName;
 
-            public Int32Field EmpKeyId;
-            public StringField EmpFirstName;
-            public StringField EmpLastName;
-            public StringField EmpEmployeeName;
-            public StringField EmpSexId;
-            public DateTimeField EmpLeftDate;
-            public BooleanField EmpActive;
-            public DateTimeField EmpStartDate;
+            public StringField FirstName;
+            public StringField LastName;
+            public StringField EmployeeName;
+            public StringField SexId;
+            public DateTimeField LeftDate;
+            public DateTimeField StartDate;
+            public StringField CompanyKey;
+            public StringField DepKey;
+            public BooleanField IsManager;
+            public StringField CanteenId;
+            public StringField CostCenter;
+
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Canteen.Administration.Forms
         public String RoleName { get; set; }
 
         [Category("Employee Selection")]
-        [RoleEditor]
+        [RoleSelectionEditor]
         [DisplayName(" "), LabelWidth(0)]
         public List<RoleSelectionRow> DetailList { get; set; }
     }
