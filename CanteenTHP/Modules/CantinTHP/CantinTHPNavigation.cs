@@ -45,3 +45,4 @@ using MyPages = Canteen.CantinTHP.Pages;
 [assembly: NavigationLink(int.MaxValue, "CantinTHP/Generals/Zk Tbl Record", typeof(MyPages.ZkTblRecordController), icon: null)]
 //[assembly: NavigationLink(int.MaxValue, "CantinTHP/V Employee Info Current", typeof(MyPages.VEmployeeInfoCurrentController), icon: null)]
 //[assembly: NavigationLink(int.MaxValue, "CantinTHP/Role Selection", typeof(MyPages.RoleSelectionController), icon: null)]
+//[assembly: NavigationLink(int.MaxValue, "CantinTHP/Role Cost Center", typeof(MyPages.RoleCostCenterController), icon: null)]

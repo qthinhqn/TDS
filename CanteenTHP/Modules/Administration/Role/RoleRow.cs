@@ -36,6 +36,13 @@ namespace Canteen.Administration.Entities
             set { Fields.DetailList[this] = value; }
         }
 
+        [DisplayName("CostCenter Details"), MasterDetailRelation(foreignKey: "RoleId", IncludeColumns = "CostCenter"), NotMapped]
+        public List<RoleCostCenterRow> CostCenterList
+        {
+            get { return Fields.CostCenterList[this]; }
+            set { Fields.CostCenterList[this] = value; }
+        }
+
 
         IIdField IIdRow.IdField
         {
@@ -60,6 +67,8 @@ namespace Canteen.Administration.Entities
             public StringField RoleName;
 
             public RowListField<RoleSelectionRow> DetailList;
+
+            public RowListField<RoleCostCenterRow> CostCenterList;
         }
     }
 }

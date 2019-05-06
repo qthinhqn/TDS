@@ -17,5 +17,10 @@ namespace Canteen.Administration.Forms
         [RoleSelectionEditor]
         [DisplayName(" "), LabelWidth(0)]
         public List<RoleSelectionRow> DetailList { get; set; }
+
+        [Category("CostCenter Selection")]
+        [RoleCostCenterEditor]
+        [DisplayName(" "), LabelWidth(0)]
+        public List<RoleCostCenterRow> CostCenterList { get; set; }
     }
 }

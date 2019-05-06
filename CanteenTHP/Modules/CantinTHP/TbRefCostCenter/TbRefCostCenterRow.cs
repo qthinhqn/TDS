@@ -67,7 +67,7 @@ namespace Canteen.CantinTHP.Entities
 
         IIdField IIdRow.IdField
         {
-            get { return Fields.KeyId; }
+            get { return Fields.CostCenter; }
         }
 
         StringField INameRow.NameField
