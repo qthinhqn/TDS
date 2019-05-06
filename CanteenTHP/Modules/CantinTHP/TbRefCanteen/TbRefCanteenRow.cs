@@ -24,6 +24,7 @@ namespace Canteen.CantinTHP.Entities
         }
 
         [DisplayName("Canteen Id"), Column("CanteenID"), Size(10), PrimaryKey, QuickSearch]
+        [LookupInclude]
         public String CanteenId
         {
             get { return Fields.CanteenId[this]; }

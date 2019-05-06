@@ -5,6 +5,7 @@ namespace Canteen.Administration.Entities
     using Serenity.Data;
     using Serenity.Data.Mapping;
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel;
 
     [ConnectionKey("Default"), Module("Administration"), TableName("Roles")]
@@ -26,6 +27,13 @@ namespace Canteen.Administration.Entities
         {
             get { return Fields.RoleName[this]; }
             set { Fields.RoleName[this] = value; }
+        }
+
+        [DisplayName("Details"), MasterDetailRelation(foreignKey: "RoleId"), NotMapped]
+        public List<RoleSelectionRow> DetailList
+        {
+            get { return Fields.DetailList[this]; }
+            set { Fields.DetailList[this] = value; }
         }
 
 
@@ -50,6 +58,8 @@ namespace Canteen.Administration.Entities
         {
             public Int32Field RoleId;
             public StringField RoleName;
+
+            public RowListField<RoleSelectionRow> DetailList;
         }
     }
 }
