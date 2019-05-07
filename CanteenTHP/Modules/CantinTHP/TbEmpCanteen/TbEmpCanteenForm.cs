@@ -15,12 +15,13 @@ namespace Canteen.CantinTHP.Forms
     public class TbEmpCanteenForm
     {
         //[LookupEditor(typeof(Entities.TbEmployeeRow))]
-        [LookupEditor(typeof(TbEmployeeLookup))]
-        public String EmpId { get; set; }
+        //[LookupEditor(typeof(TbEmployeeLookup))]
+        //public String EmpId { get; set; }
         [LookupEditor(typeof(TbRefCanteenLookup))]
         public String CanteenId { get; set; }
         [DefaultValue("now")]
         public DateTime DateChange { get; set; }
+        [DefaultValue("true")]
         public Boolean Active { get; set; }
     }
 }

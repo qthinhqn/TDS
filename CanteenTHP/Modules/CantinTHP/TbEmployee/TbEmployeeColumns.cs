@@ -18,19 +18,18 @@ namespace Canteen.CantinTHP.Columns
         public Int32 KeyId { get; set; }
         [EditLink]
         public String EmployeeId { get; set; }
-        public String LastName { get; set; }
-        public String FirstName { get; set; }
+        //public String LastName { get; set; }
+        //public String FirstName { get; set; }
         [Hidden]
         public String EmployeeName { get; set; }
-        //public String EmployeeNameForeign { get; set; }
-        public String SexId { get; set; }
-        public DateTime StartDate { get; set; }
+        [Hidden]
+        public Boolean Active { get; set; }
+        [Hidden]
         public DateTime LeftDate { get; set; }
         public String CompanyKey { get; set; }
         public String DepKey { get; set; }
         public Boolean IsManager { get; set; }
         public String CanteenId { get; set; }
         public String CostCenter { get; set; }
-        //public Boolean Active { get; set; }
     }
 }

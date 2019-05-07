@@ -34,7 +34,7 @@ namespace Canteen.CantinTHP.Entities
         }
 
         [DisplayName("Canteen"), Column("CanteenID"), Size(10), ForeignKey("[dbo].[tbRef_Canteen]", "CanteenID"), LeftJoin("jCanteen")]
-        [LookupInclude, LookupEditor(typeof(TbRefCanteenRow), InplaceAdd = true)]
+        [LookupEditor(typeof(TbRefCanteenRow))]
         public String CanteenId
         {
             get { return Fields.CanteenId[this]; }

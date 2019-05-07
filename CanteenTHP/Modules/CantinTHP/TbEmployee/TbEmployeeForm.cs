@@ -14,21 +14,16 @@ namespace Canteen.CantinTHP.Forms
     public class TbEmployeeForm
     {
         //[Category("Employee info")]
-        [FormCssClass("line-break-sm")]
+        [FormCssClass("line-break-sm"), HalfWidth]
         public String EmployeeId { get; set; }
-        [HalfWidth(UntilNext = true)]
-        public String LastName { get; set; }
-        public String FirstName { get; set; }
-        [Hidden]
         public String EmployeeName { get; set; }
-        [GenderEditor]
-        public String SexId { get; set; }
-        public DateTime LeftDate { get; set; }
-        public DateTime StartDate { get; set; }
+        [HalfWidth(UntilNext = true)]
         public Boolean Active { get; set; }
+        [ReadOnly(true)]
+        public DateTime LeftDate { get; set; }
 
-        //[Category("Cantin Details")]
-        //[EmpCanteenEditor]
-        //public List<Entities.TbEmpCanteenRow> DetailList { get; set; }
+        [Category("Cantin Details")]
+        [TbEmpCanteenEditor]
+        public List<Entities.TbEmpCanteenRow> DetailList { get; set; }
     }
 }

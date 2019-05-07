@@ -27,7 +27,37 @@ namespace Canteen.Administration {
 
         protected getButtons() {
             let buttons = super.getButtons();
-            
+
+            buttons.push({
+                title: "Pick Costcenter",
+                cssClass: "add-button",
+                onClick: () => {
+                    var pickerDialog = new _Ext.GridItemPickerDialog({
+                        gridType: CantinTHP.TbRefCostCenterGrid, multiple: true,
+                        preSelectedKeys: this.value.map(k => k.CostCenter)
+                    });
+
+                    pickerDialog.onSuccess = (selectedItems: any[]) => {
+                        let selectedItems2 = selectedItems.filter(t => { return !Q.any(this.view.getItems(), n => n.CostCenter == t.CostCenter) });
+
+                        var orderDetails = selectedItems2.map<CantinTHP.TbRefCostCenterRow>(r => {
+                            return {
+                                CostCenter: r.CostCenter,
+                                CostCenterIsTemp: r.IsTemp,
+                                CostCenterRemarks: r.Remarks
+                            }
+                        });
+
+                        for (let orderDetail of orderDetails) {
+                            orderDetail[this.getIdProperty()] = "`" + this.nextId++;
+                            this.view.addItem(orderDetail);
+                        }
+                    }
+
+                    pickerDialog.dialogOpen();
+                }
+            });
+
             return buttons;
         }
 

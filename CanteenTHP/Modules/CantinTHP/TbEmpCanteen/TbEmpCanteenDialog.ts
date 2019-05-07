@@ -1,15 +1,18 @@
-﻿
+﻿/// <reference path="../../Common/Helpers/GridEditorDialog.ts" />
+
 namespace Canteen.CantinTHP {
 
     @Serenity.Decorators.registerClass()
     export class TbEmpCanteenDialog extends _Ext.DialogBase<TbEmpCanteenRow, any> {
         protected getFormKey() { return TbEmpCanteenForm.formKey; }
-        protected getIdProperty() { return TbEmpCanteenRow.idProperty; }
-        protected getLocalTextPrefix() { return TbEmpCanteenRow.localTextPrefix; }
         protected getNameProperty() { return TbEmpCanteenRow.nameProperty; }
-        protected getService() { return TbEmpCanteenService.baseUrl; }
+        protected getLocalTextPrefix() { return TbEmpCanteenRow.localTextPrefix; }
 
-        protected form = new TbEmpCanteenForm(this.idPrefix);
+        protected form : TbEmpCanteenForm;
 
+        constructor() {
+            super();
+            this.form = new TbEmpCanteenForm(this.idPrefix);
+        }
     }
 }

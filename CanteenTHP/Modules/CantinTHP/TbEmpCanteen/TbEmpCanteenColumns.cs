@@ -13,11 +13,11 @@ namespace Canteen.CantinTHP.Columns
     [BasedOnRow(typeof(Entities.TbEmpCanteenRow), CheckNames = true)]
     public class TbEmpCanteenColumns
     {
-        [DisplayName("Db.Shared.RecordId"), AlignRight]
-        [Hidden]
-        public Int32 KeyId { get; set; }
-        //[EditLink]
-        public String StringName { get; set; }
+        //[DisplayName("Db.Shared.RecordId"), AlignRight]
+        //[Hidden]
+        //public Int32 KeyId { get; set; }
+        ////[EditLink]
+        //public String StringName { get; set; }
         public String CanteenCanteenName { get; set; }
         public DateTime DateChange { get; set; }
         public Boolean Active { get; set; }
